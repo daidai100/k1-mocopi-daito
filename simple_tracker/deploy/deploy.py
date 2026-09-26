@@ -3,6 +3,9 @@
     cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tracker/deploy/deploy.py \
         --checkpoint <exported policy.pt> --clips 'dataset-2_walk_normal_001$' [--mujoco]
 
+    # live mocopi (start live/mocopi_retarget.py udp first; stand still for the first second)
+    ... deploy.py --checkpoint <policy.pt> --source udp
+
 Without ``--mujoco`` this commands the real robot via booster_deploy's
 BoosterRobotPortal, exactly like ``booster_deploy/scripts/deploy.py``.
 """
@@ -23,6 +26,8 @@ def build_cfg(a):
 
     cfg = K1SimpleTrackerControllerCfg()
     cfg.policy.checkpoint_path = os.path.abspath(a.checkpoint)
+    cfg.policy.reference_source = getattr(a, "source", "clip")
+    cfg.policy.udp_port = getattr(a, "udp_port", 12400)
     cfg.policy.library_path = os.path.abspath(a.library)
     cfg.policy.clip_regex = a.clips
     cfg.policy.max_clips = a.max_clips
@@ -46,6 +51,8 @@ def main():
     p = argparse.ArgumentParser()
     add_args(p)
     p.add_argument("--mujoco", action="store_true")
+    p.add_argument("--source", choices=("clip", "udp"), default="clip", help="udp: live/mocopi_retarget.py stream")
+    p.add_argument("--udp-port", type=int, default=12400)
     p.add_argument("--exit-mode", choices=("walking", "damping"), default=None)
     a = p.parse_args()
     cfg = build_cfg(a)

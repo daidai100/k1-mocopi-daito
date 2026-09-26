@@ -92,6 +92,74 @@ class ClipReference:
         return next((n for n, a, b in self.segments if a <= frame < b), self.segments[-1][0])
 
 
+class UdpReference:
+    """Live reference: K1 qpos packets from ``live/mocopi_retarget.py`` (udp or bvh --stream).
+
+    Each packet is ``<30d``: sequence number, root pos(3), root quat wxyz(4), 22 dof (MJCF order).
+    Velocities come from ``CausalReference``; if packets stop, the last pose is held and the
+    velocity estimates decay to zero.
+    """
+
+    def __init__(self, port: int, device: str, wait_s: float = 30.0):
+        import socket
+        import sys
+        import time
+        from pathlib import Path
+
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "live"))
+        from causal_reference import CausalReference
+
+        self._time = time
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self.sock.bind(("127.0.0.1", port))
+        self.sock.setblocking(False)
+        self.causal = CausalReference(fps=50.0)
+        self.device = device
+        self.wait_s = wait_s
+        self.qpos = None
+        self.seq = -1
+        self.last_rx = 0.0
+        self.done = False
+
+    def _drain(self) -> bool:
+        import struct
+
+        got = False
+        while True:
+            try:
+                raw = self.sock.recv(4096)
+            except BlockingIOError:
+                return got
+            if len(raw) != 240:
+                continue
+            vals = struct.unpack("<30d", raw)
+            if vals[0] > self.seq:
+                self.seq, self.qpos, got = vals[0], np.array(vals[1:]), True
+                self.last_rx = self._time.monotonic()
+
+    def reset(self):
+        self.causal.reset()
+        t0 = self._time.monotonic()
+        print("[simple_tracker] waiting for mocopi reference packets ...", flush=True)
+        while not self._drain():
+            if self._time.monotonic() - t0 > self.wait_s:
+                raise RuntimeError("no reference packets received")
+            self._time.sleep(0.01)
+
+    def step(self):
+        self._drain()
+        r = self.causal.update(self.qpos)
+        t = lambda x: torch.tensor(x, dtype=torch.float32, device=self.device)  # noqa: E731
+        return (
+            t(r["joint_pos"]),
+            t(r["joint_vel"]),
+            t(r["root_pos"]),
+            t(r["root_quat"]),
+            t(r["root_lin_vel_w"]),
+            t(r["root_ang_vel_w"]),
+        )
+
+
 class SimpleTrackerPolicy(Policy):
     def __init__(self, cfg: SimpleTrackerPolicyCfg, controller: BaseController):
         super().__init__(cfg, controller)
@@ -103,9 +171,12 @@ class SimpleTrackerPolicy(Policy):
         self.action_scale = (0.25 * self.robot.effort_limit / self.robot.joint_stiffness).to(self.device)
         self.default_joint_pos = self.robot.default_joint_pos.to(self.device)
         self.gravity = GRAVITY.to(self.device)
-        self.reference = ClipReference(
-            cfg.library_path, cfg.clip_regex, cfg.hold_s, cfg.device, max_clips=cfg.max_clips
-        )
+        if cfg.reference_source == "udp":
+            self.reference = UdpReference(cfg.udp_port, cfg.device)
+        else:
+            self.reference = ClipReference(
+                cfg.library_path, cfg.clip_regex, cfg.hold_s, cfg.device, max_clips=cfg.max_clips
+            )
 
     def reset(self) -> None:
         self.reference.reset()
@@ -161,7 +232,9 @@ class SimpleTrackerPolicy(Policy):
 class SimpleTrackerPolicyCfg(PolicyCfg):
     constructor = SimpleTrackerPolicy
     checkpoint_path: str = MISSING  # exported TorchScript (.pt) or ONNX
-    library_path: str = MISSING
+    reference_source: str = "clip"  # "clip" (library npz) or "udp" (live/mocopi_retarget.py)
+    udp_port: int = 12400
+    library_path: str = ""
     clip_regex: str = r"dataset-2_walk_normal_001$"
     max_clips: int = 0
     hold_s: float = 2.0
