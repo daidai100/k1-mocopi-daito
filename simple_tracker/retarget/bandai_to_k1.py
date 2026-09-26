@@ -1,9 +1,12 @@
-"""Batch retarget Bandai Namco BVH clips to Booster K1 with GMR.
+"""Batch retarget BVH clips (Bandai Namco, LAFAN1) to Booster K1 with GMR.
 
 Run with the GMR venv (it only needs GMR + mujoco + numpy/scipy):
 
     ~/ws/mocopi2beyondmimic-ref/GMR/.venv/bin/python simple_tracker/retarget/bandai_to_k1.py \
         --bandai ~/ws/k1-mocopi-data/bandai/dataset --out ~/ws/k1-mocopi-data/k1_bandai --workers 20
+    # LAFAN1: long takes are cut into usable segments (see ``segment_mask``)
+    ... bandai_to_k1.py --format lafan1 --bandai ~/ws/k1-mocopi-data/lafan1 --out ~/ws/k1-mocopi-data/k1_lafan1 \
+        --calib dance1_subject1.bvh --calib_frame auto --segment
 
 GMR itself is not modified. This script
   * loads Bandai BVH (6 channels per joint, cm, y-up) with GMR's vendored parser,
@@ -39,8 +42,21 @@ from general_motion_retargeting import params  # noqa: E402
 from general_motion_retargeting.utils.lafan_vendor.extract import read_bvh  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
-IK_CONFIG = HERE / "bvh_bandai_to_k1.json"
+IK_CONFIG = HERE / "bvh_bandai_to_k1.json"  # replaced in main() per --format (before the worker fork)
 OUT_FPS = 50
+SEGMENT = False
+
+# Source bone names -> the Bandai names used throughout this file.
+BONE_ALIASES = {
+    "bandai": {},
+    "lafan1": {
+        "LeftUpLeg": "UpperLeg_L", "LeftLeg": "LowerLeg_L", "LeftFoot": "Foot_L", "LeftToe": "Toes_L",
+        "RightUpLeg": "UpperLeg_R", "RightLeg": "LowerLeg_R", "RightFoot": "Foot_R", "RightToe": "Toes_R",
+        "LeftArm": "UpperArm_L", "LeftForeArm": "LowerArm_L", "LeftHand": "Hand_L", "LeftShoulder": "Shoulder_L",
+        "RightArm": "UpperArm_R", "RightForeArm": "LowerArm_R", "RightHand": "Hand_R", "RightShoulder": "Shoulder_R",
+    },
+}  # fmt: skip
+FORMAT = "bandai"
 
 # K1 body <- Bandai bone, (table1 pos, table1 rot, table2 pos, table2 rot).
 # The K1 arm is ~0.16 m long, so like GMR's smplx_to_k1 table the K1 hand is
@@ -69,14 +85,15 @@ Y_UP_TO_Z_UP_QUAT = R.from_matrix(Y_UP_TO_Z_UP).as_quat(scalar_first=True)
 
 
 def load_bandai(path: str):
-    """Returns (frames, fps, bone_names) with frames[t][bone] = (pos[3] m, quat wxyz) in z-up."""
+    """Returns (pos[T,B,3] m, quat[T,B,4] wxyz, bone_names, fps) in z-up, bones renamed to Bandai names."""
     anim = read_bvh(path)
     gq, gp = bvh_utils.quat_fk(anim.quats, anim.pos, anim.parents)
     with open(path) as f:
         frame_time = next(float(line.split(":")[1]) for line in f if line.startswith("Frame Time"))
     pos = gp @ Y_UP_TO_Z_UP.T / 100.0
     quat = bvh_utils.quat_mul(Y_UP_TO_Z_UP_QUAT, gq)
-    return pos, quat, list(anim.bones), 1.0 / frame_time
+    aliases = BONE_ALIASES[FORMAT]
+    return pos, quat, [aliases.get(b, b) for b in anim.bones], 1.0 / frame_time
 
 
 def leg_length(pos, bones):
@@ -108,14 +125,33 @@ def robot_calibration_pose(model, arm_abduction):
     return data
 
 
-def calibrate(calib_bvh: str, out_path: Path):
+def pick_calibration_frame(pos, bones, fps) -> int:
+    """Straightest-legged frame with both feet at the same height within the first 30 s."""
+    i = {b: k for k, b in enumerate(bones)}
+    best, best_t = -1.0, 0
+    for t in range(min(len(pos), int(30 * fps))):
+        if abs(pos[t, i["Foot_L"], 2] - pos[t, i["Foot_R"], 2]) > 0.02:
+            continue
+        straight = []
+        for s in ("L", "R"):
+            a = pos[t, i[f"UpperLeg_{s}"]] - pos[t, i[f"LowerLeg_{s}"]]
+            b = pos[t, i[f"Foot_{s}"]] - pos[t, i[f"LowerLeg_{s}"]]
+            straight.append(-np.dot(a, b) / np.linalg.norm(a) / np.linalg.norm(b))  # 1 = straight knee
+        if min(straight) > best:
+            best, best_t = min(straight), t
+    return best_t
+
+
+def calibrate(calib_bvh: str, out_path: Path, frame="0"):
     """Compute GMR rotation offsets so the neutral human frame maps to the K1 neutral pose.
 
     GMR sets each target to ``R_human * R_offset``; choosing
     ``R_offset = R_human_cal^-1 * Rz(yaw_cal) * R_robot_cal`` makes a neutral human
     produce the neutral robot, whatever the rig's local bone axes are.
     """
-    pos, quat, bones, _ = load_bandai(calib_bvh)
+    pos, quat, bones, fps = load_bandai(calib_bvh)
+    t0 = pick_calibration_frame(pos, bones, fps) if frame == "auto" else int(frame)
+    pos, quat = pos[t0:], quat[t0:]
     i = {b: k for k, b in enumerate(bones)}
     yaw = facing_yaw(pos, bones)
     # abduction of the human upper arm from vertical, averaged over both arms
@@ -145,17 +181,46 @@ def calibrate(calib_bvh: str, out_path: Path):
         "human_scale_table": {bone: 0.55 for bone, *_ in BODY_MAP.values()},
         "ik_match_table1": table1,
         "ik_match_table2": table2,
-        "_calibration": {"bvh": os.path.basename(calib_bvh), "arm_abduction": float(np.mean(abd))},
+        "_calibration": {"bvh": os.path.basename(calib_bvh), "frame": t0, "arm_abduction": float(np.mean(abd))},
     }
     out_path.write_text(json.dumps(cfg, indent=1))
     return cfg
 
 
 def make_retargeter():
-    params.IK_CONFIG_DICT.setdefault("bvh_bandai", {})["booster_k1"] = IK_CONFIG
+    key = f"bvh_{FORMAT}_auto"
+    params.IK_CONFIG_DICT.setdefault(key, {})["booster_k1"] = IK_CONFIG
     from general_motion_retargeting import GeneralMotionRetargeting
 
-    return GeneralMotionRetargeting("bvh_bandai", "booster_k1", verbose=False)
+    return GeneralMotionRetargeting(key, "booster_k1", verbose=False)
+
+
+def segment_mask(root_pos, root_quat, dof, feet, fps=OUT_FPS):
+    """Frames a flat-ground standing tracker should learn from (for long mixed takes like LAFAN1).
+
+    Drops lying/crawling (trunk tilt, low trunk), fast running (1 s mean speed), flight
+    phases (both feet high), and violent joint motion; invalid spans are padded by 0.5 s.
+    """
+    up = 1.0 - 2.0 * (root_quat[:, 1] ** 2 + root_quat[:, 2] ** 2)
+    speed = np.linalg.norm(np.gradient(root_pos[:, :2], 1.0 / fps, axis=0), axis=1)
+    speed_1s = np.convolve(speed, np.ones(int(fps)) / fps, mode="same")
+    dof_vel = np.abs(np.gradient(dof, 1.0 / fps, axis=0)).max(axis=1)
+    ok = (up > 0.7) & (root_pos[:, 2] > 0.40) & (speed_1s < 1.3) & (feet.min(axis=1) < 0.10) & (dof_vel < 25.0)
+    pad = int(0.5 * fps)
+    bad = np.convolve(~ok, np.ones(2 * pad + 1), mode="same") > 0
+    return ~bad
+
+
+def split_segments(mask, min_len):
+    segs, start = [], None
+    for t, v in enumerate(np.r_[mask, False]):
+        if v and start is None:
+            start = t
+        elif not v and start is not None:
+            if t - start >= min_len:
+                segs.append((start, t))
+            start = None
+    return segs
 
 
 def resample(root_pos, root_quat, dof, fps_in, fps_out=OUT_FPS):
@@ -223,38 +288,50 @@ def retarget_clip(args):
         feet += K1_FOOT_LINK_STANDING_Z - np.percentile(feet.min(axis=1), 5)
 
         dt = 1.0 / OUT_FPS
-        dof_vel = np.gradient(dof, dt, axis=0)
-        root_vel = np.gradient(root_pos, dt, axis=0)
         lo = model.jnt_range[1:, 0]
         hi = model.jnt_range[1:, 1]
-        metrics = {
-            "frames": int(dof.shape[0]),
-            "seconds": float(dof.shape[0] * dt),
-            "scale": float(scale),
-            "ik_err_mean": float(np.mean(err)),
-            "ik_err_p95": float(np.percentile(err, 95)),
-            "max_dof_vel": float(np.abs(dof_vel).max()),
-            "p99_dof_vel": float(np.percentile(np.abs(dof_vel), 99)),
-            "root_speed_p95": float(np.percentile(np.linalg.norm(root_vel[:, :2], axis=1), 95)),
-            "root_z_min": float(root_pos[:, 2].min()),
-            "foot_penetration": float(K1_FOOT_LINK_STANDING_Z - feet.min()),
-            "limit_margin_min": float(np.min(np.minimum(dof - lo, hi - dof))),
-        }
-        np.savez_compressed(
-            Path(out_dir) / f"{name}.npz",
-            fps=OUT_FPS,
-            root_pos=root_pos.astype(np.float32),
-            root_quat=root_quat.astype(np.float32),
-            dof_pos=dof.astype(np.float32),
-        )
-        return name, metrics, None
+        segs = split_segments(segment_mask(root_pos, root_quat, dof, feet), 3 * OUT_FPS) if SEGMENT else [(0, len(dof))]
+        results = []
+        for k, (a, b) in enumerate(segs):
+            seg_name = f"{name}_s{k:02d}" if SEGMENT else name
+            d, rp, rq, ft = dof[a:b], root_pos[a:b], root_quat[a:b], feet[a:b]
+            dof_vel = np.gradient(d, dt, axis=0)
+            root_vel = np.gradient(rp, dt, axis=0)
+            metrics = {
+                "frames": int(d.shape[0]),
+                "seconds": float(d.shape[0] * dt),
+                "scale": float(scale),
+                "ik_err_mean": float(np.mean(err)),
+                "ik_err_p95": float(np.percentile(err, 95)),
+                "max_dof_vel": float(np.abs(dof_vel).max()),
+                "p99_dof_vel": float(np.percentile(np.abs(dof_vel), 99)),
+                "root_speed_p95": float(np.percentile(np.linalg.norm(root_vel[:, :2], axis=1), 95)),
+                "root_z_min": float(rp[:, 2].min()),
+                "foot_penetration": float(K1_FOOT_LINK_STANDING_Z - ft.min()),
+                "limit_margin_min": float(np.min(np.minimum(d - lo, hi - d))),
+            }
+            if SEGMENT:
+                metrics["source"] = name
+                metrics["source_frames"] = [int(a), int(b)]
+            np.savez_compressed(
+                Path(out_dir) / f"{seg_name}.npz",
+                fps=OUT_FPS,
+                root_pos=rp.astype(np.float32),
+                root_quat=rq.astype(np.float32),
+                dof_pos=d.astype(np.float32),
+            )
+            results.append((seg_name, metrics))
+        return name, results, None
     except Exception as exc:  # keep the batch going, record the failure
         return name, None, repr(exc)
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--bandai", type=Path, required=True, help=".../Bandai-Namco-Research-Motiondataset/dataset")
+    ap.add_argument("--bandai", type=Path, required=True, help="dataset root (searched recursively for *.bvh)")
+    ap.add_argument("--format", choices=sorted(BONE_ALIASES), default="bandai")
+    ap.add_argument("--calib_frame", default="0", help="frame index or 'auto' (straightest legs)")
+    ap.add_argument("--segment", action="store_true", help="cut long takes into usable segments")
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--limit", type=int, default=0, help="only the first N clips (smoke test)")
@@ -265,24 +342,31 @@ def main():
         default="Bandai-Namco-Research-Motiondataset-2/data/dataset-2_raise-up-both-hands_normal_001.bvh",
     )
     a = ap.parse_args()
+    global FORMAT, IK_CONFIG, SEGMENT
+    FORMAT, SEGMENT = a.format, a.segment
+    IK_CONFIG = HERE / f"bvh_{a.format}_to_k1.json"
     a.out.mkdir(parents=True, exist_ok=True)
-    cfg = calibrate(str(a.bandai / a.calib), IK_CONFIG)
+    cfg = calibrate(str(a.bandai / a.calib), IK_CONFIG, a.calib_frame)
     print("calibration:", cfg["_calibration"])
 
-    clips = sorted(str(p) for p in a.bandai.glob("*/data/*.bvh") if a.match in p.name)
+    clips = sorted(str(p) for p in a.bandai.rglob("*.bvh") if a.match in p.name)
     if a.limit:
         clips = clips[: a.limit]
     print(f"{len(clips)} clips -> {a.out}")
     index = {}
     with mp.Pool(a.workers) as pool:
-        for k, (name, metrics, error) in enumerate(pool.imap_unordered(retarget_clip, [(c, a.out) for c in clips])):
-            index[name] = metrics if error is None else {"error": error}
-            if k % 100 == 0 or error:
-                print(k, name, error or f"{metrics['seconds']:.1f}s ik={metrics['ik_err_mean']:.3f}", flush=True)
+        for k, (name, results, error) in enumerate(pool.imap_unordered(retarget_clip, [(c, a.out) for c in clips])):
+            if error is not None:
+                index[name] = {"error": error}
+            for seg_name, metrics in results or []:
+                index[seg_name] = metrics
+            if k % 100 == 0 or error or SEGMENT:
+                secs = sum(m["seconds"] for _, m in results or [])
+                print(k, name, error or f"{len(results)} segment(s) {secs:.1f}s", flush=True)
     with tempfile.NamedTemporaryFile("w", dir=a.out, delete=False) as f:
         json.dump({"ik_config": cfg, "clips": index}, f, indent=1)
     os.replace(f.name, a.out / "index.json")
-    print("done", sum("error" not in v for v in index.values()), "/", len(index))
+    print("done", sum("error" not in v for v in index.values()), "clips/segments,", len(clips), "sources")
 
 
 if __name__ == "__main__":
