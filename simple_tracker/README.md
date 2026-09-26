@@ -17,6 +17,8 @@
 | `isaaclab/export_policy.py` | チェックポイント → TorchScript / ONNX（Isaac 不要、学習中に実行可） |
 | `deploy/simple_tracker_policy.py` | booster_deploy 用ポリシー（観測契約は下記） |
 | `deploy/deploy.py`, `deploy/sim2sim_eval.py` | 実機 / MuJoCo 実行、ヘッドレス sim2sim 評価（成功率・誤差・動画） |
+| `live/mocopi_retarget.py` | mocopi → K1 を 1 フレームずつ（因果的に）GMR でリターゲット。`udp`（ライブ）/ `bvh`（録画を同じ処理に通す・`--stream` で実時間送信） |
+| `live/causal_reference.py` | K1 qpos 列 → 参照（後退差分＋EMA の速度、URDF 用の高さ補正）。ライブとオフライン検証で共通 |
 
 ## 学習方法の変更点
 
@@ -79,10 +81,11 @@ cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tra
 
 ## 既知の制限・次の手順
 
-- **ライブ mocopi の参照ソースは未実装**。`ClipReference.step()` と同じ値
-  （sim 順の関節角・関節速度、胴体の位置・姿勢・速度）を返すクラスに、
-  `src/k1_motion/mocopi.py`（UDP）→ GMR（`bvh_mocopi_to_k1.json`）→ 差分で速度、を実装すれば差し替えられる。
-  観測はワールド座標に依存しないので、ドリフトの補正は不要。
+- **ライブ mocopi**：`live/mocopi_retarget.py udp`（GMR venv）が mocopi アプリの UDP（12351）を受けて
+  K1 の qpos を 127.0.0.1:12400 に送り、`deploy.py --source udp` が受け取る。最初の 1 秒は静止して立つ
+  （スケールと接地のキャリブレーション）。BVH で同じ処理を再現でき、`bvh --stream` で UDP 経路を
+  mocopi なしでテストできる（受信値がオフライン処理と一致することを確認済み）。
+  **UDP のボーン座標系が BVH と同じという前提は実機の mocopi では未確認。** 最初は `--mujoco` で確認すること。
 - 歩行の参照速度は p95 で約 1 m/s あり、K1 には速い可能性がある。追従しきれない場合はクリップを
   時間方向に伸ばす（例：1.25 倍）か、速度でフィルタする。
 - K1 の腕は短い（約 0.16 m）ため、人の肘を K1 の手先に対応させている（GMR の smplx_to_k1 と同じ）。
