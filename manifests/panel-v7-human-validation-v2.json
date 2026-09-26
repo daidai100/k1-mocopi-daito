@@ -1,0 +1,1696 @@
+{
+  "version": "human-streaming-v2",
+  "split": "validation",
+  "seed": 42,
+  "index_sha256": "18627f2c68558666a4995c4ee1b72913acae27d7e7b693479606f8b56814c27e",
+  "trials": [
+    {
+      "trial_id": "bow-000-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 191664964
+    },
+    {
+      "trial_id": "bow-001-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 1662057958
+    },
+    {
+      "trial_id": "bow-002-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "brief_loss",
+      "repeat": 1,
+      "seed": 1405681632
+    },
+    {
+      "trial_id": "bow-003-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "push",
+      "repeat": 1,
+      "seed": 942484272
+    },
+    {
+      "trial_id": "bow-004-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "clean",
+      "repeat": 2,
+      "seed": 929893138
+    },
+    {
+      "trial_id": "bow-005-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "initial_pose",
+      "repeat": 2,
+      "seed": 1843824993
+    },
+    {
+      "trial_id": "bow-006-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "brief_loss",
+      "repeat": 3,
+      "seed": 184566854
+    },
+    {
+      "trial_id": "bow-007-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "push",
+      "repeat": 3,
+      "seed": 1497586439
+    },
+    {
+      "trial_id": "bow-008-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "clean",
+      "repeat": 4,
+      "seed": 432652533
+    },
+    {
+      "trial_id": "bow-009-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "initial_pose",
+      "repeat": 4,
+      "seed": 202244314
+    },
+    {
+      "trial_id": "bow-010-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "brief_loss",
+      "repeat": 5,
+      "seed": 1130604998
+    },
+    {
+      "trial_id": "bow-011-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "push",
+      "repeat": 5,
+      "seed": 2095133046
+    },
+    {
+      "trial_id": "bow-012-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "clean",
+      "repeat": 6,
+      "seed": 1580016184
+    },
+    {
+      "trial_id": "bow-013-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "initial_pose",
+      "repeat": 6,
+      "seed": 1634535063
+    },
+    {
+      "trial_id": "bow-014-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "brief_loss",
+      "repeat": 7,
+      "seed": 1540770720
+    },
+    {
+      "trial_id": "bow-015-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "push",
+      "repeat": 7,
+      "seed": 1688060241
+    },
+    {
+      "trial_id": "bow-016-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "clean",
+      "repeat": 8,
+      "seed": 1102145673
+    },
+    {
+      "trial_id": "bow-017-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "initial_pose",
+      "repeat": 8,
+      "seed": 275121931
+    },
+    {
+      "trial_id": "bow-018-2d6a188b639b3046",
+      "recording_id": "2d6a188b639b3046",
+      "capture_group": "bandai_namco/dataset-1/bow/feminine",
+      "family": "bow",
+      "scenario": "brief_loss",
+      "repeat": 9,
+      "seed": 1803345591
+    },
+    {
+      "trial_id": "bow-019-a3dad9f0eaef46bc",
+      "recording_id": "a3dad9f0eaef46bc",
+      "capture_group": "cmu/cmu/136",
+      "family": "bow",
+      "scenario": "push",
+      "repeat": 9,
+      "seed": 967196436
+    },
+    {
+      "trial_id": "dance-000-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 1074497556
+    },
+    {
+      "trial_id": "dance-001-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 796282693
+    },
+    {
+      "trial_id": "dance-002-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "push",
+      "repeat": 2,
+      "seed": 392022359
+    },
+    {
+      "trial_id": "dance-003-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "clean",
+      "repeat": 3,
+      "seed": 1990212659
+    },
+    {
+      "trial_id": "dance-004-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "delay_jitter",
+      "repeat": 4,
+      "seed": 1678403331
+    },
+    {
+      "trial_id": "dance-005-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "push",
+      "repeat": 5,
+      "seed": 1382689816
+    },
+    {
+      "trial_id": "dance-006-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "clean",
+      "repeat": 6,
+      "seed": 864178267
+    },
+    {
+      "trial_id": "dance-007-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "delay_jitter",
+      "repeat": 7,
+      "seed": 1766867110
+    },
+    {
+      "trial_id": "dance-008-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "push",
+      "repeat": 8,
+      "seed": 1171300113
+    },
+    {
+      "trial_id": "dance-009-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "clean",
+      "repeat": 9,
+      "seed": 952224741
+    },
+    {
+      "trial_id": "dance-010-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "delay_jitter",
+      "repeat": 10,
+      "seed": 967354525
+    },
+    {
+      "trial_id": "dance-011-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "push",
+      "repeat": 11,
+      "seed": 487991439
+    },
+    {
+      "trial_id": "dance-012-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "clean",
+      "repeat": 12,
+      "seed": 197860369
+    },
+    {
+      "trial_id": "dance-013-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "delay_jitter",
+      "repeat": 13,
+      "seed": 1190961761
+    },
+    {
+      "trial_id": "dance-014-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "push",
+      "repeat": 14,
+      "seed": 1906728919
+    },
+    {
+      "trial_id": "dance-015-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "clean",
+      "repeat": 15,
+      "seed": 137046513
+    },
+    {
+      "trial_id": "dance-016-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "delay_jitter",
+      "repeat": 16,
+      "seed": 1843166519
+    },
+    {
+      "trial_id": "dance-017-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "push",
+      "repeat": 17,
+      "seed": 1777324408
+    },
+    {
+      "trial_id": "dance-018-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "clean",
+      "repeat": 18,
+      "seed": 594336918
+    },
+    {
+      "trial_id": "dance-019-33217a08de7c08a5",
+      "recording_id": "33217a08de7c08a5",
+      "capture_group": "bandai_namco/dataset-1/dance-short/normal",
+      "family": "dance",
+      "scenario": "delay_jitter",
+      "repeat": 19,
+      "seed": 1356488968
+    },
+    {
+      "trial_id": "kick-000-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 354826746
+    },
+    {
+      "trial_id": "kick-001-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 1627981025
+    },
+    {
+      "trial_id": "kick-002-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "push",
+      "repeat": 2,
+      "seed": 1504361615
+    },
+    {
+      "trial_id": "kick-003-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "clean",
+      "repeat": 3,
+      "seed": 761338719
+    },
+    {
+      "trial_id": "kick-004-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "delay_jitter",
+      "repeat": 4,
+      "seed": 145857092
+    },
+    {
+      "trial_id": "kick-005-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "push",
+      "repeat": 5,
+      "seed": 2084558134
+    },
+    {
+      "trial_id": "kick-006-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "clean",
+      "repeat": 6,
+      "seed": 957106590
+    },
+    {
+      "trial_id": "kick-007-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "delay_jitter",
+      "repeat": 7,
+      "seed": 1917963003
+    },
+    {
+      "trial_id": "kick-008-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "push",
+      "repeat": 8,
+      "seed": 1455819992
+    },
+    {
+      "trial_id": "kick-009-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "clean",
+      "repeat": 9,
+      "seed": 1671565831
+    },
+    {
+      "trial_id": "kick-010-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "delay_jitter",
+      "repeat": 10,
+      "seed": 1631871624
+    },
+    {
+      "trial_id": "kick-011-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "push",
+      "repeat": 11,
+      "seed": 417983442
+    },
+    {
+      "trial_id": "kick-012-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "clean",
+      "repeat": 12,
+      "seed": 781482251
+    },
+    {
+      "trial_id": "kick-013-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "delay_jitter",
+      "repeat": 13,
+      "seed": 1002275723
+    },
+    {
+      "trial_id": "kick-014-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "push",
+      "repeat": 14,
+      "seed": 1068999196
+    },
+    {
+      "trial_id": "kick-015-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "clean",
+      "repeat": 15,
+      "seed": 94067870
+    },
+    {
+      "trial_id": "kick-016-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "delay_jitter",
+      "repeat": 16,
+      "seed": 1173749072
+    },
+    {
+      "trial_id": "kick-017-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "push",
+      "repeat": 17,
+      "seed": 331334161
+    },
+    {
+      "trial_id": "kick-018-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "clean",
+      "repeat": 18,
+      "seed": 1596387605
+    },
+    {
+      "trial_id": "kick-019-f6b5231fa879401d",
+      "recording_id": "f6b5231fa879401d",
+      "capture_group": "kit/kit/610",
+      "family": "kick",
+      "scenario": "delay_jitter",
+      "repeat": 19,
+      "seed": 1466836457
+    },
+    {
+      "trial_id": "punch-000-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 1981113450
+    },
+    {
+      "trial_id": "punch-001-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 1599364551
+    },
+    {
+      "trial_id": "punch-002-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "push",
+      "repeat": 2,
+      "seed": 787359109
+    },
+    {
+      "trial_id": "punch-003-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "clean",
+      "repeat": 3,
+      "seed": 2077711329
+    },
+    {
+      "trial_id": "punch-004-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "delay_jitter",
+      "repeat": 4,
+      "seed": 882294417
+    },
+    {
+      "trial_id": "punch-005-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "push",
+      "repeat": 5,
+      "seed": 699704628
+    },
+    {
+      "trial_id": "punch-006-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "clean",
+      "repeat": 6,
+      "seed": 1944623249
+    },
+    {
+      "trial_id": "punch-007-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "delay_jitter",
+      "repeat": 7,
+      "seed": 795556160
+    },
+    {
+      "trial_id": "punch-008-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "push",
+      "repeat": 8,
+      "seed": 163945743
+    },
+    {
+      "trial_id": "punch-009-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "clean",
+      "repeat": 9,
+      "seed": 1008363426
+    },
+    {
+      "trial_id": "punch-010-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "delay_jitter",
+      "repeat": 10,
+      "seed": 1708709736
+    },
+    {
+      "trial_id": "punch-011-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "push",
+      "repeat": 11,
+      "seed": 406886645
+    },
+    {
+      "trial_id": "punch-012-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "clean",
+      "repeat": 12,
+      "seed": 994157307
+    },
+    {
+      "trial_id": "punch-013-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "delay_jitter",
+      "repeat": 13,
+      "seed": 279004308
+    },
+    {
+      "trial_id": "punch-014-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "push",
+      "repeat": 14,
+      "seed": 1474200732
+    },
+    {
+      "trial_id": "punch-015-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "clean",
+      "repeat": 15,
+      "seed": 1021568550
+    },
+    {
+      "trial_id": "punch-016-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "delay_jitter",
+      "repeat": 16,
+      "seed": 709091226
+    },
+    {
+      "trial_id": "punch-017-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "push",
+      "repeat": 17,
+      "seed": 487284116
+    },
+    {
+      "trial_id": "punch-018-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "clean",
+      "repeat": 18,
+      "seed": 1212254291
+    },
+    {
+      "trial_id": "punch-019-afc73fa7c971035b",
+      "recording_id": "afc73fa7c971035b",
+      "capture_group": "cmu/cmu/56",
+      "family": "punch",
+      "scenario": "delay_jitter",
+      "repeat": 19,
+      "seed": 1438414600
+    },
+    {
+      "trial_id": "reach-000-0945127de9813486",
+      "recording_id": "0945127de9813486",
+      "capture_group": "kit/kit/634",
+      "family": "reach",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 2019291965
+    },
+    {
+      "trial_id": "reach-001-1a4cb091544d26c6",
+      "recording_id": "1a4cb091544d26c6",
+      "capture_group": "kit/kit/619",
+      "family": "reach",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 938776597
+    },
+    {
+      "trial_id": "reach-002-2b2ebad751923401",
+      "recording_id": "2b2ebad751923401",
+      "capture_group": "bandai_namco/dataset-1/bye/chimpira",
+      "family": "reach",
+      "scenario": "delay_jitter",
+      "repeat": 0,
+      "seed": 345075200
+    },
+    {
+      "trial_id": "reach-003-2de374e7fe4fc997",
+      "recording_id": "2de374e7fe4fc997",
+      "capture_group": "bandai_namco/dataset-2/raise-up-right-hand/youthful",
+      "family": "reach",
+      "scenario": "brief_loss",
+      "repeat": 0,
+      "seed": 1788162810
+    },
+    {
+      "trial_id": "reach-004-7d75d587ec989ce9",
+      "recording_id": "7d75d587ec989ce9",
+      "capture_group": "bandai_namco/dataset-1/guide/giant",
+      "family": "reach",
+      "scenario": "push",
+      "repeat": 0,
+      "seed": 1352408539
+    },
+    {
+      "trial_id": "reach-005-8c7657856cd27610",
+      "recording_id": "8c7657856cd27610",
+      "capture_group": "bandai_namco/dataset-2/wave-both-hands/elderly",
+      "family": "reach",
+      "scenario": "calibration",
+      "repeat": 0,
+      "seed": 1503807855
+    },
+    {
+      "trial_id": "reach-006-8e093d58b397cca2",
+      "recording_id": "8e093d58b397cca2",
+      "capture_group": "kit/kit/630",
+      "family": "reach",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 208792607
+    },
+    {
+      "trial_id": "reach-007-943d335851d5d1f9",
+      "recording_id": "943d335851d5d1f9",
+      "capture_group": "cmu/cmu/70",
+      "family": "reach",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 670802254
+    },
+    {
+      "trial_id": "reach-008-bfbe9bc1cec0ed5f",
+      "recording_id": "bfbe9bc1cec0ed5f",
+      "capture_group": "kit/kit/636",
+      "family": "reach",
+      "scenario": "delay_jitter",
+      "repeat": 0,
+      "seed": 1648932250
+    },
+    {
+      "trial_id": "reach-009-f6768b3110d55b8f",
+      "recording_id": "f6768b3110d55b8f",
+      "capture_group": "bandai_namco/dataset-1/bye/old",
+      "family": "reach",
+      "scenario": "brief_loss",
+      "repeat": 0,
+      "seed": 1787264314
+    },
+    {
+      "trial_id": "reach-010-0945127de9813486",
+      "recording_id": "0945127de9813486",
+      "capture_group": "kit/kit/634",
+      "family": "reach",
+      "scenario": "calibration",
+      "repeat": 1,
+      "seed": 934620677
+    },
+    {
+      "trial_id": "reach-011-1a4cb091544d26c6",
+      "recording_id": "1a4cb091544d26c6",
+      "capture_group": "kit/kit/619",
+      "family": "reach",
+      "scenario": "clean",
+      "repeat": 1,
+      "seed": 1728218298
+    },
+    {
+      "trial_id": "reach-012-2b2ebad751923401",
+      "recording_id": "2b2ebad751923401",
+      "capture_group": "bandai_namco/dataset-1/bye/chimpira",
+      "family": "reach",
+      "scenario": "initial_pose",
+      "repeat": 1,
+      "seed": 1807519525
+    },
+    {
+      "trial_id": "reach-013-2de374e7fe4fc997",
+      "recording_id": "2de374e7fe4fc997",
+      "capture_group": "bandai_namco/dataset-2/raise-up-right-hand/youthful",
+      "family": "reach",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 832103482
+    },
+    {
+      "trial_id": "reach-014-7d75d587ec989ce9",
+      "recording_id": "7d75d587ec989ce9",
+      "capture_group": "bandai_namco/dataset-1/guide/giant",
+      "family": "reach",
+      "scenario": "brief_loss",
+      "repeat": 1,
+      "seed": 1928628491
+    },
+    {
+      "trial_id": "reach-015-8c7657856cd27610",
+      "recording_id": "8c7657856cd27610",
+      "capture_group": "bandai_namco/dataset-2/wave-both-hands/elderly",
+      "family": "reach",
+      "scenario": "push",
+      "repeat": 1,
+      "seed": 619179888
+    },
+    {
+      "trial_id": "reach-016-8e093d58b397cca2",
+      "recording_id": "8e093d58b397cca2",
+      "capture_group": "kit/kit/630",
+      "family": "reach",
+      "scenario": "calibration",
+      "repeat": 1,
+      "seed": 514446424
+    },
+    {
+      "trial_id": "reach-017-943d335851d5d1f9",
+      "recording_id": "943d335851d5d1f9",
+      "capture_group": "cmu/cmu/70",
+      "family": "reach",
+      "scenario": "clean",
+      "repeat": 1,
+      "seed": 1465647934
+    },
+    {
+      "trial_id": "reach-018-bfbe9bc1cec0ed5f",
+      "recording_id": "bfbe9bc1cec0ed5f",
+      "capture_group": "kit/kit/636",
+      "family": "reach",
+      "scenario": "initial_pose",
+      "repeat": 1,
+      "seed": 1367435608
+    },
+    {
+      "trial_id": "reach-019-f6768b3110d55b8f",
+      "recording_id": "f6768b3110d55b8f",
+      "capture_group": "bandai_namco/dataset-1/bye/old",
+      "family": "reach",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 300116173
+    },
+    {
+      "trial_id": "run-000-0543d0ac075bd464",
+      "recording_id": "0543d0ac075bd464",
+      "capture_group": "bandai_namco/dataset-1/run/old",
+      "family": "run",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 1788288546
+    },
+    {
+      "trial_id": "run-001-5e718423d3cd485a",
+      "recording_id": "5e718423d3cd485a",
+      "capture_group": "bandai_namco/dataset-1/dash/feminine",
+      "family": "run",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 429299595
+    },
+    {
+      "trial_id": "run-002-928e762e63761725",
+      "recording_id": "928e762e63761725",
+      "capture_group": "bandai_namco/dataset-2/run/masculine",
+      "family": "run",
+      "scenario": "delay_jitter",
+      "repeat": 0,
+      "seed": 1728507683
+    },
+    {
+      "trial_id": "run-003-b426a6f4aaec4f2a",
+      "recording_id": "b426a6f4aaec4f2a",
+      "capture_group": "kit/kit/399",
+      "family": "run",
+      "scenario": "brief_loss",
+      "repeat": 0,
+      "seed": 15810353
+    },
+    {
+      "trial_id": "run-004-0543d0ac075bd464",
+      "recording_id": "0543d0ac075bd464",
+      "capture_group": "bandai_namco/dataset-1/run/old",
+      "family": "run",
+      "scenario": "calibration",
+      "repeat": 1,
+      "seed": 1711206424
+    },
+    {
+      "trial_id": "run-005-5e718423d3cd485a",
+      "recording_id": "5e718423d3cd485a",
+      "capture_group": "bandai_namco/dataset-1/dash/feminine",
+      "family": "run",
+      "scenario": "clean",
+      "repeat": 1,
+      "seed": 1689907232
+    },
+    {
+      "trial_id": "run-006-928e762e63761725",
+      "recording_id": "928e762e63761725",
+      "capture_group": "bandai_namco/dataset-2/run/masculine",
+      "family": "run",
+      "scenario": "initial_pose",
+      "repeat": 1,
+      "seed": 1675819613
+    },
+    {
+      "trial_id": "run-007-b426a6f4aaec4f2a",
+      "recording_id": "b426a6f4aaec4f2a",
+      "capture_group": "kit/kit/399",
+      "family": "run",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 1427756342
+    },
+    {
+      "trial_id": "run-008-0543d0ac075bd464",
+      "recording_id": "0543d0ac075bd464",
+      "capture_group": "bandai_namco/dataset-1/run/old",
+      "family": "run",
+      "scenario": "push",
+      "repeat": 2,
+      "seed": 1012682731
+    },
+    {
+      "trial_id": "run-009-5e718423d3cd485a",
+      "recording_id": "5e718423d3cd485a",
+      "capture_group": "bandai_namco/dataset-1/dash/feminine",
+      "family": "run",
+      "scenario": "calibration",
+      "repeat": 2,
+      "seed": 1514331119
+    },
+    {
+      "trial_id": "run-010-928e762e63761725",
+      "recording_id": "928e762e63761725",
+      "capture_group": "bandai_namco/dataset-2/run/masculine",
+      "family": "run",
+      "scenario": "clean",
+      "repeat": 2,
+      "seed": 595114158
+    },
+    {
+      "trial_id": "run-011-b426a6f4aaec4f2a",
+      "recording_id": "b426a6f4aaec4f2a",
+      "capture_group": "kit/kit/399",
+      "family": "run",
+      "scenario": "initial_pose",
+      "repeat": 2,
+      "seed": 1676602827
+    },
+    {
+      "trial_id": "run-012-0543d0ac075bd464",
+      "recording_id": "0543d0ac075bd464",
+      "capture_group": "bandai_namco/dataset-1/run/old",
+      "family": "run",
+      "scenario": "brief_loss",
+      "repeat": 3,
+      "seed": 1193242762
+    },
+    {
+      "trial_id": "run-013-5e718423d3cd485a",
+      "recording_id": "5e718423d3cd485a",
+      "capture_group": "bandai_namco/dataset-1/dash/feminine",
+      "family": "run",
+      "scenario": "push",
+      "repeat": 3,
+      "seed": 985514123
+    },
+    {
+      "trial_id": "run-014-928e762e63761725",
+      "recording_id": "928e762e63761725",
+      "capture_group": "bandai_namco/dataset-2/run/masculine",
+      "family": "run",
+      "scenario": "calibration",
+      "repeat": 3,
+      "seed": 1085781156
+    },
+    {
+      "trial_id": "run-015-b426a6f4aaec4f2a",
+      "recording_id": "b426a6f4aaec4f2a",
+      "capture_group": "kit/kit/399",
+      "family": "run",
+      "scenario": "clean",
+      "repeat": 3,
+      "seed": 1221362418
+    },
+    {
+      "trial_id": "run-016-0543d0ac075bd464",
+      "recording_id": "0543d0ac075bd464",
+      "capture_group": "bandai_namco/dataset-1/run/old",
+      "family": "run",
+      "scenario": "delay_jitter",
+      "repeat": 4,
+      "seed": 80020205
+    },
+    {
+      "trial_id": "run-017-5e718423d3cd485a",
+      "recording_id": "5e718423d3cd485a",
+      "capture_group": "bandai_namco/dataset-1/dash/feminine",
+      "family": "run",
+      "scenario": "brief_loss",
+      "repeat": 4,
+      "seed": 300211767
+    },
+    {
+      "trial_id": "run-018-928e762e63761725",
+      "recording_id": "928e762e63761725",
+      "capture_group": "bandai_namco/dataset-2/run/masculine",
+      "family": "run",
+      "scenario": "push",
+      "repeat": 4,
+      "seed": 527166791
+    },
+    {
+      "trial_id": "run-019-b426a6f4aaec4f2a",
+      "recording_id": "b426a6f4aaec4f2a",
+      "capture_group": "kit/kit/399",
+      "family": "run",
+      "scenario": "calibration",
+      "repeat": 4,
+      "seed": 245951460
+    },
+    {
+      "trial_id": "stance-000-27d7bc8fd6beabf3",
+      "recording_id": "27d7bc8fd6beabf3",
+      "capture_group": "cmu/cmu/89",
+      "family": "stance",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 944062963
+    },
+    {
+      "trial_id": "stance-001-acf6df08be27e0bd",
+      "recording_id": "acf6df08be27e0bd",
+      "capture_group": "cmu/cmu/88",
+      "family": "stance",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 1435384430
+    },
+    {
+      "trial_id": "stance-002-bb3bf20febd47a84",
+      "recording_id": "bb3bf20febd47a84",
+      "capture_group": "kit/kit/323",
+      "family": "stance",
+      "scenario": "delay_jitter",
+      "repeat": 0,
+      "seed": 1405375275
+    },
+    {
+      "trial_id": "stance-003-27d7bc8fd6beabf3",
+      "recording_id": "27d7bc8fd6beabf3",
+      "capture_group": "cmu/cmu/89",
+      "family": "stance",
+      "scenario": "push",
+      "repeat": 1,
+      "seed": 1011671399
+    },
+    {
+      "trial_id": "stance-004-acf6df08be27e0bd",
+      "recording_id": "acf6df08be27e0bd",
+      "capture_group": "cmu/cmu/88",
+      "family": "stance",
+      "scenario": "calibration",
+      "repeat": 1,
+      "seed": 1836270334
+    },
+    {
+      "trial_id": "stance-005-bb3bf20febd47a84",
+      "recording_id": "bb3bf20febd47a84",
+      "capture_group": "kit/kit/323",
+      "family": "stance",
+      "scenario": "clean",
+      "repeat": 1,
+      "seed": 1213835295
+    },
+    {
+      "trial_id": "stance-006-27d7bc8fd6beabf3",
+      "recording_id": "27d7bc8fd6beabf3",
+      "capture_group": "cmu/cmu/89",
+      "family": "stance",
+      "scenario": "delay_jitter",
+      "repeat": 2,
+      "seed": 170075129
+    },
+    {
+      "trial_id": "stance-007-acf6df08be27e0bd",
+      "recording_id": "acf6df08be27e0bd",
+      "capture_group": "cmu/cmu/88",
+      "family": "stance",
+      "scenario": "brief_loss",
+      "repeat": 2,
+      "seed": 1642822537
+    },
+    {
+      "trial_id": "stance-008-bb3bf20febd47a84",
+      "recording_id": "bb3bf20febd47a84",
+      "capture_group": "kit/kit/323",
+      "family": "stance",
+      "scenario": "push",
+      "repeat": 2,
+      "seed": 1233945443
+    },
+    {
+      "trial_id": "stance-009-27d7bc8fd6beabf3",
+      "recording_id": "27d7bc8fd6beabf3",
+      "capture_group": "cmu/cmu/89",
+      "family": "stance",
+      "scenario": "clean",
+      "repeat": 3,
+      "seed": 1363047213
+    },
+    {
+      "trial_id": "stance-010-acf6df08be27e0bd",
+      "recording_id": "acf6df08be27e0bd",
+      "capture_group": "cmu/cmu/88",
+      "family": "stance",
+      "scenario": "initial_pose",
+      "repeat": 3,
+      "seed": 1214129971
+    },
+    {
+      "trial_id": "stance-011-bb3bf20febd47a84",
+      "recording_id": "bb3bf20febd47a84",
+      "capture_group": "kit/kit/323",
+      "family": "stance",
+      "scenario": "delay_jitter",
+      "repeat": 3,
+      "seed": 1188802710
+    },
+    {
+      "trial_id": "stance-012-27d7bc8fd6beabf3",
+      "recording_id": "27d7bc8fd6beabf3",
+      "capture_group": "cmu/cmu/89",
+      "family": "stance",
+      "scenario": "push",
+      "repeat": 4,
+      "seed": 194489917
+    },
+    {
+      "trial_id": "stance-013-acf6df08be27e0bd",
+      "recording_id": "acf6df08be27e0bd",
+      "capture_group": "cmu/cmu/88",
+      "family": "stance",
+      "scenario": "calibration",
+      "repeat": 4,
+      "seed": 1200888233
+    },
+    {
+      "trial_id": "stance-014-bb3bf20febd47a84",
+      "recording_id": "bb3bf20febd47a84",
+      "capture_group": "kit/kit/323",
+      "family": "stance",
+      "scenario": "clean",
+      "repeat": 4,
+      "seed": 1707061845
+    },
+    {
+      "trial_id": "stance-015-27d7bc8fd6beabf3",
+      "recording_id": "27d7bc8fd6beabf3",
+      "capture_group": "cmu/cmu/89",
+      "family": "stance",
+      "scenario": "delay_jitter",
+      "repeat": 5,
+      "seed": 652727865
+    },
+    {
+      "trial_id": "stance-016-acf6df08be27e0bd",
+      "recording_id": "acf6df08be27e0bd",
+      "capture_group": "cmu/cmu/88",
+      "family": "stance",
+      "scenario": "brief_loss",
+      "repeat": 5,
+      "seed": 1294585271
+    },
+    {
+      "trial_id": "stance-017-bb3bf20febd47a84",
+      "recording_id": "bb3bf20febd47a84",
+      "capture_group": "kit/kit/323",
+      "family": "stance",
+      "scenario": "push",
+      "repeat": 5,
+      "seed": 66180795
+    },
+    {
+      "trial_id": "stance-018-27d7bc8fd6beabf3",
+      "recording_id": "27d7bc8fd6beabf3",
+      "capture_group": "cmu/cmu/89",
+      "family": "stance",
+      "scenario": "clean",
+      "repeat": 6,
+      "seed": 746248854
+    },
+    {
+      "trial_id": "stance-019-acf6df08be27e0bd",
+      "recording_id": "acf6df08be27e0bd",
+      "capture_group": "cmu/cmu/88",
+      "family": "stance",
+      "scenario": "initial_pose",
+      "repeat": 6,
+      "seed": 937843452
+    },
+    {
+      "trial_id": "turn-000-0a39e4dd0ea165c4",
+      "recording_id": "0a39e4dd0ea165c4",
+      "capture_group": "bandai_namco/dataset-2/walk-turn-right/youthful",
+      "family": "turn",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 2110414631
+    },
+    {
+      "trial_id": "turn-001-15c9cc432f892b36",
+      "recording_id": "15c9cc432f892b36",
+      "capture_group": "kit/kit/59",
+      "family": "turn",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 460817075
+    },
+    {
+      "trial_id": "turn-002-166675236ce5d7c7",
+      "recording_id": "166675236ce5d7c7",
+      "capture_group": "kit/kit/188",
+      "family": "turn",
+      "scenario": "delay_jitter",
+      "repeat": 0,
+      "seed": 593883019
+    },
+    {
+      "trial_id": "turn-003-258ff9a270163e41",
+      "recording_id": "258ff9a270163e41",
+      "capture_group": "kit/kit/366",
+      "family": "turn",
+      "scenario": "brief_loss",
+      "repeat": 0,
+      "seed": 877308582
+    },
+    {
+      "trial_id": "turn-004-35d31fc526b5ae9c",
+      "recording_id": "35d31fc526b5ae9c",
+      "capture_group": "kit/kit/18",
+      "family": "turn",
+      "scenario": "push",
+      "repeat": 0,
+      "seed": 2131733184
+    },
+    {
+      "trial_id": "turn-005-9040f50d0c40b1ad",
+      "recording_id": "9040f50d0c40b1ad",
+      "capture_group": "bandai_namco/dataset-2/walk-turn-right/masculine",
+      "family": "turn",
+      "scenario": "calibration",
+      "repeat": 0,
+      "seed": 1832669144
+    },
+    {
+      "trial_id": "turn-006-988af43db7b862ce",
+      "recording_id": "988af43db7b862ce",
+      "capture_group": "bandai_namco/dataset-2/walk-turn-left/elderly",
+      "family": "turn",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 74502574
+    },
+    {
+      "trial_id": "turn-007-f28ffb400ed735dc",
+      "recording_id": "f28ffb400ed735dc",
+      "capture_group": "kit/kit/446",
+      "family": "turn",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 502381220
+    },
+    {
+      "trial_id": "turn-008-0a39e4dd0ea165c4",
+      "recording_id": "0a39e4dd0ea165c4",
+      "capture_group": "bandai_namco/dataset-2/walk-turn-right/youthful",
+      "family": "turn",
+      "scenario": "brief_loss",
+      "repeat": 1,
+      "seed": 1764532445
+    },
+    {
+      "trial_id": "turn-009-15c9cc432f892b36",
+      "recording_id": "15c9cc432f892b36",
+      "capture_group": "kit/kit/59",
+      "family": "turn",
+      "scenario": "push",
+      "repeat": 1,
+      "seed": 125204184
+    },
+    {
+      "trial_id": "turn-010-166675236ce5d7c7",
+      "recording_id": "166675236ce5d7c7",
+      "capture_group": "kit/kit/188",
+      "family": "turn",
+      "scenario": "calibration",
+      "repeat": 1,
+      "seed": 1837539165
+    },
+    {
+      "trial_id": "turn-011-258ff9a270163e41",
+      "recording_id": "258ff9a270163e41",
+      "capture_group": "kit/kit/366",
+      "family": "turn",
+      "scenario": "clean",
+      "repeat": 1,
+      "seed": 604267306
+    },
+    {
+      "trial_id": "turn-012-35d31fc526b5ae9c",
+      "recording_id": "35d31fc526b5ae9c",
+      "capture_group": "kit/kit/18",
+      "family": "turn",
+      "scenario": "initial_pose",
+      "repeat": 1,
+      "seed": 1970642946
+    },
+    {
+      "trial_id": "turn-013-9040f50d0c40b1ad",
+      "recording_id": "9040f50d0c40b1ad",
+      "capture_group": "bandai_namco/dataset-2/walk-turn-right/masculine",
+      "family": "turn",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 630487793
+    },
+    {
+      "trial_id": "turn-014-988af43db7b862ce",
+      "recording_id": "988af43db7b862ce",
+      "capture_group": "bandai_namco/dataset-2/walk-turn-left/elderly",
+      "family": "turn",
+      "scenario": "brief_loss",
+      "repeat": 1,
+      "seed": 932688238
+    },
+    {
+      "trial_id": "turn-015-f28ffb400ed735dc",
+      "recording_id": "f28ffb400ed735dc",
+      "capture_group": "kit/kit/446",
+      "family": "turn",
+      "scenario": "push",
+      "repeat": 1,
+      "seed": 1421454891
+    },
+    {
+      "trial_id": "turn-016-0a39e4dd0ea165c4",
+      "recording_id": "0a39e4dd0ea165c4",
+      "capture_group": "bandai_namco/dataset-2/walk-turn-right/youthful",
+      "family": "turn",
+      "scenario": "clean",
+      "repeat": 2,
+      "seed": 271185814
+    },
+    {
+      "trial_id": "turn-017-15c9cc432f892b36",
+      "recording_id": "15c9cc432f892b36",
+      "capture_group": "kit/kit/59",
+      "family": "turn",
+      "scenario": "initial_pose",
+      "repeat": 2,
+      "seed": 1196217438
+    },
+    {
+      "trial_id": "turn-018-166675236ce5d7c7",
+      "recording_id": "166675236ce5d7c7",
+      "capture_group": "kit/kit/188",
+      "family": "turn",
+      "scenario": "delay_jitter",
+      "repeat": 2,
+      "seed": 1084512518
+    },
+    {
+      "trial_id": "turn-019-258ff9a270163e41",
+      "recording_id": "258ff9a270163e41",
+      "capture_group": "kit/kit/366",
+      "family": "turn",
+      "scenario": "brief_loss",
+      "repeat": 2,
+      "seed": 1683408585
+    },
+    {
+      "trial_id": "walk-000-08b24af6b1e4b259",
+      "recording_id": "08b24af6b1e4b259",
+      "capture_group": "kit/kit/371",
+      "family": "walk",
+      "scenario": "clean",
+      "repeat": 0,
+      "seed": 2139123294
+    },
+    {
+      "trial_id": "walk-001-0df1d9d8fc2da660",
+      "recording_id": "0df1d9d8fc2da660",
+      "capture_group": "bandai_namco/dataset-1/walk-back/happy",
+      "family": "walk",
+      "scenario": "initial_pose",
+      "repeat": 0,
+      "seed": 1426602464
+    },
+    {
+      "trial_id": "walk-002-63797b5e1aa8df93",
+      "recording_id": "63797b5e1aa8df93",
+      "capture_group": "bandai_namco/dataset-1/walk-left/giant",
+      "family": "walk",
+      "scenario": "delay_jitter",
+      "repeat": 0,
+      "seed": 878721193
+    },
+    {
+      "trial_id": "walk-003-65d7290bf752a267",
+      "recording_id": "65d7290bf752a267",
+      "capture_group": "kit/kit/506",
+      "family": "walk",
+      "scenario": "brief_loss",
+      "repeat": 0,
+      "seed": 872709139
+    },
+    {
+      "trial_id": "walk-004-aa615d09f4175d27",
+      "recording_id": "aa615d09f4175d27",
+      "capture_group": "bandai_namco/dataset-1/walk-right/masculinity",
+      "family": "walk",
+      "scenario": "push",
+      "repeat": 0,
+      "seed": 897559571
+    },
+    {
+      "trial_id": "walk-005-fc1c3081cad83d70",
+      "recording_id": "fc1c3081cad83d70",
+      "capture_group": "kit/kit/54",
+      "family": "walk",
+      "scenario": "calibration",
+      "repeat": 0,
+      "seed": 1748095465
+    },
+    {
+      "trial_id": "walk-006-08b24af6b1e4b259",
+      "recording_id": "08b24af6b1e4b259",
+      "capture_group": "kit/kit/371",
+      "family": "walk",
+      "scenario": "initial_pose",
+      "repeat": 1,
+      "seed": 689805533
+    },
+    {
+      "trial_id": "walk-007-0df1d9d8fc2da660",
+      "recording_id": "0df1d9d8fc2da660",
+      "capture_group": "bandai_namco/dataset-1/walk-back/happy",
+      "family": "walk",
+      "scenario": "delay_jitter",
+      "repeat": 1,
+      "seed": 358571615
+    },
+    {
+      "trial_id": "walk-008-63797b5e1aa8df93",
+      "recording_id": "63797b5e1aa8df93",
+      "capture_group": "bandai_namco/dataset-1/walk-left/giant",
+      "family": "walk",
+      "scenario": "brief_loss",
+      "repeat": 1,
+      "seed": 717885406
+    },
+    {
+      "trial_id": "walk-009-65d7290bf752a267",
+      "recording_id": "65d7290bf752a267",
+      "capture_group": "kit/kit/506",
+      "family": "walk",
+      "scenario": "push",
+      "repeat": 1,
+      "seed": 48773805
+    },
+    {
+      "trial_id": "walk-010-aa615d09f4175d27",
+      "recording_id": "aa615d09f4175d27",
+      "capture_group": "bandai_namco/dataset-1/walk-right/masculinity",
+      "family": "walk",
+      "scenario": "calibration",
+      "repeat": 1,
+      "seed": 227939461
+    },
+    {
+      "trial_id": "walk-011-fc1c3081cad83d70",
+      "recording_id": "fc1c3081cad83d70",
+      "capture_group": "kit/kit/54",
+      "family": "walk",
+      "scenario": "clean",
+      "repeat": 1,
+      "seed": 193376308
+    },
+    {
+      "trial_id": "walk-012-08b24af6b1e4b259",
+      "recording_id": "08b24af6b1e4b259",
+      "capture_group": "kit/kit/371",
+      "family": "walk",
+      "scenario": "delay_jitter",
+      "repeat": 2,
+      "seed": 1656896192
+    },
+    {
+      "trial_id": "walk-013-0df1d9d8fc2da660",
+      "recording_id": "0df1d9d8fc2da660",
+      "capture_group": "bandai_namco/dataset-1/walk-back/happy",
+      "family": "walk",
+      "scenario": "brief_loss",
+      "repeat": 2,
+      "seed": 1551254893
+    },
+    {
+      "trial_id": "walk-014-63797b5e1aa8df93",
+      "recording_id": "63797b5e1aa8df93",
+      "capture_group": "bandai_namco/dataset-1/walk-left/giant",
+      "family": "walk",
+      "scenario": "push",
+      "repeat": 2,
+      "seed": 1496303882
+    },
+    {
+      "trial_id": "walk-015-65d7290bf752a267",
+      "recording_id": "65d7290bf752a267",
+      "capture_group": "kit/kit/506",
+      "family": "walk",
+      "scenario": "calibration",
+      "repeat": 2,
+      "seed": 991873799
+    },
+    {
+      "trial_id": "walk-016-aa615d09f4175d27",
+      "recording_id": "aa615d09f4175d27",
+      "capture_group": "bandai_namco/dataset-1/walk-right/masculinity",
+      "family": "walk",
+      "scenario": "clean",
+      "repeat": 2,
+      "seed": 1539871430
+    },
+    {
+      "trial_id": "walk-017-fc1c3081cad83d70",
+      "recording_id": "fc1c3081cad83d70",
+      "capture_group": "kit/kit/54",
+      "family": "walk",
+      "scenario": "initial_pose",
+      "repeat": 2,
+      "seed": 346328508
+    },
+    {
+      "trial_id": "walk-018-08b24af6b1e4b259",
+      "recording_id": "08b24af6b1e4b259",
+      "capture_group": "kit/kit/371",
+      "family": "walk",
+      "scenario": "brief_loss",
+      "repeat": 3,
+      "seed": 1934070333
+    },
+    {
+      "trial_id": "walk-019-0df1d9d8fc2da660",
+      "recording_id": "0df1d9d8fc2da660",
+      "capture_group": "bandai_namco/dataset-1/walk-back/happy",
+      "family": "walk",
+      "scenario": "push",
+      "repeat": 3,
+      "seed": 1075985461
+    }
+  ],
+  "human_sha256": {
+    "acf6df08be27e0bd": "0d4e5450bacf5846edbde0dbb9113cc5341dc2d6a5b7dc113157b1c619970ad6",
+    "aa615d09f4175d27": "bd9aeec76575c65336195e2321113b7bcda3988c8803d6c140e5545555a1b9e8",
+    "a3dad9f0eaef46bc": "8f83dd1bc6f38edd5866d8bfd1870dbefbe7391c564ddf3bf2906bd7e700c4b4",
+    "f6b5231fa879401d": "9f649280a8a576d20bbea30ec826016a0108b1537c4a0b51323cbd286aae32c2",
+    "63797b5e1aa8df93": "286725f056b0e719f7e7f39a9a8992393134145affe0ccd55e88d7baab735b4b",
+    "988af43db7b862ce": "f356eefb48d344205b81cffa05a8d0d2ab34be7848e1c8ba1ba69a0536c992f4",
+    "2de374e7fe4fc997": "4f68ba39021095ca4f76b27d388d50b394e5a4b3b879b279b4e21536f529d031",
+    "9040f50d0c40b1ad": "afb345b1e163eb2adaa85f7728b501dd23d75295ac8c50664cb7efbe9b6d34f2",
+    "afc73fa7c971035b": "2bdd75e3d91298e5897af63534b2c71a0d99f46266d3f965c140f50052a633b8",
+    "166675236ce5d7c7": "0f0411947d24ae0a88ed62034ec1142565757fcb10e5916032ed4cd13fa6abc1",
+    "1a4cb091544d26c6": "99da10a76b020eeac40e6de8ac2223fcbc4483d67f98238bb2f695ce8668e6ff",
+    "bfbe9bc1cec0ed5f": "7c0fe6521bf1c61727bd10e9be7d104c393075255d1797cedf57d3d1441a0f72",
+    "2d6a188b639b3046": "74b3e283e2d66b983b5c3d7edebecdc0ce917c1192049bcbfa265726597b6a2e",
+    "0945127de9813486": "7f4f701763eabca9415f2093632e87d72b9c57d87222bd3e4c9d4f3f784fc7df",
+    "b426a6f4aaec4f2a": "206a544ee4bce727d90fa91880b01c90e45859353856b80b8162db7ceaff38b8",
+    "bb3bf20febd47a84": "4534af67d80a312148fecb60d8a517d5b4f9a76c43cadea4f97b1decffddc01a",
+    "0a39e4dd0ea165c4": "1e4db38ea42751519b01469dbfae37ef889d52b30312423fe6c4b58d849d61bd",
+    "928e762e63761725": "f7f3138b6739271fbb7e14884673474eb5a1308bb3fb084ea59990a82c504878",
+    "8e093d58b397cca2": "7bc7d35fd0502717585e91959f8da0c27f6caf717472e39f1117d45c80165561",
+    "943d335851d5d1f9": "32776d9acfab4e478d49bf5ed7751c83f5459dd0046fac48eedd5f9a47cc00cf",
+    "15c9cc432f892b36": "8189296d10711252521025484b333b2f67b54985725f1eaca660fcc89cb7a378",
+    "5e718423d3cd485a": "a6f04462b81d92a65b8ed9cf7823e0fdd27f294d54ab00cfa047f61b53bde82b",
+    "0543d0ac075bd464": "5e141d07d2ab120c6b21ff0f943b02df01b1a5a98dffba8118e8c3a1dc22d5ca",
+    "fc1c3081cad83d70": "4e6dd1eb5fa5d06b202ce9e6f3fdb80d2754d0bb89d0b9f055b3aa1723d9e7de",
+    "35d31fc526b5ae9c": "b81fd356b276cd312835829d42299aeb4049c7d950f36b765a1429622292d38e",
+    "65d7290bf752a267": "159ff60c4a6b150695f9bfca597be422718a225cb8cfd2a22d2f1b85266f8ae4",
+    "258ff9a270163e41": "38f7a9e5194022b6e16765ff9b2895d53b04e5f5025739c05de03e555bf93457",
+    "08b24af6b1e4b259": "c5b9356408e2bd6ab356aa96857bc37c24982e96f1a956f45dbc6919ade35926",
+    "2b2ebad751923401": "34016660205c13e4a4dc3a7e462508b3ef5cb8e4605d9351982e57a2726330c3",
+    "f6768b3110d55b8f": "24d54e9ebcf9190850b3ad53b6087501957d44d7f3c7c732d2be45634f4d176d",
+    "8c7657856cd27610": "c91d8b1e197321a64f206c09bc3b8d4eea41b0b286e087a3a487e88e0e76d397",
+    "f28ffb400ed735dc": "30d65fc745456ae9cb1cabe7bc3c9981b96d0432395440a7e8058d8bf3541c42",
+    "7d75d587ec989ce9": "02d9a8df5888b91f45f1f5d1951046a2b0c0735186a6bf32fe8d36ef2c7b523c"
+  },
+  "retarget_version": "causal-ik-v7-contact-root-projection",
+  "independent_recordings": 36,
+  "capture_groups": 36,
+  "reference_rejections": 3,
+  "thresholds": {
+    "min_height_m": 0.22,
+    "min_upright_cos": 0.2,
+    "max_joint_rmse_rad": 0.35,
+    "max_relative_body_rmse_m": 0.15,
+    "max_effort_saturation_fraction": 0.05,
+    "max_contact_slip_m_s": 0.2,
+    "min_trials_per_family": 20,
+    "min_families": 8,
+    "min_family_completion": 0.95,
+    "command_p95_ms": 40.0
+  },
+  "metric_contract": {
+    "body_error": "RMS Euclidean error of root-relative landmark positions",
+    "slip": "mean tangential velocity at active foot-ground contact points",
+    "latency": "human-frame validation, causal retargeting, and runtime command CPU time",
+    "initialization": "one reference-state reset per trial; no resets after a fall"
+  },
+  "assumptions": {
+    "initial_joint_noise_rad": 0.015,
+    "initial_roll_pitch_rad": 0.02,
+    "delay_seconds": 0.02,
+    "jitter_seconds": 0.008,
+    "loss_burst_source_frames": 3,
+    "push_force_newtons": 10.0,
+    "push_duration_seconds": 0.1,
+    "calibration": "rigid yaw/translation and 3 percent human scale change",
+    "raw_mocopi_tested": false
+  }
+}

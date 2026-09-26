@@ -1,0 +1,34 @@
+{
+  "dataset": "kit_motion_language",
+  "checked_utc": "2026-09-18T11:16:18.642107+00:00",
+  "motion_files": 3911,
+  "expected_motion_files": 3911,
+  "file_count_matches_upstream": true,
+  "valid_human_tracks": 3911,
+  "unique_source_tracks": 3911,
+  "frames": 4148202,
+  "hours": 11.227421481738888,
+  "fps_values": {
+    "100.0": 2200,
+    "120.0048": 313,
+    "120.048": 821,
+    "120.4819": 103,
+    "120.0264": 4,
+    "59.988": 419,
+    "59.8802": 15,
+    "59.9988": 27,
+    "59.9934": 2,
+    "120.0005": 4,
+    "120.0": 1,
+    "59.9999": 2
+  },
+  "subsets": {
+    "kit": 2094,
+    "ekut": 106,
+    "cmu": 1711
+  },
+  "failed_files": 0,
+  "errors": [],
+  "inventory": "manifests/kit_motion_language.motions.jsonl",
+  "validation_scope": "Finite values, dimensions, skeleton headers, timing, annotations and provenance; physical retargeting and control not yet evaluated"
+}

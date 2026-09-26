@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-09-20T15:39:30.511940+09:00",
+  "audit_v2": {
+    "replayed_originals": 514,
+    "completed_originals": 286,
+    "clean_originals": 271,
+    "collision_originals": 101,
+    "fall_originals": 228,
+    "clean_replay_hours": 0.5156944444444445,
+    "status_counts": {
+      "reference_rejected": 418,
+      "mirror_deferred": 933,
+      "replayed": 514
+    },
+    "execution_errors": 0,
+    "running": true,
+    "updated_unix": 1789886368.4806938,
+    "behaviorally_accepted": false,
+    "hardware_verified": false
+  },
+  "controller_source_revision": "11437efc8c2a0531efe44fdcd3259d3127bcf65c44343d5f15a5af0cad748282",
+  "controller_sha256": "091d6927485137f36eee96dd857d2286dc108293d567deb2cad4d72d5d4db9b9",
+  "upstream_recovery_source_hashes": {
+    "scripts/recover_bones_seed.py": "61664ee7e11f6c42f54add06b5ca6ec4ff8d7a01eac1b6ecf0b88e0a09ebbe1a",
+    "src/k1_motion/retarget_recovery.py": "77034bd9517243e78a6a5f3725b0b623a6ecaaa830af1bbb598651b130edbf1f",
+    "src/k1_motion/recovery_validation.py": "9a049b4d8ad3da482e9050eaf4d031bfb46ea9d2d0aad7cb764eb6b7caddfe50",
+    "src/k1_motion/adapters.py": "a5c41a212c5a5e9b003498b8812862d84558690e38d59c5cf6e5cacbbe5fa159",
+    "src/k1_motion/robot.py": "2fa4f82a8c5766a250b01af11b92a3f8c26ee045518c74cf518df5404e17d129",
+    "src/k1_motion/streaming.py": "e7f25e49ef5b1e7d3d68ac7af5969908f8c068a8302c0e723471277f0196711c",
+    "src/k1_motion/contracts.py": "d06f8103628aee759dcd14045f1da078b904846dc1a1b2eca429c479aa3abe46",
+    "src/k1_motion/calibration.py": "e36fd47b1c4436d9ed172ae6a328420c263e96b3e0493565f10318c515cdbd1a",
+    "src/k1_motion/math3d.py": "9bebb1e4b530c43a2897f4ff039b4100934752add5f025954f34fbbfcdb4c205",
+    "scripts/convert_bones_seed.py": "440604db9bb5ffbb13defdc3981739e39ff801fa02ecd34d324709aa15561d49"
+  },
+  "local_services": "Restart=no\nMainPID=0\nResult=success\nNRestarts=0\nId=k1-bones-seed-gmr-local.service\nActiveState=inactive\n\nRestart=on-failure\nMainPID=3175013\nResult=success\nNRestarts=0\nId=k1-bones-seed-recovery-local.service\nActiveState=active\n\nRestart=on-failure\nMainPID=3176917\nResult=success\nNRestarts=0\nId=k1-bones-seed-control-audit-v2-local.service\nActiveState=active\n",
+  "v1_audit": "stopped and superseded; retained for comparison",
+  "local_retargeting": {
+    "v3": {
+      "complete": true,
+      "processed_rows": 69987,
+      "expected_metadata_rows": 69987,
+      "original_motions": 35005,
+      "accepted_original_motions": 22640,
+      "recovered_originals": null,
+      "baseline_original_acceptances_withheld": null,
+      "running": null
+    },
+    "v4": {
+      "complete": false,
+      "processed_rows": 1865,
+      "expected_metadata_rows": 69987,
+      "original_motions": 933,
+      "accepted_original_motions": 515,
+      "recovered_originals": 117,
+      "baseline_original_acceptances_withheld": 147,
+      "running": true
+    }
+  },
+  "remote_retargeting": {
+    "as_of": "2026-09-20T15:39:31.760289+09:00",
+    "v3": {
+      "complete": true,
+      "processed_rows": 72233,
+      "expected_metadata_rows": 72233,
+      "original_motions": 36127,
+      "accepted_original_motions": 23975,
+      "recovered_originals": null,
+      "baseline_original_acceptances_withheld": null,
+      "running": null
+    },
+    "v4": {
+      "complete": false,
+      "processed_rows": 2405,
+      "expected_metadata_rows": 72233,
+      "original_motions": 1201,
+      "accepted_original_motions": 655,
+      "recovered_originals": 110,
+      "baseline_original_acceptances_withheld": 217,
+      "running": true
+    },
+    "services": "Id=k1-bones-seed-shard1.service\nActiveState=inactive\nMainPID=0\nResult=success\nNRestarts=0\n\nId=k1-bones-seed-recovery-shard1.service\nActiveState=active\nMainPID=1531790\nResult=success\nNRestarts=0\n"
+  },
+  "operational_incidents": [
+    {
+      "time_jst": "2026-09-20T15:34:28+09:00",
+      "upstream_worker_segfault": true,
+      "controller_audit_stopped_on_incomplete_upstream": true,
+      "resumed_same_contract": true,
+      "recovery_manual_resumes": 1,
+      "audit_manual_resumes": 1,
+      "post_resume_progress_verified": true,
+      "evidence": "artifacts/controller-lab-20260920/recovery-worker-incident-153428",
+      "retry_limit": "three starts per hour; failure diagnostics enabled"
+    }
+  ],
+  "controller_audit_scope": "local shard 0 only; remote V4 references are not included in controller replay totals"
+}

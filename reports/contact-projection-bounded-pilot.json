@@ -1,0 +1,443 @@
+{
+  "b23c64a3d4c7e3a5": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 1
+      },
+      "slip_p95": 1.8293361439190874
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.021439806861142864
+    },
+    "family": "run"
+  },
+  "6ff24774f6fff946": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 2.306349485503771
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0076610146080839285
+    },
+    "family": "run"
+  },
+  "0d686a93c33f8002": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.047609396667461744
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.004078515821745794
+    },
+    "family": "run"
+  },
+  "f051b92184ae690c": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 1.3565877964074227
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.021776015033632863
+    },
+    "family": "run"
+  },
+  "382ff39b9b1d0d3a": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.2789656860827203
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.02071768021073353
+    },
+    "family": "walk"
+  },
+  "a46a8255107e14e8": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.919733812497366
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.024701344035503003
+    },
+    "family": "walk"
+  },
+  "98512b1041839bed": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 36
+      },
+      "slip_p95": 0.02057380926437768
+    },
+    "v7": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 35
+      },
+      "slip_p95": 0.0012060310253821514
+    },
+    "family": "walk"
+  },
+  "264a56305fd377d7": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.22090437125720677
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.020387955828880845
+    },
+    "family": "walk"
+  },
+  "287feb82e2934af4": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.5249920035395741
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.03153948433521422
+    },
+    "family": "turn"
+  },
+  "f9fd6f84f4bf2555": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.7396231968565284
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.031201787299404683
+    },
+    "family": "turn"
+  },
+  "5301a2566765a3dd": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.449693208894817
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0351292741122219
+    },
+    "family": "turn"
+  },
+  "6e0e07633abcb4a8": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 3
+      },
+      "slip_p95": 0.6974685042115706
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.010802629135172546
+    },
+    "family": "turn"
+  },
+  "c1146b08861215f5": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.019255922275016477
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.003855503027563589
+    },
+    "family": "jump"
+  },
+  "4e43644e396e84ad": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 1.929735136717839
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.002339196327560923
+    },
+    "family": "jump"
+  },
+  "9855bfb97be13ed6": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 2.6799777055917793
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.04535779161940494
+    },
+    "family": "jump"
+  },
+  "debb681325946985": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 14
+      },
+      "slip_p95": 0.4970686089854359
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.03738807580184634
+    },
+    "family": "jump"
+  },
+  "dae437faa7edc9a8": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.00041623291627953184
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 1.3918445125988946e-05
+    },
+    "family": "reach"
+  },
+  "e70f84225978b25f": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0004961929143436094
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 1.973544012817684e-05
+    },
+    "family": "reach"
+  },
+  "997c8e3b3adcaad8": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.03215958628968178
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.004665095879137456
+    },
+    "family": "reach"
+  },
+  "71deb8c12ec3625a": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.003879397543113651
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.00046415473985756675
+    },
+    "family": "reach"
+  },
+  "139f75760218a757": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.05271238383691594
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0006716588672364496
+    },
+    "family": "bow"
+  },
+  "3561b82f2f925f50": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.12733788400427887
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.004092849606287294
+    },
+    "family": "bow"
+  },
+  "1317392727d219be": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.025648335037900948
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0005237669841525815
+    },
+    "family": "bow"
+  },
+  "7ea44b2bc58ff019": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.004264166207008456
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 4.153718869497214e-05
+    },
+    "family": "bow"
+  },
+  "33217a08de7c08a5": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 5
+      },
+      "slip_p95": 0.2984921401293815
+    },
+    "v7": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 6
+      },
+      "slip_p95": 0.01539091169705502
+    },
+    "family": "dance"
+  },
+  "e886cdd7505e46ce": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0035702592801472896
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.00010127375383402327
+    },
+    "family": "dance"
+  },
+  "f758098a9476a58d": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.024368472003782993
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.004786630239955438
+    },
+    "family": "dance"
+  },
+  "b25d89d9a047e295": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 19
+      },
+      "slip_p95": 0.03450001507126137
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.001189646931861388
+    },
+    "family": "dance"
+  },
+  "de4c6f924e8d370e": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0007563488127301166
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 1.0951313071872348e-05
+    },
+    "family": "stance"
+  },
+  "acf6df08be27e0bd": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "ground_penetration_or_root_height": 3,
+        "landmark_error": 5
+      },
+      "slip_p95": 1.1178261418587698
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.005144314666787518
+    },
+    "family": "stance"
+  },
+  "aae03bb4e10b3223": {
+    "v6": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.8192282912013271
+    },
+    "v7": {
+      "accepted": true,
+      "reject": {},
+      "slip_p95": 0.0023957961896678174
+    },
+    "family": "stance"
+  },
+  "27d7bc8fd6beabf3": {
+    "v6": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 10,
+        "landmark_error": 27
+      },
+      "slip_p95": 2.3489507311969033
+    },
+    "v7": {
+      "accepted": false,
+      "reject": {
+        "self_collision": 6,
+        "landmark_error": 9
+      },
+      "slip_p95": 0.018943675378554084
+    },
+    "family": "stance"
+  }
+}

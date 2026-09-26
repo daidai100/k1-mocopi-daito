@@ -1,0 +1,11 @@
+[Unit]
+Description=K1 server metrics shipper
+After=k1-dashboard.service
+
+[Service]
+ExecStart=/mnt/ssd1/k1-dashboard/.venv/bin/python /mnt/ssd1/k1-dashboard/app/agent.py --config /mnt/ssd1/k1-dashboard/app/server.json --mode metrics
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

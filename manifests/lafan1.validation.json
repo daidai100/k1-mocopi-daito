@@ -1,0 +1,21 @@
+{
+  "dataset": "lafan1",
+  "checked_utc": "2026-09-18T10:59:02.775689+00:00",
+  "motion_files": 77,
+  "expected_motion_files": 77,
+  "file_count_matches_upstream": true,
+  "valid_human_tracks": 77,
+  "unique_source_tracks": 77,
+  "frames": 496672,
+  "hours": 4.598768826666666,
+  "fps_values": {
+    "30.0003": 77
+  },
+  "subsets": {
+    "LAFAN1": 77
+  },
+  "failed_files": 0,
+  "errors": [],
+  "inventory": "manifests/lafan1.motions.jsonl",
+  "validation_scope": "Finite values, dimensions, skeleton headers, timing, annotations and provenance; physical retargeting and control not yet evaluated"
+}

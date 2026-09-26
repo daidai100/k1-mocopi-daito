@@ -1,0 +1,96 @@
+{
+  "same_selection_and_grouped_splits": true,
+  "selected": 400,
+  "validated_references": 398,
+  "source_timestamps_preserved": true,
+  "received_clocks_preserved": true,
+  "control_period": 0.02,
+  "panels": {
+    "validation": {
+      "trials": 180,
+      "recordings": 36,
+      "reference_rejections": 3
+    },
+    "test": {
+      "trials": 200,
+      "recordings": 49,
+      "reference_rejections": 7
+    }
+  },
+  "annotation_screen_corrections": [
+    {
+      "id": "1bbcd91eb631d0e0",
+      "split": "train",
+      "stored_family": "stance",
+      "screened_family": "external_support_or_recovery",
+      "annotations": [
+        "Subject starts on its knees and stands up.",
+        "A person stands up"
+      ]
+    },
+    {
+      "id": "bab3067082a0a8e0",
+      "split": "test",
+      "stored_family": "stance",
+      "screened_family": "external_support_or_recovery",
+      "annotations": [
+        "A person kneeling on the floor and then standing up using the right hand",
+        "A person stands up",
+        "A human was on his knees and stands up."
+      ]
+    },
+    {
+      "id": "50719e07bbf91075",
+      "split": "train",
+      "stored_family": "stance",
+      "screened_family": "external_support_or_recovery",
+      "annotations": [
+        "a person is on all fours and stands up"
+      ]
+    },
+    {
+      "id": "f49623e41b99d030",
+      "split": "train",
+      "stored_family": "stance",
+      "screened_family": "external_support_or_recovery",
+      "annotations": [
+        "kneel down with hand support",
+        "A standing person gets down on its knees.",
+        "a person gets down on its knees"
+      ]
+    },
+    {
+      "id": "c2e81a1cacdffed6",
+      "split": "train",
+      "stored_family": "stance",
+      "screened_family": "external_support_or_recovery",
+      "annotations": [
+        "A person getting done on their knees",
+        "A person goes down to his knees.",
+        "Somebody stands on his knees."
+      ]
+    },
+    {
+      "id": "f93aba3fe8d19452",
+      "split": "test",
+      "stored_family": "stance",
+      "screened_family": "external_support_or_recovery",
+      "annotations": [
+        "The lays down on the floor and stands up again."
+      ]
+    },
+    {
+      "id": "b0b84a321b604284",
+      "split": "test",
+      "stored_family": "reach",
+      "screened_family": "external_support_or_recovery",
+      "annotations": [
+        "A person raises the arms and then goes down on the knees.",
+        "a person raises both hands like wings and then goes down to its knees",
+        "A person lifts their arms and then kneels"
+      ]
+    }
+  ],
+  "acceptance_panels_unchanged_by_curation_screen": true,
+  "physics_qualified": false
+}

@@ -1,0 +1,50 @@
+{
+  "baseline": "artifacts/tsubame-103768/student-v1/human-validation-v2-iteration100",
+  "candidate": "artifacts/student-warp-v8-contact/human-validation-iteration300",
+  "trials": 180,
+  "independent_recordings": 36,
+  "comparison": {
+    "completed": {
+      "baseline": 68,
+      "candidate": 70,
+      "gained": [
+        "turn-008-0a39e4dd0ea165c4",
+        "walk-002-63797b5e1aa8df93",
+        "walk-004-aa615d09f4175d27",
+        "walk-008-63797b5e1aa8df93",
+        "walk-010-aa615d09f4175d27",
+        "walk-014-63797b5e1aa8df93"
+      ],
+      "lost": [
+        "run-004-0543d0ac075bd464",
+        "run-008-0543d0ac075bd464",
+        "run-012-0543d0ac075bd464",
+        "turn-018-166675236ce5d7c7"
+      ]
+    },
+    "tracking_passed": {
+      "baseline": 30,
+      "candidate": 40,
+      "gained": [
+        "bow-002-2d6a188b639b3046",
+        "bow-006-2d6a188b639b3046",
+        "bow-010-2d6a188b639b3046",
+        "bow-014-2d6a188b639b3046",
+        "bow-018-2d6a188b639b3046",
+        "turn-008-0a39e4dd0ea165c4",
+        "walk-002-63797b5e1aa8df93",
+        "walk-004-aa615d09f4175d27",
+        "walk-008-63797b5e1aa8df93",
+        "walk-010-aa615d09f4175d27",
+        "walk-012-08b24af6b1e4b259",
+        "walk-014-63797b5e1aa8df93"
+      ],
+      "lost": [
+        "reach-017-943d335851d5d1f9",
+        "run-008-0543d0ac075bd464"
+      ]
+    }
+  },
+  "behaviorally_accepted": false,
+  "selection": "Continue development from candidate; acceptance remains unproven"
+}

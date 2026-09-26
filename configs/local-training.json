@@ -1,0 +1,32 @@
+{
+  "backend": "isaac",
+  "num_envs": 4096,
+  "physics_dt": 0.002,
+  "control_dt": 0.02,
+  "history_frames": 10,
+  "hidden_sizes": [
+    512,
+    256
+  ],
+  "learning_rate": 0.0001,
+  "sampling": "transition_balanced",
+  "matmul_precision": "high",
+  "teacher_iterations": 3000,
+  "student_iterations": 3000,
+  "horizon": 32,
+  "epochs": 4,
+  "minibatch": 16384,
+  "reference_library": "artifacts/references-v7-contact-root",
+  "scope": "Active universal-tracking candidate; behavioral acceptance required",
+  "corruption": {
+    "default_enabled": false,
+    "delay_seconds": [
+      0.0,
+      0.04
+    ],
+    "single_frame_loss_probability": 0.05,
+    "basis": "engineering_assumptions_not_measured_mocopi_statistics"
+  },
+  "evaluation_interval": 250,
+  "checkpoint_interval": 100
+}

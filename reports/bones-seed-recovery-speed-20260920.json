@@ -1,0 +1,118 @@
+{
+  "as_of": "2026-09-20T16:40:59.744119+09:00",
+  "changes": [
+    "geometry-only pose updates",
+    "vectorized penetrating-contact filtering",
+    "compiled-model reuse with per-motion state reset",
+    "local workers 12 to 16; server remains 52"
+  ],
+  "gates_changed": false,
+  "audit_hz": 500,
+  "regression_tests_passed": 12,
+  "paired_motions_passed": 30,
+  "paired_benchmark_speedups": {
+    "local": 1.746804890041243,
+    "server": 1.859800816733477
+  },
+  "local": {
+    "as_of": "2026-09-20T16:40:58.335551+09:00",
+    "host": "local",
+    "rates": {
+      "before": {
+        "window_seconds": 276.0,
+        "records_per_min": 118.69565217391303,
+        "start": "2026-09-20T16:27:42+09:00",
+        "end": "2026-09-20T16:32:18+09:00",
+        "first": 7197,
+        "last": 7743
+      },
+      "after": {
+        "window_seconds": 273.0,
+        "records_per_min": 232.0879120879121,
+        "start": "2026-09-20T16:36:25+09:00",
+        "end": "2026-09-20T16:40:58+09:00",
+        "first": 8631,
+        "last": 9687
+      }
+    },
+    "summary": {
+      "processed_rows": 9687,
+      "expected_metadata_rows": 69987,
+      "original_motions": 7081,
+      "mirrored_augmentations": 2606,
+      "accepted_original_motions": 3259,
+      "recovered_originals": 515,
+      "baseline_original_acceptances_withheld": 2074,
+      "active_execution": "d8b5fb605dd0e52e80640d5ecb6c9f6fbd805cd7ec13f6d7c61a801934e4c281",
+      "running": true,
+      "complete": false
+    },
+    "ledger_prefix_preserved": true,
+    "original_campaign_preserved": true,
+    "new_execution_rows": 1893,
+    "execution_ids": [
+      "d8b5fb605dd0e52e80640d5ecb6c9f6fbd805cd7ec13f6d7c61a801934e4c281"
+    ],
+    "service": "MainPID=3398322\nResult=success\nNRestarts=0\nActiveState=active\n",
+    "originals_remaining_hours": 2.0052746212121213,
+    "all_remaining_hours": 4.3302556818181825
+  },
+  "server": {
+    "as_of": "2026-09-20T16:40:59.717617+09:00",
+    "host": "server",
+    "rates": {
+      "before": {
+        "window_seconds": 273.0,
+        "records_per_min": 140.65934065934067,
+        "start": "2026-09-20T16:31:54+09:00",
+        "end": "2026-09-20T16:36:27+09:00",
+        "first": 9908,
+        "last": 10548
+      },
+      "after": {
+        "window_seconds": 150.0,
+        "records_per_min": 238.39999999999998,
+        "start": "2026-09-20T16:38:14+09:00",
+        "end": "2026-09-20T16:40:44+09:00",
+        "first": 10778,
+        "last": 11374
+      }
+    },
+    "summary": {
+      "processed_rows": 11374,
+      "expected_metadata_rows": 72233,
+      "original_motions": 7956,
+      "mirrored_augmentations": 3418,
+      "accepted_original_motions": 3603,
+      "recovered_originals": 484,
+      "baseline_original_acceptances_withheld": 2418,
+      "active_execution": "0011277fd184201527779baf85148762fc2241395a9ac41871643bb781325833",
+      "running": true,
+      "complete": false
+    },
+    "ledger_prefix_preserved": true,
+    "original_campaign_preserved": true,
+    "new_execution_rows": 823,
+    "execution_ids": [
+      "0011277fd184201527779baf85148762fc2241395a9ac41871643bb781325833"
+    ],
+    "service": "ActiveState=active\nMainPID=2679620\nResult=success\nNRestarts=0\n",
+    "originals_remaining_hours": 1.9694491051454142,
+    "all_remaining_hours": 4.2546840044742735
+  },
+  "estimated_remaining_hours": {
+    "originals": 2.0052746212121213,
+    "including_mirrors": 4.3302556818181825
+  },
+  "eta_method": "Max of per-shard remaining work divided by each recent rate, excluding the first minute after restart. Original-first ordering. Approximate: motion costs vary and the remote measurement window is shorter.",
+  "production_checks": {
+    "old_ledgers_preserved": true,
+    "original_campaigns_preserved": true,
+    "new_execution_receipts_and_clip_metadata_verified": true,
+    "local_controller_audit_execution_errors": 0
+  },
+  "sources": [
+    "https://mujoco.readthedocs.io/en/stable/APIreference/APIfunctions.html#mj-jac",
+    "https://mujoco.readthedocs.io/en/stable/APIreference/APIfunctions.html#mj-collision"
+  ]
+}

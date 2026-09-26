@@ -1,0 +1,181 @@
+{
+  "summary": {
+    "contract": {
+      "source_revision": "6a8510056dad25d9bccb7ab0a3e71f3b4f055ecb3edac7af6a0854ca6c48ecb2",
+      "policy": "/home/vivi/c/k1-motion/artifacts/controller-pv-arm-feedback-v1/actor.pt",
+      "policy_sha256": "091d6927485137f36eee96dd857d2286dc108293d567deb2cad4d72d5d4db9b9",
+      "policy_metadata_sha256": "cc46c24361f9545851656a9aa61a4f0c359eed6636379a53875e031164cc61a7",
+      "panel_sha256": "d6bf375e092eb6f2bf2528e83f5bc7e803d7f6a6083047ac9ac5c79b342ee3bd",
+      "originals": 54
+    },
+    "execution_errors": 0,
+    "resets_during_trials": 0,
+    "behaviorally_accepted": false,
+    "hardware_verified": false,
+    "all": {
+      "trials": 54,
+      "completed": 24,
+      "clean": 17,
+      "collision_trials": 7,
+      "fell": 30,
+      "mean_root_velocity_rmse_m_s": 0.40504027019255023
+    },
+    "expanded_validation": {
+      "trials": 54,
+      "completed": 24,
+      "clean": 17,
+      "collision_trials": 7,
+      "fell": 30,
+      "mean_root_velocity_rmse_m_s": 0.40504027019255023
+    }
+  },
+  "family": {
+    "dance": {
+      "trials": 4,
+      "completed": 2,
+      "clean": 1,
+      "collision_trials": 1,
+      "fell": 2
+    },
+    "avoidance": {
+      "trials": 2,
+      "completed": 0,
+      "clean": 0,
+      "collision_trials": 1,
+      "fell": 2
+    },
+    "turn": {
+      "trials": 4,
+      "completed": 0,
+      "clean": 0,
+      "collision_trials": 1,
+      "fell": 4
+    },
+    "kick": {
+      "trials": 4,
+      "completed": 0,
+      "clean": 0,
+      "collision_trials": 0,
+      "fell": 4
+    },
+    "squat": {
+      "trials": 4,
+      "completed": 0,
+      "clean": 0,
+      "collision_trials": 2,
+      "fell": 4
+    },
+    "jump": {
+      "trials": 4,
+      "completed": 2,
+      "clean": 0,
+      "collision_trials": 0,
+      "fell": 2
+    },
+    "other": {
+      "trials": 4,
+      "completed": 3,
+      "clean": 3,
+      "collision_trials": 0,
+      "fell": 1
+    },
+    "kneel": {
+      "trials": 1,
+      "completed": 0,
+      "clean": 0,
+      "collision_trials": 0,
+      "fell": 1
+    },
+    "idle_stance": {
+      "trials": 4,
+      "completed": 4,
+      "clean": 4,
+      "collision_trials": 0,
+      "fell": 0
+    },
+    "walk": {
+      "trials": 4,
+      "completed": 1,
+      "clean": 0,
+      "collision_trials": 1,
+      "fell": 3
+    },
+    "object_interaction": {
+      "trials": 4,
+      "completed": 1,
+      "clean": 1,
+      "collision_trials": 0,
+      "fell": 3
+    },
+    "gesture": {
+      "trials": 4,
+      "completed": 4,
+      "clean": 4,
+      "collision_trials": 0,
+      "fell": 0
+    },
+    "punch": {
+      "trials": 3,
+      "completed": 3,
+      "clean": 3,
+      "collision_trials": 0,
+      "fell": 0
+    },
+    "transition": {
+      "trials": 4,
+      "completed": 2,
+      "clean": 1,
+      "collision_trials": 1,
+      "fell": 2
+    },
+    "run": {
+      "trials": 4,
+      "completed": 2,
+      "clean": 0,
+      "collision_trials": 0,
+      "fell": 2
+    }
+  },
+  "gained": [
+    {
+      "id": "04b07e49a3576255d81d",
+      "family": "dance"
+    },
+    {
+      "id": "0e3a92d137825ee1afae",
+      "family": "other"
+    },
+    {
+      "id": "00f513a5534928c3e2f5",
+      "family": "gesture"
+    },
+    {
+      "id": "03d886436864b1dd2bad",
+      "family": "idle_stance"
+    },
+    {
+      "id": "0052ce839a1a73a3ff6e",
+      "family": "transition"
+    },
+    {
+      "id": "021f102942220f56c4f5",
+      "family": "gesture"
+    }
+  ],
+  "lost": [],
+  "all_failures": {
+    "fall": 30,
+    "root_speed": 34,
+    "progress": 11,
+    "collision": 7
+  },
+  "completed_failures": {
+    "fall": 0,
+    "root_speed": 6,
+    "progress": 3,
+    "collision": 1
+  },
+  "completed_no_collision": 23,
+  "actor_tensor_max_error": 0,
+  "unchanged_tensor_count": 9
+}

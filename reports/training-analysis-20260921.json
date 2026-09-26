@@ -1,0 +1,3021 @@
+{
+  "audit_date": "2026-09-21",
+  "timezone": "Asia/Tokyo",
+  "scope": "September 20 work and September 20-21 overnight campaigns; no training launched or training code changed during this analysis.",
+  "source_paths": {
+    "local": "artifacts/local-warp-broad-20260921/campaign",
+    "server": "server:/mnt/ssd1/k1-motion/experiments/server-ablation-20260921/campaign-optimized",
+    "library": "artifacts/broad-motion-coverage-20260920/curated-v1/pool/index.jsonl"
+  },
+  "verified_training_identity": {
+    "count": 18054,
+    "dataset_counts": {
+      "bones_seed": 18003,
+      "kit_motion_language": 51
+    },
+    "hours": 36.49737777777782,
+    "frames": 6587582,
+    "related_take_families": 1630,
+    "originals_only": true,
+    "physics_qualified_demonstrations": 0,
+    "train_row_identity_sha256": "11a3975d02d78ff155b42fbfd911d6a5cffccfdad60a4922a02855a42aebb232",
+    "identity_fields": [
+      "id",
+      "capture_group",
+      "dataset",
+      "family",
+      "frames"
+    ],
+    "local_server_identity_equal": true,
+    "train_families": {
+      "transition": 5689,
+      "idle_stance": 1131,
+      "run": 807,
+      "walk": 1671,
+      "turn": 491,
+      "object_interaction": 1328,
+      "squat": 269,
+      "dance": 971,
+      "gesture": 3647,
+      "jump": 1168,
+      "kick": 130,
+      "kneel": 16,
+      "other": 664,
+      "bow": 19,
+      "punch": 28,
+      "avoidance": 18,
+      "step_over": 7
+    },
+    "validation_originals_total": 5356,
+    "test_originals_total": 4461,
+    "validation_evaluated": 54,
+    "panel_row_identity_sha256": "487d99e34bf04afddfd7019dab80b9a45e0b99be0cf19d31c569323fd11b49a2",
+    "local_server_panel_identity_equal": true
+  },
+  "inherited_initializer": {
+    "checkpoint": "artifacts/tsubame-103768/student-v10-ppo-long/checkpoint-002500.pt",
+    "library": "artifacts/references-v8-control-cadence",
+    "training_originals": 315,
+    "datasets": {
+      "bandai_namco": 133,
+      "kit_motion_language": 170,
+      "lafan1": 12
+    }
+  },
+  "earlier_september20_pilots": {
+    "controller_arms": {
+      "names": [
+        "legacy-finetune",
+        "pv-finetune",
+        "pv-full-finetune"
+      ],
+      "library": "artifacts/controller-lab-20260920/training-library",
+      "train_originals": 40,
+      "dataset": "bones_seed",
+      "transitions_each": 1966080,
+      "updates_each": 120,
+      "summary": "No trained candidate beat selected controller on development; historical strict scores predate final fidelity gate."
+    },
+    "rl_reference_study": {
+      "train_originals": 1492,
+      "dataset": "bones_seed",
+      "hours": 2.8048,
+      "transitions": 2457600,
+      "updates": 300,
+      "object_interaction": 1328,
+      "walk": 0,
+      "run": 0,
+      "baseline": {
+        "n": 30,
+        "completed": 17,
+        "clean": 15,
+        "collisions": 6
+      },
+      "final": {
+        "n": 30,
+        "completed": 18,
+        "clean": 14,
+        "collisions": 5
+      },
+      "source": "artifacts/rl-reference-study-20260920/campaign/comparison.json"
+    }
+  },
+  "local": {
+    "status.json": {
+      "phase": "workload_finished",
+      "trainer_exit_code": 0,
+      "num_envs": 1024,
+      "source_revision": "6a8510056dad25d9bccb7ab0a3e71f3b4f055ecb3edac7af6a0854ca6c48ecb2",
+      "initialize_checkpoint": null
+    },
+    "training/config.json": {
+      "backend": "warp",
+      "library": "artifacts/broad-motion-coverage-20260920/curated-v1/pool",
+      "num_envs": 1024,
+      "reference_fingerprint": "fb60622aff8121d7aadd1d8674ca1f3fb69d83cb552c5ad42b50c2f3337ff834",
+      "source_revision": "6a8510056dad25d9bccb7ab0a3e71f3b4f055ecb3edac7af6a0854ca6c48ecb2",
+      "reward_settings": {
+        "self_collision_weight": 1,
+        "root_velocity_weight": 2,
+        "root_velocity_sigma": 0.5
+      },
+      "action_settings": {
+        "residual_scale": 0.25,
+        "command_velocity_limit": 6
+      },
+      "resume_checkpoint": "/home/vivi/c/k1-motion/artifacts/local-warp-broad-20260921/preflight/checkpoint.pt",
+      "initialize_checkpoint": null,
+      "initialization_iteration": null,
+      "initialization_semantics": null,
+      "hyperparameters": {
+        "stage": "student",
+        "iterations": 7995,
+        "horizon": 32,
+        "epochs": 4,
+        "minibatch": 4096,
+        "learning_rate": 0.00005,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "clip": 0.2,
+        "bc_weight": 0,
+        "seed": 42,
+        "checkpoint_interval": 25,
+        "evaluation_interval": 0,
+        "initial_std": 0.4,
+        "desired_kl": 0.01,
+        "student_warm_start": true,
+        "hidden_sizes": [
+          512,
+          256
+        ],
+        "matmul_precision": "high",
+        "sampling": "take_transition_balanced"
+      }
+    },
+    "training/report.json": {
+      "iterations": 7995,
+      "transitions": 262144000,
+      "finite_updates": true,
+      "checkpoint_reload_max_error": 0,
+      "backend": "warp",
+      "library": "artifacts/broad-motion-coverage-20260920/curated-v1/pool",
+      "num_envs": 1024,
+      "reference_fingerprint": "fb60622aff8121d7aadd1d8674ca1f3fb69d83cb552c5ad42b50c2f3337ff834",
+      "source_revision": "6a8510056dad25d9bccb7ab0a3e71f3b4f055ecb3edac7af6a0854ca6c48ecb2",
+      "reward_settings": {
+        "self_collision_weight": 1,
+        "root_velocity_weight": 2,
+        "root_velocity_sigma": 0.5
+      },
+      "action_settings": {
+        "residual_scale": 0.25,
+        "command_velocity_limit": 6
+      },
+      "elapsed_seconds": 9920.214241643,
+      "resume_checkpoint": "/home/vivi/c/k1-motion/artifacts/local-warp-broad-20260921/preflight/checkpoint.pt",
+      "initialize_checkpoint": null,
+      "initialization_iteration": null,
+      "initialization_semantics": null
+    },
+    "validation/status.json": {
+      "phase": "completed",
+      "source_revision": "6a8510056dad25d9bccb7ab0a3e71f3b4f055ecb3edac7af6a0854ca6c48ecb2",
+      "baseline": {
+        "trials": 54,
+        "completed": 25,
+        "clean": 11,
+        "collision_trials": 27,
+        "fell": 29,
+        "mean_root_velocity_rmse_m_s": 0.40074345234289444
+      },
+      "latest_comparison": {
+        "baseline": {
+          "trials": 54,
+          "completed": 25,
+          "clean": 11,
+          "collision_trials": 27,
+          "fell": 29,
+          "mean_root_velocity_rmse_m_s": 0.40074345234289444
+        },
+        "candidate": {
+          "trials": 54,
+          "completed": 32,
+          "clean": 12,
+          "collision_trials": 33,
+          "fell": 22,
+          "mean_root_velocity_rmse_m_s": 0.372178196674405
+        },
+        "raw_completion_delta": 7,
+        "clean_delta": 1,
+        "execution_errors": 0,
+        "automatically_promoted": false
+      },
+      "latest_checkpoint": "/home/vivi/c/k1-motion/artifacts/local-warp-broad-20260921/campaign/training/checkpoint-007500.pt",
+      "keys": [
+        "panel",
+        "panel_sha256",
+        "trials",
+        "source_revision",
+        "behaviorally_accepted",
+        "hardware_verified",
+        "scope",
+        "updated_unix",
+        "phase",
+        "checkpoint",
+        "evaluation",
+        "baseline",
+        "latest_comparison",
+        "latest_checkpoint"
+      ]
+    },
+    "evaluations": {
+      "checkpoint-000500": {
+        "trials": 54,
+        "completed": 26,
+        "clean": 11,
+        "collision_trials": 28,
+        "fell": 28,
+        "mean_root_velocity_rmse_m_s": 0.413606703773338
+      },
+      "checkpoint-004000": {
+        "trials": 54,
+        "completed": 30,
+        "clean": 9,
+        "collision_trials": 35,
+        "fell": 24,
+        "mean_root_velocity_rmse_m_s": 0.40240471844297676
+      },
+      "checkpoint-006500": {
+        "trials": 54,
+        "completed": 31,
+        "clean": 14,
+        "collision_trials": 33,
+        "fell": 23,
+        "mean_root_velocity_rmse_m_s": 0.3836033253912678
+      },
+      "checkpoint-007500": {
+        "trials": 54,
+        "completed": 32,
+        "clean": 12,
+        "collision_trials": 33,
+        "fell": 22,
+        "mean_root_velocity_rmse_m_s": 0.372178196674405
+      },
+      "checkpoint-002500": {
+        "trials": 54,
+        "completed": 28,
+        "clean": 10,
+        "collision_trials": 32,
+        "fell": 26,
+        "mean_root_velocity_rmse_m_s": 0.374259793650486
+      },
+      "checkpoint-006000": {
+        "trials": 54,
+        "completed": 29,
+        "clean": 11,
+        "collision_trials": 35,
+        "fell": 25,
+        "mean_root_velocity_rmse_m_s": 0.39464231363492736
+      },
+      "checkpoint-005500": {
+        "trials": 54,
+        "completed": 30,
+        "clean": 10,
+        "collision_trials": 33,
+        "fell": 24,
+        "mean_root_velocity_rmse_m_s": 0.38945935897518774
+      },
+      "baseline": {
+        "trials": 54,
+        "completed": 25,
+        "clean": 11,
+        "collision_trials": 27,
+        "fell": 29,
+        "mean_root_velocity_rmse_m_s": 0.40074345234289444
+      },
+      "checkpoint-001500": {
+        "trials": 54,
+        "completed": 28,
+        "clean": 7,
+        "collision_trials": 36,
+        "fell": 26,
+        "mean_root_velocity_rmse_m_s": 0.3962570388684358
+      },
+      "checkpoint-005000": {
+        "trials": 54,
+        "completed": 30,
+        "clean": 11,
+        "collision_trials": 30,
+        "fell": 24,
+        "mean_root_velocity_rmse_m_s": 0.3961864725892842
+      },
+      "checkpoint-004500": {
+        "trials": 54,
+        "completed": 28,
+        "clean": 8,
+        "collision_trials": 35,
+        "fell": 26,
+        "mean_root_velocity_rmse_m_s": 0.4074263269344819
+      },
+      "checkpoint-003500": {
+        "trials": 54,
+        "completed": 31,
+        "clean": 9,
+        "collision_trials": 35,
+        "fell": 23,
+        "mean_root_velocity_rmse_m_s": 0.4095211018100772
+      },
+      "checkpoint-003000": {
+        "trials": 54,
+        "completed": 31,
+        "clean": 11,
+        "collision_trials": 31,
+        "fell": 23,
+        "mean_root_velocity_rmse_m_s": 0.38405521802172277
+      },
+      "checkpoint-007000": {
+        "trials": 54,
+        "completed": 31,
+        "clean": 13,
+        "collision_trials": 31,
+        "fell": 23,
+        "mean_root_velocity_rmse_m_s": 0.38294489876158316
+      },
+      "checkpoint-002000": {
+        "trials": 54,
+        "completed": 28,
+        "clean": 8,
+        "collision_trials": 33,
+        "fell": 26,
+        "mean_root_velocity_rmse_m_s": 0.3876387482901182
+      },
+      "checkpoint-001000": {
+        "trials": 54,
+        "completed": 28,
+        "clean": 10,
+        "collision_trials": 31,
+        "fell": 26,
+        "mean_root_velocity_rmse_m_s": 0.3885490923792651
+      }
+    },
+    "checkpoint_files": [
+      "checkpoint-001500.pt",
+      "checkpoint-003000.pt",
+      "checkpoint-006500.pt",
+      "checkpoint-002500.pt",
+      "checkpoint-005000.pt",
+      "checkpoint.pt",
+      "checkpoint-008000.pt",
+      "checkpoint-006000.pt",
+      "checkpoint-000500.pt",
+      "checkpoint-004500.pt",
+      "checkpoint-004000.pt",
+      "checkpoint-003500.pt",
+      "checkpoint-001000.pt",
+      "checkpoint-007500.pt",
+      "checkpoint-007000.pt",
+      "checkpoint-002000.pt",
+      "checkpoint-005500.pt"
+    ],
+    "final_validation_files": [],
+    "final_replay": {
+      "summary": {
+        "contract": {
+          "source_revision": "6a8510056dad25d9bccb7ab0a3e71f3b4f055ecb3edac7af6a0854ca6c48ecb2",
+          "policy": "/home/vivi/c/k1-motion/artifacts/training-analysis-20260921/local-final/actor.pt",
+          "policy_sha256": "946fc3ad54bab377ecb95166757a0c69357ea604ca88e389ea70e238ca7dbc83",
+          "policy_metadata_sha256": "3963eb499416ce0d429c2050fe7eb235828aed8c819042c81a53d19129703d5f",
+          "panel_sha256": "d6bf375e092eb6f2bf2528e83f5bc7e803d7f6a6083047ac9ac5c79b342ee3bd",
+          "originals": 54
+        },
+        "execution_errors": 0,
+        "resets_during_trials": 0,
+        "behaviorally_accepted": false,
+        "hardware_verified": false,
+        "all": {
+          "trials": 54,
+          "completed": 33,
+          "clean": 10,
+          "collision_trials": 36,
+          "fell": 21,
+          "mean_root_velocity_rmse_m_s": 0.3864579392080866
+        },
+        "expanded_validation": {
+          "trials": 54,
+          "completed": 33,
+          "clean": 10,
+          "collision_trials": 36,
+          "fell": 21,
+          "mean_root_velocity_rmse_m_s": 0.3864579392080866
+        }
+      },
+      "family": {
+        "dance": {
+          "trials": 4,
+          "completed": 2,
+          "clean": 0,
+          "collisions": 3,
+          "fell": 2
+        },
+        "avoidance": {
+          "trials": 2,
+          "completed": 1,
+          "clean": 0,
+          "collisions": 2,
+          "fell": 1
+        },
+        "turn": {
+          "trials": 4,
+          "completed": 1,
+          "clean": 0,
+          "collisions": 4,
+          "fell": 3
+        },
+        "kick": {
+          "trials": 4,
+          "completed": 0,
+          "clean": 0,
+          "collisions": 3,
+          "fell": 4
+        },
+        "squat": {
+          "trials": 4,
+          "completed": 1,
+          "clean": 0,
+          "collisions": 3,
+          "fell": 3
+        },
+        "jump": {
+          "trials": 4,
+          "completed": 3,
+          "clean": 0,
+          "collisions": 3,
+          "fell": 1
+        },
+        "other": {
+          "trials": 4,
+          "completed": 3,
+          "clean": 2,
+          "collisions": 2,
+          "fell": 1
+        },
+        "kneel": {
+          "trials": 1,
+          "completed": 0,
+          "clean": 0,
+          "collisions": 1,
+          "fell": 1
+        },
+        "idle_stance": {
+          "trials": 4,
+          "completed": 4,
+          "clean": 3,
+          "collisions": 1,
+          "fell": 0
+        },
+        "walk": {
+          "trials": 4,
+          "completed": 3,
+          "clean": 0,
+          "collisions": 3,
+          "fell": 1
+        },
+        "object_interaction": {
+          "trials": 4,
+          "completed": 2,
+          "clean": 2,
+          "collisions": 0,
+          "fell": 2
+        },
+        "gesture": {
+          "trials": 4,
+          "completed": 4,
+          "clean": 2,
+          "collisions": 2,
+          "fell": 0
+        },
+        "punch": {
+          "trials": 3,
+          "completed": 3,
+          "clean": 1,
+          "collisions": 2,
+          "fell": 0
+        },
+        "transition": {
+          "trials": 4,
+          "completed": 3,
+          "clean": 0,
+          "collisions": 3,
+          "fell": 1
+        },
+        "run": {
+          "trials": 4,
+          "completed": 3,
+          "clean": 0,
+          "collisions": 4,
+          "fell": 1
+        }
+      },
+      "all_failures": {
+        "fell": 21,
+        "collision": 36,
+        "root_speed": 32,
+        "orientation_max": 16,
+        "progress": 11,
+        "orientation_mean": 8,
+        "body_rmse": 3
+      },
+      "completed_failures": {
+        "fell": 0,
+        "collision": 19,
+        "root_speed": 12,
+        "orientation_max": 0,
+        "progress": 7,
+        "orientation_mean": 0,
+        "body_rmse": 0
+      },
+      "completed_collision_free": 14
+    },
+    "final_iteration": 8000,
+    "optimizer_steps_derived": 256000
+  },
+  "server": {
+    "campaign_phase": "completed",
+    "validation_phase": "completed",
+    "started_unix": 1789924991.7764614,
+    "updated_unix": 1789953835.1601894,
+    "baseline": {
+      "trials": 54,
+      "completed": 25,
+      "clean": 11,
+      "collision_trials": 27,
+      "fell": 29,
+      "mean_root_velocity_rmse_m_s": 0.40115893891792076
+    },
+    "baseline_by_family": {
+      "idle_stance": {
+        "trials": 4,
+        "completed": 4,
+        "clean": 3,
+        "collision_trials": 1,
+        "fell": 0,
+        "mean_joint_rmse_rad": 0.09849355912927821,
+        "mean_relative_body_rmse_m": 0.02235590569833764
+      },
+      "object_interaction": {
+        "trials": 4,
+        "completed": 1,
+        "clean": 1,
+        "collision_trials": 2,
+        "fell": 3,
+        "mean_joint_rmse_rad": 0.12122983645056871,
+        "mean_relative_body_rmse_m": 0.05886886152936261
+      },
+      "transition": {
+        "trials": 4,
+        "completed": 2,
+        "clean": 0,
+        "collision_trials": 2,
+        "fell": 2,
+        "mean_joint_rmse_rad": 0.11653993708254329,
+        "mean_relative_body_rmse_m": 0.07204808486330905
+      },
+      "jump": {
+        "trials": 4,
+        "completed": 2,
+        "clean": 0,
+        "collision_trials": 1,
+        "fell": 2,
+        "mean_joint_rmse_rad": 0.13659473494087743,
+        "mean_relative_body_rmse_m": 0.06670883609310467
+      },
+      "gesture": {
+        "trials": 4,
+        "completed": 4,
+        "clean": 2,
+        "collision_trials": 2,
+        "fell": 0,
+        "mean_joint_rmse_rad": 0.10542549596180831,
+        "mean_relative_body_rmse_m": 0.023968266772255005
+      },
+      "punch": {
+        "trials": 3,
+        "completed": 3,
+        "clean": 3,
+        "collision_trials": 0,
+        "fell": 0,
+        "mean_joint_rmse_rad": 0.09435890388367452,
+        "mean_relative_body_rmse_m": 0.02037835663281933
+      },
+      "walk": {
+        "trials": 4,
+        "completed": 1,
+        "clean": 0,
+        "collision_trials": 3,
+        "fell": 3,
+        "mean_joint_rmse_rad": 0.13678024150020596,
+        "mean_relative_body_rmse_m": 0.08396356200056876
+      },
+      "dance": {
+        "trials": 4,
+        "completed": 2,
+        "clean": 0,
+        "collision_trials": 3,
+        "fell": 2,
+        "mean_joint_rmse_rad": 0.1449279253420731,
+        "mean_relative_body_rmse_m": 0.071646693401916
+      },
+      "run": {
+        "trials": 4,
+        "completed": 2,
+        "clean": 0,
+        "collision_trials": 2,
+        "fell": 2,
+        "mean_joint_rmse_rad": 0.1530561277719879,
+        "mean_relative_body_rmse_m": 0.0798346839839207
+      },
+      "other": {
+        "trials": 4,
+        "completed": 3,
+        "clean": 2,
+        "collision_trials": 1,
+        "fell": 1,
+        "mean_joint_rmse_rad": 0.12019723189810189,
+        "mean_relative_body_rmse_m": 0.059146921153334336
+      },
+      "kick": {
+        "trials": 4,
+        "completed": 0,
+        "clean": 0,
+        "collision_trials": 2,
+        "fell": 4,
+        "mean_joint_rmse_rad": 0.14363614805168862,
+        "mean_relative_body_rmse_m": 0.10200845900475539
+      },
+      "turn": {
+        "trials": 4,
+        "completed": 0,
+        "clean": 0,
+        "collision_trials": 3,
+        "fell": 4,
+        "mean_joint_rmse_rad": 0.146339212349882,
+        "mean_relative_body_rmse_m": 0.14132131488105565
+      },
+      "squat": {
+        "trials": 4,
+        "completed": 1,
+        "clean": 0,
+        "collision_trials": 2,
+        "fell": 3,
+        "mean_joint_rmse_rad": 0.1432740154778776,
+        "mean_relative_body_rmse_m": 0.060407902676603065
+      },
+      "avoidance": {
+        "trials": 2,
+        "completed": 0,
+        "clean": 0,
+        "collision_trials": 2,
+        "fell": 2,
+        "mean_joint_rmse_rad": 0.13054956378931276,
+        "mean_relative_body_rmse_m": 0.06146687352728912
+      },
+      "kneel": {
+        "trials": 1,
+        "completed": 0,
+        "clean": 0,
+        "collision_trials": 1,
+        "fell": 1,
+        "mean_joint_rmse_rad": 0.16881621152688803,
+        "mean_relative_body_rmse_m": 0.11424652556502976
+      }
+    },
+    "runs": {
+      "a_legacy_small": {
+        "phase": "completed",
+        "exit_code": 0,
+        "gpu": "AMD Radeon AI PRO R9700",
+        "latest": {
+          "iteration": 3265,
+          "transitions": 197591040,
+          "optimizer_steps": 192960,
+          "mean_reward": 0.11820106953382492,
+          "episode_ends": 523,
+          "loss": 0.34853941202163696,
+          "policy_loss": -0.01987801492214203,
+          "value_loss": 0.37265700101852417,
+          "bc_loss": 0,
+          "gradient_norm": 2.473231315612793,
+          "actor_gradient_norm": 7.030335903167725,
+          "approx_kl": 0.0088372603058815,
+          "clip_fraction": 0.1233367919921875,
+          "learning_rate": 0.00001,
+          "action_std": 0.3157990872859955,
+          "elapsed_seconds": 28457.874362575996,
+          "rollout_seconds": 6.739319289976265,
+          "update_seconds": 5.375511351012392,
+          "iteration_seconds": 12.11483087099623,
+          "transitions_per_second": 5409.567749613596,
+          "peak_torch_vram_bytes": 8813450240,
+          "falls": 29,
+          "tracking_failures": 187,
+          "completed": 309,
+          "episode_length_steps": 126.92734225621415,
+          "body_rmse_m": 0.06327102333307266,
+          "orientation_error_rad": 0.1458166539669037,
+          "reward_components": {
+            "joint": 0.8085234761238098,
+            "height": 0.9468346834182739,
+            "orientation": 0.8488923907279968,
+            "body_position": 0.8309774398803711,
+            "feet_position": 0.6387450695037842,
+            "body_orientation": 0.7514920234680176,
+            "velocity": 0.7666047811508179,
+            "body_velocity": 0.8933866024017334
+          },
+          "joint_rmse_rad": 0.1418316811323166,
+          "effort_saturation": 0.00002538507578719873,
+          "self_collision_fraction": 0.0427093505859375,
+          "corruption_assumptions": false,
+          "family_transition_share": {
+            "avoidance": 0.050750732421875,
+            "bow": 0.061004638671875,
+            "dance": 0.05157470703125,
+            "gesture": 0.061920166015625,
+            "idle_stance": 0.062652587890625,
+            "jump": 0.05511474609375,
+            "kick": 0.0656585693359375,
+            "kneel": 0.0650482177734375,
+            "object_interaction": 0.049530029296875,
+            "other": 0.05767822265625,
+            "punch": 0.07110595703125,
+            "run": 0.05010986328125,
+            "squat": 0.0588531494140625,
+            "step_over": 0.0586395263671875,
+            "transition": 0.055633544921875,
+            "turn": 0.0633087158203125,
+            "walk": 0.0614166259765625
+          },
+          "visible_cuda_memory_used_bytes": 20176699392,
+          "visible_cuda_memory_total_bytes": 34208743424
+        },
+        "report": {
+          "iterations": 2765,
+          "stop_reason": "walltime_budget",
+          "transitions": 197591040,
+          "optimizer_steps": 192960,
+          "checkpoint_reload_max_error": 0,
+          "finite_updates": true,
+          "elapsed_seconds": 28458.048958801024,
+          "backend": "mujoco_cpp",
+          "reference_fingerprint": "84b22308d19da5ed01b3192baeb5ac66770fd65d188b5ade2d5281b0f6403334",
+          "reference_storage_bytes": 6271378064,
+          "reward_settings": {
+            "self_collision_weight": 1,
+            "root_velocity_weight": 2,
+            "root_velocity_sigma": 0.5
+          },
+          "action_settings": {
+            "residual_scale": 0.25,
+            "command_velocity_limit": 6
+          },
+          "task_version": "relative-body-tracking-v3-low-support-v1"
+        },
+        "config": {
+          "stage": "student",
+          "iterations": 31750,
+          "horizon": 32,
+          "epochs": 4,
+          "minibatch": 4096,
+          "learning_rate": 0.00001,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip": 0.2,
+          "bc_weight": 0,
+          "seed": 42,
+          "checkpoint_interval": 25,
+          "evaluation_interval": 0,
+          "initial_std": 0.4,
+          "desired_kl": 0.01,
+          "student_warm_start": true,
+          "hidden_sizes": [
+            512,
+            256
+          ],
+          "matmul_precision": "high",
+          "sampling": "take_transition_balanced",
+          "allow_env_resize": true,
+          "milestone_interval": 250,
+          "max_seconds": 28448.68458390236
+        }
+      },
+      "b_beyondmimic_small": {
+        "phase": "completed",
+        "exit_code": 0,
+        "gpu": "AMD Radeon RX 9060 XT",
+        "latest": {
+          "iteration": 6299,
+          "transitions": 396427264,
+          "optimizer_steps": 387136,
+          "mean_reward": 0.1185247078537941,
+          "episode_ends": 489,
+          "loss": 0.27673643827438354,
+          "policy_loss": -0.021046005189418793,
+          "value_loss": 0.3013693690299988,
+          "bc_loss": 0,
+          "gradient_norm": 2.2124247550964355,
+          "actor_gradient_norm": 7.799114227294922,
+          "approx_kl": 0.010264253243803978,
+          "clip_fraction": 0.14538955688476562,
+          "learning_rate": 0.00001,
+          "action_std": 0.3108644485473633,
+          "elapsed_seconds": 28244.794294260995,
+          "rollout_seconds": 3.4085104079858866,
+          "update_seconds": 1.4373046889959369,
+          "iteration_seconds": 4.845815228007268,
+          "transitions_per_second": 13524.245793508604,
+          "peak_torch_vram_bytes": 8813384704,
+          "falls": 30,
+          "tracking_failures": 191,
+          "completed": 270,
+          "episode_length_steps": 131.67893660531698,
+          "body_rmse_m": 0.06803381443023682,
+          "orientation_error_rad": 0.1707478016614914,
+          "reward_components": {
+            "anchor_height": 0.9924101829528809,
+            "anchor_orientation": 0.8124754428863525,
+            "relative_body_position": 0.9586829543113708,
+            "relative_body_orientation": 0.6865255832672119,
+            "global_body_linear_velocity": 0.8122844696044922,
+            "global_body_angular_velocity": 0.6654854416847229
+          },
+          "joint_rmse_rad": 0.15098850429058075,
+          "effort_saturation": 0.00003599687261157669,
+          "self_collision_fraction": 0.038421630859375,
+          "corruption_assumptions": false,
+          "family_transition_share": {
+            "avoidance": 0.0549774169921875,
+            "bow": 0.0648651123046875,
+            "dance": 0.0658721923828125,
+            "gesture": 0.0618743896484375,
+            "idle_stance": 0.071929931640625,
+            "jump": 0.0523681640625,
+            "kick": 0.053863525390625,
+            "kneel": 0.0563507080078125,
+            "object_interaction": 0.053802490234375,
+            "other": 0.0677032470703125,
+            "punch": 0.05859375,
+            "run": 0.053436279296875,
+            "squat": 0.0626678466796875,
+            "step_over": 0.056976318359375,
+            "transition": 0.056793212890625,
+            "turn": 0.0535888671875,
+            "walk": 0.0543365478515625
+          },
+          "visible_cuda_memory_used_bytes": 9518972928,
+          "visible_cuda_memory_total_bytes": 17095983104
+        },
+        "report": {
+          "iterations": 5799,
+          "stop_reason": "walltime_budget",
+          "transitions": 396427264,
+          "optimizer_steps": 387136,
+          "checkpoint_reload_max_error": 0,
+          "finite_updates": true,
+          "elapsed_seconds": 28244.920878086996,
+          "backend": "mujoco_cpp",
+          "reference_fingerprint": "84b22308d19da5ed01b3192baeb5ac66770fd65d188b5ade2d5281b0f6403334",
+          "reference_storage_bytes": 6271378064,
+          "reward_settings": {
+            "self_collision_weight": 1,
+            "profile": "beyondmimic-causal-v1"
+          },
+          "action_settings": {
+            "residual_scale": 0.25,
+            "command_velocity_limit": 6
+          },
+          "task_version": "relative-body-tracking-v3-low-support-v1"
+        },
+        "config": {
+          "stage": "student",
+          "iterations": 31750,
+          "horizon": 32,
+          "epochs": 4,
+          "minibatch": 4096,
+          "learning_rate": 0.00001,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip": 0.2,
+          "bc_weight": 0,
+          "seed": 42,
+          "checkpoint_interval": 25,
+          "evaluation_interval": 0,
+          "initial_std": 0.4,
+          "desired_kl": 0.01,
+          "student_warm_start": true,
+          "hidden_sizes": [
+            512,
+            256
+          ],
+          "matmul_precision": "high",
+          "sampling": "take_transition_balanced",
+          "allow_env_resize": true,
+          "milestone_interval": 250,
+          "max_seconds": 28242.869590759277
+        }
+      },
+      "c_beyondmimic_large": {
+        "phase": "completed",
+        "exit_code": 0,
+        "gpu": "AMD Radeon AI PRO R9700",
+        "latest": {
+          "iteration": 1770,
+          "transitions": 99614720,
+          "optimizer_steps": 97280,
+          "mean_reward": 0.11923011392354965,
+          "episode_ends": 559,
+          "loss": 0.1951710730791092,
+          "policy_loss": -0.024376999586820602,
+          "value_loss": 0.2244962453842163,
+          "bc_loss": 0,
+          "gradient_norm": 3.9486985206604004,
+          "actor_gradient_norm": 14.89333438873291,
+          "approx_kl": 0.027939124032855034,
+          "clip_fraction": 0.3380126953125,
+          "learning_rate": 0.00001,
+          "action_std": 0.3207664489746094,
+          "elapsed_seconds": 25487.727506772004,
+          "rollout_seconds": 6.18154299800517,
+          "update_seconds": 14.032293529977323,
+          "iteration_seconds": 20.213836668001022,
+          "transitions_per_second": 3242.135579514021,
+          "peak_torch_vram_bytes": 9344585728,
+          "falls": 43,
+          "tracking_failures": 210,
+          "completed": 312,
+          "episode_length_steps": 129.9427549194991,
+          "body_rmse_m": 0.0658186823129654,
+          "orientation_error_rad": 0.1561380922794342,
+          "reward_components": {
+            "anchor_height": 0.9932671785354614,
+            "anchor_orientation": 0.8362659215927124,
+            "relative_body_position": 0.9605629444122314,
+            "relative_body_orientation": 0.7066516280174255,
+            "global_body_linear_velocity": 0.812799334526062,
+            "global_body_angular_velocity": 0.6586934924125671
+          },
+          "joint_rmse_rad": 0.14498388767242432,
+          "effort_saturation": 0.000022194602934177965,
+          "self_collision_fraction": 0.0395660400390625,
+          "corruption_assumptions": false,
+          "family_transition_share": {
+            "avoidance": 0.0662689208984375,
+            "bow": 0.055084228515625,
+            "dance": 0.0625,
+            "gesture": 0.0665283203125,
+            "idle_stance": 0.0658416748046875,
+            "jump": 0.05401611328125,
+            "kick": 0.0575408935546875,
+            "kneel": 0.0628204345703125,
+            "object_interaction": 0.0566253662109375,
+            "other": 0.0603485107421875,
+            "punch": 0.0617828369140625,
+            "run": 0.0692291259765625,
+            "squat": 0.0395050048828125,
+            "step_over": 0.04998779296875,
+            "transition": 0.053558349609375,
+            "turn": 0.0565338134765625,
+            "walk": 0.06182861328125
+          },
+          "visible_cuda_memory_used_bytes": 19969081344,
+          "visible_cuda_memory_total_bytes": 34208743424
+        },
+        "report": {
+          "iterations": 1270,
+          "stop_reason": "walltime_budget",
+          "transitions": 99614720,
+          "optimizer_steps": 97280,
+          "checkpoint_reload_max_error": 0,
+          "finite_updates": true,
+          "elapsed_seconds": 25488.747762576008,
+          "backend": "mujoco_cpp",
+          "reference_fingerprint": "84b22308d19da5ed01b3192baeb5ac66770fd65d188b5ade2d5281b0f6403334",
+          "reference_storage_bytes": 6271378064,
+          "reward_settings": {
+            "self_collision_weight": 1,
+            "profile": "beyondmimic-causal-v1"
+          },
+          "action_settings": {
+            "residual_scale": 0.25,
+            "command_velocity_limit": 6
+          },
+          "task_version": "relative-body-tracking-v3-low-support-v1"
+        },
+        "config": {
+          "stage": "student",
+          "iterations": 31750,
+          "horizon": 32,
+          "epochs": 4,
+          "minibatch": 4096,
+          "learning_rate": 0.00001,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "clip": 0.2,
+          "bc_weight": 0,
+          "seed": 42,
+          "checkpoint_interval": 25,
+          "evaluation_interval": 0,
+          "initial_std": 0.4,
+          "desired_kl": 0.01,
+          "student_warm_start": true,
+          "hidden_sizes": [
+            4096,
+            2048
+          ],
+          "matmul_precision": "high",
+          "sampling": "take_transition_balanced",
+          "allow_env_resize": true,
+          "milestone_interval": 250,
+          "max_seconds": 25479.050543308258
+        }
+      }
+    },
+    "comparisons": {
+      "a_legacy_small/checkpoint-000500": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 15,
+          "collision_trials": 25,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.37826634022743166
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 500,
+          "checkpoint_transitions": 16384000,
+          "checkpoint_optimizer_steps": 16000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-000500": {
+        "all": {
+          "trials": 54,
+          "completed": 27,
+          "clean": 12,
+          "collision_trials": 27,
+          "fell": 27,
+          "mean_root_velocity_rmse_m_s": 0.3809403402193267
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 500,
+          "checkpoint_transitions": 16384000,
+          "checkpoint_optimizer_steps": 16000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-000750": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 13,
+          "collision_trials": 27,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.3863258050004803
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 750,
+          "checkpoint_transitions": 32768000,
+          "checkpoint_optimizer_steps": 32000
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 4,
+            "collision_trials": 0,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10495202122567959,
+            "mean_relative_body_rmse_m": 0.02772759234624014
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1166235347528608,
+            "mean_relative_body_rmse_m": 0.0405839525243455
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1287587582364009,
+            "mean_relative_body_rmse_m": 0.07759319683637103
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14719287161845768,
+            "mean_relative_body_rmse_m": 0.08380011121425357
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10462607993535754,
+            "mean_relative_body_rmse_m": 0.022956455196532756
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10162684309785791,
+            "mean_relative_body_rmse_m": 0.021666675487248762
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1398006619462097,
+            "mean_relative_body_rmse_m": 0.06890464988864664
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.16054925620830343,
+            "mean_relative_body_rmse_m": 0.07458025904004517
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.15636587131865085,
+            "mean_relative_body_rmse_m": 0.07137201589759172
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.12494744694292344,
+            "mean_relative_body_rmse_m": 0.05830834487205515
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.14803144541076552,
+            "mean_relative_body_rmse_m": 0.08562745159906164
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.1617979168195857,
+            "mean_relative_body_rmse_m": 0.155380743171716
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.1456934008753883,
+            "mean_relative_body_rmse_m": 0.06165649490722584
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13582047538722508,
+            "mean_relative_body_rmse_m": 0.06543949445198442
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.17504651602780422,
+            "mean_relative_body_rmse_m": 0.12171783508159031
+          }
+        }
+      },
+      "a_legacy_small/checkpoint-000750": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 16,
+          "collision_trials": 22,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.3903942186629146
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 750,
+          "checkpoint_transitions": 32768000,
+          "checkpoint_optimizer_steps": 32000
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 4,
+            "collision_trials": 0,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10161920124906484,
+            "mean_relative_body_rmse_m": 0.028933104263983794
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 2,
+            "collision_trials": 0,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.11999768425593624,
+            "mean_relative_body_rmse_m": 0.044182086538994546
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 1,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.123374926442817,
+            "mean_relative_body_rmse_m": 0.05399573920696156
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 0,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1445450546040995,
+            "mean_relative_body_rmse_m": 0.0697656452351946
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10389614600513702,
+            "mean_relative_body_rmse_m": 0.02237487055136399
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 3,
+            "collision_trials": 0,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10639322532132432,
+            "mean_relative_body_rmse_m": 0.021769183212017405
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14038086527294308,
+            "mean_relative_body_rmse_m": 0.07808218419933088
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.15435714090928904,
+            "mean_relative_body_rmse_m": 0.07922687819743285
+          },
+          "run": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.15250122735304647,
+            "mean_relative_body_rmse_m": 0.08854440297216805
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.12356691077246401,
+            "mean_relative_body_rmse_m": 0.05705854865605318
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.15071468251819528,
+            "mean_relative_body_rmse_m": 0.11646796528360567
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.14911193637062503,
+            "mean_relative_body_rmse_m": 0.13296002448067265
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.14252133973888456,
+            "mean_relative_body_rmse_m": 0.06329553498289577
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13083549539384082,
+            "mean_relative_body_rmse_m": 0.06248540587851655
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.17995531007971532,
+            "mean_relative_body_rmse_m": 0.11198135283974893
+          }
+        }
+      },
+      "b_beyondmimic_small/checkpoint-001000": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 11,
+          "collision_trials": 27,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.3859618068631067
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1000,
+          "checkpoint_transitions": 49152000,
+          "checkpoint_optimizer_steps": 48000
+        },
+        "execution_errors": 0
+      },
+      "c_beyondmimic_large/checkpoint-000500": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 9,
+          "collision_trials": 37,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.3854176431590422
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 500,
+          "checkpoint_transitions": 16384000,
+          "checkpoint_optimizer_steps": 16000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-001250": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 11,
+          "collision_trials": 28,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.3902481888576478
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1250,
+          "checkpoint_transitions": 65536000,
+          "checkpoint_optimizer_steps": 64000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-001500": {
+        "all": {
+          "trials": 54,
+          "completed": 27,
+          "clean": 11,
+          "collision_trials": 27,
+          "fell": 27,
+          "mean_root_velocity_rmse_m_s": 0.39691334357759045
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1500,
+          "checkpoint_transitions": 81920000,
+          "checkpoint_optimizer_steps": 80000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-001000": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 14,
+          "collision_trials": 26,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.37284922731557313
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1000,
+          "checkpoint_transitions": 49152000,
+          "checkpoint_optimizer_steps": 48000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-001750": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 9,
+          "collision_trials": 31,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.3889424969192728
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1750,
+          "checkpoint_transitions": 98304000,
+          "checkpoint_optimizer_steps": 96000
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10763887476140285,
+            "mean_relative_body_rmse_m": 0.02813155726759914
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.12838160928560938,
+            "mean_relative_body_rmse_m": 0.05507435250469151
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.12953725091318052,
+            "mean_relative_body_rmse_m": 0.06363344036755306
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.148292098089312,
+            "mean_relative_body_rmse_m": 0.07830350000047434
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10683726525501515,
+            "mean_relative_body_rmse_m": 0.022428082799851003
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10807575242275408,
+            "mean_relative_body_rmse_m": 0.023775723717336498
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.14658457438800868,
+            "mean_relative_body_rmse_m": 0.08731051465080689
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.16433869548770452,
+            "mean_relative_body_rmse_m": 0.07818146767873814
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.15400758392580774,
+            "mean_relative_body_rmse_m": 0.07106045967641363
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 1,
+            "collision_trials": 3,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13125585627274367,
+            "mean_relative_body_rmse_m": 0.05825248600299639
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.14897340953316987,
+            "mean_relative_body_rmse_m": 0.09840080161997532
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.1632353537916229,
+            "mean_relative_body_rmse_m": 0.15664773450895336
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.1444040971694557,
+            "mean_relative_body_rmse_m": 0.06475312744760847
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13127563788184718,
+            "mean_relative_body_rmse_m": 0.04538364771006961
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.18406735651227263,
+            "mean_relative_body_rmse_m": 0.1156616384515981
+          }
+        }
+      },
+      "b_beyondmimic_small/checkpoint-002000": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 9,
+          "collision_trials": 32,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.3892050684516946
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2000,
+          "checkpoint_transitions": 114688000,
+          "checkpoint_optimizer_steps": 112000
+        },
+        "execution_errors": 0
+      },
+      "c_beyondmimic_large/checkpoint-000750": {
+        "all": {
+          "trials": 54,
+          "completed": 27,
+          "clean": 11,
+          "collision_trials": 30,
+          "fell": 27,
+          "mean_root_velocity_rmse_m_s": 0.4043631972948136
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 750,
+          "checkpoint_transitions": 32768000,
+          "checkpoint_optimizer_steps": 32000
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 4,
+            "collision_trials": 0,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10824264258846382,
+            "mean_relative_body_rmse_m": 0.025824027586161084
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1278419952671413,
+            "mean_relative_body_rmse_m": 0.05345836784886493
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13102594624420177,
+            "mean_relative_body_rmse_m": 0.07324545425494981
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14631546241905125,
+            "mean_relative_body_rmse_m": 0.07970657709710804
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11044907091838142,
+            "mean_relative_body_rmse_m": 0.02045410454126549
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11131678419885972,
+            "mean_relative_body_rmse_m": 0.020006084538898756
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1428029469360651,
+            "mean_relative_body_rmse_m": 0.0724291496930373
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.15805826580888438,
+            "mean_relative_body_rmse_m": 0.07691116016181107
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.15059813031509672,
+            "mean_relative_body_rmse_m": 0.07107939612955753
+          },
+          "other": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 2,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13675229930070681,
+            "mean_relative_body_rmse_m": 0.06476235032622223
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.15774500958121906,
+            "mean_relative_body_rmse_m": 0.1193158588972272
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.1595837153480621,
+            "mean_relative_body_rmse_m": 0.1481542477277013
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 4,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.1448499440463319,
+            "mean_relative_body_rmse_m": 0.06202426480098666
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13658611720213748,
+            "mean_relative_body_rmse_m": 0.07334275659826278
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.18328689757818,
+            "mean_relative_body_rmse_m": 0.12078337792458683
+          }
+        }
+      },
+      "a_legacy_small/checkpoint-001250": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 13,
+          "collision_trials": 27,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.3762162304057991
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1250,
+          "checkpoint_transitions": 65536000,
+          "checkpoint_optimizer_steps": 64000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-002250": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 9,
+          "collision_trials": 32,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.39729759038795676
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2250,
+          "checkpoint_transitions": 131072000,
+          "checkpoint_optimizer_steps": 128000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-002500": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 10,
+          "collision_trials": 31,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.4000592546568403
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2500,
+          "checkpoint_transitions": 147456000,
+          "checkpoint_optimizer_steps": 144000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-002750": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 11,
+          "collision_trials": 30,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.3854383244852843
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2750,
+          "checkpoint_transitions": 163840000,
+          "checkpoint_optimizer_steps": 160000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-001500": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 11,
+          "collision_trials": 28,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.3739318134208059
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1500,
+          "checkpoint_transitions": 81920000,
+          "checkpoint_optimizer_steps": 80000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-003000": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 9,
+          "collision_trials": 35,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.37720325054283316
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 3000,
+          "checkpoint_transitions": 180224000,
+          "checkpoint_optimizer_steps": 176000
+        },
+        "execution_errors": 0
+      },
+      "c_beyondmimic_large/checkpoint-001000": {
+        "all": {
+          "trials": 54,
+          "completed": 27,
+          "clean": 13,
+          "collision_trials": 31,
+          "fell": 27,
+          "mean_root_velocity_rmse_m_s": 0.4018752673772757
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1000,
+          "checkpoint_transitions": 49152000,
+          "checkpoint_optimizer_steps": 48000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-003250": {
+        "all": {
+          "trials": 54,
+          "completed": 31,
+          "clean": 10,
+          "collision_trials": 31,
+          "fell": 23,
+          "mean_root_velocity_rmse_m_s": 0.3814980049566316
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 3250,
+          "checkpoint_transitions": 196608000,
+          "checkpoint_optimizer_steps": 192000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-001750": {
+        "all": {
+          "trials": 54,
+          "completed": 33,
+          "clean": 11,
+          "collision_trials": 34,
+          "fell": 21,
+          "mean_root_velocity_rmse_m_s": 0.3578955101042509
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1750,
+          "checkpoint_transitions": 98304000,
+          "checkpoint_optimizer_steps": 96000
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11041977518630587,
+            "mean_relative_body_rmse_m": 0.0315755277997395
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.12505277548864632,
+            "mean_relative_body_rmse_m": 0.04128340088248744
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 4,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13298289893145382,
+            "mean_relative_body_rmse_m": 0.0578931193406369
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13622706259056283,
+            "mean_relative_body_rmse_m": 0.06513208613633253
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10867923648651259,
+            "mean_relative_body_rmse_m": 0.022499666876330027
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 3,
+            "collision_trials": 0,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11539644438334422,
+            "mean_relative_body_rmse_m": 0.027248771455211807
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1369738390622966,
+            "mean_relative_body_rmse_m": 0.07191613258506327
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.16477590542760528,
+            "mean_relative_body_rmse_m": 0.06806963197043317
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 4,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.1539184110525103,
+            "mean_relative_body_rmse_m": 0.07374547117575928
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.12686385329373046,
+            "mean_relative_body_rmse_m": 0.05891531521900732
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14790108466621482,
+            "mean_relative_body_rmse_m": 0.07290403169524236
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 4,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.1537975324335287,
+            "mean_relative_body_rmse_m": 0.13126074988260455
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.14086344178347385,
+            "mean_relative_body_rmse_m": 0.0624179530017453
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.12452926253168475,
+            "mean_relative_body_rmse_m": 0.043919136698116173
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.18434572225398083,
+            "mean_relative_body_rmse_m": 0.11792944411933035
+          }
+        }
+      },
+      "b_beyondmimic_small/checkpoint-003500": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 10,
+          "collision_trials": 34,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.3842210661544975
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 3500,
+          "checkpoint_transitions": 212992000,
+          "checkpoint_optimizer_steps": 208000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-003750": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 12,
+          "collision_trials": 30,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.39415655297293994
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 3750,
+          "checkpoint_transitions": 229376000,
+          "checkpoint_optimizer_steps": 224000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-002000": {
+        "all": {
+          "trials": 54,
+          "completed": 31,
+          "clean": 11,
+          "collision_trials": 33,
+          "fell": 23,
+          "mean_root_velocity_rmse_m_s": 0.36795782839008
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2000,
+          "checkpoint_transitions": 114688000,
+          "checkpoint_optimizer_steps": 112000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-004000": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 11,
+          "collision_trials": 30,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.3939721191059078
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 4000,
+          "checkpoint_transitions": 245760000,
+          "checkpoint_optimizer_steps": 240000
+        },
+        "execution_errors": 0
+      },
+      "c_beyondmimic_large/checkpoint-001250": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 12,
+          "collision_trials": 29,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.40005360790922073
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1250,
+          "checkpoint_transitions": 65536000,
+          "checkpoint_optimizer_steps": 64000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-004250": {
+        "all": {
+          "trials": 54,
+          "completed": 31,
+          "clean": 10,
+          "collision_trials": 34,
+          "fell": 23,
+          "mean_root_velocity_rmse_m_s": 0.3878268868568803
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 4250,
+          "checkpoint_transitions": 262144000,
+          "checkpoint_optimizer_steps": 256000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-002250": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 12,
+          "collision_trials": 30,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.38714369314487745
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2250,
+          "checkpoint_transitions": 131072000,
+          "checkpoint_optimizer_steps": 128000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-004500": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 12,
+          "collision_trials": 34,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.3864637560364541
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 4500,
+          "checkpoint_transitions": 278528000,
+          "checkpoint_optimizer_steps": 272000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-004750": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 10,
+          "collision_trials": 34,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.395740515126456
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 4750,
+          "checkpoint_transitions": 294912000,
+          "checkpoint_optimizer_steps": 288000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-002500": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 10,
+          "collision_trials": 33,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.39396546681856
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2500,
+          "checkpoint_transitions": 147456000,
+          "checkpoint_optimizer_steps": 144000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-005000": {
+        "all": {
+          "trials": 54,
+          "completed": 29,
+          "clean": 11,
+          "collision_trials": 32,
+          "fell": 25,
+          "mean_root_velocity_rmse_m_s": 0.3815047067911885
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 5000,
+          "checkpoint_transitions": 311296000,
+          "checkpoint_optimizer_steps": 304000
+        },
+        "execution_errors": 0
+      },
+      "c_beyondmimic_large/checkpoint-001500": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 9,
+          "collision_trials": 33,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.40214633096246527
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1500,
+          "checkpoint_transitions": 81920000,
+          "checkpoint_optimizer_steps": 80000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-005250": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 10,
+          "collision_trials": 33,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.389870504232742
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 5250,
+          "checkpoint_transitions": 327680000,
+          "checkpoint_optimizer_steps": 320000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-002750": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 10,
+          "collision_trials": 33,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.3894013317844159
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 2750,
+          "checkpoint_transitions": 163840000,
+          "checkpoint_optimizer_steps": 160000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-005500": {
+        "all": {
+          "trials": 54,
+          "completed": 31,
+          "clean": 10,
+          "collision_trials": 32,
+          "fell": 23,
+          "mean_root_velocity_rmse_m_s": 0.3864943161591718
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 5500,
+          "checkpoint_transitions": 344064000,
+          "checkpoint_optimizer_steps": 336000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-005750": {
+        "all": {
+          "trials": 54,
+          "completed": 34,
+          "clean": 12,
+          "collision_trials": 32,
+          "fell": 20,
+          "mean_root_velocity_rmse_m_s": 0.37892166230306196
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 5750,
+          "checkpoint_transitions": 360448000,
+          "checkpoint_optimizer_steps": 352000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-003000": {
+        "all": {
+          "trials": 54,
+          "completed": 31,
+          "clean": 9,
+          "collision_trials": 33,
+          "fell": 23,
+          "mean_root_velocity_rmse_m_s": 0.3798664563693195
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 3000,
+          "checkpoint_transitions": 180224000,
+          "checkpoint_optimizer_steps": 176000
+        },
+        "execution_errors": 0
+      },
+      "b_beyondmimic_small/checkpoint-006000": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 12,
+          "collision_trials": 31,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.39107779149778604
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 6000,
+          "checkpoint_transitions": 376832000,
+          "checkpoint_optimizer_steps": 368000
+        },
+        "execution_errors": 0
+      },
+      "c_beyondmimic_large/checkpoint-001750": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 13,
+          "collision_trials": 26,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.3977248335315888
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1750,
+          "checkpoint_transitions": 98304000,
+          "checkpoint_optimizer_steps": 96000
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.10555747625731446,
+            "mean_relative_body_rmse_m": 0.02631723988938178
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 2,
+            "collision_trials": 0,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1310870756436039,
+            "mean_relative_body_rmse_m": 0.0534355581980421
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13520799295972966,
+            "mean_relative_body_rmse_m": 0.07409801658353368
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.15503338791287508,
+            "mean_relative_body_rmse_m": 0.10153410982844996
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11954600545544186,
+            "mean_relative_body_rmse_m": 0.02433446592132246
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.12042739620449734,
+            "mean_relative_body_rmse_m": 0.02576755860718445
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14508389927474916,
+            "mean_relative_body_rmse_m": 0.07537133087267545
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 4,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.16425158134404272,
+            "mean_relative_body_rmse_m": 0.07368873971844095
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 0,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.14936223870127552,
+            "mean_relative_body_rmse_m": 0.06492786311048059
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.1411467386715085,
+            "mean_relative_body_rmse_m": 0.05819947635648801
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.1617161325515019,
+            "mean_relative_body_rmse_m": 0.12019567126030611
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.16086213058131554,
+            "mean_relative_body_rmse_m": 0.1340839573882201
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 4,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.15542885568530765,
+            "mean_relative_body_rmse_m": 0.07460064724428354
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13993993455972728,
+            "mean_relative_body_rmse_m": 0.08209178973860742
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.1966518504898911,
+            "mean_relative_body_rmse_m": 0.10704963785464668
+          }
+        }
+      },
+      "b_beyondmimic_small/checkpoint-006250": {
+        "all": {
+          "trials": 54,
+          "completed": 31,
+          "clean": 11,
+          "collision_trials": 32,
+          "fell": 23,
+          "mean_root_velocity_rmse_m_s": 0.3860647363982286
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 6250,
+          "checkpoint_transitions": 393216000,
+          "checkpoint_optimizer_steps": 384000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint-003250": {
+        "all": {
+          "trials": 54,
+          "completed": 33,
+          "clean": 10,
+          "collision_trials": 31,
+          "fell": 21,
+          "mean_root_velocity_rmse_m_s": 0.368663005956913
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 3250,
+          "checkpoint_transitions": 196608000,
+          "checkpoint_optimizer_steps": 192000
+        },
+        "execution_errors": 0
+      },
+      "a_legacy_small/checkpoint": {
+        "all": {
+          "trials": 54,
+          "completed": 30,
+          "clean": 10,
+          "collision_trials": 30,
+          "fell": 24,
+          "mean_root_velocity_rmse_m_s": 0.38159415807847086
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 3265,
+          "checkpoint_transitions": 197591040,
+          "checkpoint_optimizer_steps": 192960
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 4,
+            "collision_trials": 0,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11723412934895543,
+            "mean_relative_body_rmse_m": 0.03400876915841462
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13241991952021026,
+            "mean_relative_body_rmse_m": 0.05451043823820778
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13659713237231755,
+            "mean_relative_body_rmse_m": 0.0655761061837858
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13570547996778873,
+            "mean_relative_body_rmse_m": 0.0629478511939837
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11950292847468703,
+            "mean_relative_body_rmse_m": 0.024908632851502903
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 2,
+            "clean": 2,
+            "collision_trials": 0,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.117118014909807,
+            "mean_relative_body_rmse_m": 0.053210373784075816
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14065886329817234,
+            "mean_relative_body_rmse_m": 0.06780240239448611
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.15917086687212878,
+            "mean_relative_body_rmse_m": 0.0759339890129315
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.145976148287229,
+            "mean_relative_body_rmse_m": 0.06623628300667231
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13273281770213063,
+            "mean_relative_body_rmse_m": 0.05853694686467305
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.15685361627576244,
+            "mean_relative_body_rmse_m": 0.10422758807737496
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 4,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.15561502232896193,
+            "mean_relative_body_rmse_m": 0.13980580826382083
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.14497757588666466,
+            "mean_relative_body_rmse_m": 0.07170735141201527
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13043312248412392,
+            "mean_relative_body_rmse_m": 0.07054257561039814
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.18033182997178765,
+            "mean_relative_body_rmse_m": 0.12003254881652065
+          }
+        }
+      },
+      "b_beyondmimic_small/checkpoint": {
+        "all": {
+          "trials": 54,
+          "completed": 32,
+          "clean": 12,
+          "collision_trials": 31,
+          "fell": 22,
+          "mean_root_velocity_rmse_m_s": 0.37899531314437496
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 6299,
+          "checkpoint_transitions": 396427264,
+          "checkpoint_optimizer_steps": 387136
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 4,
+            "collision_trials": 0,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.1224327683463671,
+            "mean_relative_body_rmse_m": 0.03227957916390188
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 2,
+            "collision_trials": 0,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13875670295112746,
+            "mean_relative_body_rmse_m": 0.06398890169687721
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13825986530313145,
+            "mean_relative_body_rmse_m": 0.07027771457539848
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1639578464069963,
+            "mean_relative_body_rmse_m": 0.10762897949708602
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.12392735869321782,
+            "mean_relative_body_rmse_m": 0.02757309922271081
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.124956735051771,
+            "mean_relative_body_rmse_m": 0.030298555791385146
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.1477674064741133,
+            "mean_relative_body_rmse_m": 0.07483778811570453
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.1701880795430533,
+            "mean_relative_body_rmse_m": 0.08607216744692003
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.15840698129903816,
+            "mean_relative_body_rmse_m": 0.0736100742219331
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.13883144087081734,
+            "mean_relative_body_rmse_m": 0.06298859418286981
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.159013958017589,
+            "mean_relative_body_rmse_m": 0.09269568761824927
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.16777630004472058,
+            "mean_relative_body_rmse_m": 0.14916267063746338
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.16670198059432945,
+            "mean_relative_body_rmse_m": 0.09153515286712256
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.14013854456854702,
+            "mean_relative_body_rmse_m": 0.05883804272875676
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.18497790249797325,
+            "mean_relative_body_rmse_m": 0.12500345546811745
+          }
+        }
+      },
+      "c_beyondmimic_large/checkpoint": {
+        "all": {
+          "trials": 54,
+          "completed": 28,
+          "clean": 13,
+          "collision_trials": 25,
+          "fell": 26,
+          "mean_root_velocity_rmse_m_s": 0.39488223306525033
+        },
+        "training_exposure": {
+          "checkpoint_iteration": 1770,
+          "checkpoint_transitions": 99614720,
+          "checkpoint_optimizer_steps": 97280
+        },
+        "execution_errors": 0,
+        "by_family": {
+          "idle_stance": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.1063653181844272,
+            "mean_relative_body_rmse_m": 0.026574007483040212
+          },
+          "object_interaction": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 2,
+            "collision_trials": 0,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13075756110536751,
+            "mean_relative_body_rmse_m": 0.053394062811295245
+          },
+          "transition": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 1,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.13602180771681072,
+            "mean_relative_body_rmse_m": 0.07401003957552257
+          },
+          "jump": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.15488037982413472,
+            "mean_relative_body_rmse_m": 0.09119973544928925
+          },
+          "gesture": {
+            "trials": 4,
+            "completed": 4,
+            "clean": 3,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.11906206243536305,
+            "mean_relative_body_rmse_m": 0.024052326481637108
+          },
+          "punch": {
+            "trials": 3,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 1,
+            "fell": 0,
+            "mean_joint_rmse_rad": 0.12100248173138854,
+            "mean_relative_body_rmse_m": 0.025776321020768298
+          },
+          "walk": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14330795508080013,
+            "mean_relative_body_rmse_m": 0.07300763526395847
+          },
+          "dance": {
+            "trials": 4,
+            "completed": 2,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.16307948098408317,
+            "mean_relative_body_rmse_m": 0.07102412916340489
+          },
+          "run": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.14937676217276624,
+            "mean_relative_body_rmse_m": 0.060377892444862996
+          },
+          "other": {
+            "trials": 4,
+            "completed": 3,
+            "clean": 2,
+            "collision_trials": 2,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.141445987681026,
+            "mean_relative_body_rmse_m": 0.058774172669163585
+          },
+          "kick": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.1596559606461978,
+            "mean_relative_body_rmse_m": 0.1112727400750978
+          },
+          "turn": {
+            "trials": 4,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 2,
+            "fell": 4,
+            "mean_joint_rmse_rad": 0.16144971530842506,
+            "mean_relative_body_rmse_m": 0.13599679342866422
+          },
+          "squat": {
+            "trials": 4,
+            "completed": 1,
+            "clean": 0,
+            "collision_trials": 3,
+            "fell": 3,
+            "mean_joint_rmse_rad": 0.155300997617912,
+            "mean_relative_body_rmse_m": 0.07493661623410888
+          },
+          "avoidance": {
+            "trials": 2,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 2,
+            "mean_joint_rmse_rad": 0.14271246606654703,
+            "mean_relative_body_rmse_m": 0.08977553603118432
+          },
+          "kneel": {
+            "trials": 1,
+            "completed": 0,
+            "clean": 0,
+            "collision_trials": 1,
+            "fell": 1,
+            "mean_joint_rmse_rad": 0.1994256714670656,
+            "mean_relative_body_rmse_m": 0.10828342141538673
+          }
+        }
+      }
+    }
+  },
+  "code_findings": {
+    "self_collision_cost_per_tick_at_weight1": 0.02,
+    "self_collision_terminates_episode": false,
+    "reference_start_probability": 0.25,
+    "random_interior_start_probability": 0.75,
+    "learning_rate_floor": 0.00001,
+    "large_last100_kl_mean": 0.0281225,
+    "large_last100_kl_above_0_02": 100,
+    "large_last100_lr_at_floor": 100,
+    "overnight_action_settings": {
+      "residual_scale": 0.25,
+      "command_velocity_limit": 6
+    },
+    "pv_profile_initializer_weight_comparison_max_error": 0
+  },
+  "boundaries": [
+    "Single training seed; 54 validation originals across 15 families; 1-4 trials per represented family.",
+    "No bow or step_over validation trial; no admitted crawling training data.",
+    "Clean includes motion fidelity, slip, effort, speed and timing, in addition to uninterrupted completion without self-collision.",
+    "Local and server runs differ in simulator backend and initial learning rate; compare A/B/C at matched exposure for reward/capacity conclusions.",
+    "Local validation monitor marked completed while omitting checkpoint 8000; that saved checkpoint was freshly exported and evaluated during this analysis.",
+    "Proposed experiments are hypotheses, not proven remedies or authorization to start training."
+  ]
+}

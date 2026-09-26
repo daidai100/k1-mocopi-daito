@@ -1,0 +1,43 @@
+{
+  "observed_unix": 1789807308.0517344,
+  "checkpoint": "artifacts/tsubame-103768/student-v10-ppo-long/startup-check/checkpoint.pt",
+  "retained_iteration": 25,
+  "retained_transitions": 6553600,
+  "optimizer_step": [
+    800
+  ],
+  "expected_optimizer_steps": 800,
+  "model_and_optimizer_finite": true,
+  "num_envs": 8192,
+  "source_revision": "a8d8f5855382be83e205820f28bd6a54233ed87d437bf7fdaa16feed0448a0a8",
+  "physics_contract": {
+    "implementation": "mujoco-warp-k1-v1",
+    "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+    "mujoco": "3.10.0",
+    "mujoco_warp": "3.11.0",
+    "warp": "1.17.0",
+    "physics_dt": 0.002,
+    "control_dt": 0.02,
+    "nconmax": 128,
+    "njmax": 1024,
+    "epa_horizon": 96,
+    "integrator": 3,
+    "solver": 2,
+    "solver_iterations": 100,
+    "solver_tolerance": 1e-06,
+    "overflow_check": "latched across episode resets; fatal before PPO update or validation report",
+    "derived_state": "kinematics refreshed after integration",
+    "physics_steps_per_graph": 1,
+    "conditional_graphs": false,
+    "self_contact_measurement": "any non-ground penetration during the control interval"
+  },
+  "action_settings": {
+    "residual_scale": 0.25,
+    "command_velocity_limit": 6.0
+  },
+  "reward_settings": {
+    "self_collision_weight": 1.0
+  },
+  "optimizer_restored_from_preflight": true,
+  "behaviorally_accepted": false
+}

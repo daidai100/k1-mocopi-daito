@@ -1,0 +1,142 @@
+{
+  "panel": "manifests/panel-v7-human-validation-v2.json",
+  "student_checkpoint": "artifacts/tsubame-103768/student-v1/checkpoint-000050.pt",
+  "trials": 180,
+  "independent_recordings": 36,
+  "baseline": {
+    "completed": 26,
+    "tracking_passed": 14,
+    "reasons": {
+      "finished": 26,
+      "fall": 123,
+      "offline_reference_rejected": 31
+    }
+  },
+  "student": {
+    "completed": 63,
+    "tracking_passed": 18,
+    "reasons": {
+      "finished": 63,
+      "fall": 86,
+      "offline_reference_rejected": 31
+    }
+  },
+  "families": {
+    "bow": {
+      "trials": 20,
+      "baseline_completed": 10,
+      "student_completed": 10,
+      "baseline_passed": 0,
+      "student_passed": 0
+    },
+    "dance": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "student_completed": 0,
+      "baseline_passed": 0,
+      "student_passed": 0
+    },
+    "kick": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "student_completed": 0,
+      "baseline_passed": 0,
+      "student_passed": 0
+    },
+    "punch": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "student_completed": 0,
+      "baseline_passed": 0,
+      "student_passed": 0
+    },
+    "reach": {
+      "trials": 20,
+      "baseline_completed": 10,
+      "student_completed": 18,
+      "baseline_passed": 8,
+      "student_passed": 12
+    },
+    "run": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "student_completed": 7,
+      "baseline_passed": 0,
+      "student_passed": 0
+    },
+    "stance": {
+      "trials": 20,
+      "baseline_completed": 6,
+      "student_completed": 6,
+      "baseline_passed": 6,
+      "student_passed": 6
+    },
+    "turn": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "student_completed": 12,
+      "baseline_passed": 0,
+      "student_passed": 0
+    },
+    "walk": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "student_completed": 10,
+      "baseline_passed": 0,
+      "student_passed": 0
+    }
+  },
+  "scope": "Matched development validation; not a passing controller; all offline rejects retained",
+  "completed_gained": [
+    "reach-003-2de374e7fe4fc997",
+    "reach-004-7d75d587ec989ce9",
+    "reach-006-8e093d58b397cca2",
+    "reach-007-943d335851d5d1f9",
+    "reach-013-2de374e7fe4fc997",
+    "reach-014-7d75d587ec989ce9",
+    "reach-016-8e093d58b397cca2",
+    "reach-017-943d335851d5d1f9",
+    "run-003-b426a6f4aaec4f2a",
+    "run-007-b426a6f4aaec4f2a",
+    "run-011-b426a6f4aaec4f2a",
+    "run-012-0543d0ac075bd464",
+    "run-015-b426a6f4aaec4f2a",
+    "run-016-0543d0ac075bd464",
+    "run-019-b426a6f4aaec4f2a",
+    "turn-001-15c9cc432f892b36",
+    "turn-002-166675236ce5d7c7",
+    "turn-003-258ff9a270163e41",
+    "turn-004-35d31fc526b5ae9c",
+    "turn-006-988af43db7b862ce",
+    "turn-009-15c9cc432f892b36",
+    "turn-010-166675236ce5d7c7",
+    "turn-011-258ff9a270163e41",
+    "turn-012-35d31fc526b5ae9c",
+    "turn-017-15c9cc432f892b36",
+    "turn-018-166675236ce5d7c7",
+    "turn-019-258ff9a270163e41",
+    "walk-000-08b24af6b1e4b259",
+    "walk-003-65d7290bf752a267",
+    "walk-005-fc1c3081cad83d70",
+    "walk-006-08b24af6b1e4b259",
+    "walk-009-65d7290bf752a267",
+    "walk-011-fc1c3081cad83d70",
+    "walk-012-08b24af6b1e4b259",
+    "walk-015-65d7290bf752a267",
+    "walk-017-fc1c3081cad83d70",
+    "walk-018-08b24af6b1e4b259"
+  ],
+  "completed_lost": [],
+  "tracking_passed_gained": [
+    "reach-003-2de374e7fe4fc997",
+    "reach-004-7d75d587ec989ce9",
+    "reach-006-8e093d58b397cca2",
+    "reach-013-2de374e7fe4fc997",
+    "reach-014-7d75d587ec989ce9",
+    "reach-016-8e093d58b397cca2"
+  ],
+  "tracking_passed_lost": [
+    "reach-008-bfbe9bc1cec0ed5f",
+    "reach-018-bfbe9bc1cec0ed5f"
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "rows": [
+    {
+      "id": "b23c64a3d4c7e3a5",
+      "family": "run",
+      "old_accepted": false,
+      "old_rejects": {
+        "self_collision": 1
+      },
+      "old_slip_p95": 1.8293361439190874,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 1
+      },
+      "new_slip_p95": 0.42632377845596214,
+      "projection": 0.06620456657952849
+    },
+    {
+      "id": "6ff24774f6fff946",
+      "family": "run",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 2.306349485503771,
+      "new_accepted": false,
+      "new_rejects": {
+        "ground_penetration_or_root_height": 8
+      },
+      "new_slip_p95": 1.535197826028679,
+      "projection": 0.04726784714650672
+    },
+    {
+      "id": "0d686a93c33f8002",
+      "family": "run",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.047609396667461744,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 1
+      },
+      "new_slip_p95": 0.5880549559034316,
+      "projection": 0.04217503916016681
+    },
+    {
+      "id": "f051b92184ae690c",
+      "family": "run",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 1.3565877964074227,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.5913701540115024,
+      "projection": 0.07305774512668187
+    },
+    {
+      "id": "382ff39b9b1d0d3a",
+      "family": "walk",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.2789656860827203,
+      "new_accepted": false,
+      "new_rejects": {
+        "ground_penetration_or_root_height": 2
+      },
+      "new_slip_p95": 1.604039353305216,
+      "projection": 0.0850234908719526
+    },
+    {
+      "id": "a46a8255107e14e8",
+      "family": "walk",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.919733812497366,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 2.840819697932902,
+      "projection": 0.07133676456723731
+    },
+    {
+      "id": "98512b1041839bed",
+      "family": "walk",
+      "old_accepted": false,
+      "old_rejects": {
+        "self_collision": 36
+      },
+      "old_slip_p95": 0.02057380926437768,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 44
+      },
+      "new_slip_p95": 0.009487936885362364,
+      "projection": 0.0680877516570373
+    },
+    {
+      "id": "264a56305fd377d7",
+      "family": "walk",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.22090437125720677,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 1.4467552998220485,
+      "projection": 0.05926568581948572
+    },
+    {
+      "id": "287feb82e2934af4",
+      "family": "turn",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.5249920035395741,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 1.676200465870278,
+      "projection": 0.11886917124374445
+    },
+    {
+      "id": "f9fd6f84f4bf2555",
+      "family": "turn",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.7396231968565284,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 1.7123080181410149,
+      "projection": 0.11034279322162036
+    },
+    {
+      "id": "5301a2566765a3dd",
+      "family": "turn",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.449693208894817,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 1.805408593511287,
+      "projection": 0.1667806831052299
+    },
+    {
+      "id": "6e0e07633abcb4a8",
+      "family": "turn",
+      "old_accepted": false,
+      "old_rejects": {
+        "self_collision": 3
+      },
+      "old_slip_p95": 0.6974685042115706,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 6
+      },
+      "new_slip_p95": 2.505811285144724,
+      "projection": 0.09301548083529527
+    },
+    {
+      "id": "c1146b08861215f5",
+      "family": "jump",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.019255922275016477,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.003713130338548294,
+      "projection": 0.025789446161000366
+    },
+    {
+      "id": "4e43644e396e84ad",
+      "family": "jump",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 1.929735136717839,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.006199190353965437,
+      "projection": 0.05722790718336545
+    },
+    {
+      "id": "9855bfb97be13ed6",
+      "family": "jump",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 2.6799777055917793,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 2.1657543550983975,
+      "projection": 0.09246292969513002
+    },
+    {
+      "id": "debb681325946985",
+      "family": "jump",
+      "old_accepted": false,
+      "old_rejects": {
+        "self_collision": 14
+      },
+      "old_slip_p95": 0.4970686089854359,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 2
+      },
+      "new_slip_p95": 0.817724879821043,
+      "projection": 0.036164540646295235
+    },
+    {
+      "id": "dae437faa7edc9a8",
+      "family": "reach",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.00041623291627953184,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 1.3959620926230164e-05,
+      "projection": 0.004002023498034592
+    },
+    {
+      "id": "e70f84225978b25f",
+      "family": "reach",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.0004961929143436094,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 1.8557630072633125e-05,
+      "projection": 0.007313508239648497
+    },
+    {
+      "id": "997c8e3b3adcaad8",
+      "family": "reach",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.03215958628968178,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.08372512656765764,
+      "projection": 0.04997707246356014
+    },
+    {
+      "id": "71deb8c12ec3625a",
+      "family": "reach",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.003879397543113651,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.00047858097125944645,
+      "projection": 0.015919843291016172
+    },
+    {
+      "id": "139f75760218a757",
+      "family": "bow",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.05271238383691594,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.0006767004696988891,
+      "projection": 0.03749059590133667
+    },
+    {
+      "id": "3561b82f2f925f50",
+      "family": "bow",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.12733788400427887,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 2.784028713838929,
+      "projection": 0.10251449828343284
+    },
+    {
+      "id": "1317392727d219be",
+      "family": "bow",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.025648335037900948,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.0005489509315666197,
+      "projection": 0.03239970740806362
+    },
+    {
+      "id": "7ea44b2bc58ff019",
+      "family": "bow",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.004264166207008456,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 4.2731717455539946e-05,
+      "projection": 0.022566141605896733
+    },
+    {
+      "id": "33217a08de7c08a5",
+      "family": "dance",
+      "old_accepted": false,
+      "old_rejects": {
+        "self_collision": 5
+      },
+      "old_slip_p95": 0.2984921401293815,
+      "new_accepted": false,
+      "new_rejects": {
+        "ground_penetration_or_root_height": 2,
+        "self_collision": 6
+      },
+      "new_slip_p95": 0.8108675177089746,
+      "projection": 0.09991984911688964
+    },
+    {
+      "id": "e886cdd7505e46ce",
+      "family": "dance",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.0035702592801472896,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.00011398016021547448,
+      "projection": 0.03950677001921778
+    },
+    {
+      "id": "f758098a9476a58d",
+      "family": "dance",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.024368472003782993,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 2
+      },
+      "new_slip_p95": 0.011785369490266444,
+      "projection": 0.04441842384880948
+    },
+    {
+      "id": "b25d89d9a047e295",
+      "family": "dance",
+      "old_accepted": false,
+      "old_rejects": {
+        "self_collision": 19
+      },
+      "old_slip_p95": 0.03450001507126137,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 1
+      },
+      "new_slip_p95": 0.0637319153995226,
+      "projection": 0.037527202654452245
+    },
+    {
+      "id": "de4c6f924e8d370e",
+      "family": "stance",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.0007563488127301166,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 9.350555205922737e-06,
+      "projection": 0.03458246560688046
+    },
+    {
+      "id": "acf6df08be27e0bd",
+      "family": "stance",
+      "old_accepted": false,
+      "old_rejects": {
+        "ground_penetration_or_root_height": 3,
+        "landmark_error": 5
+      },
+      "old_slip_p95": 1.1178261418587698,
+      "new_accepted": false,
+      "new_rejects": {
+        "landmark_error": 5,
+        "ground_penetration_or_root_height": 2
+      },
+      "new_slip_p95": 0.6083154339231002,
+      "projection": 0.04935086311828923
+    },
+    {
+      "id": "aae03bb4e10b3223",
+      "family": "stance",
+      "old_accepted": true,
+      "old_rejects": {},
+      "old_slip_p95": 0.8192282912013271,
+      "new_accepted": true,
+      "new_rejects": {},
+      "new_slip_p95": 0.0025670299491996696,
+      "projection": 0.037896249836204085
+    },
+    {
+      "id": "27d7bc8fd6beabf3",
+      "family": "stance",
+      "old_accepted": false,
+      "old_rejects": {
+        "self_collision": 10,
+        "landmark_error": 27
+      },
+      "old_slip_p95": 2.3489507311969033,
+      "new_accepted": false,
+      "new_rejects": {
+        "self_collision": 24,
+        "landmark_error": 22
+      },
+      "new_slip_p95": 1.3181295199971212,
+      "projection": 0.24337101309932974
+    }
+  ],
+  "accepted_old": 24,
+  "accepted_new": 20
+}

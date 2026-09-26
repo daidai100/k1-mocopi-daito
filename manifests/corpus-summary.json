@@ -1,0 +1,93 @@
+{
+  "updated_utc": "2026-09-18T11:16:18.649612+00:00",
+  "download_and_numerical_validation_complete": true,
+  "target_hours": 20,
+  "validated_human_motion_hours": 19.729853071405557,
+  "approximately_20_hours_acquired": true,
+  "valid_human_tracks": 7065,
+  "pending_datasets": [],
+  "failed_files": 0,
+  "datasets": {
+    "bandai_namco": {
+      "dataset": "bandai_namco",
+      "checked_utc": "2026-09-18T10:59:02.215382+00:00",
+      "motion_files": 3077,
+      "expected_motion_files": 3077,
+      "file_count_matches_upstream": true,
+      "valid_human_tracks": 3077,
+      "unique_source_tracks": 3077,
+      "frames": 421596,
+      "hours": 3.9036627630000007,
+      "fps_values": {
+        "30.0": 3077
+      },
+      "subsets": {
+        "dataset-1": 175,
+        "dataset-2": 2902
+      },
+      "failed_files": 0,
+      "errors": [],
+      "inventory": "manifests/bandai_namco.motions.jsonl",
+      "validation_scope": "Finite values, dimensions, skeleton headers, timing, annotations and provenance; physical retargeting and control not yet evaluated"
+    },
+    "lafan1": {
+      "dataset": "lafan1",
+      "checked_utc": "2026-09-18T10:59:02.775689+00:00",
+      "motion_files": 77,
+      "expected_motion_files": 77,
+      "file_count_matches_upstream": true,
+      "valid_human_tracks": 77,
+      "unique_source_tracks": 77,
+      "frames": 496672,
+      "hours": 4.598768826666666,
+      "fps_values": {
+        "30.0003": 77
+      },
+      "subsets": {
+        "LAFAN1": 77
+      },
+      "failed_files": 0,
+      "errors": [],
+      "inventory": "manifests/lafan1.motions.jsonl",
+      "validation_scope": "Finite values, dimensions, skeleton headers, timing, annotations and provenance; physical retargeting and control not yet evaluated"
+    },
+    "kit_motion_language": {
+      "dataset": "kit_motion_language",
+      "checked_utc": "2026-09-18T11:16:18.642107+00:00",
+      "motion_files": 3911,
+      "expected_motion_files": 3911,
+      "file_count_matches_upstream": true,
+      "valid_human_tracks": 3911,
+      "unique_source_tracks": 3911,
+      "frames": 4148202,
+      "hours": 11.227421481738888,
+      "fps_values": {
+        "100.0": 2200,
+        "120.0048": 313,
+        "120.048": 821,
+        "120.4819": 103,
+        "120.0264": 4,
+        "59.988": 419,
+        "59.8802": 15,
+        "59.9988": 27,
+        "59.9934": 2,
+        "120.0005": 4,
+        "120.0": 1,
+        "59.9999": 2
+      },
+      "subsets": {
+        "kit": 2094,
+        "ekut": 106,
+        "cmu": 1711
+      },
+      "failed_files": 0,
+      "errors": [],
+      "inventory": "manifests/kit_motion_language.motions.jsonl",
+      "validation_scope": "Finite values, dimensions, skeleton headers, timing, annotations and provenance; physical retargeting and control not yet evaluated"
+    }
+  },
+  "duration_basis": "Sum of original human track frame durations; C3D/MMM representations counted once; no augmentation or mirrored copies added. Distinct people recorded simultaneously are separate human tracks, not independent studio sessions.",
+  "retargeted_to_k1": false,
+  "controller_trained": false,
+  "training_readiness": "Raw human source data only. Skeleton/axis normalization, contact/environment screening, split design, retargeting and physics validation are still required."
+}

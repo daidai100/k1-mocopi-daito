@@ -1,0 +1,12 @@
+{
+  "updated_utc": "2026-09-18T11:15:56.848360+00:00",
+  "state": "download_complete",
+  "pending": [],
+  "archive_bytes": {
+    "lafan1.zip": 144051503,
+    "bandai-namco-74ead3ba.zip": 314441604,
+    "kit-motion-language-2017-06-22.zip": 4159992190
+  },
+  "range_chunk_bytes": 3983724926,
+  "errors": []
+}

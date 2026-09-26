@@ -1,0 +1,12 @@
+{
+  "previous_source": "314012449f62021395941092ae6e4e49c930702b4307fa8d979b1c16b65b9560",
+  "recovery_source": "4a35d828978e30e78f32b9c548d82c4bb6de60ca99503d936f38d9f4a6a471b8",
+  "changed": [
+    "training_validation.py",
+    "warp_compat.py",
+    "warp_physics.py"
+  ],
+  "change": "Scoped rigid convex EPA scratch capacity; evaluation inherits capacity. PPO, rewards, action transform, and data unchanged.",
+  "qualification": "reports/warp-epa96-preflight.json",
+  "upstream_bitmask_reference": "https://github.com/google-deepmind/mujoco_warp/pull/1529"
+}

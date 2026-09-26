@@ -1,0 +1,8 @@
+{
+  "residual_scale": 0.25,
+  "command_velocity_limit": 6.0,
+  "target_velocity_scale": 0.25,
+  "upper_body_residual_scale": 0.1,
+  "imu_reference_rate_scale": 0.0,
+  "arm_collision_clearance": 0.025
+}

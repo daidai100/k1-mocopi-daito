@@ -1,0 +1,16 @@
+{
+  "dataset_id": "bandai_namco",
+  "status": "downloaded_and_extracted",
+  "completed_utc": "2026-09-18T10:54:47.946473+00:00",
+  "source_url": "https://codeload.github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset/zip/74ead3ba1ae4696404e6086233779f60de8bf9ef",
+  "revision": "74ead3ba1ae4696404e6086233779f60de8bf9ef",
+  "archive": "data/archives/bandai-namco-74ead3ba.zip",
+  "archive_bytes": 314441604,
+  "archive_sha256": "c6b056c89403787c4feacd5616b7656f091269a38da6686a9f771119250986d8",
+  "upstream_sha256_verified": false,
+  "raw_directory": "data/raw/bandai_namco",
+  "extracted_files": 6166,
+  "extracted_bytes": 560524887,
+  "extracted_entry_crc_verified": true,
+  "motion_quality_validation": "pending inventory validation"
+}

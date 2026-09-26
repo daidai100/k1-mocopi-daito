@@ -1,0 +1,37 @@
+{
+  "scope": "Kinematic diagnostics computed from commanded reference states at control ticks. Backward second differences amplify held-frame steps and are not measured forces or an inverse-dynamics feasibility test. COM projection outside support does not prove dynamic infeasibility.",
+  "trials": [
+    {
+      "trial": "kick-000-f6b5231fa879401d",
+      "reference_com_vertical_velocity_abs_p95": 0.23665884693283448,
+      "reference_com_vertical_acceleration_abs_p95": 3.269087894389698,
+      "reference_com_horizontal_speed_p95": 0.21911304676254362,
+      "reference_single_support_com_to_ankle_xy_m_p95": 0.10714826988705949,
+      "flight_reference_ticks": 1
+    },
+    {
+      "trial": "punch-000-afc73fa7c971035b",
+      "reference_com_vertical_velocity_abs_p95": 0.1150715022361054,
+      "reference_com_vertical_acceleration_abs_p95": 6.105344115548977,
+      "reference_com_horizontal_speed_p95": 0.3482307218735791,
+      "reference_single_support_com_to_ankle_xy_m_p95": 0.1761518224360767,
+      "flight_reference_ticks": 0
+    },
+    {
+      "trial": "run-005-5e718423d3cd485a",
+      "reference_com_vertical_velocity_abs_p95": 1.7713882389141524,
+      "reference_com_vertical_acceleration_abs_p95": 105.27586810235911,
+      "reference_com_horizontal_speed_p95": 3.398108948784806,
+      "reference_single_support_com_to_ankle_xy_m_p95": 0.1804693725167434,
+      "flight_reference_ticks": 32
+    },
+    {
+      "trial": "walk-016-aa615d09f4175d27",
+      "reference_com_vertical_velocity_abs_p95": 0.6525194558709639,
+      "reference_com_vertical_acceleration_abs_p95": 47.9944036356925,
+      "reference_com_horizontal_speed_p95": 2.203724525987001,
+      "reference_single_support_com_to_ankle_xy_m_p95": 0.2561578683828111,
+      "flight_reference_ticks": 17
+    }
+  ]
+}

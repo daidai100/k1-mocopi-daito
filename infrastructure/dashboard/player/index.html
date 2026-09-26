@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuJoCo rollout playback</title>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <a href="/">K1 MLflow</a>
+        <h1 id="title">MuJoCo rollout</h1>
+      </div>
+      <div id="status">Loading engine…</div>
+    </header>
+    <section id="viewer"></section>
+    <footer>
+      <button id="play" type="button" disabled>Play</button>
+      <button id="restart" type="button" disabled>Restart</button>
+      <a id="request-similar" class="button-link" href="/vis/">Request rollout</a>
+      <input id="timeline" aria-label="Rollout timestep" type="range" min="0" max="0" value="0" disabled>
+      <output id="step">0 / 0</output>
+      <label>Speed
+        <select id="speed">
+          <option value="0.25">0.25×</option>
+          <option value="0.5">0.5×</option>
+          <option value="1" selected>1×</option>
+          <option value="2">2×</option>
+          <option value="4">4×</option>
+        </select>
+      </label>
+    </footer>
+    <section id="metrics" aria-label="Rollout metrics">
+      <div class="metrics-heading">
+        <h2>Rollout telemetry</h2>
+        <span id="metrics-frame"></span>
+      </div>
+      <div id="metrics-status">Loading root trajectory telemetry…</div>
+      <div id="charts"></div>
+    </section>
+    <section id="rollout-metadata" aria-label="Rollout metadata">
+      <div class="metadata-heading"><h2>Rollout metadata</h2><span>manifest JSON</span></div>
+      <div id="metadata-content">No rollout metadata attached.</div>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

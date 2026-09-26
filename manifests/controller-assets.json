@@ -1,0 +1,23 @@
+{
+  "booster_assets": {
+    "url": "https://github.com/BoosterRobotics/booster_assets.git",
+    "revision": "3c2dfa99e09beddf092e0d6521dbbcec7e7903ed",
+    "path": "third_party/booster_assets",
+    "license": "BSD-3-Clause"
+  },
+  "booster_train": {
+    "url": "https://github.com/BoosterRobotics/booster_train.git",
+    "revision": "651b7a53f2ffaf2d5629d0604d065cc385e29c6b",
+    "path": "third_party/booster_train",
+    "license": "See upstream LICENSE"
+  },
+  "legacy": {
+    "source": "/home/vivi/Downloads/k1.zip",
+    "path": "data/legacy",
+    "receipt": "data/legacy/recovery-receipt.json",
+    "rosbag_receipt": "data/legacy/rosbag-recovery-receipt.json",
+    "archive_complete": false,
+    "recovered_members_crc_verified": true,
+    "raw_mocopi_available": false
+  }
+}

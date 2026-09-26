@@ -1,0 +1,708 @@
+
+
+
+
+<!-- use HTML5 -->
+<!DOCTYPE html>
+<head>
+	<!-- Fonts -->
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+	<!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+	<!-- Style definitions -->
+	<link rel="stylesheet" type="text/css" href="/static/templates/kit2/frameworks/Normalize/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/static/templates/kit2/frameworks/FontAwesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="/static/templates/kit2/frameworks/MDB/css/bootstrap.min.css" />
+	<!--<link rel="stylesheet" type="text/css" href="/static/templates/kit2/frameworks/SemanticUI/semantic.min.css" />-->
+	<link rel="stylesheet" type="text/css" href="/static/templates/kit2/frameworks/MDB/css/addons/datatables.min.css" />
+	<link rel="stylesheet" type="text/css" href="/static/templates/kit2/frameworks/MDB/css/mdb.min.css" />
+	<link rel="stylesheet" type="text/css" href="/static/templates/kit2/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/static/templates/kit2/mmm_viewer/css/base.css">
+
+	<!-- Javascript libraries. For additional definitions see end of page -->
+	<script src="/static/templates/kit2/frameworks/MDB/js/jquery-3.4.1.min.js"></script>
+	<script src="/static/templates/kit2/frameworks/MDB/js/popper.min.js"></script>
+	<script src="/static/templates/kit2/frameworks/MDB/js/bootstrap.min.js"></script>
+	<!--<script src="/static/templates/kit2/frameworks/SemanticUI/semantic.min.js"></script>-->
+
+	<!-- specific content -->
+	<link rel="shortcut icon" type="image/x-icon" href="/static/templates/kit2/images/favicon.ico" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Christian Mandery and Fabian Peller-Konrad" />
+	<title>KIT Whole-Body Human Motion Database
+</title>
+</head>
+<body>
+
+	<!-- Include Header -->
+	
+
+<header id="primary-header">
+  <div id="header-top-navigation" class="header-navigation" style="min-height:50px">
+
+      <!-- Main menu -->
+      <nav class="navbar navbar-expand-lg navbar-dark z-depth-0">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav1">
+              <ul class="navbar-nav mr-auto">
+                
+                  
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Database</a>
+
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                    <a class="dropdown-item level_2_not_selected" href="/list/motions/">Motions</a>
+                  
+                
+                  
+                    <a class="dropdown-item level_2_not_selected" href="/list/datasets/">Datasets</a>
+                  
+                
+                  
+                    <a class="dropdown-item level_2_not_selected" href="/list/subjects/">Subjects</a>
+                  
+                
+                  
+                    <a class="dropdown-item level_2_not_selected" href="/list/objects/">Objects</a>
+                  
+                
+                  
+                    <a class="dropdown-item level_2_not_selected" href="/list/projects/">Projects</a>
+                  
+                
+</div>
+
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="/marker_set/">Marker Set</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="/anthropometric_table/">Anthropometric Table</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="/statistics/">Statistics</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="/publications/">Publications</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="nav-item active">
+                        <a class="nav-link" href="/faq/">FAQ</a>
+                      </li>
+                    
+                  
+                
+                  
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                      </li>
+                    
+                  
+                
+
+              </ul>
+
+              <!-- User menu -->
+              <div>
+                <ul class="navbar-nav mr-auto">
+                  
+                  <li class="nav-item align-middle"><a class="nav-link" href="/register/"><i class="fa fa-book" aria-hidden="true"></i> Register</a></li>
+                  <li class="nav-item align-middle"><a class="nav-link" href="/login/?next=/faq/"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  
+
+
+                  <!--<li class="nav-item align-middle">
+                    # TODO add shopping cart here
+                  </li>-->
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  <div id="header-content" class="container-fluid">
+
+    <div id="header-logo-and-sitename">
+      <div id="header-logo">
+        <a href="/"><img src="/static/logos/kit_logo_inverse.png" alt="KIT" /></a>
+      </div>
+      <div id="header-sitename">
+        <h1>| KIT Whole-Body Human Motion Database
+</h1>
+      </div>
+    </div>
+
+
+    <div id="header-bottom-navigation" class="header-navigation">
+
+      <!-- Bottom menu -->
+      <nav class="float-left">
+        <ul>
+          
+            
+            
+          
+            
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+	<main id="main" class="container">
+			<div class="col-xs-12">
+				
+	
+
+
+<section class="section extra-margins" id="questions">
+	<h1 class="section-heading">Frequently Asked Questions</h1>
+
+	<p class="section-description">
+		This page contains answers to some frequently (or less frequently) asked questions about the Motion Database.
+		If your question is not answered here, please <a href="/contact/">contact us</a>.
+	</p>
+
+	<ul class="list-group">
+		<li class="list-group-item"><a class="lightlink" href="#data_types"><i class="fa fa-fw fa-question-circle"></i> Which types of data are offered by the KIT Whole-Body Human Motion Database
+?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#register"><i class="fa fa-fw fa-question-circle"></i> Do I need an account to access the KIT Whole-Body Human Motion Database
+? How can I register?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#access_download"><i class="fa fa-fw fa-question-circle"></i> How to download content from the KIT Whole-Body Human Motion Database
+?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#access_methods"><i class="fa fa-fw fa-question-circle"></i> How to access the KIT Whole-Body Human Motion Database
+ programatically?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#access_control"><i class="fa fa-fw fa-question-circle"></i> How is access to the content in the KIT Whole-Body Human Motion Database
+ controlled?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#cite"><i class="fa fa-fw fa-question-circle"></i> How can I cite the KIT Whole-Body Human Motion Database
+?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#mmm"><i class="fa fa-fw fa-question-circle"></i> What is the Master Motor Map (MMM) framework and where can I find its code and documentation?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#mdt"><i class="fa fa-fw fa-question-circle"></i> What is the Motion Description Tree?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#mdt_search"><i class="fa fa-fw fa-question-circle"></i> How does the &quot;Advanced MDT search term&quot; filter work?</a></li>
+		<li class="list-group-item"><a class="lightlink" href="#video_previews"><i class="fa fa-fw fa-question-circle"></i> Why do some videos not offer a preview video on the webpage?</a></li>
+		
+			<li class="list-group-item"><a class="lightlink" href="#cmu"><i class="fa fa-fw fa-question-circle"></i> How is data from the CMU Graphics Lab Motion Capture Database contained within the KIT Whole-Body Human Motion Database?</a></li>
+		
+	</ul>
+</section>
+
+<section class="section" id="answers">
+
+	<h4 class="mt-5" id="data_types">Which types of data are offered by the KIT Whole-Body Human Motion Database
+?</h3>
+	<div class="answer-block">
+		<p>
+			The major types of data available in the database are:
+		</p>
+		<ul>
+			<li>
+				<span style="font-weight: bold">MMM Motions (*.xml)</span>:
+				<p>Human motion represented on the Master Motor Map (MMM) reference model as a well-specified kinematic and dynamic model of the human body.
+				For every timestep (100 Hz), root location and rotation and joint angle values of the reference model are given.
+				Additionally, these files also include the motion of environmental objects.
+				For more information about the MMM framework, see the corresponding question below.</p>
+			</li>
+			<li>
+				<span style="font-weight: bold">C3D Files (*.c3d)</span>:
+				<p>Raw recordings (100 Hz) from the Vicon motion capture in the industry standard <a href="https://www.c3d.org/">file format C3D</a>.</p>
+			</li>
+			<li>
+				<span style="font-weight: bold">Video Files (*.avi)</span>:
+				<p>Complementary video recordings for the captured motions.
+				Publicly available videos are anonymized, e.g. have their audio track removed and subjects' faces blurred.</p>
+			</li>
+			<li>
+				<span style="font-weight: bold">Information about Subjects</span>:
+				<p>Body height and weight, segment lengths according to the <a href="/anthropometric_table/">Anthropometric Data Table</a>, gender, age.</p>
+			</li>
+			<li>
+				<span style="font-weight: bold">Information about Objects</span>:
+				<p>3D models (Blender and Simox), images.</p>
+			</li>
+		</ul>
+		<p>
+			Depending on the type of motion capture experiment, there may be additional data available, e.g. measurements from force sensors or an inertial measurement unit.
+		</p>
+	</div>
+
+	<h4 class="mt-5" id="register">Do I need an account to access the KIT Whole-Body Human Motion Database
+? How can I register?</h3>
+	<div class="answer-block">
+	<p>
+		Downloading files from the KIT Whole-Body Human Motion Database
+ requires a account.
+		Registration is free and only takes a few seconds.
+		Browsing the database content to see what is available, including previews of video recordings, is possible without a login (some data may be hidden for privacy protection, e.g. non-anonymized video recordings, subject names).
+	</p>
+	<p>
+		To create an account, fill out the <a href="/register/">registration form</a>.
+		To change your account information like mail address and password, you can edit your <a href="/user_profile/">user profile</a> after login.
+	</p>
+	<p><b>Please note that we disabled the login via the H²T project management system (Redmine)</a>. If you need access please create a local account via this webpage or <a href="/contact/">contact us</a>.
+	</b></p>
+	</div>
+
+	<h4 class="mt-5" id="access_download">How to download content from the KIT Whole-Body Human Motion Database
+?</h3>
+	<div class="answer-block">
+	<p>
+		All content related to specific <a href="https://motion-database.humanoids.kit.edu/list/motions/">motions</a> or 
+		<a href="https://motion-database.humanoids.kit.edu/list/objects/">objects</a> can be downloaded individually via our available web interface.
+	</p>
+	<p>
+		We are currently working on providing exports of parts of the KIT Whole-Body Human Motion Database including relevant meta information. 
+	</p>
+	<p>
+		We also provide downloads for individual datasets:
+	</p>
+	<p>
+		<ul>
+			<li><a href="https://motion-annotation.humanoids.kit.edu/dataset/">The KIT Motion-Language Dataset (external website)</a>,</li>
+			<li><a href="https://motion-database.humanoids.kit.edu/details/datasets/3521">The Extended KIT Bimanual Manipulation Dataset</a>,</li>
+			<li>or <a href="https://motion-database.humanoids.kit.edu/list/datasets/">other datasets</a></li>
+		</ul>
+	</p>
+	<p>
+		Please note to <a href="#cite">cite</a> the respective dataset.
+	</p>
+	<p>
+		If you need any assistance, feel free to <a href="/contact/">contact us</a>.
+	</p>
+	</div>
+
+	<h4 class="mt-5" id="access_methods">How to access the KIT Whole-Body Human Motion Database
+ programatically?</h3>
+	<div class="answer-block">
+	<p>
+		Please note that due to changes to our web server, the API is deactivated for an indefinite period of time.
+		You can find out how to download content from our database under <a href="#access_download">the previous point.</a>
+	</p>
+	</div>
+
+	<h4 class="mt-5" id="access_control">How is access to the content in the KIT Whole-Body Human Motion Database
+ controlled?</h3>
+	<div class="answer-block">
+	<p>
+		In general, we aim to make content freely available to the whole scientific community.
+		Some files however need be protected for certain reasons, e.g. video recordings of motions that are not yet anonymized and allow the identification of human subjects.
+	</p>
+	<p>
+		On a more technical level, users in the KIT Whole-Body Human Motion Database
+ are associated with a number of user groups.
+		These groups determine which protected files the user can access and which database entries they can edit.
+		When logged in, you can see the groups your account is assigned to on the <a href="/user_profile/">user profile page</a>.
+	</p>
+	<p>
+		For every file uploaded to a database entry (motion, subject or object), the uploader can select whether the file is public or protected.
+		For every database entry, groups can be selected for two different levels of access:
+	</p>
+	<ul>
+		<li>
+			<span style="font-weight: bold">Read protected groups</span>:
+			<p>Users in one of the &quot;read protected groups&quot; can download files marked as protected associated with this database entry.</p>
+		</li>
+		<li>
+			<span style="font-weight: bold">Write groups</span>:
+			<p>Users in one of the &quot;write groups&quot; can alter the database entry, which means they can edit the entry (including the assigned groups), delete it and upload/edit/delete associated files.
+			Additionally, the users in one of the &quot;write groups&quot; can also download protected files (like for &quot;read protected groups&quot;).</p>
+		</li>
+	</ul>
+	<p>
+		In addition to the group-based permission system, the user that created a database entry always retains full read and write access.
+	</p>
+	</div>
+
+	<h4 class="mt-5" id="cite">How can I cite the KIT Whole-Body Human Motion Database
+?</h3>
+	<div class="answer-block">
+	<p>
+		If you are using the KIT Whole-Body Human Motion Database
+ in work that leads to a publication, we kindly ask you to cite one of the following papers:
+	</p>
+<p>If you are using specific motions corresponding to a <a href="https://motion-database.humanoids.kit.edu/list/datasets/">published dataset</a>, please cite the corresponding dataset, such as the KIT Bimanual Manipulation Dataset:</p>
+	<pre>
+		<code>
+@INPROCEEDINGS {KrebsMeixner2021,
+author = {Franziska Krebs and Andre Meixner and Isabel Patzer and Tamim Asfour},
+title = {The {KIT} {B}imanual {M}anipulation {D}ataset},
+booktitle = {IEEE/RAS International Conference on Humanoid Robots (Humanoids)},
+pages = {499--506},
+year = {2021}
+}
+		</code>
+	</pre>
+	[<a href="/static/paper/KrebsMeixner2021.bib">KrebsMeixner2021 - BibTeX</a>]
+	[<a href="https://h2t.iar.kit.edu/pdf/KrebsMeixner2021.pdf">KrebsMeixner2021 - PDF</a>]
+	
+	<p></br>Otherwise, if you are using the motion database as a whole or other motion recordings not corresponding to a published dataset, please cite one of the following citations:</p>
+	<pre>
+		<code>
+@ARTICLE {Mandery2016b,
+author = {Christian Mandery and \"Omer Terlemez and Martin Do and Nikolaus Vahrenkamp and Tamim Asfour},
+title = {Unifying Representations and Large-Scale Whole-Body Motion Databases for Studying Human Motion},
+pages = {796--809},
+volume ={32},
+number ={4},
+journal ={IEEE Transactions on Robotics},
+year = {2016},
+}
+
+@INPROCEEDINGS {Mandery2015a,
+author = {Christian Mandery and \"Omer Terlemez and Martin Do and Nikolaus Vahrenkamp and Tamim Asfour},
+title = {The KIT Whole-Body Human Motion Database},
+booktitle = {International Conference on Advanced Robotics (ICAR)},
+pages = {329--336},
+year = {2015},
+}
+		</code>
+	</pre>
+	[<a href="/static/paper/Mandery2016b.bib">Mandery2016b - BibTeX</a>]
+	[<a href="/static/paper/Mandery2016b.pdf">Mandery2016b - PDF</a>]
+	<br />
+	[<a href="/static/paper/Mandery2015a.bib">Mandery2015a - BibTeX</a>]
+	[<a href="/static/paper/Mandery2015a.pdf">Mandery2015a - PDF</a>]
+
+	</div>
+
+	<h4 class="mt-5" id="mmm">What is the Master Motor Map (MMM) framework and where can I find its code and documentation?</h3>
+	<div class="answer-block">
+	<p>
+		Master Motor Map (MMM) is a conceptual framework for perception, visualization, reproduction and recognition of human motion in order to decouple motion capture data from further post-processing tasks, such as execution on a humanoid robot.
+		The MMM framework has been developed in our lab at KIT and is <a href="https://git.h2t.iar.kit.edu/sw/mmm/">freely available on GitLab</a> under the GNU General Public License.
+	</p>
+	<p>
+		In addition to raw C3D motion capture data (which can be used without MMM by all kinds of motion processing tools), the KIT Whole-Body Human Motion Database
+ also provides the motions converted to the MMM reference model in the XML-based MMM motion format.
+	</p>
+	<p>
+		MMM consists of two main C++ packages:
+	</p>
+	<ul>
+		<li><p><a href="https://git.h2t.iar.kit.edu/sw/mmm/core">MMMCore</a> contains the data structures, kinematic models and code for reading and writing motion data.</p></li>
+		<li><p><a href="https://git.h2t.iar.kit.edu/sw/mmm/tools">MMMTools</a> contains tools for visualization, reproduction and recognition for motion, e.g. the converters used to transfer raw motions from MoCap to the MMM reference model.</p></li>
+	</ul>
+	<p>
+		The documentation can be found at <a href="http://mmm.humanoids.kit.edu/">mmm.humanoids.kit.edu</a> and a discussion of the core ideas and principles of MMM is provided in the following paper:
+	</p>
+	<p>
+		In addition, we also provide <a href="https://git.h2t.iar.kit.edu/sw/mmm/mmmpy/lite">mmmpy lite</a>, a light-weight library in Python to load and visualize motions in the MMM data format.
+	</p>
+			<pre>
+		<code>
+@inproceedings{Terlemez2014a,
+author = {Oemer Terlemez and Stefan Ulbrich and Christian Mandery and Martin Do and Nikolaus Vahrenkamp and Tamim Asfour},
+title = {Master Motor Map (MMM) -
+			Framework and Toolkit for Capturing, Representing, and Reproducing Human Motion on Humanoid Robots},
+booktitle = {IEEE/RAS International Conference on Humanoid Robots (Humanoids)},
+pages = {894--901},
+year = {2014}
+}
+		</code>
+	</pre>
+	[<a href="/static/paper/Terlemez2014.bib">Terlemez2014a - BibTeX</a>]
+	[<a href="/static/paper/Terlemez2014.pdf">Terlemez2014a - PDF</a>]
+
+	</div>
+
+	<h4 class="mt-5" id="mdt">What is the Motion Description Tree?</h3>
+	<div class="answer-block">
+	<p>
+		The Motion Description Tree (MDT) consists of a hierarchical structure of tags that can be used to describe human motion.
+		Every motion entry in the database can be assigned one or more of the &quot;motion descriptions&quot; available in the MDT.
+	</p>
+	<p>
+		When filtering for a motion description using the filter panel in the right bar, only motions are considered that are contained in one of the selected subtrees.
+		Additionally, the &quot;Advanced MDT search term&quot; filter can be used to construct more complex search queries (see next question).
+	</p>
+	</div>
+
+	<h4 class="mt-5" id="mdt_search">How does the &quot;Advanced MDT search term&quot; filter work?</h3>
+	<div class="answer-block">
+	<p>
+		The &quot;Advanced MDT search term&quot; filter allows to filter for motions based on their classification in the Motion Description Tree.
+		If a search term is provided, the simpler &quot;Motion descriptions&quot; filter is ignored.
+	</p>
+	<p>
+		Search terms consist of queries chained by using the logical operators &quot;x AND y&quot;, &quot;x OR y&quot; and &quot;NOT(x)&quot;.
+		These search terms can be of an (almost) arbitrary length.
+	</p>
+	<p>
+		Examples:
+	</p>
+	<ul>
+		<li><p>&quot;run AND forward&quot;: Returns all running motions directed forwards.</p></li>
+		<li><p>&quot;carry AND drop&quot;: Returns all motions where an object is carried and dropped (a specific object may also be included in the search by using the object filter).</p></li>
+		<li><p>&quot;run OR (walk AND NOT(slow))&quot;: Returns all motions where the subject is running or walking, but not slow.</p></li>
+	</ul>
+	<p>
+		Motion description tags that contain spaces must be written within quotation marks when used within a search term (e.g.: &quot;hand stand&quot;).
+	</p>
+	</div>
+
+	<h4 class="mt-5" id="video_previews">Why do some videos not offer a preview video on the webpage?</h3>
+	<div class="answer-block">
+	<p>
+		Video previews that are shown on the motion list and the motion detail page use the excellent <a href="http://en.wikipedia.org/wiki/VP8">VP8 codec</a> from Google in a <a href="http://en.wikipedia.org/wiki/WebM">WebM</a> container.
+		They should work in any major browser (Firefox, Chrome/Chromium, Opera) except Internet Explorer.
+	</p>
+	<p>
+		Preview videos share the same access restrictions as their corresponding (full-resolution) video files.
+		Therefore, if a video file is not accessible to you (e.g. because you are not logged in and the video is not yet properly anonymized), you will neither be able to see its preview.
+		Additionally, preview videos are generated once daily, which is why they are not shown for very recently uploaded videos.
+		Of course, you can still download a video file to inspect its content in this case.
+	</p>
+	</div>
+
+	
+		<h4 class="mt-5" id="cmu">How is data from the CMU Graphics Lab Motion Capture Database contained within the KIT Whole-Body Human Motion Database?</h3>
+		<div class="answer-block">
+		<p>
+			Starting in June 2016, we have integrated motion recordings from the <a href="http://mocap.cs.cmu.edu/">CMU Graphics Lab Motion Capture Database</a> as a subset into our motion database.
+			These motions can be found by filtering the list of motions for the &quot;Carnegie Mellon University (CMU)&quot; institution.
+			The motion recordings are provided as C3D files and as the corresponding MMM representations (<a href="#data_types">see above</a>).
+		</p>
+		<p>
+			Some important limitations and differences to the rest of our data should be noted when working with this data though:
+		</p>
+		<ul>
+			<li><p>The CMU data does not contain information about objects with which the human subject is interacting.</p></li>
+			<li><p>The CMU recordings use a slightly different marker set, which is described <a href="http://mocap.cs.cmu.edu/markerPlacementGuide.pdf">here</a> (in contrast to our KIT reference marker set <a href="/marker_set/">here</a>).</p></li>
+			<li><p>Data imported from the CMU database is not labeled according to our Motion Description Tree and only contains the imported free text description (this may change someday).</p></li>
+			<li><p>The date of the recordings is not available and has been set arbitrarily to 2010-01-01 in our database.</p></li>
+			<li><p>The CMU data does not provide information about subjects. Therefore, for every motion experiment, a separate &quot;dummy subject&quot; has been created in our database. There &quot;dummy subjects&quot; do not contain anthropometric measurements and the subject height is estimated only based on the head markers in the initial pose.</p></li>
+			<li><p>Some recordings miss some of the defined markers in the CMU marker set and have been skipped.</p></li>
+		</ul>
+		<p>
+			Acknowledgments: Motion data from the CMU Graphics Lab Motion Capture Database was obtained from mocap.cs.cmu.edu.
+			This database was created with funding from NSF EIA-0196217.
+		</p>
+	</div>
+	
+
+	</section>
+
+
+
+			</div>
+	</main>
+
+	<!-- Include Footer -->
+	
+
+<footer class="page-footer font-small pt-4" id="primary-footer">
+
+  <div class="container text-center text-left">
+
+    <div class="row text-center text-left mt-3 pb-3">
+      <div class="col-md-12">
+	  <h3>Institute for Anthropomatics and Robotics<br /><strong>High Performance Humanoid Technologies (H²T)</strong></h3>
+	  <hr />
+      </div>
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <div class="w-100">
+            <a href="/"><img class="w-50" src="/static/logos/kit_logo_inverse.png" alt="KIT" /></a>
+          </div>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!--<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-left">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Our Projects</h6>
+            <p>
+              <a target="_blank" href="https://koibot-motion-database.humanoids.kit.edu">Koroibot</a>
+        </p>
+        <p>
+              <a target="_blank" href="https://www.walk-man.eu/">Walk-Man</a>
+        </p>
+        <p>
+              <a target="_blank" href="http://www.xperience.org/">Xperience</a>
+        </p>
+        <p>
+              <a target="_blank" href="http://www.secondhands.eu">Second Hands</a>
+        </p>
+        <p>
+              <a target="_blank" href="http://www.timestorm.eu">TimeStorm</a>
+        </p>
+        <p>
+              <a target="_blank" href="http://www.i-support-project.eu/">iSupport</a>
+        </p>
+        <p>
+              <a target="_blank" href="http://www.paco-plus.org/">Pacoplus</a>
+        </p>
+      </div>-->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-3 text-left">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Additional Links</h6>
+            <!--<p>
+                <a target="_blank" href="https://motion-annotation.humanoids.kit.edu/">Motion Annotation Tool</a>
+            </p>-->
+            <p>
+                <a target="_blank" href="https://www.informatik.kit.edu/1323.php">Institute for Anthropomatics and Robotics</a>
+            </p>
+            <p>
+                <a target="_blank" href="https://h2t.iar.kit.edu/index.php">High Performance Humanoid Technologies (H²T)</a>
+            </p>
+            <p>
+                <a target="_blank" href="http://h2t.iar.kit.edu/impressum.php">Imprint</a>
+            </p>
+      <p>
+              <a target="_blank" href="http://h2t.iar.kit.edu/datenschutz.php">Data protection</a>
+        </p>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-left">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+            Prof. Dr.-Ing. Tamim Asfour
+        </p>
+        <p>
+            Adenauerring 2 (Building 50.20) <br/>
+            76131, Karlsruhe, Germany
+        </p>
+        <p>
+            <a href="mailto:motiondatabase@lists.kit.edu">motiondatabase@lists.kit.edu</a>
+        </p>
+        <p>
+            <a href="tel:++4972160848277">+49 (0)721 608-48277</a>
+        </p>
+        <p>
+            <a href="tel:+4972160843547">+49 (0)721 608-43547</a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+    <div>
+    <hr />
+    <p id="footer-copyright-info" class="text-center">
+      © 2020 Copyright: KIT - High Performance Humanoid Technologies (H²T), Chair Prof. Dr-Ing. Tamim Asfour
+    </p>
+  </div>
+
+</footer>
+
+
+</body>
+
+<!-- Javascript definitions -->
+<script src="/static/templates/kit2/frameworks/MDB/js/addons/datatables.min.js"></script>
+<script src="/static/templates/kit2/frameworks/MDB/js/mdb.min.js"></script>
+
+
+<script>
+	// Datatables Initialization
+  $(document).ready(function () {
+		var datatables = $('.datatable');
+		datatables.DataTable();
+		datatables.each(function() {
+			var id = $(this).attr('id');
+			$('#'+id+'_wrapper').find('label').each(function () {
+				$(this).parent().append($(this).children());
+			});
+			$('#'+id+'_wrapper .dataTables_filter').find('input').each(function () {
+				$('input').attr("placeholder", "Search");
+				$('input').removeClass('form-control-sm');
+			});
+			$('#'+id+'_wrapper .dataTables_length').addClass('d-flex flex-row');
+			$('#'+id+'_wrapper .dataTables_filter').addClass('md-form');
+			$('#'+id+'_wrapper select').removeClass(
+				'custom-select custom-select-sm form-control form-control-sm');
+			$('#'+id+'_wrapper select').addClass('mdb-select');
+			$('#'+id+'_wrapper .dataTables_filter').find('label').remove();
+		});
+  });
+</script>
+
+<script>
+	// Material Select Initialization
+	$(document).ready(function() {
+	 	$('.mdb-select').material_select();
+ 	});
+</script>
+
+<!--<script>
+	// Ui Search Initialization
+	$(document).ready(function() {
+		$('.ui.search')
+			.search({
+				source: search_content
+			})
+		;
+	});
+</script>-->
+
+<!-- Google Analytics API -->
+<!-- TODO -->
+</html>

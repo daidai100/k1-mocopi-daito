@@ -1,0 +1,73 @@
+{
+  "version": "standing-student-bouts-v2",
+  "controller": "artifacts/student-warp-v10-ppo-control/actor.pt",
+  "policy_sha256": "1fac24b93fe1adcbe43f2ce51c0497fee4b3b1115c0b7bf101cef33daca899af",
+  "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+  "source_kind": "synthetic_neutral_robot_reference",
+  "bouts": [
+    {
+      "bout": 1,
+      "minimum_root_height_m": 0.5384133821910722,
+      "minimum_upright_cos": 0.9996888330910338,
+      "seconds_requested": 300.0,
+      "seconds_completed": 300.0,
+      "completed": true
+    },
+    {
+      "bout": 2,
+      "minimum_root_height_m": 0.5398729681558109,
+      "minimum_upright_cos": 0.9984460728404689,
+      "seconds_requested": 300.0,
+      "seconds_completed": 300.0,
+      "completed": true
+    }
+  ],
+  "falls": 0,
+  "failure_reason": null,
+  "resets_after_initialization": 0,
+  "max_target_step_rad": 0.12000000000001876,
+  "max_target_step_limit_fraction": 1.0000000000001563,
+  "action_settings": {
+    "residual_scale": 0.25,
+    "command_velocity_limit": 6.0
+  },
+  "command_p95_ms": 0.6545173000631621,
+  "joint_rmse_rad": 0.09923946378319463,
+  "relative_body_rmse_m": 0.04418925688599487,
+  "effort_saturation_fraction": 0.0,
+  "contact_point_slip_mean_m_s": 0.0005399077792430276,
+  "self_collision_frames": 0,
+  "events": [
+    {
+      "time": 0.0,
+      "mode": "ready",
+      "reason": "calibrated; explicit arm required"
+    },
+    {
+      "time": 0.0,
+      "mode": "active",
+      "reason": "operator armed"
+    },
+    {
+      "time": 300.0000000000171,
+      "mode": "paused",
+      "reason": "operator paused"
+    },
+    {
+      "time": 301.0000000000162,
+      "mode": "ready",
+      "reason": "calibrated; explicit arm required"
+    },
+    {
+      "time": 301.0000000000162,
+      "mode": "active",
+      "reason": "operator armed"
+    }
+  ],
+  "five_minute_duration_met": true,
+  "behaviorally_accepted": false,
+  "live_mocopi_tested": false,
+  "hardware_verified": false,
+  "scope": "Standing, supported pause, calibration and rearming with the selected actor. No human retargeting or dynamic-tracking acceptance.",
+  "passed": true
+}

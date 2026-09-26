@@ -1,0 +1,10 @@
+{
+  "source_kind": "synthetic_joint_reference",
+  "controller": "zero_residual_with_imu_prior",
+  "seconds_requested": 20.0,
+  "seconds_completed": 20.0,
+  "minimum_root_height_m": 0.5418041257692778,
+  "max_joint_rmse_rad": 0.0185618923506256,
+  "fell": false,
+  "hardware_tested": false
+}

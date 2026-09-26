@@ -1,0 +1,60 @@
+{
+  "backend": "isaaclab",
+  "headless": true,
+  "rendering": false,
+  "stage": "physics_complete_learning_not_tested",
+  "passed": true,
+  "physics_passed": true,
+  "learning_passed": false,
+  "versions": {
+    "torch": "2.7.0+cu128",
+    "isaacsim": "5.1.0.0",
+    "isaaclab": "0.54.0"
+  },
+  "python": "/home/vivi/miniconda3/envs/isaaclab/bin/python",
+  "startup_seconds": 2.7105433530000482,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "gpu_memory_bytes": 16575954944,
+  "compatibility_adapter": "k1_motion.isaac_compat.make_robot_cfg",
+  "joints": [
+    "aahead_yaw_joint",
+    "aaleft_shoulder_pitch_joint",
+    "aaright_shoulder_pitch_joint",
+    "left_hip_pitch_joint",
+    "right_hip_pitch_joint",
+    "aahead_pitch_joint",
+    "left_shoulder_roll_joint",
+    "right_shoulder_roll_joint",
+    "left_hip_roll_joint",
+    "right_hip_roll_joint",
+    "left_elbow_pitch_joint",
+    "right_elbow_pitch_joint",
+    "left_hip_yaw_joint",
+    "right_hip_yaw_joint",
+    "left_elbow_yaw_joint",
+    "right_elbow_yaw_joint",
+    "left_knee_pitch_joint",
+    "right_knee_pitch_joint",
+    "left_ankle_pitch_joint",
+    "right_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_ankle_roll_joint"
+  ],
+  "final_root_state": [
+    [
+      -0.0033419239334762096,
+      0.002224009484052658,
+      0.5403302907943726,
+      0.9998506307601929,
+      0.00435528764501214,
+      -0.016700875014066696,
+      0.0008921157568693161,
+      0.022068746387958527,
+      0.04076584801077843,
+      0.008702486753463745,
+      0.02248351462185383,
+      0.12812280654907227,
+      -0.0007580259116366506
+    ]
+  ]
+}

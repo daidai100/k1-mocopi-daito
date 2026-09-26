@@ -1,0 +1,326 @@
+{
+  "timestamp": "2026-09-20T14:21:12.352600+09:00",
+  "original_motions": 92,
+  "discovery_originals": 30,
+  "confirmation_originals": 62,
+  "capture_groups_disjoint": true,
+  "variants": [
+    {
+      "variant": "baseline",
+      "trials": 30,
+      "frame_gate_passes": 8,
+      "self_clear_with_interpolation": 6
+    },
+    {
+      "variant": "iterations36",
+      "trials": 30,
+      "frame_gate_passes": 8,
+      "self_clear_with_interpolation": 6
+    },
+    {
+      "variant": "soft20",
+      "trials": 30,
+      "frame_gate_passes": 11,
+      "self_clear_with_interpolation": 5
+    },
+    {
+      "variant": "precontact20",
+      "trials": 30,
+      "frame_gate_passes": 6,
+      "self_clear_with_interpolation": 4
+    },
+    {
+      "variant": "hard_precontact",
+      "trials": 30,
+      "frame_gate_passes": 16,
+      "self_clear_with_interpolation": 1
+    },
+    {
+      "variant": "clock_only",
+      "trials": 30,
+      "frame_gate_passes": 9,
+      "self_clear_with_interpolation": 5
+    },
+    {
+      "variant": "safe_soft20",
+      "trials": 30,
+      "frame_gate_passes": 24,
+      "self_clear_with_interpolation": 17
+    },
+    {
+      "variant": "safe_hard",
+      "trials": 30,
+      "frame_gate_passes": 10,
+      "self_clear_with_interpolation": 7
+    },
+    {
+      "variant": "command_safe",
+      "trials": 30,
+      "frame_gate_passes": 24,
+      "self_clear_with_interpolation": 24
+    },
+    {
+      "variant": "command_safe24",
+      "trials": 30,
+      "frame_gate_passes": 24,
+      "self_clear_with_interpolation": 24
+    },
+    {
+      "variant": "command_ground32",
+      "trials": 30,
+      "frame_gate_passes": 24,
+      "self_clear_with_interpolation": 24
+    }
+  ],
+  "frozen_decision": {
+    "frozen_at": "2026-09-20T14:01:19.117718+09:00",
+    "selected_variant": "command_safe",
+    "variant_sha256": "ba88a7489751bb6083d394c6e4f2db1974a9190c05b4a55e858ab44da0e71257",
+    "selection_reason": "All 24 usable discovery clips clear self collision at 500 Hz, 8 previously rejected clips also pass floor/slip/speed screening; 24 iterations did not add passing clips.",
+    "thresholds": {
+      "self_penetration_tolerance_m": 0.0001,
+      "max_ground_penetration_m": 0.005,
+      "stance_slip_p95_m_s": 0.2,
+      "command_speed_rad_s": 6.0,
+      "max_mean_landmark_error_increase_m": 0.015,
+      "max_joint_rms_change_rad": 0.2,
+      "minimum_motion_amplitude_ratio": 0.7,
+      "maximum_motion_amplitude_ratio": 1.3
+    },
+    "scope": "Kinematic recovery only; dynamic qualification and training admission remain false."
+  },
+  "panels": {
+    "discovery": {
+      "selected_originals": 30,
+      "previously_accepted_controls": 8,
+      "collision_rejected_originals": 16,
+      "accepted_after_all_recovery_gates": 11,
+      "recovered_originals": 8,
+      "accepted_controls_passing_stricter_gates": 3,
+      "source_errors_retained": 6,
+      "remaining_failure_reasons": {
+        "ground_penetration_on_command_path": 13,
+        "stance_foot_slip": 3,
+        "motion_joint_distortion": 1
+      },
+      "recoveries_by_family": {
+        "walk": 1,
+        "run": 1,
+        "turn": 2,
+        "jump": 1,
+        "dance": 1,
+        "gesture": 2
+      }
+    },
+    "confirmation": {
+      "selected_originals": 62,
+      "previously_accepted_controls": 19,
+      "collision_rejected_originals": 37,
+      "accepted_after_all_recovery_gates": 21,
+      "recovered_originals": 13,
+      "accepted_controls_passing_stricter_gates": 8,
+      "source_errors_retained": 6,
+      "remaining_failure_reasons": {
+        "ground_penetration_on_command_path": 33,
+        "stance_foot_slip": 9,
+        "motion_joint_distortion": 6,
+        "retarget_invalid_ticks": 4,
+        "human_tracking_regression": 1
+      },
+      "recoveries_by_family": {
+        "run": 1,
+        "turn": 1,
+        "gesture": 2,
+        "squat": 1,
+        "idle_stance": 1,
+        "transition": 1,
+        "kick": 1,
+        "bow": 2,
+        "sit_or_kneel": 1,
+        "fall_or_recovery": 1,
+        "other": 1
+      }
+    }
+  },
+  "native_pd_diagnostic": [
+    {
+      "id": "47fc8f5e23c30fbd5d34",
+      "family": "walk",
+      "panel": "discovery",
+      "scope": "Native PD stress diagnostic; no learned controller and no admission claim",
+      "baseline": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 9,
+        "simulated_seconds": 0.9800000000000008,
+        "joint_rmse_rad": 0.0511817022096225,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      },
+      "command_safe": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 0,
+        "simulated_seconds": 0.9800000000000008,
+        "joint_rmse_rad": 0.050981857240640256,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      }
+    },
+    {
+      "id": "24e8bc656ad32a92286b",
+      "family": "run",
+      "panel": "discovery",
+      "scope": "Native PD stress diagnostic; no learned controller and no admission claim",
+      "baseline": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 8,
+        "simulated_seconds": 0.7600000000000006,
+        "joint_rmse_rad": 0.12830304904851608,
+        "mean_effort_saturation_fraction": 0.00023923444976076553,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      },
+      "command_safe": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 2,
+        "simulated_seconds": 0.6400000000000005,
+        "joint_rmse_rad": 0.12101906651698442,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      }
+    },
+    {
+      "id": "1be5208dc571d87c3899",
+      "family": "jump",
+      "panel": "discovery",
+      "scope": "Native PD stress diagnostic; no learned controller and no admission claim",
+      "baseline": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 0,
+        "simulated_seconds": 1.1800000000000008,
+        "joint_rmse_rad": 0.05918052102668453,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      },
+      "command_safe": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 0,
+        "simulated_seconds": 1.1800000000000008,
+        "joint_rmse_rad": 0.05920746002601754,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      }
+    },
+    {
+      "id": "35281350b51b4270d9d7",
+      "family": "gesture",
+      "panel": "discovery",
+      "scope": "Native PD stress diagnostic; no learned controller and no admission claim",
+      "baseline": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 25,
+        "simulated_seconds": 1.1000000000000008,
+        "joint_rmse_rad": 0.058246245439297954,
+        "mean_effort_saturation_fraction": 8.264462809917355e-05,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      },
+      "command_safe": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 1,
+        "simulated_seconds": 1.0600000000000007,
+        "joint_rmse_rad": 0.05593021632265381,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      }
+    },
+    {
+      "id": "26c294dd9439ba6264bc",
+      "family": "turn",
+      "panel": "confirmation",
+      "scope": "Native PD stress diagnostic; no learned controller and no admission claim",
+      "baseline": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 2,
+        "simulated_seconds": 1.1000000000000008,
+        "joint_rmse_rad": 0.09951399157413397,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      },
+      "command_safe": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 0,
+        "simulated_seconds": 1.0400000000000007,
+        "joint_rmse_rad": 0.10064842598440701,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      }
+    },
+    {
+      "id": "17edbe5924459d59a97b",
+      "family": "dance",
+      "panel": "discovery",
+      "scope": "Native PD stress diagnostic; no learned controller and no admission claim",
+      "baseline": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 0,
+        "simulated_seconds": 1.1600000000000008,
+        "joint_rmse_rad": 0.050766883917652696,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      },
+      "command_safe": {
+        "completed": false,
+        "fell": true,
+        "self_collision_control_ticks": 0,
+        "simulated_seconds": 1.1600000000000008,
+        "joint_rmse_rad": 0.050715728314915644,
+        "mean_effort_saturation_fraction": 0.0,
+        "resets_during_trial": 0,
+        "physics_qualified": false
+      }
+    }
+  ],
+  "physics_qualified": false,
+  "training_eligible_motions": 0,
+  "tests": {
+    "full_suite_passed": 51,
+    "warnings": 18,
+    "focused_after_final_changes_passed": 9,
+    "lint_passed": true
+  },
+  "desktop_canary": {
+    "expected": 29,
+    "processed": 29,
+    "accepted": 10,
+    "recovered_originals": 7,
+    "production_payloads_matching_frozen_experiment": 23,
+    "maximum_joint_difference": 0.0
+  },
+  "server_canary": {
+    "expected": 12,
+    "processed": 12,
+    "accepted": 6,
+    "recovered_originals": 2,
+    "operational_errors": 0
+  }
+}

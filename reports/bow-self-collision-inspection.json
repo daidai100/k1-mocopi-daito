@@ -1,0 +1,46 @@
+{
+  "scope": "Kinematic collision inspection of completed baseline bow; not a physics replay",
+  "reference-v8": [],
+  "baseline-replay": [
+    {
+      "frame": 215,
+      "penetration_m": 5.582400635536997e-06,
+      "bodies": [
+        "trunk",
+        "right_elbow_yaw_link"
+      ]
+    },
+    {
+      "frame": 215,
+      "penetration_m": 5.582400635536997e-06,
+      "bodies": [
+        "trunk",
+        "right_elbow_yaw_link"
+      ]
+    },
+    {
+      "frame": 218,
+      "penetration_m": 2.6014906775042107e-06,
+      "bodies": [
+        "trunk",
+        "right_elbow_yaw_link"
+      ]
+    },
+    {
+      "frame": 219,
+      "penetration_m": 3.8915785530886605e-08,
+      "bodies": [
+        "trunk",
+        "right_elbow_yaw_link"
+      ]
+    },
+    {
+      "frame": 227,
+      "penetration_m": 8.930272239709707e-06,
+      "bodies": [
+        "trunk",
+        "right_elbow_yaw_link"
+      ]
+    }
+  ]
+}

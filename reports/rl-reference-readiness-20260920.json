@@ -1,0 +1,294 @@
+{
+  "as_of": "2026-09-20T16:13:24.138376+09:00",
+  "references": {
+    "version": "k1-retargeted-rl-reference-v1",
+    "source_rows": 6750,
+    "pool_originals": 1860,
+    "pool_split_counts": {
+      "test": 170,
+      "train": 1492,
+      "validation": 198
+    },
+    "pool_train_hours": 2.804811111111111,
+    "pilot_split_counts": {
+      "train": 64,
+      "validation": 9
+    },
+    "pilot_train_families": {
+      "transition": 16,
+      "squat": 5,
+      "turn": 6,
+      "gesture": 9,
+      "idle_stance": 9,
+      "jump": 2,
+      "object_interaction": 16,
+      "dance": 1
+    },
+    "pilot_validation_families": {
+      "turn": 1,
+      "other": 1,
+      "punch": 1,
+      "object_interaction": 4,
+      "transition": 1,
+      "jump": 1
+    },
+    "pilot_train_hours": 0.17852777777777779,
+    "pool_manifest_sha256": "3106b41965877d504e2f80e328b753a33ffc6b8902229ccfa440435c731735d1",
+    "retargeted_reference_training_ready": true,
+    "qualified_robot_demonstration_hours": 0,
+    "controller_success_used_for_selection": false,
+    "hardware_verified": false,
+    "rejection_reason_counts": {
+      "retargeting_audit_failed": 2848,
+      "missing_reference": 2848,
+      "mirror_deferred": 3374,
+      "related_held_out_take": 194,
+      "invalid_reference_ticks": 337,
+      "contact_task_not_configured": 138,
+      "external_support_not_configured": 128
+    }
+  },
+  "full_pool_preflight": {
+    "finite_updates": true,
+    "transitions": 40960,
+    "checkpoint_reload_max_error": 0.0,
+    "reference_storage": "packed",
+    "reference_storage_bytes": 471925656,
+    "source_revision": "5ce4b07183d1c2c7a585fab36a7dc8fa8071a29357ad811273ec86a656265daa"
+  },
+  "training": {
+    "observed_unix_time": 1789888340.400616,
+    "run": "/home/vivi/c/k1-motion/artifacts/rl-reference-study-20260920/campaign/training",
+    "state": "running",
+    "live_pids": [
+      3260363
+    ],
+    "stage": "student",
+    "num_envs": 256,
+    "planned_iterations": 295,
+    "target_iteration": 300,
+    "initialize_checkpoint": null,
+    "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+    "task_version": "relative-body-tracking-v3",
+    "source_revision": "5ce4b07183d1c2c7a585fab36a7dc8fa8071a29357ad811273ec86a656265daa",
+    "latest_metrics": {
+      "iteration": 196,
+      "transitions": 1605632,
+      "mean_reward": 0.12762024998664856,
+      "episode_ends": 40,
+      "loss": 0.37181389331817627,
+      "policy_loss": -0.014249570667743683,
+      "value_loss": 0.39042380452156067,
+      "bc_loss": 0.0,
+      "gradient_norm": 3.7213048934936523,
+      "actor_gradient_norm": 5.011444091796875,
+      "approx_kl": 0.009450772777199745,
+      "clip_fraction": 0.131195068359375,
+      "learning_rate": 5e-05,
+      "action_std": 0.3130064010620117,
+      "elapsed_seconds": 764.8978395140002,
+      "rollout_seconds": 3.7652122319996124,
+      "update_seconds": 0.022754065998014994,
+      "iteration_seconds": 3.787966518997564,
+      "transitions_per_second": 2162.637748962402,
+      "peak_torch_vram_bytes": 974262272,
+      "falls": 3,
+      "tracking_failures": 18,
+      "completed": 19,
+      "episode_length_steps": 163.5,
+      "body_rmse_m": 0.05353395640850067,
+      "orientation_error_rad": 0.12400270998477936,
+      "reward_components": {
+        "joint": 0.8983032703399658,
+        "height": 0.966251015663147,
+        "orientation": 0.8782593607902527,
+        "body_position": 0.8804166913032532,
+        "feet_position": 0.6988599896430969,
+        "body_orientation": 0.8358054161071777,
+        "velocity": 0.8419234752655029,
+        "body_velocity": 0.9389097690582275
+      },
+      "joint_rmse_rad": 0.09980936348438263,
+      "effort_saturation": 0.0,
+      "self_collision_fraction": 0.00830078125,
+      "corruption_assumptions": false,
+      "family_transition_share": {
+        "dance": 0.17236328125,
+        "gesture": 0.127685546875,
+        "idle_stance": 0.12548828125,
+        "jump": 0.1214599609375,
+        "object_interaction": 0.1031494140625,
+        "squat": 0.125732421875,
+        "transition": 0.1011962890625,
+        "turn": 0.1229248046875
+      },
+      "visible_cuda_memory_used_bytes": 3380609024,
+      "visible_cuda_memory_total_bytes": 16575954944
+    },
+    "behaviorally_accepted": false,
+    "metrics_age_seconds": 0.6320936679840088,
+    "phase": "learner_updates",
+    "recent_transitions_per_second": 2045.8170435571717,
+    "rough_remaining_seconds": 416.4438861642474,
+    "gpu_util_memory_power": "2 %, 3224 MiB, 16303 MiB, 50.16 W"
+  },
+  "campaign": {
+    "source_revision": "5ce4b07183d1c2c7a585fab36a7dc8fa8071a29357ad811273ec86a656265daa",
+    "preflight": "/home/vivi/c/k1-motion/artifacts/rl-reference-study-20260920/full-pool-preflight",
+    "library": "artifacts/rl-reference-study-20260920/references/pool",
+    "target_iteration": 300,
+    "data_role": "GMR references for RL; balance is learned",
+    "behaviorally_accepted": false,
+    "hardware_verified": false,
+    "phase": "training",
+    "updated_at": "2026-09-20T15:59:23.355160+09:00",
+    "command": [
+      "/home/vivi/c/k1-motion/.venv/bin/python",
+      "/home/vivi/c/k1-motion/scripts/train_warp.py",
+      "--library",
+      "artifacts/rl-reference-study-20260920/references/pool",
+      "--output",
+      "/home/vivi/c/k1-motion/artifacts/rl-reference-study-20260920/campaign/training",
+      "--stage",
+      "student",
+      "--resume",
+      "/home/vivi/c/k1-motion/artifacts/rl-reference-study-20260920/full-pool-preflight/checkpoint.pt",
+      "--iterations",
+      "295",
+      "--num-envs",
+      "256",
+      "--horizon",
+      "32",
+      "--history",
+      "10",
+      "--hidden-sizes",
+      "512",
+      "256",
+      "--minibatch",
+      "8192",
+      "--epochs",
+      "4",
+      "--learning-rate",
+      "5e-05",
+      "--sampling",
+      "transition_balanced",
+      "--matmul-precision",
+      "high",
+      "--bc-weight",
+      "0",
+      "--action-settings",
+      "/home/vivi/c/k1-motion/artifacts/rl-reference-study-20260920/campaign/action-settings.json",
+      "--reference-storage",
+      "packed",
+      "--self-collision-weight",
+      "1.0",
+      "--root-velocity-weight",
+      "2.0",
+      "--root-velocity-sigma",
+      "0.5",
+      "--evaluation-interval",
+      "0",
+      "--checkpoint-interval",
+      "25",
+      "--nconmax",
+      "128",
+      "--njmax",
+      "1024",
+      "--epa-horizon",
+      "96",
+      "--no-conditional-graphs",
+      "--threads",
+      "2",
+      "--seed",
+      "42"
+    ]
+  },
+  "priority_dynamic_reference_audit": {
+    "processed_rows": 48,
+    "expected_metadata_rows": 48,
+    "accepted_original_motions": 15,
+    "running": false
+  },
+  "tests_passed": 64,
+  "controller_behavior_improved": null,
+  "behavioral_evaluation": "pending campaign completion; baseline saved; automatic candidate replay configured",
+  "service_state": "MainPID=3260362\nResult=success\nNRestarts=0\nId=k1-rl-retargeted-reference-pilot.service\nActiveState=active\n\nMainPID=3304384\nResult=success\nNRestarts=0\nId=k1-bones-seed-recovery-local.service\nActiveState=active\n\nMainPID=3304403\nResult=success\nNRestarts=0\nId=k1-bones-seed-control-audit-v2-local.service\nActiveState=active\n",
+  "next_frozen_dataset": {
+    "source": "frozen pool plus 48-take priority audit",
+    "originals": 1875,
+    "split_counts": {
+      "test": 170,
+      "train": 1507,
+      "validation": 198
+    },
+    "added_train_originals": 15,
+    "added_families": {
+      "jump": 5,
+      "run": 5,
+      "walk": 4,
+      "kick": 1
+    },
+    "train_families": {
+      "transition": 64,
+      "squat": 27,
+      "turn": 15,
+      "object_interaction": 1328,
+      "gesture": 29,
+      "idle_stance": 25,
+      "jump": 8,
+      "dance": 1,
+      "run": 5,
+      "walk": 4,
+      "kick": 1
+    },
+    "manifest_sha256": "e3ec205173efec8629966294ee90fa0b396776919148b7b6aa5730101425ff1d",
+    "controller_success_required": false,
+    "active_training_manifest_unchanged": true
+  },
+  "queue_priority": "both production shards interleave families/capture groups; originals before mirrors; source records and gates unchanged",
+  "source_inventory": {
+    "scope": "BONES full two-shard original-only inventory; exclusive labels; original V3 gate is not the stricter V4 audit",
+    "families": [
+      {
+        "family": "walk",
+        "source_originals": 3706,
+        "v3_kinematic_accepted_originals": 2015
+      },
+      {
+        "family": "run",
+        "source_originals": 2830,
+        "v3_kinematic_accepted_originals": 2156
+      },
+      {
+        "family": "kick",
+        "source_originals": 786,
+        "v3_kinematic_accepted_originals": 377
+      },
+      {
+        "family": "jump",
+        "source_originals": 8599,
+        "v3_kinematic_accepted_originals": 6889
+      },
+      {
+        "family": "dance",
+        "source_originals": 3605,
+        "v3_kinematic_accepted_originals": 2058
+      },
+      {
+        "family": "turn",
+        "source_originals": 1085,
+        "v3_kinematic_accepted_originals": 798
+      },
+      {
+        "family": "transition",
+        "source_originals": 16305,
+        "v3_kinematic_accepted_originals": 11261
+      },
+      {
+        "family": "punch",
+        "source_originals": 304,
+        "v3_kinematic_accepted_originals": 223
+      }
+    ]
+  }
+}

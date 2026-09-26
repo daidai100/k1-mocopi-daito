@@ -1,0 +1,22 @@
+{
+  "dataset": "bandai_namco",
+  "checked_utc": "2026-09-18T10:59:02.215382+00:00",
+  "motion_files": 3077,
+  "expected_motion_files": 3077,
+  "file_count_matches_upstream": true,
+  "valid_human_tracks": 3077,
+  "unique_source_tracks": 3077,
+  "frames": 421596,
+  "hours": 3.9036627630000007,
+  "fps_values": {
+    "30.0": 3077
+  },
+  "subsets": {
+    "dataset-1": 175,
+    "dataset-2": 2902
+  },
+  "failed_files": 0,
+  "errors": [],
+  "inventory": "manifests/bandai_namco.motions.jsonl",
+  "validation_scope": "Finite values, dimensions, skeleton headers, timing, annotations and provenance; physical retargeting and control not yet evaluated"
+}

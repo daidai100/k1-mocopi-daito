@@ -1,0 +1,16 @@
+{
+  "dataset_id": "lafan1",
+  "status": "downloaded_and_extracted",
+  "completed_utc": "2026-09-18T10:54:22.771171+00:00",
+  "source_url": "https://media.githubusercontent.com/media/ubisoft/ubisoft-laforge-animation-dataset/94084601bacdf9cc3764b5c73daaeccae6035fac/lafan1/lafan1.zip",
+  "revision": "94084601bacdf9cc3764b5c73daaeccae6035fac",
+  "archive": "data/archives/lafan1.zip",
+  "archive_bytes": 144051503,
+  "archive_sha256": "ea918082b500a5d158e9d3aa39039df04cd42e25f5c02fe8f7e88e8e9365a977",
+  "upstream_sha256_verified": true,
+  "raw_directory": "data/raw/lafan1",
+  "extracted_files": 77,
+  "extracted_bytes": 348829109,
+  "extracted_entry_crc_verified": true,
+  "motion_quality_validation": "pending inventory validation"
+}

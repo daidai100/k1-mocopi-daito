@@ -1,0 +1,156 @@
+{
+  "baseline": "artifacts/student-warp-v10-ppo-control/human-validation-iteration150",
+  "candidate": "artifacts/student-warp-v10-ppo-continuation/human-validation-iteration650",
+  "panel_sha256": "33d36bcdf71f52f9635c6161dab9950ab14632c2603ed9c90911d16bac86f3f7",
+  "trials": 180,
+  "independent_recordings": 36,
+  "action_settings": {
+    "baseline": {
+      "residual_scale": 0.25,
+      "command_velocity_limit": 6.0
+    },
+    "candidate": {
+      "residual_scale": 0.25,
+      "command_velocity_limit": 6.0
+    }
+  },
+  "replay_workers": {
+    "baseline": 4,
+    "candidate": 6
+  },
+  "comparison": {
+    "completed": {
+      "baseline": 72,
+      "candidate": 65,
+      "gained": [
+        "reach-017-943d335851d5d1f9",
+        "turn-013-9040f50d0c40b1ad",
+        "walk-008-63797b5e1aa8df93"
+      ],
+      "lost": [
+        "kick-016-f6b5231fa879401d",
+        "kick-019-f6b5231fa879401d",
+        "run-003-b426a6f4aaec4f2a",
+        "run-004-0543d0ac075bd464",
+        "run-007-b426a6f4aaec4f2a",
+        "run-008-0543d0ac075bd464",
+        "run-011-b426a6f4aaec4f2a",
+        "run-015-b426a6f4aaec4f2a",
+        "run-019-b426a6f4aaec4f2a",
+        "turn-005-9040f50d0c40b1ad"
+      ]
+    },
+    "tracking_passed": {
+      "baseline": 46,
+      "candidate": 31,
+      "gained": [
+        "turn-002-166675236ce5d7c7",
+        "turn-008-0a39e4dd0ea165c4",
+        "turn-013-9040f50d0c40b1ad",
+        "walk-000-08b24af6b1e4b259",
+        "walk-004-aa615d09f4175d27",
+        "walk-008-63797b5e1aa8df93"
+      ],
+      "lost": [
+        "bow-000-2d6a188b639b3046",
+        "bow-002-2d6a188b639b3046",
+        "bow-004-2d6a188b639b3046",
+        "bow-006-2d6a188b639b3046",
+        "bow-008-2d6a188b639b3046",
+        "bow-010-2d6a188b639b3046",
+        "bow-012-2d6a188b639b3046",
+        "bow-014-2d6a188b639b3046",
+        "bow-016-2d6a188b639b3046",
+        "bow-018-2d6a188b639b3046",
+        "kick-016-f6b5231fa879401d",
+        "reach-008-bfbe9bc1cec0ed5f",
+        "run-004-0543d0ac075bd464",
+        "turn-005-9040f50d0c40b1ad",
+        "turn-011-258ff9a270163e41",
+        "walk-003-65d7290bf752a267",
+        "walk-006-08b24af6b1e4b259",
+        "walk-009-65d7290bf752a267",
+        "walk-012-08b24af6b1e4b259",
+        "walk-015-65d7290bf752a267",
+        "walk-018-08b24af6b1e4b259"
+      ]
+    }
+  },
+  "families": {
+    "bow": {
+      "trials": 20,
+      "baseline_completed": 10,
+      "candidate_completed": 10,
+      "baseline_strict": 10,
+      "candidate_strict": 0
+    },
+    "dance": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "kick": {
+      "trials": 20,
+      "baseline_completed": 2,
+      "candidate_completed": 0,
+      "baseline_strict": 1,
+      "candidate_strict": 0
+    },
+    "punch": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "reach": {
+      "trials": 20,
+      "baseline_completed": 17,
+      "candidate_completed": 18,
+      "baseline_strict": 14,
+      "candidate_strict": 13
+    },
+    "run": {
+      "trials": 20,
+      "baseline_completed": 7,
+      "candidate_completed": 0,
+      "baseline_strict": 1,
+      "candidate_strict": 0
+    },
+    "stance": {
+      "trials": 20,
+      "baseline_completed": 6,
+      "candidate_completed": 6,
+      "baseline_strict": 6,
+      "candidate_strict": 6
+    },
+    "turn": {
+      "trials": 20,
+      "baseline_completed": 17,
+      "candidate_completed": 17,
+      "baseline_strict": 6,
+      "candidate_strict": 7
+    },
+    "walk": {
+      "trials": 20,
+      "baseline_completed": 13,
+      "candidate_completed": 14,
+      "baseline_strict": 8,
+      "candidate_strict": 5
+    }
+  },
+  "baseline_reasons": {
+    "finished": 72,
+    "fall": 77,
+    "offline_reference_rejected": 31
+  },
+  "candidate_reasons": {
+    "finished": 65,
+    "fall": 84,
+    "offline_reference_rejected": 31
+  },
+  "candidate_behaviorally_accepted": false,
+  "scope": "Paired development comparison; no promotion or broader acceptance implied"
+}

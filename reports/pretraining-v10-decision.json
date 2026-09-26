@@ -1,0 +1,89 @@
+{
+  "observed_unix": 1789807130.260242,
+  "decision": "Start a long development pretraining run using V8 references, original action authority, PPO without teacher BC, and collision weight 1.0. Retain local iteration150 as the behavioral baseline; resume the qualified 8192-environment optimizer after its 20-step preflight.",
+  "experiments": [
+    {
+      "candidate": "PPO-only local iteration 150",
+      "report": "reports/student-v8-1000-vs-v10-ppo150.json",
+      "completed": 72,
+      "strict_passes": 46,
+      "trials": 180,
+      "strict_gained": 7,
+      "strict_lost": 4,
+      "comparison_baseline": "artifacts/student-warp-v8-contact-continuation/human-validation-iteration1000"
+    },
+    {
+      "candidate": "Higher action authority iteration 150",
+      "report": "reports/student-v10-ppo150-vs-authority150.json",
+      "completed": 69,
+      "strict_passes": 30,
+      "trials": 180,
+      "strict_gained": 4,
+      "strict_lost": 20,
+      "comparison_baseline": "artifacts/student-warp-v10-ppo-control/human-validation-iteration150"
+    },
+    {
+      "candidate": "Expanded V9 data iteration 300",
+      "report": "reports/student-v8-1000-vs-v9-300-human-validation.json",
+      "completed": 68,
+      "strict_passes": 39,
+      "trials": 180,
+      "strict_gained": 3,
+      "strict_lost": 7,
+      "comparison_baseline": "artifacts/student-warp-v8-contact-continuation/human-validation-iteration1000"
+    },
+    {
+      "candidate": "Original H100 BC1 iteration 275",
+      "report": "reports/student-v8-1000-vs-h100-epa275.json",
+      "completed": 69,
+      "strict_passes": 25,
+      "trials": 180,
+      "strict_gained": 4,
+      "strict_lost": 22,
+      "comparison_baseline": "artifacts/student-warp-v8-contact-continuation/human-validation-iteration1000"
+    },
+    {
+      "candidate": "PPO-only local continuation iteration 650",
+      "report": "reports/student-v10-ppo150-vs-ppo650.json",
+      "completed": 65,
+      "strict_passes": 31,
+      "trials": 180,
+      "strict_gained": 6,
+      "strict_lost": 21,
+      "comparison_baseline": "artifacts/student-warp-v10-ppo-control/human-validation-iteration150"
+    },
+    {
+      "candidate": "H100 PPO-only preflight iteration 20",
+      "report": "artifacts/tsubame-103768/student-v10-ppo-preflight/validation-000020/comparison.json",
+      "completed": 70,
+      "strict_passes": 43,
+      "trials": 180,
+      "strict_gained": 7,
+      "strict_lost": 10,
+      "comparison_baseline": "artifacts/student-warp-v10-ppo-control/human-validation-iteration150"
+    }
+  ],
+  "selection_limits": "Single-panel development evidence; preflight is 3 strict passes and 2 completions below the 150 baseline, so it is operational qualification, not a behavioral promotion. Local iteration650 regressed and is not the initializer. No claim that a longer run will improve behavior.",
+  "configuration": "configs/pretraining-v10.json",
+  "validation": "42 existing tests passed; remote finite-update/reload preflight passed; complete matched human-panel monitoring exercised end to end.",
+  "held_out_test_used": false,
+  "prior_remote_stop": {
+    "retained_iteration": 350,
+    "retained_transitions": 91750400,
+    "last_logged_iteration": 367,
+    "unsaved_updates_not_retained": 17
+  },
+  "behaviorally_accepted": false,
+  "hardware_verified": false,
+  "launch": {
+    "receipt": "reports/tsubame-103768-v10-long-launch.json",
+    "status": "reports/tsubame-103768-v10-long-status.json",
+    "startup_checkpoint_check": "reports/pretraining-v10-startup-check.json",
+    "verified_phase": "learner_updates",
+    "verified_iteration": 34,
+    "verified_transitions": 8912896,
+    "rate": 36429.11904835772,
+    "monitor_service": "k1-pretrain-v10-monitor-103768.service",
+    "monitor_operational_check": "artifacts/tsubame-103768/student-v10-ppo-preflight/monitor-status.json"
+  }
+}

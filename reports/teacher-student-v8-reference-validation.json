@@ -1,0 +1,33 @@
+{
+  "reports": [
+    "reports/teacher-v6-500-v8-mujoco-validation.json",
+    "reports/teacher-v6-2000-v8-mujoco-validation.json",
+    "reports/student-v8-1000-mujoco-validation.json"
+  ],
+  "trials": 33,
+  "comparisons": {
+    "teacher500_to_2000": {
+      "baseline_completed": 22,
+      "candidate_completed": 22,
+      "gained": [
+        "aa615d09f4175d27"
+      ],
+      "lost": [
+        "9040f50d0c40b1ad"
+      ]
+    },
+    "teacher2000_to_student1000": {
+      "baseline_completed": 22,
+      "candidate_completed": 23,
+      "gained": [
+        "63797b5e1aa8df93",
+        "0a39e4dd0ea165c4",
+        "f28ffb400ed735dc"
+      ],
+      "lost": [
+        "aa615d09f4175d27",
+        "0543d0ac075bd464"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "baseline": "artifacts/teacher-isaac-v6-continuation/checkpoint-000500.pt",
+  "candidate": "artifacts/teacher-isaac-v6-continuation/checkpoint-002000.pt",
+  "trials": 33,
+  "baseline_completed": 21,
+  "candidate_completed": 24,
+  "gained": [
+    "aa615d09f4175d27",
+    "b426a6f4aaec4f2a",
+    "0a39e4dd0ea165c4"
+  ],
+  "lost": [],
+  "scope": "Paired independent CPU MuJoCo diagnostic; not controller acceptance",
+  "behaviorally_accepted": false
+}

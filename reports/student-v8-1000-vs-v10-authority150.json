@@ -1,0 +1,146 @@
+{
+  "baseline": "artifacts/student-warp-v8-contact-continuation/human-validation-iteration1000",
+  "candidate": "artifacts/student-warp-v10-authority/human-validation-iteration150",
+  "panel_sha256": "33d36bcdf71f52f9635c6161dab9950ab14632c2603ed9c90911d16bac86f3f7",
+  "trials": 180,
+  "independent_recordings": 36,
+  "action_settings": {
+    "baseline": "legacy robot defaults",
+    "candidate": {
+      "residual_scale": 0.35,
+      "command_velocity_limit": 10.0
+    }
+  },
+  "replay_workers": {
+    "baseline": 1,
+    "candidate": 4
+  },
+  "comparison": {
+    "completed": {
+      "baseline": 71,
+      "candidate": 69,
+      "gained": [
+        "run-016-0543d0ac075bd464",
+        "walk-004-aa615d09f4175d27",
+        "walk-010-aa615d09f4175d27",
+        "walk-016-aa615d09f4175d27"
+      ],
+      "lost": [
+        "reach-016-8e093d58b397cca2",
+        "turn-005-9040f50d0c40b1ad",
+        "turn-007-f28ffb400ed735dc",
+        "turn-015-f28ffb400ed735dc",
+        "walk-008-63797b5e1aa8df93",
+        "walk-014-63797b5e1aa8df93"
+      ]
+    },
+    "tracking_passed": {
+      "baseline": 43,
+      "candidate": 30,
+      "gained": [
+        "turn-008-0a39e4dd0ea165c4",
+        "walk-004-aa615d09f4175d27",
+        "walk-006-08b24af6b1e4b259",
+        "walk-010-aa615d09f4175d27",
+        "walk-016-aa615d09f4175d27"
+      ],
+      "lost": [
+        "bow-002-2d6a188b639b3046",
+        "bow-006-2d6a188b639b3046",
+        "bow-010-2d6a188b639b3046",
+        "bow-014-2d6a188b639b3046",
+        "bow-018-2d6a188b639b3046",
+        "reach-008-bfbe9bc1cec0ed5f",
+        "reach-016-8e093d58b397cca2",
+        "reach-018-bfbe9bc1cec0ed5f",
+        "turn-000-0a39e4dd0ea165c4",
+        "turn-005-9040f50d0c40b1ad",
+        "turn-006-988af43db7b862ce",
+        "turn-016-0a39e4dd0ea165c4",
+        "walk-003-65d7290bf752a267",
+        "walk-008-63797b5e1aa8df93",
+        "walk-009-65d7290bf752a267",
+        "walk-012-08b24af6b1e4b259",
+        "walk-014-63797b5e1aa8df93",
+        "walk-015-65d7290bf752a267"
+      ]
+    }
+  },
+  "families": {
+    "bow": {
+      "trials": 20,
+      "baseline_completed": 10,
+      "candidate_completed": 10,
+      "baseline_strict": 10,
+      "candidate_strict": 5
+    },
+    "dance": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "kick": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "punch": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "reach": {
+      "trials": 20,
+      "baseline_completed": 18,
+      "candidate_completed": 17,
+      "baseline_strict": 14,
+      "candidate_strict": 11
+    },
+    "run": {
+      "trials": 20,
+      "baseline_completed": 5,
+      "candidate_completed": 6,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "stance": {
+      "trials": 20,
+      "baseline_completed": 6,
+      "candidate_completed": 6,
+      "baseline_strict": 6,
+      "candidate_strict": 6
+    },
+    "turn": {
+      "trials": 20,
+      "baseline_completed": 20,
+      "candidate_completed": 17,
+      "baseline_strict": 7,
+      "candidate_strict": 4
+    },
+    "walk": {
+      "trials": 20,
+      "baseline_completed": 12,
+      "candidate_completed": 13,
+      "baseline_strict": 6,
+      "candidate_strict": 4
+    }
+  },
+  "baseline_reasons": {
+    "finished": 71,
+    "fall": 78,
+    "offline_reference_rejected": 31
+  },
+  "candidate_reasons": {
+    "finished": 69,
+    "fall": 80,
+    "offline_reference_rejected": 31
+  },
+  "candidate_behaviorally_accepted": false,
+  "scope": "Paired development comparison; no promotion or broader acceptance implied"
+}

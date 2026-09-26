@@ -1,0 +1,56 @@
+{
+  "project": "Human motion corpus for a universal mocap-to-K1 controller",
+  "created_date": "2026-09-18",
+  "use": "Non-commercial research, authorized by the user",
+  "target_hours": 20,
+  "datasets": [
+    {
+      "id": "lafan1",
+      "title": "Ubisoft La Forge Animation Dataset (LAFAN1)",
+      "source_page": "https://github.com/ubisoft/ubisoft-laforge-animation-dataset",
+      "revision": "94084601bacdf9cc3764b5c73daaeccae6035fac",
+      "url": "https://media.githubusercontent.com/media/ubisoft/ubisoft-laforge-animation-dataset/94084601bacdf9cc3764b5c73daaeccae6035fac/lafan1/lafan1.zip",
+      "archive": "lafan1.zip",
+      "expected_bytes": 144051503,
+      "expected_sha256": "ea918082b500a5d158e9d3aa39039df04cd42e25f5c02fe8f7e88e8e9365a977",
+      "format": "BVH human skeleton",
+      "license": "CC BY-NC-ND 4.0",
+      "documents": [
+        {"name": "license.txt", "url": "https://raw.githubusercontent.com/ubisoft/ubisoft-laforge-animation-dataset/94084601bacdf9cc3764b5c73daaeccae6035fac/license.txt"},
+        {"name": "README.upstream.md", "url": "https://raw.githubusercontent.com/ubisoft/ubisoft-laforge-animation-dataset/94084601bacdf9cc3764b5c73daaeccae6035fac/README.md"}
+      ]
+    },
+    {
+      "id": "bandai_namco",
+      "title": "Bandai Namco Research Motion Dataset 1 and 2",
+      "source_page": "https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset",
+      "revision": "74ead3ba1ae4696404e6086233779f60de8bf9ef",
+      "url": "https://codeload.github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset/zip/74ead3ba1ae4696404e6086233779f60de8bf9ef",
+      "archive": "bandai-namco-74ead3ba.zip",
+      "format": "BVH human skeleton and JSON annotations",
+      "license": "CC BY-NC 4.0",
+      "strip_components": 1,
+      "include_prefixes": ["dataset/", "README"],
+      "documents": []
+    },
+    {
+      "id": "kit_motion_language",
+      "title": "KIT Motion-Language Dataset 2017-06-22",
+      "source_page": "https://motion-annotation.humanoids.kit.edu/dataset/",
+      "revision": "2017-06-22",
+      "url": "https://motion-annotation.humanoids.kit.edu/downloads/4/",
+      "archive": "kit-motion-language-2017-06-22.zip",
+      "expected_bytes": 4159992190,
+      "range_workers": 6,
+      "expected_etag": "\"594b41dd-f7f4717e\"",
+      "format": "MMM human kinematics, original C3D mocap, JSON annotations and provenance",
+      "license": "KIT published research-use/citation terms; CMU-origin motions retain CMU terms",
+      "documents": [
+        {"name": "dataset-page.html", "url": "https://motion-annotation.humanoids.kit.edu/dataset/"},
+        {"name": "kit-faq-and-citation.html", "url": "https://motion-database.humanoids.kit.edu/faq/"},
+        {"name": "kit-terms.html", "url": "https://download.is.tue.mpg.de/amass/licences/kit.html"},
+        {"name": "cmu-terms.html", "url": "http://mocap.cs.cmu.edu/", "note": "Public CMU site serves HTTP successfully; its HTTPS certificate chain failed local verification. No credentials are used."}
+      ]
+    }
+  ]
+}

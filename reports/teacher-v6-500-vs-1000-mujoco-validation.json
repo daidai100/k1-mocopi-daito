@@ -1,0 +1,14 @@
+{
+  "older_iteration": 500,
+  "newer_iteration": 1000,
+  "total": 33,
+  "older_completed": 21,
+  "newer_completed": 20,
+  "gained": [
+    "b426a6f4aaec4f2a"
+  ],
+  "lost": [
+    "9040f50d0c40b1ad",
+    "258ff9a270163e41"
+  ]
+}

@@ -1,0 +1,46 @@
+==============================================================
+job_number:                 103768
+jclass:                     NONE
+submission_time:            09/19/2026 13:15:26.788
+owner:                      uh06814
+uid:                        6814
+group:                      tsubame-users
+gid:                        2000
+supplementary group:        tsubame-users, tgz-edu, sys_cat1
+sge_o_home:                 /home/4/uh06814
+sge_o_log_name:             uh06814
+sge_o_path:                 /apps/t4/rhel9/uge/interactive/bin/lx-amd64:/apps/t4/rhel9/hpe/ptl/info_com/user/bin:/apps/t4/rhel9/uge/latest/bin/lx-amd64:/home/4/uh06814/.local/bin:/home/4/uh06814/bin:/apps/t4/rhel9/hpe/ptl/info_com/user/bin:/apps/t4/rhel9/uge/latest/bin/lx-amd64:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+sge_o_shell:                /bin/bash
+sge_o_workdir:              /home/4/uh06814
+sge_o_host:                 login1
+account:                    6814 2000 0 103768 0 0 0 0 0 0 0 0 0 0 0 0 1 86400 0 0 0
+stderr_path_list:           NONE:NONE:/dev/null
+allocation_rule:            2
+hard_resource_list:         h_rt=86400,h_vmem=48G,interq=1
+hard_queue_list:            interactive
+mail_list:                  uh06814@login1
+notify:                     FALSE
+job_name:                   QRLOGIN
+stdout_path_list:           NONE:NONE:/dev/null
+priority:                   0
+jobshare:                   0
+restart:                    n
+env_list:                   TERM=screen,RGST_PARAM_99=1
+parallel environment:       OpenMP range: 2
+department:                 defaultdepartment
+binding:                    NONE
+mbind:                      NONE
+submit_cmd:                 /apps/t4/rhel9/uge/latest/bin/lx-amd64/qrsh.bin -q interactive -l h_rt=24:00:00
+category_id:                2343
+request_dispatch_info:      FALSE
+start_time            1:    09/19/2026 13:15:27.187
+job_state             1:    r
+exec_host_list        1:    r4n11:2
+granted_req.          1,0:  interq=1
+granted_req.          1,1:  interq=1
+usage                 1:    wallclock=00:00:46, cpu=00:00:00, mem=0.00008 GBs, io=0.01132 GB, iow=0.000 s, ioops=4636, vmem=7.773M, maxvmem=7.773M, rss=3.000M, maxrss=3.000M
+resource_map          1,0:  interq=r4n11=(20)
+resource_map          1,1:  interq=r4n11=(21)
+gpu_usage             1:    NONE
+cgroups_usage         1:    failcnt=0, memsw.failcnt=0, usage_in_bytes=2.199M, memsw.usage_in_bytes=2.199M, cgroups_memory=0.902M, max_cgroups_memory=0.902M
+scheduling info:            -

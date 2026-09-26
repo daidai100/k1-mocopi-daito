@@ -1,0 +1,45 @@
+{
+  "scope": "BONES full two-shard original-only inventory; exclusive labels; original V3 gate is not the stricter V4 audit",
+  "families": [
+    {
+      "family": "walk",
+      "source_originals": 3706,
+      "v3_kinematic_accepted_originals": 2015
+    },
+    {
+      "family": "run",
+      "source_originals": 2830,
+      "v3_kinematic_accepted_originals": 2156
+    },
+    {
+      "family": "kick",
+      "source_originals": 786,
+      "v3_kinematic_accepted_originals": 377
+    },
+    {
+      "family": "jump",
+      "source_originals": 8599,
+      "v3_kinematic_accepted_originals": 6889
+    },
+    {
+      "family": "dance",
+      "source_originals": 3605,
+      "v3_kinematic_accepted_originals": 2058
+    },
+    {
+      "family": "turn",
+      "source_originals": 1085,
+      "v3_kinematic_accepted_originals": 798
+    },
+    {
+      "family": "transition",
+      "source_originals": 16305,
+      "v3_kinematic_accepted_originals": 11261
+    },
+    {
+      "family": "punch",
+      "source_originals": 304,
+      "v3_kinematic_accepted_originals": 223
+    }
+  ]
+}

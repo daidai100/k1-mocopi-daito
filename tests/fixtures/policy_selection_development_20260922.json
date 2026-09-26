@@ -1,0 +1,456 @@
+{
+  "panel": [
+    {
+      "id": "0038b9e027fad22e4bfc",
+      "semantic_group": "broad_idle_stance"
+    },
+    {
+      "id": "00468cd8760a92cb6097",
+      "semantic_group": "broad_object_interaction"
+    },
+    {
+      "id": "0052ce839a1a73a3ff6e",
+      "semantic_group": "body_turn"
+    },
+    {
+      "id": "005a4876934a4cf09e68",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "005a7702291d1e616a6c",
+      "semantic_group": "broad_object_interaction"
+    },
+    {
+      "id": "00806f4e718c4514dfc2",
+      "semantic_group": "broad_transition"
+    },
+    {
+      "id": "00b079e232ea41dc8d16",
+      "semantic_group": "broad_jump"
+    },
+    {
+      "id": "00f07136ac5bcdfadeab",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "00f513a5534928c3e2f5",
+      "semantic_group": "broad_gesture"
+    },
+    {
+      "id": "00f935c88d24efb596a1",
+      "semantic_group": "broad_gesture"
+    },
+    {
+      "id": "010151e4be8f6d6539c4",
+      "semantic_group": "broad_punch"
+    },
+    {
+      "id": "014f021eb1bb7b895808",
+      "semantic_group": "broad_object_interaction"
+    },
+    {
+      "id": "0157c6888d9861452d5d",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "015db0d280c02f56f840",
+      "semantic_group": "broad_dance"
+    },
+    {
+      "id": "016e1fd8f71d552c0da7",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "01ccb8809bf735a7b703",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "01e860258266c78f70a8",
+      "semantic_group": "broad_run"
+    },
+    {
+      "id": "01f5f0ec5334910b2b36",
+      "semantic_group": "broad_other"
+    },
+    {
+      "id": "0206136ac64ea1ca4436",
+      "semantic_group": "ordinary_run"
+    },
+    {
+      "id": "0207dc8a1967614696a7",
+      "semantic_group": "broad_object_interaction"
+    },
+    {
+      "id": "021f102942220f56c4f5",
+      "semantic_group": "broad_gesture"
+    },
+    {
+      "id": "0242b806277336052fcc",
+      "semantic_group": "broad_gesture"
+    },
+    {
+      "id": "0248d73c911f5cda23b9",
+      "semantic_group": "broad_run"
+    },
+    {
+      "id": "02648f3909d1b4e66677",
+      "semantic_group": "broad_kick"
+    },
+    {
+      "id": "026525ca55fe12d2c9a8",
+      "semantic_group": "broad_dance"
+    },
+    {
+      "id": "02e6d1324fc5dcaedb62",
+      "semantic_group": "broad_jump"
+    },
+    {
+      "id": "030d53f863f602f745bc",
+      "semantic_group": "broad_walk"
+    },
+    {
+      "id": "033b5268ebb7af30628a",
+      "semantic_group": "ordinary_run"
+    },
+    {
+      "id": "0351f6d7fedf1f98715b",
+      "semantic_group": "broad_idle_stance"
+    },
+    {
+      "id": "03d886436864b1dd2bad",
+      "semantic_group": "broad_idle_stance"
+    },
+    {
+      "id": "0453bac54a4fb8f312cd",
+      "semantic_group": "broad_dance"
+    },
+    {
+      "id": "04b07e49a3576255d81d",
+      "semantic_group": "broad_dance"
+    },
+    {
+      "id": "04deb06c7c1bcd552c86",
+      "semantic_group": "broad_jump"
+    },
+    {
+      "id": "04f10f62169a9fe5c856",
+      "semantic_group": "broad_idle_stance"
+    },
+    {
+      "id": "0745bc6c9e72938f5fa6",
+      "semantic_group": "broad_jump"
+    },
+    {
+      "id": "07bfaf0d2dcf3e4f6dbc",
+      "semantic_group": "body_turn"
+    },
+    {
+      "id": "08c65e348f79b6afde88",
+      "semantic_group": "broad_kick"
+    },
+    {
+      "id": "0a0963bba4ed9598b505",
+      "semantic_group": "broad_squat"
+    },
+    {
+      "id": "0b13cabe412ed3509bbf",
+      "semantic_group": "broad_turn"
+    },
+    {
+      "id": "0c28d49691dc55ecdd6b",
+      "semantic_group": "broad_squat"
+    },
+    {
+      "id": "0e3a92d137825ee1afae",
+      "semantic_group": "broad_other"
+    },
+    {
+      "id": "0ee909696707dcf345b4",
+      "semantic_group": "broad_turn"
+    },
+    {
+      "id": "0ef583099b364722d6d0",
+      "semantic_group": "broad_kick"
+    },
+    {
+      "id": "0f0c615beacd4d33ebc1",
+      "semantic_group": "broad_other"
+    },
+    {
+      "id": "0f341a93bdbb12bb62b2",
+      "semantic_group": "broad_turn"
+    },
+    {
+      "id": "12e77c67bc7da67da6dd",
+      "semantic_group": "broad_squat"
+    },
+    {
+      "id": "15ed06b890655ebf402d",
+      "semantic_group": "broad_other"
+    },
+    {
+      "id": "181831dbc0920fa2",
+      "semantic_group": "broad_avoidance"
+    },
+    {
+      "id": "188e8b1510bb7620",
+      "semantic_group": "broad_avoidance"
+    },
+    {
+      "id": "1f29b2ca323459e84def",
+      "semantic_group": "broad_squat"
+    },
+    {
+      "id": "20606a3e35521e91f66f",
+      "semantic_group": "broad_kick"
+    },
+    {
+      "id": "8c492b1bd6c4b5b48493",
+      "semantic_group": "broad_kneel"
+    },
+    {
+      "id": "bfbe9bc1cec0ed5f",
+      "semantic_group": "broad_punch"
+    },
+    {
+      "id": "d74c60617d33f6082c58",
+      "semantic_group": "broad_punch"
+    },
+    {
+      "id": "2fd39ec1fd9a9d88b205",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "881896d79dbfa3df814e",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "b028486a8f57f4bea2b1",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "5ddd896e4bedbfe56f72",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "5b54e83be218b8e35a28",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "47def0349f8ad4825911",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "33d20ae32404813a5969",
+      "semantic_group": "ordinary_walk"
+    },
+    {
+      "id": "70aff981947237b5f64e",
+      "semantic_group": "ordinary_run"
+    },
+    {
+      "id": "c76431a814c9845ec9f2",
+      "semantic_group": "body_turn"
+    }
+  ],
+  "results": {
+    "guard_only": {
+      "all": {
+        "trials": 63,
+        "completed": 31,
+        "clean": 19,
+        "clean_v3": 19,
+        "collision_trials": 15,
+        "fell": 32,
+        "full_reference_duration_xy_score": 0.631093005000693,
+        "root_xy_rmse_m": 0.24488713160357956,
+        "survived_fraction": 0.7312408092003158,
+        "world_body_rmse_m": 0.25700866346506457,
+        "world_body_p95_m": 0.46754458913376007,
+        "full_reference_duration_world_score": 0.5106348348201727,
+        "absolute_clean": 13,
+        "operating_overspeed_trials": 2,
+        "nominal_overspeed_trials": 0,
+        "joint_limit_violation_trials": 27
+      },
+      "clean_ids": [
+        "0038b9e027fad22e4bfc",
+        "0052ce839a1a73a3ff6e",
+        "005a7702291d1e616a6c",
+        "00f513a5534928c3e2f5",
+        "00f935c88d24efb596a1",
+        "010151e4be8f6d6539c4",
+        "015db0d280c02f56f840",
+        "01f5f0ec5334910b2b36",
+        "0207dc8a1967614696a7",
+        "021f102942220f56c4f5",
+        "0242b806277336052fcc",
+        "0351f6d7fedf1f98715b",
+        "03d886436864b1dd2bad",
+        "04b07e49a3576255d81d",
+        "04f10f62169a9fe5c856",
+        "0e3a92d137825ee1afae",
+        "0f0c615beacd4d33ebc1",
+        "bfbe9bc1cec0ed5f",
+        "d74c60617d33f6082c58"
+      ],
+      "absolute_clean_ids": [
+        "0038b9e027fad22e4bfc",
+        "005a7702291d1e616a6c",
+        "00f935c88d24efb596a1",
+        "010151e4be8f6d6539c4",
+        "01f5f0ec5334910b2b36",
+        "0207dc8a1967614696a7",
+        "0242b806277336052fcc",
+        "0351f6d7fedf1f98715b",
+        "03d886436864b1dd2bad",
+        "04b07e49a3576255d81d",
+        "04f10f62169a9fe5c856",
+        "0f0c615beacd4d33ebc1",
+        "bfbe9bc1cec0ed5f"
+      ],
+      "contract": {
+        "source_revision": "2c86277eb2bf473d780933156b828755e367e6adc3bc6c1063ef829b87cb7196",
+        "policy": "/home/vivi/c/k1-motion/artifacts/policy-improvement-20260922/development/all_margin03/actor.pt",
+        "policy_sha256": "3dffc1ccf5e49e6c99f470f59f56a7522c10a9e0ec5f4c13c90cbe2570d8d4de",
+        "policy_metadata_sha256": "876c0bd70e7141649937265bb4f4076db27a53cc48b2d215a1ca2a083bd9eed0",
+        "panel_sha256": "ba5008cfbb19b0e94db8a771e05e43ac74dd72e0603ceb5cdb5f9ecb3c04821c",
+        "originals": 63
+      },
+      "execution_errors": 0
+    },
+    "guard_world": {
+      "all": {
+        "trials": 63,
+        "completed": 30,
+        "clean": 18,
+        "clean_v3": 18,
+        "collision_trials": 14,
+        "fell": 33,
+        "full_reference_duration_xy_score": 0.6301246409780659,
+        "root_xy_rmse_m": 0.23726797022980703,
+        "survived_fraction": 0.727658476386746,
+        "world_body_rmse_m": 0.24869788699813544,
+        "world_body_p95_m": 0.4534360603915403,
+        "full_reference_duration_world_score": 0.5113452356039799,
+        "absolute_clean": 13,
+        "operating_overspeed_trials": 5,
+        "nominal_overspeed_trials": 0,
+        "joint_limit_violation_trials": 29
+      },
+      "clean_ids": [
+        "0038b9e027fad22e4bfc",
+        "0052ce839a1a73a3ff6e",
+        "005a7702291d1e616a6c",
+        "00f513a5534928c3e2f5",
+        "00f935c88d24efb596a1",
+        "010151e4be8f6d6539c4",
+        "01f5f0ec5334910b2b36",
+        "0207dc8a1967614696a7",
+        "021f102942220f56c4f5",
+        "0242b806277336052fcc",
+        "0351f6d7fedf1f98715b",
+        "03d886436864b1dd2bad",
+        "04b07e49a3576255d81d",
+        "04f10f62169a9fe5c856",
+        "0e3a92d137825ee1afae",
+        "0f0c615beacd4d33ebc1",
+        "bfbe9bc1cec0ed5f",
+        "d74c60617d33f6082c58"
+      ],
+      "absolute_clean_ids": [
+        "0038b9e027fad22e4bfc",
+        "005a7702291d1e616a6c",
+        "00f935c88d24efb596a1",
+        "010151e4be8f6d6539c4",
+        "01f5f0ec5334910b2b36",
+        "0242b806277336052fcc",
+        "02e6d1324fc5dcaedb62",
+        "0351f6d7fedf1f98715b",
+        "03d886436864b1dd2bad",
+        "04b07e49a3576255d81d",
+        "04f10f62169a9fe5c856",
+        "0f0c615beacd4d33ebc1",
+        "bfbe9bc1cec0ed5f"
+      ],
+      "contract": {
+        "source_revision": "2c86277eb2bf473d780933156b828755e367e6adc3bc6c1063ef829b87cb7196",
+        "policy": "/home/vivi/c/k1-motion/artifacts/policy-improvement-20260922/pilot-evaluations/monitor/guard_world/actor.pt",
+        "policy_sha256": "428a933a5d3b475114b314920054a5c69147cf220dcda5e84b42125b821ea5d0",
+        "policy_metadata_sha256": "250ad76a02b583fed7664d7264bfec024fa84d20158b71273cb1840fa1c8ed38",
+        "panel_sha256": "ba5008cfbb19b0e94db8a771e05e43ac74dd72e0603ceb5cdb5f9ecb3c04821c",
+        "originals": 63
+      },
+      "execution_errors": 0
+    },
+    "guard_velocity": {
+      "all": {
+        "trials": 63,
+        "completed": 31,
+        "clean": 19,
+        "clean_v3": 19,
+        "collision_trials": 14,
+        "fell": 32,
+        "full_reference_duration_xy_score": 0.6308057299869778,
+        "root_xy_rmse_m": 0.23835411398355394,
+        "survived_fraction": 0.7322883033909527,
+        "world_body_rmse_m": 0.2510862957661074,
+        "world_body_p95_m": 0.45755900491347906,
+        "full_reference_duration_world_score": 0.5078969185645009,
+        "absolute_clean": 13,
+        "operating_overspeed_trials": 5,
+        "nominal_overspeed_trials": 1,
+        "joint_limit_violation_trials": 31
+      },
+      "clean_ids": [
+        "0038b9e027fad22e4bfc",
+        "0052ce839a1a73a3ff6e",
+        "005a7702291d1e616a6c",
+        "00f513a5534928c3e2f5",
+        "00f935c88d24efb596a1",
+        "010151e4be8f6d6539c4",
+        "015db0d280c02f56f840",
+        "01f5f0ec5334910b2b36",
+        "0207dc8a1967614696a7",
+        "021f102942220f56c4f5",
+        "0242b806277336052fcc",
+        "0351f6d7fedf1f98715b",
+        "03d886436864b1dd2bad",
+        "04b07e49a3576255d81d",
+        "04f10f62169a9fe5c856",
+        "0e3a92d137825ee1afae",
+        "0f0c615beacd4d33ebc1",
+        "bfbe9bc1cec0ed5f",
+        "d74c60617d33f6082c58"
+      ],
+      "absolute_clean_ids": [
+        "0038b9e027fad22e4bfc",
+        "005a7702291d1e616a6c",
+        "00f935c88d24efb596a1",
+        "010151e4be8f6d6539c4",
+        "01f5f0ec5334910b2b36",
+        "0207dc8a1967614696a7",
+        "0242b806277336052fcc",
+        "0351f6d7fedf1f98715b",
+        "03d886436864b1dd2bad",
+        "04b07e49a3576255d81d",
+        "04f10f62169a9fe5c856",
+        "0f0c615beacd4d33ebc1",
+        "bfbe9bc1cec0ed5f"
+      ],
+      "contract": {
+        "source_revision": "2c86277eb2bf473d780933156b828755e367e6adc3bc6c1063ef829b87cb7196",
+        "policy": "/home/vivi/c/k1-motion/artifacts/policy-improvement-20260922/pilot-evaluations/monitor/guard_velocity/actor.pt",
+        "policy_sha256": "19c9625bcd30557be662b2986ed12c56cb2e08ef2dafbf33ac611d55171b5a9e",
+        "policy_metadata_sha256": "17e28a63d91d8a8216250f88b76180361f8522a71981468e72bbb445ffa20bcd",
+        "panel_sha256": "ba5008cfbb19b0e94db8a771e05e43ac74dd72e0603ceb5cdb5f9ecb3c04821c",
+        "originals": 63
+      },
+      "execution_errors": 0
+    }
+  },
+  "source_artifacts": [
+    "artifacts/policy-improvement-20260922/development/results.json",
+    "artifacts/policy-improvement-20260922/pilot-evaluations/results.json"
+  ]
+}

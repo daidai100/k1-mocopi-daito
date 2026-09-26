@@ -1,0 +1,796 @@
+{
+  "source_kind": "archived_ros_commands_and_state",
+  "raw_mocopi": false,
+  "state_origin": "physical_vs_simulated_unverified",
+  "bags": [
+    {
+      "path": "data/legacy/k1/rosbags/k1_20260719_145014/k1_20260719_145014_0.mcap",
+      "topics": {
+        "/booster_k1/upper_body_joint_targets": {
+          "messages": 2333,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784440239301743228,
+          "last_log_time_ns": 1784440285941647817,
+          "schema": "sensor_msgs/msg/JointState",
+          "sample": {
+            "header": {
+              "stamp": {
+                "sec": 1784440239,
+                "nanosec": 301636409
+              },
+              "frame_id": ""
+            },
+            "name": [
+              "AAHead_yaw",
+              "Head_pitch",
+              "ALeft_Shoulder_Pitch",
+              "Left_Shoulder_Roll",
+              "Left_Elbow_Pitch",
+              "Left_Elbow_Yaw",
+              "ARight_Shoulder_Pitch",
+              "Right_Shoulder_Roll",
+              "Right_Elbow_Pitch",
+              "Right_Elbow_Yaw"
+            ],
+            "position": [
+              0.0,
+              0.0,
+              0.2,
+              -1.35,
+              0.0,
+              -0.5,
+              0.2,
+              1.35,
+              0.0,
+              0.5
+            ],
+            "velocity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "effort": []
+          },
+          "publication_interval_p50_ms": 19.9964795,
+          "publication_interval_p99_ms": 20.40685662
+        },
+        "/booster_k1/locomotion_command": {
+          "messages": 2333,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784440239301757501,
+          "last_log_time_ns": 1784440285941659602,
+          "schema": "std_msgs/msg/Float64MultiArray",
+          "sample": {
+            "layout": {
+              "dim": [
+                {
+                  "label": "vx_vy_wz_heading_mode",
+                  "size": 5,
+                  "stride": 5
+                }
+              ],
+              "data_offset": 0
+            },
+            "data": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "publication_interval_p50_ms": 19.995376500000003,
+          "publication_interval_p99_ms": 20.44823926
+        },
+        "/booster_k1/lower_body_mode": {
+          "messages": 2333,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784440239301771804,
+          "last_log_time_ns": 1784440285941666157,
+          "schema": "std_msgs/msg/String",
+          "sample": {
+            "data": "prepare"
+          },
+          "publication_interval_p50_ms": 19.995365500000002,
+          "publication_interval_p99_ms": 20.464100920000003
+        },
+        "/booster_k1/htwk_joint_targets": {
+          "messages": 21818,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784440242298089824,
+          "last_log_time_ns": 1784440285952043078,
+          "schema": "sensor_msgs/msg/JointState",
+          "sample": {
+            "header": {
+              "stamp": {
+                "sec": 1784440242,
+                "nanosec": 298048434
+              },
+              "frame_id": ""
+            },
+            "name": [
+              "AAHead_yaw",
+              "Head_pitch",
+              "ALeft_Shoulder_Pitch",
+              "Left_Shoulder_Roll",
+              "Left_Elbow_Pitch",
+              "Left_Elbow_Yaw",
+              "ARight_Shoulder_Pitch",
+              "Right_Shoulder_Roll",
+              "Right_Elbow_Pitch",
+              "Right_Elbow_Yaw",
+              "Left_Hip_Pitch",
+              "Left_Hip_Roll",
+              "Left_Hip_Yaw",
+              "Left_Knee_Pitch",
+              "Left_Ankle_Pitch",
+              "Left_Ankle_Roll",
+              "Right_Hip_Pitch",
+              "Right_Hip_Roll",
+              "Right_Hip_Yaw",
+              "Right_Knee_Pitch",
+              "Right_Ankle_Pitch",
+              "Right_Ankle_Roll"
+            ],
+            "position": [
+              0.0,
+              0.0,
+              0.2000000774860382,
+              -1.350000262260437,
+              0.0,
+              -0.5,
+              0.2000000774860382,
+              1.350000262260437,
+              0.0,
+              0.5,
+              -0.1000000387430191,
+              0.0,
+              0.0,
+              0.2000000774860382,
+              -0.1000000387430191,
+              0.0,
+              -0.1000000387430191,
+              0.0,
+              0.0,
+              0.2000000774860382,
+              -0.1000000387430191,
+              0.0
+            ],
+            "velocity": [],
+            "effort": []
+          },
+          "publication_interval_p50_ms": 1.998741,
+          "publication_interval_p99_ms": 2.6587561200000005
+        },
+        "/booster_k1/htwk_lowlevel_status": {
+          "messages": 2069,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784440242306603348,
+          "last_log_time_ns": 1784440285942308186,
+          "schema": "std_msgs/msg/String",
+          "sample": {
+            "data": "{\"action_scale\": 1.0, \"dry_run\": false, \"effective_mode\": \"prepare\", \"enable_hardware\": true, \"enable_lower_body\": true, \"enable_upper_body\": true, \"gains\": {\"ankle_kp\": 50.0, \"arm_kp\": 20.0, \"head_kp\": 20.0, \"hip_kp\": 100.0, \"knee_kp\": 100.0}, \"gait_frequency_hz\": 1.8, \"gyro\": [-0.0005, -0.0007, 0.0025], \"handover\": {\"armed\": false, \"custom_active\": false, \"fault_reason\": \"\", \"lowcmd_ignored_in_vendor_mode\": \"deployment_assumption\", \"observed_mode\": \"prepare\", \"prestream_elapsed_s\": 0.0, \"prestream_frames\": 0, \"state\": \"waiting_vendor\", \"vendor_mode\": \"prepare\"}, \"htwk_command\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], \"invalid_low_state_frames\": 0, \"locomotion_feedback_addr\": [\"127.0.0.1\", 12452], \"locomotion_feedback_sent\": false, \"lowcmd_write_ok\": true, \"lower_body_filter\": {\"attitude_fault\": false, \"delay_buffer_len\": 1, \"delay_s\": 0.0, \"delayed_sample_available\": true, \"filtered_locomotion\": [0.0, 0.0, 0.0, 0.0, 0.0], \"reason\": \"\", \"safety_limited\": false, \"stale\": false}, \"mode\": \"prepare\", \"raw_target_lower\": [-0.1, 0.0, 0.0, 0.2, -0.1, 0.0, -0.1, 0.0, 0.0, 0.2, -0.1, 0.0], \"read_hardware_state\": true, \"rpy\": [0.0012, -0.0108, -0.499], \"stale_command\": false, \"stale_state\": false, \"stale_upper_body\": false, \"state_age_s\": 0.0007216930389404297, \"target_error_rad\": 0.10514996200799942, \"target_filter_alpha\": 0.2, \"target_lower\": [-0.1, 0.0, 0.0, 0.2, -0.1, 0.0, -0.1, 0.0, 0.0, 0.2, -0.1, 0.0], \"writing_lowcmd\": true}",
+            "decoded_json": {
+              "action_scale": 1.0,
+              "dry_run": false,
+              "effective_mode": "prepare",
+              "enable_hardware": true,
+              "enable_lower_body": true,
+              "enable_upper_body": true,
+              "gains": {
+                "ankle_kp": 50.0,
+                "arm_kp": 20.0,
+                "head_kp": 20.0,
+                "hip_kp": 100.0,
+                "knee_kp": 100.0
+              },
+              "gait_frequency_hz": 1.8,
+              "gyro": [
+                -0.0005,
+                -0.0007,
+                0.0025
+              ],
+              "handover": {
+                "armed": false,
+                "custom_active": false,
+                "fault_reason": "",
+                "lowcmd_ignored_in_vendor_mode": "deployment_assumption",
+                "observed_mode": "prepare",
+                "prestream_elapsed_s": 0.0,
+                "prestream_frames": 0,
+                "state": "waiting_vendor",
+                "vendor_mode": "prepare"
+              },
+              "htwk_command": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "invalid_low_state_frames": 0,
+              "locomotion_feedback_addr": [
+                "127.0.0.1",
+                12452
+              ],
+              "locomotion_feedback_sent": false,
+              "lowcmd_write_ok": true,
+              "lower_body_filter": {
+                "attitude_fault": false,
+                "delay_buffer_len": 1,
+                "delay_s": 0.0,
+                "delayed_sample_available": true,
+                "filtered_locomotion": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reason": "",
+                "safety_limited": false,
+                "stale": false
+              },
+              "mode": "prepare",
+              "raw_target_lower": [
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0,
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0
+              ],
+              "read_hardware_state": true,
+              "rpy": [
+                0.0012,
+                -0.0108,
+                -0.499
+              ],
+              "stale_command": false,
+              "stale_state": false,
+              "stale_upper_body": false,
+              "state_age_s": 0.0007216930389404297,
+              "target_error_rad": 0.10514996200799942,
+              "target_filter_alpha": 0.2,
+              "target_lower": [
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0,
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0
+              ],
+              "writing_lowcmd": true
+            }
+          },
+          "publication_interval_p50_ms": 21.598811500000004,
+          "publication_interval_p99_ms": 22.696858039999995
+        },
+        "/booster_k1/low_state_summary": {
+          "messages": 2068,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784440242312141837,
+          "last_log_time_ns": 1784440285942250982,
+          "schema": "std_msgs/msg/String",
+          "sample": {
+            "data": "{\"stamp\":1784440242.3118477,\"stale_state\":false,\"rpy\":[0.0012441460276022553,-0.010827003978192806,-0.49896401166915894],\"gyro\":[0.0007337272400036454,0.00036998375435359776,-0.0012021904112771153],\"q\":[0.00251327408477664,-0.00125663704238832,0.19712254405021667,-1.4542582035064697,0.0011505207512527704,-0.5081466436386108,0.19520501792430878,1.451957106590271,-0.00421857601031661,0.5050786137580872,0.005149920005351305,-0.0036240178160369396,0.0032425422687083483,0.10509651154279709,-0.08825663477182388,-0.00718562351539731,0.0036240178160369396,0.0036240178160369396,0.005149920005351305,0.1039520874619484,-0.0984840914607048,0.0013167260913178325],\"dq\":[-0.0008353806915692985,-0.000161263276822865,0.007406687829643488,-0.005602698773145676,0.026627829298377037,-0.011672441847622395,-0.008860711008310318,-0.025937603786587715,-0.0067963264882564545,0.003589522559195757,0.0004996825009584427,0.0037021164316684008,-0.0008064160356298089,-0.005388360470533371,-0.00014851204468868673,0.005498693790286779,0.003067768644541502,6.703774852212518e-05,3.76333664462436e-05,0.015989309176802635,0.005605809856206179,0.012482501566410065],\"tau_est\":[-0.10224000364542007,0.05894999951124191,0.14612261950969696,0.23499251902103424,-0.014954069629311562,0.07306130975484848,0.18115787208080292,-0.08972442150115967,0.03503524884581566,-0.04657124727964401,-1.466153860092163,0.9687911868095398,-0.3795604407787323,-0.31992673873901367,-0.01798102632164955,0.02041843719780445,-0.7679853439331055,-0.6288644671440125,-0.747619092464447,0.4944322407245636,3.032365083694458,0.2706485092639923]}",
+            "decoded_json": {
+              "stamp": 1784440242.3118477,
+              "stale_state": false,
+              "rpy": [
+                0.0012441460276022553,
+                -0.010827003978192806,
+                -0.49896401166915894
+              ],
+              "gyro": [
+                0.0007337272400036454,
+                0.00036998375435359776,
+                -0.0012021904112771153
+              ],
+              "q": [
+                0.00251327408477664,
+                -0.00125663704238832,
+                0.19712254405021667,
+                -1.4542582035064697,
+                0.0011505207512527704,
+                -0.5081466436386108,
+                0.19520501792430878,
+                1.451957106590271,
+                -0.00421857601031661,
+                0.5050786137580872,
+                0.005149920005351305,
+                -0.0036240178160369396,
+                0.0032425422687083483,
+                0.10509651154279709,
+                -0.08825663477182388,
+                -0.00718562351539731,
+                0.0036240178160369396,
+                0.0036240178160369396,
+                0.005149920005351305,
+                0.1039520874619484,
+                -0.0984840914607048,
+                0.0013167260913178325
+              ],
+              "dq": [
+                -0.0008353806915692985,
+                -0.000161263276822865,
+                0.007406687829643488,
+                -0.005602698773145676,
+                0.026627829298377037,
+                -0.011672441847622395,
+                -0.008860711008310318,
+                -0.025937603786587715,
+                -0.0067963264882564545,
+                0.003589522559195757,
+                0.0004996825009584427,
+                0.0037021164316684008,
+                -0.0008064160356298089,
+                -0.005388360470533371,
+                -0.00014851204468868673,
+                0.005498693790286779,
+                0.003067768644541502,
+                6.703774852212518e-05,
+                3.76333664462436e-05,
+                0.015989309176802635,
+                0.005605809856206179,
+                0.012482501566410065
+              ],
+              "tau_est": [
+                -0.10224000364542007,
+                0.05894999951124191,
+                0.14612261950969696,
+                0.23499251902103424,
+                -0.014954069629311562,
+                0.07306130975484848,
+                0.18115787208080292,
+                -0.08972442150115967,
+                0.03503524884581566,
+                -0.04657124727964401,
+                -1.466153860092163,
+                0.9687911868095398,
+                -0.3795604407787323,
+                -0.31992673873901367,
+                -0.01798102632164955,
+                0.02041843719780445,
+                -0.7679853439331055,
+                -0.6288644671440125,
+                -0.747619092464447,
+                0.4944322407245636,
+                3.032365083694458,
+                0.2706485092639923
+              ]
+            }
+          },
+          "publication_interval_p50_ms": 21.620691,
+          "publication_interval_p99_ms": 22.648862859999998
+        }
+      }
+    },
+    {
+      "path": "data/legacy/k1/rosbags/k1_20260719_150836/k1_20260719_150836_0.mcap",
+      "topics": {
+        "/booster_k1/lower_body_mode": {
+          "messages": 5340,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784441317284349984,
+          "last_log_time_ns": 1784441565237386245,
+          "schema": "std_msgs/msg/String",
+          "sample": {
+            "data": "walk"
+          },
+          "publication_interval_p50_ms": 19.996502000000003,
+          "publication_interval_p99_ms": 20.65802326
+        },
+        "/booster_k1/htwk_joint_targets": {
+          "messages": 51854,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784441404570781324,
+          "last_log_time_ns": 1784441565251556589,
+          "schema": "sensor_msgs/msg/JointState",
+          "sample": {
+            "header": {
+              "stamp": {
+                "sec": 1784441404,
+                "nanosec": 570685492
+              },
+              "frame_id": ""
+            },
+            "name": [
+              "AAHead_yaw",
+              "Head_pitch",
+              "ALeft_Shoulder_Pitch",
+              "Left_Shoulder_Roll",
+              "Left_Elbow_Pitch",
+              "Left_Elbow_Yaw",
+              "ARight_Shoulder_Pitch",
+              "Right_Shoulder_Roll",
+              "Right_Elbow_Pitch",
+              "Right_Elbow_Yaw",
+              "Left_Hip_Pitch",
+              "Left_Hip_Roll",
+              "Left_Hip_Yaw",
+              "Left_Knee_Pitch",
+              "Left_Ankle_Pitch",
+              "Left_Ankle_Roll",
+              "Right_Hip_Pitch",
+              "Right_Hip_Roll",
+              "Right_Hip_Yaw",
+              "Right_Knee_Pitch",
+              "Right_Ankle_Pitch",
+              "Right_Ankle_Roll"
+            ],
+            "position": [
+              0.0,
+              0.0,
+              0.2000000774860382,
+              -1.350000262260437,
+              0.0,
+              -0.5,
+              0.2000000774860382,
+              1.350000262260437,
+              0.0,
+              0.5,
+              -0.1000000387430191,
+              0.0,
+              0.0,
+              0.2000000774860382,
+              -0.1000000387430191,
+              0.0,
+              -0.1000000387430191,
+              0.0,
+              0.0,
+              0.2000000774860382,
+              -0.1000000387430191,
+              0.0
+            ],
+            "velocity": [],
+            "effort": []
+          },
+          "publication_interval_p50_ms": 1.998447,
+          "publication_interval_p99_ms": 2.50520748
+        },
+        "/booster_k1/upper_body_joint_targets": {
+          "messages": 5339,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784441404574773061,
+          "last_log_time_ns": 1784441565237371176,
+          "schema": "sensor_msgs/msg/JointState",
+          "sample": {
+            "header": {
+              "stamp": {
+                "sec": 1784441404,
+                "nanosec": 574464395
+              },
+              "frame_id": ""
+            },
+            "name": [
+              "AAHead_yaw",
+              "Head_pitch",
+              "ALeft_Shoulder_Pitch",
+              "Left_Shoulder_Roll",
+              "Left_Elbow_Pitch",
+              "Left_Elbow_Yaw",
+              "ARight_Shoulder_Pitch",
+              "Right_Shoulder_Roll",
+              "Right_Elbow_Pitch",
+              "Right_Elbow_Yaw"
+            ],
+            "position": [
+              0.0,
+              0.0,
+              0.2,
+              -1.35,
+              0.0,
+              -0.5,
+              0.2,
+              1.35,
+              0.0,
+              0.5
+            ],
+            "velocity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "effort": []
+          },
+          "publication_interval_p50_ms": 19.997523000000005,
+          "publication_interval_p99_ms": 20.566478710000002
+        },
+        "/booster_k1/locomotion_command": {
+          "messages": 5339,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784441404574848294,
+          "last_log_time_ns": 1784441565237382508,
+          "schema": "std_msgs/msg/Float64MultiArray",
+          "sample": {
+            "layout": {
+              "dim": [
+                {
+                  "label": "vx_vy_wz_heading_mode",
+                  "size": 5,
+                  "stride": 5
+                }
+              ],
+              "data_offset": 0
+            },
+            "data": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "publication_interval_p50_ms": 19.996844,
+          "publication_interval_p99_ms": 20.625423530000003
+        },
+        "/booster_k1/htwk_lowlevel_status": {
+          "messages": 4918,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784441404579086770,
+          "last_log_time_ns": 1784441565239842913,
+          "schema": "std_msgs/msg/String",
+          "sample": {
+            "data": "{\"action_scale\": 1.0, \"damping_latched\": false, \"damping_reason\": \"\", \"dry_run\": false, \"effective_mode\": \"prepare\", \"enable_hardware\": true, \"enable_lower_body\": true, \"enable_upper_body\": true, \"gains\": {\"ankle_kp\": 50.0, \"arm_kp\": 20.0, \"head_kp\": 20.0, \"hip_kp\": 100.0, \"knee_kp\": 100.0}, \"gait_frequency_hz\": 1.8, \"gyro\": [-0.0008, 0.0004, 0.0013], \"handover\": {\"armed\": false, \"custom_active\": false, \"damping_latched\": false, \"fault_reason\": \"\", \"lowcmd_ignored_in_vendor_mode\": \"deployment_assumption\", \"observed_mode\": \"prepare\", \"prestream_elapsed_s\": 0.0, \"prestream_frames\": 0, \"state\": \"waiting_vendor\", \"vendor_mode\": \"prepare\"}, \"htwk_command\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], \"invalid_low_state_frames\": 0, \"locomotion_feedback_addr\": [\"127.0.0.1\", 12452], \"locomotion_feedback_sent\": false, \"lowcmd_write_ok\": true, \"lower_body_filter\": {\"attitude_fault\": false, \"delay_buffer_len\": 1, \"delay_s\": 0.0, \"delayed_sample_available\": true, \"filtered_locomotion\": [0.0, 0.0, 0.0, 0.0, 0.0], \"reason\": \"\", \"safety_limited\": false, \"stale\": false}, \"mode\": \"prepare\", \"raw_target_lower\": [-0.1, 0.0, 0.0, 0.2, -0.1, 0.0, -0.1, 0.0, 0.0, 0.2, -0.1, 0.0], \"read_hardware_state\": true, \"rpy\": [-0.0003, -0.0122, -0.0386], \"stale_command\": false, \"stale_state\": false, \"stale_upper_body\": false, \"state_age_s\": 0.0013744831085205078, \"target_error_rad\": 0.10591290891170502, \"target_filter_alpha\": 0.2, \"target_lower\": [-0.1, 0.0, 0.0, 0.2, -0.1, 0.0, -0.1, 0.0, 0.0, 0.2, -0.1, 0.0], \"writing_lowcmd\": true}",
+            "decoded_json": {
+              "action_scale": 1.0,
+              "damping_latched": false,
+              "damping_reason": "",
+              "dry_run": false,
+              "effective_mode": "prepare",
+              "enable_hardware": true,
+              "enable_lower_body": true,
+              "enable_upper_body": true,
+              "gains": {
+                "ankle_kp": 50.0,
+                "arm_kp": 20.0,
+                "head_kp": 20.0,
+                "hip_kp": 100.0,
+                "knee_kp": 100.0
+              },
+              "gait_frequency_hz": 1.8,
+              "gyro": [
+                -0.0008,
+                0.0004,
+                0.0013
+              ],
+              "handover": {
+                "armed": false,
+                "custom_active": false,
+                "damping_latched": false,
+                "fault_reason": "",
+                "lowcmd_ignored_in_vendor_mode": "deployment_assumption",
+                "observed_mode": "prepare",
+                "prestream_elapsed_s": 0.0,
+                "prestream_frames": 0,
+                "state": "waiting_vendor",
+                "vendor_mode": "prepare"
+              },
+              "htwk_command": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "invalid_low_state_frames": 0,
+              "locomotion_feedback_addr": [
+                "127.0.0.1",
+                12452
+              ],
+              "locomotion_feedback_sent": false,
+              "lowcmd_write_ok": true,
+              "lower_body_filter": {
+                "attitude_fault": false,
+                "delay_buffer_len": 1,
+                "delay_s": 0.0,
+                "delayed_sample_available": true,
+                "filtered_locomotion": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "reason": "",
+                "safety_limited": false,
+                "stale": false
+              },
+              "mode": "prepare",
+              "raw_target_lower": [
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0,
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0
+              ],
+              "read_hardware_state": true,
+              "rpy": [
+                -0.0003,
+                -0.0122,
+                -0.0386
+              ],
+              "stale_command": false,
+              "stale_state": false,
+              "stale_upper_body": false,
+              "state_age_s": 0.0013744831085205078,
+              "target_error_rad": 0.10591290891170502,
+              "target_filter_alpha": 0.2,
+              "target_lower": [
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0,
+                -0.1,
+                0.0,
+                0.0,
+                0.2,
+                -0.1,
+                0.0
+              ],
+              "writing_lowcmd": true
+            }
+          },
+          "publication_interval_p50_ms": 21.690121,
+          "publication_interval_p99_ms": 22.53350096
+        },
+        "/booster_k1/low_state_summary": {
+          "messages": 4917,
+          "decode_errors": 0,
+          "nonfinite_messages": 0,
+          "first_log_time_ns": 1784441404588756535,
+          "last_log_time_ns": 1784441565239764955,
+          "schema": "std_msgs/msg/String",
+          "sample": {
+            "data": "{\"stamp\":1784441404.5884588,\"stale_state\":false,\"rpy\":[-0.0002849788870662451,-0.012201688252389431,-0.03859307989478111],\"gyro\":[-0.0002596161502879113,0.00012871931539848447,-0.00015740480739623308],\"q\":[0.005654866807162762,-0.00125663704238832,0.1959720253944397,-1.4546416997909546,0.00153402762953192,-0.505462110042572,0.19635553658008575,1.451957106590271,-0.011505207046866417,0.5108311772346497,0.005912871100008488,-0.004386968910694122,0.0009536888683214784,0.10814831405878067,-0.09280990809202194,-0.00043734684004448354,0.002861066721379757,0.001716639962978661,-0.0024795911740511656,0.10662241280078888,-0.09490455687046051,-9.634102752897888e-05],\"dq\":[-0.00020691270765382797,0.0003136277664452791,-0.013501021079719067,-0.03182775154709816,-0.01032064575701952,0.0009879295248538256,0.01003027893602848,-0.00047298631398007274,0.02633657678961754,0.008044247515499592,-0.00423106225207448,-0.004367007873952389,-0.002623304259032011,-0.009362475015223026,-0.0009565729997120798,-0.0012396983802318573,0.0016003268538042903,-0.00602854136377573,-0.0014986583264544606,0.007489270530641079,0.0012342595728114247,0.009599178098142147],\"tau_est\":[-0.2032500058412552,0.06375999748706818,0.17218543589115143,0.23627430200576782,-0.04443494975566864,0.04828028380870819,0.20422986149787903,-0.0713522732257843,0.11535996943712234,-0.09997864067554474,-2.3039560317993164,1.2407326698303223,0.3795604407787323,-1.0179487466812134,1.0301685333251953,-0.3235507905483246,-0.6283516883850098,-1.308717966079712,0.747619092464447,-0.20358975231647491,1.6947624683380127,0.6465356349945068]}",
+            "decoded_json": {
+              "stamp": 1784441404.5884588,
+              "stale_state": false,
+              "rpy": [
+                -0.0002849788870662451,
+                -0.012201688252389431,
+                -0.03859307989478111
+              ],
+              "gyro": [
+                -0.0002596161502879113,
+                0.00012871931539848447,
+                -0.00015740480739623308
+              ],
+              "q": [
+                0.005654866807162762,
+                -0.00125663704238832,
+                0.1959720253944397,
+                -1.4546416997909546,
+                0.00153402762953192,
+                -0.505462110042572,
+                0.19635553658008575,
+                1.451957106590271,
+                -0.011505207046866417,
+                0.5108311772346497,
+                0.005912871100008488,
+                -0.004386968910694122,
+                0.0009536888683214784,
+                0.10814831405878067,
+                -0.09280990809202194,
+                -0.00043734684004448354,
+                0.002861066721379757,
+                0.001716639962978661,
+                -0.0024795911740511656,
+                0.10662241280078888,
+                -0.09490455687046051,
+                -9.634102752897888e-05
+              ],
+              "dq": [
+                -0.00020691270765382797,
+                0.0003136277664452791,
+                -0.013501021079719067,
+                -0.03182775154709816,
+                -0.01032064575701952,
+                0.0009879295248538256,
+                0.01003027893602848,
+                -0.00047298631398007274,
+                0.02633657678961754,
+                0.008044247515499592,
+                -0.00423106225207448,
+                -0.004367007873952389,
+                -0.002623304259032011,
+                -0.009362475015223026,
+                -0.0009565729997120798,
+                -0.0012396983802318573,
+                0.0016003268538042903,
+                -0.00602854136377573,
+                -0.0014986583264544606,
+                0.007489270530641079,
+                0.0012342595728114247,
+                0.009599178098142147
+              ],
+              "tau_est": [
+                -0.2032500058412552,
+                0.06375999748706818,
+                0.17218543589115143,
+                0.23627430200576782,
+                -0.04443494975566864,
+                0.04828028380870819,
+                0.20422986149787903,
+                -0.0713522732257843,
+                0.11535996943712234,
+                -0.09997864067554474,
+                -2.3039560317993164,
+                1.2407326698303223,
+                0.3795604407787323,
+                -1.0179487466812134,
+                1.0301685333251953,
+                -0.3235507905483246,
+                -0.6283516883850098,
+                -1.308717966079712,
+                0.747619092464447,
+                -0.20358975231647491,
+                1.6947624683380127,
+                0.6465356349945068
+              ]
+            }
+          },
+          "publication_interval_p50_ms": 21.711667500000004,
+          "publication_interval_p99_ms": 22.503119200000004
+        }
+      }
+    }
+  ]
+}

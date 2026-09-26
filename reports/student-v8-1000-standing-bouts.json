@@ -1,0 +1,68 @@
+{
+  "version": "standing-student-bouts-v2",
+  "controller": "artifacts/student-warp-v8-contact-continuation/actor.pt",
+  "policy_sha256": "fa89d1f9813f5e734a80cd88bbddc09c21832ab19900d514b69127f7a7363e06",
+  "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+  "source_kind": "synthetic_neutral_robot_reference",
+  "bouts": [
+    {
+      "bout": 1,
+      "minimum_root_height_m": 0.5409931396235289,
+      "minimum_upright_cos": 0.9996939776884798,
+      "seconds_requested": 300.0,
+      "seconds_completed": 300.0,
+      "completed": true
+    },
+    {
+      "bout": 2,
+      "minimum_root_height_m": 0.5402116318266303,
+      "minimum_upright_cos": 0.9990304178609507,
+      "seconds_requested": 300.0,
+      "seconds_completed": 300.0,
+      "completed": true
+    }
+  ],
+  "falls": 0,
+  "failure_reason": null,
+  "resets_after_initialization": 0,
+  "max_target_step_rad": 0.1200000000000001,
+  "command_p95_ms": 0.6922193986611092,
+  "joint_rmse_rad": 0.09902534413796268,
+  "relative_body_rmse_m": 0.023078782474940274,
+  "effort_saturation_fraction": 0.0,
+  "contact_point_slip_mean_m_s": 6.86568427707608e-05,
+  "self_collision_frames": 0,
+  "events": [
+    {
+      "time": 0.0,
+      "mode": "ready",
+      "reason": "calibrated; explicit arm required"
+    },
+    {
+      "time": 0.0,
+      "mode": "active",
+      "reason": "operator armed"
+    },
+    {
+      "time": 300.0000000000171,
+      "mode": "paused",
+      "reason": "operator paused"
+    },
+    {
+      "time": 301.0000000000162,
+      "mode": "ready",
+      "reason": "calibrated; explicit arm required"
+    },
+    {
+      "time": 301.0000000000162,
+      "mode": "active",
+      "reason": "operator armed"
+    }
+  ],
+  "five_minute_duration_met": true,
+  "behaviorally_accepted": false,
+  "live_mocopi_tested": false,
+  "hardware_verified": false,
+  "scope": "Standing, supported pause, calibration and rearming with the selected actor. No human retargeting or dynamic-tracking acceptance.",
+  "passed": true
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=K1 desktop metrics agent
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/vivi/c/k1-motion
+ExecStart=/usr/bin/python3 /home/vivi/c/k1-motion/infrastructure/dashboard/agent.py --config /home/vivi/c/k1-motion/infrastructure/dashboard/desktop.json --mode metrics
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

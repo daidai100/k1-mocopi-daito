@@ -1,0 +1,90 @@
+{
+  "observed_unix_time": 1789801033.2806695,
+  "run": "/home/vivi/c/k1-motion/artifacts/teacher-isaac-v6-continuation",
+  "state": "running",
+  "live_pids": [
+    347127
+  ],
+  "stage": "teacher",
+  "num_envs": 4096,
+  "planned_iterations": 2850,
+  "target_iteration": 3000,
+  "initialize_checkpoint": null,
+  "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+  "task_version": "relative-body-tracking-v3",
+  "source_revision": "84e2a2e89da900b89059fe5fcd0cd53b80747a16eb4bc2de41e0c51f9b8490e1",
+  "latest_metrics": {
+    "iteration": 2766,
+    "transitions": 362545152,
+    "mean_reward": 0.1031852588057518,
+    "episode_ends": 1061,
+    "loss": -0.007408091798424721,
+    "policy_loss": -0.018224967643618584,
+    "value_loss": 0.01655912958085537,
+    "bc_loss": 0.0,
+    "gradient_norm": 0.5822001695632935,
+    "actor_gradient_norm": 3.170949935913086,
+    "approx_kl": 0.014129241928458214,
+    "clip_fraction": 0.189422607421875,
+    "learning_rate": 4.4444444444444447e-05,
+    "action_std": 0.32332542538642883,
+    "elapsed_seconds": 11282.125585360001,
+    "rollout_seconds": 2.4952744469992467,
+    "update_seconds": 0.2432619719984359,
+    "iteration_seconds": 2.7385365279988036,
+    "transitions_per_second": 47862.05510703235,
+    "peak_torch_vram_bytes": 4472171520,
+    "falls": 28,
+    "tracking_failures": 237,
+    "completed": 797,
+    "episode_length_steps": 109.07634307257304,
+    "body_rmse_m": 0.04834965988993645,
+    "orientation_error_rad": 0.09868663549423218,
+    "reward_components": {
+      "joint": 0.8464221954345703,
+      "height": 0.9565394520759583,
+      "orientation": 0.9143627285957336,
+      "body_position": 0.8958691358566284,
+      "feet_position": 0.7550116777420044,
+      "body_orientation": 0.8241865634918213,
+      "velocity": 0.8371213674545288,
+      "body_velocity": 0.8755630850791931
+    },
+    "joint_rmse_rad": 0.12673084437847137,
+    "effort_saturation": 8.635087579023093e-05,
+    "corruption_assumptions": false,
+    "family_transition_share": {
+      "bow": 0.083038330078125,
+      "dance": 0.09293365478515625,
+      "jump": 0.08937835693359375,
+      "kick": 0.0897064208984375,
+      "punch": 0.11191558837890625,
+      "reach": 0.0880584716796875,
+      "run": 0.0807342529296875,
+      "squat": 0.10219573974609375,
+      "stance": 0.09073638916015625,
+      "turn": 0.0831756591796875,
+      "walk": 0.08812713623046875
+    }
+  },
+  "behaviorally_accepted": false,
+  "metrics_age_seconds": 1.259378433227539,
+  "phase": "learner_updates",
+  "recent_transitions_per_second": 24561.626999534572,
+  "rough_remaining_seconds": 1248.7303060412567,
+  "latest_native_evaluation": {
+    "path": "/home/vivi/c/k1-motion/artifacts/teacher-isaac-v6-continuation/native-evaluations/iteration-002750.json",
+    "results": {
+      "train": {
+        "completed": 245,
+        "total": 274
+      },
+      "validation": {
+        "completed": 25,
+        "total": 33
+      }
+    },
+    "scope": "Development diagnostic, not exported-student acceptance"
+  },
+  "gpu_util_memory_power": "65 %, 10044 MiB, 16303 MiB, 82.64 W"
+}

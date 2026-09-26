@@ -1,0 +1,16 @@
+{
+  "purpose": "Human reference skeleton and upstream loader source for interpreting KIT MMM data offline",
+  "assets": [
+    {
+      "id": "kit_mmmpy_lite",
+      "source_url": "https://git.h2t.iar.kit.edu/sw/mmm/mmmpy/lite",
+      "revision": "82b350892027a39e0aaa77dd85e0c5aee040f8e2",
+      "local_directory": "data/reference/mmmpy_lite",
+      "human_skeleton": "data/reference/mmmpy_lite/mmmpy_lite/data/models/mmm/mmm.urdf",
+      "upstream_license_file": "data/reference/mmmpy_lite/LICENSE",
+      "asset_license_notice": "The upstream mmmpy_lite/data/README.md explicitly excludes that data directory and subdirectories from its MIT software license. Original notices are retained; no MIT relicensing of model/mesh data is asserted.",
+      "code_installed_or_executed": false,
+      "included_in_motion_duration": false
+    }
+  ]
+}

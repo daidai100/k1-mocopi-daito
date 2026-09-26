@@ -1,0 +1,12 @@
+[Unit]
+Description=K1 MLflow tracking server
+After=network-online.target
+
+[Service]
+WorkingDirectory=/mnt/ssd1/k1-dashboard
+ExecStart=/mnt/ssd1/k1-dashboard/.venv/bin/mlflow server --host 127.0.0.1 --port 5001 --workers 2 --backend-store-uri sqlite:////mnt/ssd1/k1-dashboard/mlflow.sqlite --default-artifact-root /mnt/ssd1/k1-dashboard/artifacts --cors-allowed-origins http://100.109.119.8:5050
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

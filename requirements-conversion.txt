@@ -1,0 +1,9 @@
+# Validated numerical stack for the distributed BONES-SEED V3 conversion.
+# Keep both hosts aligned: newer SciPy changed the BVH Euler-angle API behavior.
+numpy==1.26.4
+scipy==1.11.4
+pandas==3.0.1
+pyarrow==23.0.1
+mujoco==3.10.0
+# Optional on the desktop; used by the server's parallel archive extractor.
+rapidgzip==0.16.0

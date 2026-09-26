@@ -1,0 +1,122 @@
+{
+  "baseline": "artifacts/tsubame-103768/student-v1/human-validation-v2-iteration100",
+  "candidate": "artifacts/tsubame-103768/student-v1-buffer-continuation/human-validation-iteration100",
+  "panel_sha256": "33d36bcdf71f52f9635c6161dab9950ab14632c2603ed9c90911d16bac86f3f7",
+  "trials": 180,
+  "independent_recordings": 36,
+  "comparison": {
+    "completed": {
+      "baseline": 68,
+      "candidate": 66,
+      "gained": [
+        "turn-000-0a39e4dd0ea165c4",
+        "turn-016-0a39e4dd0ea165c4",
+        "walk-004-aa615d09f4175d27"
+      ],
+      "lost": [
+        "run-004-0543d0ac075bd464",
+        "run-008-0543d0ac075bd464",
+        "run-012-0543d0ac075bd464",
+        "turn-002-166675236ce5d7c7",
+        "walk-016-aa615d09f4175d27"
+      ]
+    },
+    "tracking_passed": {
+      "baseline": 30,
+      "candidate": 34,
+      "gained": [
+        "bow-002-2d6a188b639b3046",
+        "bow-006-2d6a188b639b3046",
+        "bow-010-2d6a188b639b3046",
+        "bow-014-2d6a188b639b3046",
+        "bow-018-2d6a188b639b3046",
+        "turn-000-0a39e4dd0ea165c4",
+        "turn-016-0a39e4dd0ea165c4",
+        "walk-004-aa615d09f4175d27"
+      ],
+      "lost": [
+        "reach-008-bfbe9bc1cec0ed5f",
+        "reach-017-943d335851d5d1f9",
+        "run-008-0543d0ac075bd464",
+        "walk-016-aa615d09f4175d27"
+      ]
+    }
+  },
+  "families": {
+    "bow": {
+      "trials": 20,
+      "baseline_completed": 10,
+      "candidate_completed": 10,
+      "baseline_strict": 5,
+      "candidate_strict": 10
+    },
+    "dance": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "kick": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "punch": {
+      "trials": 20,
+      "baseline_completed": 0,
+      "candidate_completed": 0,
+      "baseline_strict": 0,
+      "candidate_strict": 0
+    },
+    "reach": {
+      "trials": 20,
+      "baseline_completed": 18,
+      "candidate_completed": 18,
+      "baseline_strict": 15,
+      "candidate_strict": 13
+    },
+    "run": {
+      "trials": 20,
+      "baseline_completed": 8,
+      "candidate_completed": 5,
+      "baseline_strict": 1,
+      "candidate_strict": 0
+    },
+    "stance": {
+      "trials": 20,
+      "baseline_completed": 6,
+      "candidate_completed": 6,
+      "baseline_strict": 6,
+      "candidate_strict": 6
+    },
+    "turn": {
+      "trials": 20,
+      "baseline_completed": 15,
+      "candidate_completed": 16,
+      "baseline_strict": 2,
+      "candidate_strict": 4
+    },
+    "walk": {
+      "trials": 20,
+      "baseline_completed": 11,
+      "candidate_completed": 11,
+      "baseline_strict": 1,
+      "candidate_strict": 1
+    }
+  },
+  "baseline_reasons": {
+    "finished": 68,
+    "fall": 81,
+    "offline_reference_rejected": 31
+  },
+  "candidate_reasons": {
+    "finished": 66,
+    "fall": 83,
+    "offline_reference_rejected": 31
+  },
+  "candidate_behaviorally_accepted": false,
+  "scope": "Paired development comparison; no promotion or broader acceptance implied"
+}

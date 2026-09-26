@@ -1,0 +1,13 @@
+{
+  "job_id": "103768",
+  "scratch": "/local/103768",
+  "node": "r4n11",
+  "torch": "2.7.1+cu128",
+  "mujoco": "3.10.0",
+  "mujoco_warp": "3.11.0",
+  "warp": "1.17.0",
+  "cuda": true,
+  "device": "NVIDIA H100 MIG 4g.47gb",
+  "device_memory_bytes": 49794777088,
+  "python": "3.11.15"
+}

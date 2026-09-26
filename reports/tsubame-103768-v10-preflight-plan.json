@@ -1,0 +1,17 @@
+{
+  "checkpoint_sha256": "15471fce886dbdea86044e491e16f01e0258386e14eaf53ef2b7a971505a6ac7",
+  "index_sha256": "f3100d39e276a29c3f13188f45fcd7036fd3479117d5db01c9008433e822b420",
+  "source_revision": "a8d8f5855382be83e205820f28bd6a54233ed87d437bf7fdaa16feed0448a0a8",
+  "script_sha256": {
+    "train_warp.py": "b1a7c762453c31b51498a94b52819b75dac5a1993d7479189e3589c80b2e089a",
+    "launch_tsubame_student.py": "13ad29f08fe420d454168645328a15c1e6ec8f32343036acf76f950622289dfb",
+    "freeze_source.py": "ee1e3b894f09cfbadf832b11325f58d05d7032cb1e1ab5484208a5a14e2138ed"
+  },
+  "original_run": "student-v1-epa96",
+  "new_run": "student-v10-ppo-preflight",
+  "parent_local_iteration": 150,
+  "parent_validation_strict": 46,
+  "parent_validation_trials": 180,
+  "standing_bouts_passed": true,
+  "scope": "Fresh optimizer for larger 8192-world rollout; 20 updates to qualify H100 execution of locally tested V8-data/PPO-only/self-collision-cost candidate. No acceptance claim."
+}

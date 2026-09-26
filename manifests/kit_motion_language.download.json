@@ -1,0 +1,16 @@
+{
+  "dataset_id": "kit_motion_language",
+  "status": "downloaded_and_extracted",
+  "completed_utc": "2026-09-18T11:15:56.846679+00:00",
+  "source_url": "https://motion-annotation.humanoids.kit.edu/downloads/4/",
+  "revision": "2017-06-22",
+  "archive": "data/archives/kit-motion-language-2017-06-22.zip",
+  "archive_bytes": 4159992190,
+  "archive_sha256": "ba51bb70e3b7aa9c3b5539d543336b4cdca5a7ee5ad730b82f1449a2ebed4b43",
+  "upstream_sha256_verified": false,
+  "raw_directory": "data/raw/kit_motion_language",
+  "extracted_files": 15644,
+  "extracted_bytes": 8658554990,
+  "extracted_entry_crc_verified": true,
+  "motion_quality_validation": "pending inventory validation"
+}

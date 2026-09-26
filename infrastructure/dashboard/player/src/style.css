@@ -1,0 +1,49 @@
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #090b0f; color: #e7eaf0; }
+* { box-sizing: border-box; }
+html, body { width: 100%; margin: 0; }
+body { min-height: 100%; overflow: auto; }
+main { display: grid; min-height: 100vh; grid-template-rows: auto minmax(420px, 62vh) auto auto; }
+header, footer { display: flex; align-items: center; gap: 12px; padding: 10px 14px; background: #11151c; border-color: #282e39; }
+header { justify-content: space-between; border-bottom: 1px solid #282e39; }
+header h1 { display: inline; margin: 0 0 0 12px; font-size: 15px; font-weight: 600; }
+header a { color: #8db8ff; font-size: 12px; text-decoration: none; }
+#status { color: #9ca6b7; font: 12px ui-monospace, monospace; }
+#status.error { color: #ff8080; }
+#viewer { position: relative; min-height: 0; }
+#viewer canvas { display: block; width: 100%; height: 100%; }
+footer { border-top: 1px solid #282e39; }
+button, select, .button-link { border: 1px solid #3a4352; border-radius: 5px; background: #202631; color: inherit; padding: 6px 10px; }
+.button-link { font-size: 12px; text-decoration: none; white-space: nowrap; }
+button:disabled { opacity: .45; }
+#timeline { flex: 1; min-width: 80px; accent-color: #60a5fa; }
+#step { min-width: 100px; color: #b8c0cc; font: 12px ui-monospace, monospace; text-align: center; }
+label { display: flex; align-items: center; gap: 6px; color: #aeb7c5; font-size: 12px; }
+#metrics { position: relative; min-height: 320px; padding: 10px 12px 18px; border-top: 1px solid #282e39; background: #0c0f14; }
+.metrics-heading { display: flex; align-items: baseline; justify-content: space-between; margin: 0 2px 8px; }
+.metrics-heading h2 { margin: 0; font-size: 15px; }
+#metrics-frame { color: #9ca6b7; font: 12px ui-monospace, monospace; }
+#metrics-status { display: grid; min-height: 260px; place-items: center; color: #8994a6; font: 13px ui-monospace, monospace; }
+#metrics-status.error { color: #ff8080; }
+#charts { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+.chart-card { min-width: 0; width: 100%; padding: 7px 0 0; overflow: hidden; border: 1px solid #252b35; border-radius: 2px; background: #101319; }
+.chart-card h3 { display: flex; justify-content: space-between; margin: 0; padding: 0 9px 5px; color: #d9dee8; font-size: 12px; font-weight: 600; }
+.chart-card h3 small { color: #7f8a9c; font-weight: 400; }
+.partition-key { display: flex; align-items: center; gap: 5px; color: #9ba5b4; font-size: 10px; font-weight: 400; }
+.partition-key i { display: inline-block; width: 12px; height: 3px; margin-left: 5px; }
+.partition-key .executed { background: #3b82f6; }
+.partition-key .inpainted { background: #facc15; }
+.partition-key .discarded { background: #7c8594; }
+.plot { width: 100%; }
+.uplot { background: #0f1217; font-family: ui-monospace, monospace; }
+.uplot .u-legend { margin: 0; padding: 3px 8px 5px; border-top: 1px solid #202630; background: #0d1015; text-align: left; font-size: 11px; }
+.uplot .u-legend .u-series { margin-right: 14px; }
+.uplot .u-legend .u-value { color: #e1e6ef; }
+#rollout-metadata { padding: 12px; border-top: 1px solid #282e39; background: #0b0e13; }
+.metadata-heading { display: flex; align-items: baseline; justify-content: space-between; margin: 0 2px 8px; }
+.metadata-heading h2 { margin: 0; font-size: 15px; }
+.metadata-heading span { color: #7f8a9c; font: 11px ui-monospace, monospace; }
+#metadata-content { display: flex; flex-direction: column; gap: 4px; }
+#metadata-content details { border: 1px solid #252b35; background: #101319; }
+#metadata-content summary { padding: 7px 10px; cursor: pointer; color: #cbd2dd; font: 12px ui-monospace, monospace; text-transform: capitalize; }
+#metadata-content pre { max-height: 420px; margin: 0; padding: 10px 12px; overflow: auto; border-top: 1px solid #252b35; color: #aeb8c7; background: #0d1015; font: 11px/1.45 ui-monospace, monospace; white-space: pre-wrap; }
+@media (max-width: 650px) { header h1 { display: block; margin: 3px 0 0; } label { display: none; } }

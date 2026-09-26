@@ -1,0 +1,43 @@
+{
+  "baseline_iteration": 50,
+  "candidate_iteration": 100,
+  "trials": 180,
+  "independent_recordings": 36,
+  "comparison": {
+    "completed": {
+      "baseline": 63,
+      "candidate": 68,
+      "gained": [
+        "run-004-0543d0ac075bd464",
+        "run-008-0543d0ac075bd464",
+        "turn-005-9040f50d0c40b1ad",
+        "turn-013-9040f50d0c40b1ad",
+        "turn-014-988af43db7b862ce",
+        "walk-016-aa615d09f4175d27"
+      ],
+      "lost": [
+        "run-016-0543d0ac075bd464"
+      ]
+    },
+    "tracking_passed": {
+      "baseline": 18,
+      "candidate": 30,
+      "gained": [
+        "bow-000-2d6a188b639b3046",
+        "bow-004-2d6a188b639b3046",
+        "bow-008-2d6a188b639b3046",
+        "bow-012-2d6a188b639b3046",
+        "bow-016-2d6a188b639b3046",
+        "reach-008-bfbe9bc1cec0ed5f",
+        "reach-017-943d335851d5d1f9",
+        "reach-018-bfbe9bc1cec0ed5f",
+        "run-008-0543d0ac075bd464",
+        "turn-005-9040f50d0c40b1ad",
+        "turn-013-9040f50d0c40b1ad",
+        "walk-016-aa615d09f4175d27"
+      ],
+      "lost": []
+    }
+  },
+  "behaviorally_accepted": false
+}

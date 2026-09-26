@@ -1,0 +1,277 @@
+{
+  "recorded_experiment_replays": 627,
+  "setting_and_condition_count": 46,
+  "independent_originals": 32,
+  "discovery_originals": 11,
+  "confirmation_originals": 21,
+  "baseline": {
+    "completed": 20,
+    "clean": 5,
+    "collision_trials": 24
+  },
+  "candidate": {
+    "completed": 19,
+    "clean": 16,
+    "collision_trials": 7
+  },
+  "gained_ids": [
+    "35281350b51b4270d9d7",
+    "36c094f374f02a7920b2",
+    "47fc8f5e23c30fbd5d34",
+    "4f2b91a2b7e0856e6445",
+    "9528dc1d7bf16b66bc8d",
+    "9a2c6d6a2976a03b6f57",
+    "9ab8e0cf997174fcaa54",
+    "b9665468e91d87519a54",
+    "c1fcf76e0922e1c490b7",
+    "efab9075a6ec75fcd477",
+    "fd8ba3b2de5557f0f782"
+  ],
+  "lost_ids": [],
+  "conditions": [
+    {
+      "condition": "Nominal",
+      "trials": 21,
+      "baseline_clean": 5,
+      "candidate_clean": 11
+    },
+    {
+      "condition": "Initial pose",
+      "trials": 21,
+      "baseline_clean": 5,
+      "candidate_clean": 12
+    },
+    {
+      "condition": "Push",
+      "trials": 21,
+      "baseline_clean": 5,
+      "candidate_clean": 11
+    },
+    {
+      "condition": "40 ms delay",
+      "trials": 21,
+      "baseline_clean": 5,
+      "candidate_clean": 11
+    },
+    {
+      "condition": "IMU unavailable",
+      "trials": 21,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    }
+  ],
+  "families": [
+    {
+      "family": "bow",
+      "originals": 3,
+      "baseline_clean": 0,
+      "candidate_clean": 2
+    },
+    {
+      "family": "dance",
+      "originals": 1,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    },
+    {
+      "family": "fall_or_recovery",
+      "originals": 1,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    },
+    {
+      "family": "gesture",
+      "originals": 6,
+      "baseline_clean": 0,
+      "candidate_clean": 5
+    },
+    {
+      "family": "idle_stance",
+      "originals": 2,
+      "baseline_clean": 1,
+      "candidate_clean": 1
+    },
+    {
+      "family": "jump",
+      "originals": 1,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    },
+    {
+      "family": "kick",
+      "originals": 1,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    },
+    {
+      "family": "object_interaction",
+      "originals": 2,
+      "baseline_clean": 1,
+      "candidate_clean": 1
+    },
+    {
+      "family": "other",
+      "originals": 2,
+      "baseline_clean": 1,
+      "candidate_clean": 2
+    },
+    {
+      "family": "punch",
+      "originals": 1,
+      "baseline_clean": 1,
+      "candidate_clean": 1
+    },
+    {
+      "family": "run",
+      "originals": 3,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    },
+    {
+      "family": "sit_or_kneel",
+      "originals": 2,
+      "baseline_clean": 1,
+      "candidate_clean": 1
+    },
+    {
+      "family": "squat",
+      "originals": 1,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    },
+    {
+      "family": "transition",
+      "originals": 1,
+      "baseline_clean": 0,
+      "candidate_clean": 0
+    },
+    {
+      "family": "turn",
+      "originals": 4,
+      "baseline_clean": 0,
+      "candidate_clean": 2
+    },
+    {
+      "family": "walk",
+      "originals": 1,
+      "baseline_clean": 0,
+      "candidate_clean": 1
+    }
+  ],
+  "thresholds": {
+    "min_height_m": 0.22,
+    "min_upright_cos": 0.2,
+    "max_joint_rmse_rad": 0.35,
+    "max_relative_body_rmse_m": 0.15,
+    "max_effort_saturation_fraction": 0.05,
+    "max_contact_slip_m_s": 0.2,
+    "min_trials_per_family": 20,
+    "min_families": 8,
+    "min_family_completion": 0.95,
+    "command_p95_ms": 40.0,
+    "max_root_velocity_rmse_m_s": 0.3,
+    "max_mean_root_orientation_error_rad": 0.35,
+    "max_root_orientation_error_rad": 1.0,
+    "progress_check_min_displacement_m": 0.5,
+    "min_root_progress_ratio": 0.7,
+    "max_root_progress_ratio": 1.3
+  },
+  "behaviorally_accepted": false,
+  "hardware_verified": false,
+  "three_training_arms": {
+    "iterations_each": 120,
+    "environments": 512,
+    "horizon": 32,
+    "transitions_each": 1966080,
+    "total_transitions": 5898240,
+    "original_reference_candidates": 40,
+    "selected": false
+  },
+  "profile": "artifacts/controller-pv-arm-feedback-v1/actor.pt",
+  "action_settings": {
+    "residual_scale": 0.25,
+    "command_velocity_limit": 6.0,
+    "target_velocity_scale": 0.25,
+    "upper_body_residual_scale": 0.0,
+    "imu_reference_rate_scale": 0.0,
+    "arm_collision_clearance": 0.025
+  },
+  "standing": {
+    "version": "standing-student-bouts-v2",
+    "controller": "artifacts/controller-pv-arm-feedback-v1/actor.pt",
+    "policy_sha256": "091d6927485137f36eee96dd857d2286dc108293d567deb2cad4d72d5d4db9b9",
+    "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+    "source_kind": "synthetic_neutral_robot_reference",
+    "bouts": [
+      {
+        "bout": 1,
+        "minimum_root_height_m": 0.5379144070752826,
+        "minimum_upright_cos": 0.9988670869897353,
+        "seconds_requested": 300,
+        "seconds_completed": 300.0,
+        "completed": true
+      },
+      {
+        "bout": 2,
+        "minimum_root_height_m": 0.5376923358943057,
+        "minimum_upright_cos": 0.999253461477701,
+        "seconds_requested": 300,
+        "seconds_completed": 300.0,
+        "completed": true
+      }
+    ],
+    "falls": 0,
+    "failure_reason": null,
+    "resets_after_initialization": 0,
+    "max_target_step_rad": 0.12000000000000277,
+    "max_target_step_limit_fraction": 1.000000000000023,
+    "action_settings": {
+      "residual_scale": 0.25,
+      "command_velocity_limit": 6.0,
+      "target_velocity_scale": 0.25,
+      "upper_body_residual_scale": 0.0,
+      "imu_reference_rate_scale": 0.0,
+      "arm_collision_clearance": 0.025
+    },
+    "command_p95_ms": 1.3677273476787375,
+    "joint_rmse_rad": 0.049431607041452996,
+    "relative_body_rmse_m": 0.011473840086004406,
+    "effort_saturation_fraction": 0.0,
+    "contact_point_slip_mean_m_s": 5.5434605379169996e-05,
+    "self_collision_frames": 0,
+    "events": [
+      {
+        "time": 0.0,
+        "mode": "ready",
+        "reason": "calibrated; explicit arm required"
+      },
+      {
+        "time": 0.0,
+        "mode": "active",
+        "reason": "operator armed"
+      },
+      {
+        "time": 300.0000000000171,
+        "mode": "paused",
+        "reason": "operator paused"
+      },
+      {
+        "time": 301.0000000000162,
+        "mode": "ready",
+        "reason": "calibrated; explicit arm required"
+      },
+      {
+        "time": 301.0000000000162,
+        "mode": "active",
+        "reason": "operator armed"
+      }
+    ],
+    "five_minute_duration_met": true,
+    "behaviorally_accepted": false,
+    "live_mocopi_tested": false,
+    "hardware_verified": false,
+    "scope": "Standing, supported pause, calibration and rearming with the selected actor. No human retargeting or dynamic-tracking acceptance.",
+    "passed": true
+  },
+  "generated_at": "2026-09-20T15:28:19.695894+09:00"
+}

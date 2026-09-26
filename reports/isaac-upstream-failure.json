@@ -1,0 +1,20 @@
+{
+  "backend": "isaaclab",
+  "headless": true,
+  "rendering": false,
+  "stage": "robot_spawn",
+  "passed": false,
+  "physics_passed": false,
+  "learning_passed": false,
+  "versions": {
+    "torch": "2.7.0+cu128",
+    "isaacsim": "5.1.0.0",
+    "isaaclab": "0.54.0"
+  },
+  "python": "/home/vivi/miniconda3/envs/isaaclab/bin/python",
+  "startup_seconds": 6.652042937999795,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "gpu_memory_bytes": 16575954944,
+  "error": "ValueError: Not all regular expressions are matched! Please check that the regular expressions are correct: \n\tLeft_Shoulder_Roll: []\n\tRight_Shoulder_Roll: []\nAvailable strings: ['aahead_yaw_joint', 'aaleft_shoulder_pitch_joint', 'aaright_shoulder_pitch_joint', 'left_hip_pitch_joint', 'right_hip_pitch_joint', 'aahead_pitch_joint', 'left_shoulder_roll_joint', 'right_shoulder_roll_joint', 'left_hip_roll_joint', 'right_hip_roll_joint', 'left_elbow_pitch_joint', 'right_elbow_pitch_joint', 'left_hip_yaw_joint', 'right_hip_yaw_joint', 'left_elbow_yaw_joint', 'right_elbow_yaw_joint', 'left_knee_pitch_joint', 'right_knee_pitch_joint', 'left_ankle_pitch_joint', 'right_ankle_pitch_joint', 'left_ankle_roll_joint', 'right_ankle_roll_joint']\n",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/vivi/c/k1-motion/scripts/preflight_isaac.py\", line 57, in <module>\n    sim.reset()\n  File \"/home/vivi/IsaacLab/source/isaaclab/isaaclab/sim/simulation_context.py\", line 530, in reset\n    self.render()\n  File \"/home/vivi/IsaacLab/source/isaaclab/isaaclab/sim/simulation_context.py\", line 601, in render\n    raise exception_to_raise\n  File \"/home/vivi/IsaacLab/source/isaaclab/isaaclab/assets/asset_base.py\", line 317, in _initialize_callback\n    self._initialize_impl()\n  File \"/home/vivi/IsaacLab/source/isaaclab/isaaclab/assets/articulation/articulation.py\", line 1583, in _initialize_impl\n    self._process_cfg()\n  File \"/home/vivi/IsaacLab/source/isaaclab/isaaclab/assets/articulation/articulation.py\", line 1684, in _process_cfg\n    indices_list, _, values_list = string_utils.resolve_matching_names_values(\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/vivi/IsaacLab/source/isaaclab/isaaclab/utils/string.py\", line 369, in resolve_matching_names_values\n    raise ValueError(\nValueError: Not all regular expressions are matched! Please check that the regular expressions are correct: \n\tLeft_Shoulder_Roll: []\n\tRight_Shoulder_Roll: []\nAvailable strings: ['aahead_yaw_joint', 'aaleft_shoulder_pitch_joint', 'aaright_shoulder_pitch_joint', 'left_hip_pitch_joint', 'right_hip_pitch_joint', 'aahead_pitch_joint', 'left_shoulder_roll_joint', 'right_shoulder_roll_joint', 'left_hip_roll_joint', 'right_hip_roll_joint', 'left_elbow_pitch_joint', 'right_elbow_pitch_joint', 'left_hip_yaw_joint', 'right_hip_yaw_joint', 'left_elbow_yaw_joint', 'right_elbow_yaw_joint', 'left_knee_pitch_joint', 'right_knee_pitch_joint', 'left_ankle_pitch_joint', 'right_ankle_pitch_joint', 'left_ankle_roll_joint', 'right_ankle_roll_joint']\n\n"
+}

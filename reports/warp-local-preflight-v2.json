@@ -1,0 +1,53 @@
+{
+  "backend": "warp",
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "steps": 100,
+  "contract": {
+    "implementation": "mujoco-warp-k1-v1",
+    "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+    "mujoco": "3.10.0",
+    "mujoco_warp": "3.11.0",
+    "warp": "1.17.0",
+    "physics_dt": 0.002,
+    "control_dt": 0.02,
+    "nconmax": 64,
+    "njmax": 256,
+    "integrator": 3,
+    "solver": 2,
+    "solver_iterations": 100,
+    "solver_tolerance": 1e-06,
+    "overflow_check": "latched across episode resets; fatal before PPO update or validation report",
+    "derived_state": "kinematics refreshed after integration"
+  },
+  "initial_max_abs_error": {
+    "q": 0.0,
+    "dq": 0.0,
+    "orientation": 0.0,
+    "omega": 7.450580596923828e-09,
+    "position": 0.0,
+    "velocity": 0.0,
+    "landmarks": 1.1548399925231934e-07,
+    "body_orientation": 1.1920928955078125e-07
+  },
+  "trajectory_max_abs_error": {
+    "q": 0.033979058265686035,
+    "dq": 4.177492618560791,
+    "position": 0.0010650455951690674,
+    "orientation": 0.0026200413703918457,
+    "landmarks": 0.004099596291780472
+  },
+  "limits": {
+    "q": 0.02,
+    "dq": 0.15,
+    "position": 0.01,
+    "orientation": 0.01,
+    "landmarks": 0.01
+  },
+  "max_effort_difference": 0.0031316606421448734,
+  "max_saturation_difference": 0.004545449194583016,
+  "partial_reset_passed": true,
+  "overflow_latched": true,
+  "dynamics_passed": false,
+  "elapsed_seconds": 2.1438048950003576,
+  "scope": "Bounded CPU/GPU dynamics parity; not learned-policy acceptance"
+}

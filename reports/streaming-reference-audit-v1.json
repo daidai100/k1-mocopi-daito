@@ -1,0 +1,116 @@
+{
+  "selection": "one highest source-rate accepted training recording per family; diagnostic only",
+  "library": "artifacts/references-v7-contact-root",
+  "trials": [
+    {
+      "id": "3561b82f2f925f50",
+      "family": "bow",
+      "source_hz": 99.99999999999991,
+      "ticks": 176,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.003327122725661594,
+      "joint_max_abs_rad": 0.059999999999998714,
+      "root_diff_p95_m": 0.0029620799433753378
+    },
+    {
+      "id": "df2d54aa5f58869c",
+      "family": "dance",
+      "source_hz": 120.04801920768381,
+      "ticks": 908,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.023378745349778546,
+      "joint_max_abs_rad": 0.26885263401020465,
+      "root_diff_p95_m": 0.021563894175937622
+    },
+    {
+      "id": "9855bfb97be13ed6",
+      "family": "jump",
+      "source_hz": 120.00480019200758,
+      "ticks": 116,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.020433728588469213,
+      "joint_max_abs_rad": 0.17260595572609264,
+      "root_diff_p95_m": 0.04102209985507982
+    },
+    {
+      "id": "4ec9a0c947f7c0cb",
+      "family": "kick",
+      "source_hz": 99.99999999999991,
+      "ticks": 205,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.011525983282441641,
+      "joint_max_abs_rad": 0.15310277274430317,
+      "root_diff_p95_m": 0.012628547034971438
+    },
+    {
+      "id": "91366e1f6369aa7b",
+      "family": "punch",
+      "source_hz": 120.04801920768381,
+      "ticks": 431,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.02527612435154003,
+      "joint_max_abs_rad": 0.19854858354631433,
+      "root_diff_p95_m": 0.01436573247711504
+    },
+    {
+      "id": "e70f84225978b25f",
+      "family": "reach",
+      "source_hz": 99.99999999999991,
+      "ticks": 112,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.0006349120698282473,
+      "joint_max_abs_rad": 0.01674725585347958,
+      "root_diff_p95_m": 0.0006457479052663285
+    },
+    {
+      "id": "6ff24774f6fff946",
+      "family": "run",
+      "source_hz": 120.00480019200758,
+      "ticks": 116,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.01838979761094555,
+      "joint_max_abs_rad": 0.15554915637892575,
+      "root_diff_p95_m": 0.020397767004619746
+    },
+    {
+      "id": "a431534d9b747da6",
+      "family": "squat",
+      "source_hz": 99.99999999999991,
+      "ticks": 218,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.044504688319850084,
+      "joint_max_abs_rad": 0.18719493669877987,
+      "root_diff_p95_m": 0.015246754807089771
+    },
+    {
+      "id": "de4c6f924e8d370e",
+      "family": "stance",
+      "source_hz": 120.00480019200758,
+      "ticks": 106,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.0011265526970558643,
+      "joint_max_abs_rad": 0.016154741178921433,
+      "root_diff_p95_m": 0.0016742024963433925
+    },
+    {
+      "id": "6e0e07633abcb4a8",
+      "family": "turn",
+      "source_hz": 99.99999999999991,
+      "ticks": 153,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.03597486117472502,
+      "joint_max_abs_rad": 0.27445878648859034,
+      "root_diff_p95_m": 0.04220071665454333
+    },
+    {
+      "id": "a46a8255107e14e8",
+      "family": "walk",
+      "source_hz": 120.00480019200758,
+      "ticks": 116,
+      "invalid_streaming_ticks": 0,
+      "joint_rmse_rad": 0.022455390128757344,
+      "joint_max_abs_rad": 0.2137328949704623,
+      "root_diff_p95_m": 0.032524525819595224
+    }
+  ]
+}

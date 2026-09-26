@@ -1,0 +1,23 @@
+{
+  "started_unix": 1789791112.5545685,
+  "authorization": "User authorized deleting pi05 related code from TSUBAME persistent storage",
+  "free_bytes_before": 4836085760,
+  "deleted": [
+    "/home/4/uh06814/pi05-libero-plus-lab",
+    "/home/4/uh06814/pi05-runtime/pi05-libero-plus4-r32/venv",
+    "/home/4/uh06814/pi05-runtime/pi05-libero-plus4-r32/LIBERO-plus",
+    "/home/4/uh06814/pi05-runtime/pi05-libero-plus4-r32/bin",
+    "/home/4/uh06814/parc2026/pi05_v4",
+    "/home/4/uh06814/parc2026/pi05_v4_resume_20260906",
+    "/home/4/uh06814/parc2026/pi05-track2-fullft-20260914.tar.gz",
+    "/home/4/uh06814/parc2026/pi05-track2-lora16-20260914.tar.gz"
+  ],
+  "preserved": [
+    "pi05-runtime assets, cache, checkpoints, data, downloads, hf and run evidence",
+    "shared Python installations",
+    "uv copied to .local/bin/uv"
+  ],
+  "finished_unix": 1789791144.8962445,
+  "free_bytes_after": 14063890432,
+  "all_targets_absent": true
+}

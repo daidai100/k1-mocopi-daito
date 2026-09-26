@@ -1,0 +1,101 @@
+{
+  "bow": {
+    "completed": 10,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 10,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "dance": {
+    "completed": 0,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 0,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "kick": {
+    "completed": 0,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 0,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "punch": {
+    "completed": 0,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 0,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "reach": {
+    "completed": 18,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 6,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "run": {
+    "completed": 7,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 7,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "stance": {
+    "completed": 6,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 0,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "turn": {
+    "completed": 12,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 12,
+      "received_frame_to_command_p95_ms": 0
+    }
+  },
+  "walk": {
+    "completed": 10,
+    "failed_gates": {
+      "joint_rmse_rad": 0,
+      "relative_body_rmse_m": 0,
+      "effort_saturation_fraction": 0,
+      "contact_point_slip_mean_m_s": 0,
+      "self_collision_frames": 10,
+      "received_frame_to_command_p95_ms": 0
+    }
+  }
+}

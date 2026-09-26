@@ -1,0 +1,13 @@
+{
+  "checkpoint": "artifacts/tsubame-103768/student-v1/checkpoint-000050.pt",
+  "iteration": 50,
+  "optimizer_steps": [
+    1600
+  ],
+  "expected_optimizer_steps": 1600,
+  "source_revision": "f86ee52066426f6f2ac90db928b7dd86aaf156a3ed93df4f142273aeeb819fb1",
+  "transitions": 26214400,
+  "resume_from_iteration": 20,
+  "optimizer_continuation_verified": true,
+  "behaviorally_accepted": false
+}

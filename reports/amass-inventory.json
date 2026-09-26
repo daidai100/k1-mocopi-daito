@@ -1,0 +1,2292 @@
+{
+  "archives": [
+    {
+      "path": "ACCAD.tar.bz2",
+      "bytes": 109319415,
+      "motions": [
+        {
+          "source_id": "ACCAD/Female1Gestures_c3d/D5 - Random Stuff 2_poses.npz",
+          "frames": 1996,
+          "fps": 120.0,
+          "seconds": 16.633333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Gestures_c3d/D2 - Wait 1_poses.npz",
+          "frames": 4624,
+          "fps": 120.0,
+          "seconds": 38.53333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Gestures_c3d/D3 - Conversation Gestures_poses.npz",
+          "frames": 6086,
+          "fps": 120.0,
+          "seconds": 50.71666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Gestures_c3d/D1 - Urban 1_poses.npz",
+          "frames": 1843,
+          "fps": 120.0,
+          "seconds": 15.358333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Gestures_c3d/Female1 Subj Calibration_poses.npz",
+          "frames": 360,
+          "fps": 120.0,
+          "seconds": 3.0,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Gestures_c3d/D6- CartWheel_poses.npz",
+          "frames": 572,
+          "fps": 120.0,
+          "seconds": 4.766666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/s007/QkWalk1_poses.npz",
+          "frames": 307,
+          "fps": 120.0,
+          "seconds": 2.558333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C2 - Run to stand_poses.npz",
+          "frames": 639,
+          "fps": 120.0,
+          "seconds": 5.325,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C14 -  run turn right  (90)_poses.npz",
+          "frames": 511,
+          "fps": 120.0,
+          "seconds": 4.258333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C9 -  run backwards turn run forward_poses.npz",
+          "frames": 275,
+          "fps": 120.0,
+          "seconds": 2.2916666666666665,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C15 -  run turn right  (45)_poses.npz",
+          "frames": 254,
+          "fps": 120.0,
+          "seconds": 2.1166666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C21 -  run to pick up box_poses.npz",
+          "frames": 578,
+          "fps": 120.0,
+          "seconds": 4.816666666666666,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C21 s2 -  run to pick up box_poses.npz",
+          "frames": 307,
+          "fps": 120.0,
+          "seconds": 2.558333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C26 -  run to crouch_poses.npz",
+          "frames": 360,
+          "fps": 120.0,
+          "seconds": 3.0,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C7 -  run backwards_poses.npz",
+          "frames": 371,
+          "fps": 120.0,
+          "seconds": 3.091666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C22 -  run with box_poses.npz",
+          "frames": 238,
+          "fps": 120.0,
+          "seconds": 1.9833333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C5 - walk to run_poses.npz",
+          "frames": 650,
+          "fps": 120.0,
+          "seconds": 5.416666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C4 - Run to walk1_poses.npz",
+          "frames": 424,
+          "fps": 120.0,
+          "seconds": 3.533333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C25 -  side step right_poses.npz",
+          "frames": 515,
+          "fps": 120.0,
+          "seconds": 4.291666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C27 - crouch to run1_poses.npz",
+          "frames": 386,
+          "fps": 120.0,
+          "seconds": 3.216666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C10 -  run backwards stop run forward_poses.npz",
+          "frames": 610,
+          "fps": 120.0,
+          "seconds": 5.083333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C8 -  run backwards to stand_poses.npz",
+          "frames": 529,
+          "fps": 120.0,
+          "seconds": 4.408333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C3 - Run_poses.npz",
+          "frames": 203,
+          "fps": 120.0,
+          "seconds": 1.6916666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C11 -  run turn left (90)_poses.npz",
+          "frames": 278,
+          "fps": 120.0,
+          "seconds": 2.316666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C6 - stand to run backwards_poses.npz",
+          "frames": 898,
+          "fps": 120.0,
+          "seconds": 7.483333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C16 -  run turn right  (135)_poses.npz",
+          "frames": 281,
+          "fps": 120.0,
+          "seconds": 2.341666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C24 -  side step left_poses.npz",
+          "frames": 476,
+          "fps": 120.0,
+          "seconds": 3.966666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C13 -  run turn left (135)_poses.npz",
+          "frames": 344,
+          "fps": 120.0,
+          "seconds": 2.8666666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C20 -  run to jump to walk_poses.npz",
+          "frames": 480,
+          "fps": 120.0,
+          "seconds": 4.0,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Running_c3d/C19 -  run to hop to walk_poses.npz",
+          "frames": 505,
+          "fps": 120.0,
+          "seconds": 4.208333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A6 - Lift Box_poses.npz",
+          "frames": 592,
+          "fps": 120.0,
+          "seconds": 4.933333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A1 - Stand_poses.npz",
+          "frames": 745,
+          "fps": 120.0,
+          "seconds": 6.208333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A2 - Sway_poses.npz",
+          "frames": 1084,
+          "fps": 120.0,
+          "seconds": 9.033333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A5 - Pick Up Box_poses.npz",
+          "frames": 564,
+          "fps": 120.0,
+          "seconds": 4.7,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A7 - Crouch_poses.npz",
+          "frames": 717,
+          "fps": 120.0,
+          "seconds": 5.975,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A4 - Look Around_poses.npz",
+          "frames": 1913,
+          "fps": 120.0,
+          "seconds": 15.941666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A9 -   Lie (forward) t2_poses.npz",
+          "frames": 993,
+          "fps": 120.0,
+          "seconds": 8.275,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A8 -  Crourch to Lie (forward)_poses.npz",
+          "frames": 792,
+          "fps": 120.0,
+          "seconds": 6.6,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A3 - Swing Arms While Stand_poses.npz",
+          "frames": 688,
+          "fps": 120.0,
+          "seconds": 5.733333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A11 -   Military Crawl Forward_poses.npz",
+          "frames": 1274,
+          "fps": 120.0,
+          "seconds": 10.616666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A8 - Crouch to Lie Down_poses.npz",
+          "frames": 947,
+          "fps": 120.0,
+          "seconds": 7.891666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A2 - Sway t3_poses.npz",
+          "frames": 1166,
+          "fps": 120.0,
+          "seconds": 9.716666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A9 -   Lie (forward)_poses.npz",
+          "frames": 283,
+          "fps": 120.0,
+          "seconds": 2.3583333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A2 - Sway t2_poses.npz",
+          "frames": 1124,
+          "fps": 120.0,
+          "seconds": 9.366666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A10 -  Lie Down to Crouch_poses.npz",
+          "frames": 903,
+          "fps": 120.0,
+          "seconds": 7.525,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A12 -   Military Crawl Backwards_poses.npz",
+          "frames": 1974,
+          "fps": 120.0,
+          "seconds": 16.45,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1General_c3d/General A9 -  Lie Down_poses.npz",
+          "frames": 1395,
+          "fps": 120.0,
+          "seconds": 11.625,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/s008/Run1_poses.npz",
+          "frames": 217,
+          "fps": 120.0,
+          "seconds": 1.8083333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B4 - Stand to Walk Back_poses.npz",
+          "frames": 1555,
+          "fps": 120.0,
+          "seconds": 12.958333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B22 - Side step left_poses.npz",
+          "frames": 555,
+          "fps": 120.0,
+          "seconds": 4.625,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Male1 Cal_poses.npz",
+          "frames": 360,
+          "fps": 120.0,
+          "seconds": 3.0,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B10 - Walk turn left 45_poses.npz",
+          "frames": 1011,
+          "fps": 120.0,
+          "seconds": 8.425,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B23 - Side step right_poses.npz",
+          "frames": 430,
+          "fps": 120.0,
+          "seconds": 3.5833333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B15 - Walk turn around_poses.npz",
+          "frames": 1367,
+          "fps": 120.0,
+          "seconds": 11.391666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B17 - Walk 2 hop 2 walk_poses.npz",
+          "frames": 979,
+          "fps": 120.0,
+          "seconds": 8.158333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B21 - Put Down Box to walk_poses.npz",
+          "frames": 835,
+          "fps": 120.0,
+          "seconds": 6.958333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B13 - Walk turn right 45_poses.npz",
+          "frames": 1116,
+          "fps": 120.0,
+          "seconds": 9.3,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Walking_c3d/Walk B16 - Walk turn change_poses.npz",
+          "frames": 1454,
+          "fps": 120.0,
+          "seconds": 12.116666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/s009/Sprint1_poses.npz",
+          "frames": 265,
+          "fps": 120.0,
+          "seconds": 2.2083333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C25 - quick sidestep right_poses.npz",
+          "frames": 242,
+          "fps": 120.0,
+          "seconds": 2.0166666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C24 - quick sidestep left_poses.npz",
+          "frames": 241,
+          "fps": 120.0,
+          "seconds": 2.0083333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C9 - run backwards turn run forward_poses.npz",
+          "frames": 430,
+          "fps": 120.0,
+          "seconds": 3.5833333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C1 - stand to run_poses.npz",
+          "frames": 491,
+          "fps": 120.0,
+          "seconds": 4.091666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C4 - run to walk_poses.npz",
+          "frames": 462,
+          "fps": 120.0,
+          "seconds": 3.85,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C5 - walk to run_poses.npz",
+          "frames": 428,
+          "fps": 120.0,
+          "seconds": 3.566666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C26 - run to crouch_poses.npz",
+          "frames": 284,
+          "fps": 120.0,
+          "seconds": 2.3666666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C3 - run_poses.npz",
+          "frames": 326,
+          "fps": 120.0,
+          "seconds": 2.716666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C7 - run backwards t2_poses.npz",
+          "frames": 386,
+          "fps": 120.0,
+          "seconds": 3.216666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C13 - run turn left 135_poses.npz",
+          "frames": 370,
+          "fps": 120.0,
+          "seconds": 3.0833333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C23 - put down box to run_poses.npz",
+          "frames": 387,
+          "fps": 120.0,
+          "seconds": 3.225,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C19 - run to jump to walk_poses.npz",
+          "frames": 426,
+          "fps": 120.0,
+          "seconds": 3.55,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C14 - run turn right 90_poses.npz",
+          "frames": 381,
+          "fps": 120.0,
+          "seconds": 3.175,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C6 - stand to run backwards_poses.npz",
+          "frames": 698,
+          "fps": 120.0,
+          "seconds": 5.816666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C4 - run to walk a_poses.npz",
+          "frames": 462,
+          "fps": 120.0,
+          "seconds": 3.85,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C12 - run turn left 45_poses.npz",
+          "frames": 264,
+          "fps": 120.0,
+          "seconds": 2.2,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C11 - run turn left 90_poses.npz",
+          "frames": 338,
+          "fps": 120.0,
+          "seconds": 2.816666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C17 - run change direction_poses.npz",
+          "frames": 366,
+          "fps": 120.0,
+          "seconds": 3.05,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C16 - run turn right 135_poses.npz",
+          "frames": 379,
+          "fps": 120.0,
+          "seconds": 3.158333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C8 - run backwards to stand_poses.npz",
+          "frames": 481,
+          "fps": 120.0,
+          "seconds": 4.008333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C20 - run to pickup box_poses.npz",
+          "frames": 349,
+          "fps": 120.0,
+          "seconds": 2.908333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C18 - run to hop to walk_poses.npz",
+          "frames": 542,
+          "fps": 120.0,
+          "seconds": 4.516666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Running_c3d/C15 - run turn right 45_poses.npz",
+          "frames": 376,
+          "fps": 120.0,
+          "seconds": 3.1333333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E12 - block left low_poses.npz",
+          "frames": 691,
+          "fps": 120.0,
+          "seconds": 5.758333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E16 - block right middle_poses.npz",
+          "frames": 300,
+          "fps": 120.0,
+          "seconds": 2.5,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E5 - retreat_poses.npz",
+          "frames": 926,
+          "fps": 120.0,
+          "seconds": 7.716666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E19 - dodge left t2_poses.npz",
+          "frames": 308,
+          "fps": 120.0,
+          "seconds": 2.566666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E11 - block left high_poses.npz",
+          "frames": 323,
+          "fps": 120.0,
+          "seconds": 2.691666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E2 - Turn around left_poses.npz",
+          "frames": 1570,
+          "fps": 120.0,
+          "seconds": 13.083333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E9 - side step left_poses.npz",
+          "frames": 273,
+          "fps": 120.0,
+          "seconds": 2.275,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E10 - side step right_poses.npz",
+          "frames": 231,
+          "fps": 120.0,
+          "seconds": 1.925,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E15 - block left middle_poses.npz",
+          "frames": 278,
+          "fps": 120.0,
+          "seconds": 2.316666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E21 - duck left_poses.npz",
+          "frames": 328,
+          "fps": 120.0,
+          "seconds": 2.7333333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E6 - quick retreat_poses.npz",
+          "frames": 643,
+          "fps": 120.0,
+          "seconds": 5.358333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E7 - super fast advance_poses.npz",
+          "frames": 509,
+          "fps": 120.0,
+          "seconds": 4.241666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E14 - block right low_poses.npz",
+          "frames": 353,
+          "fps": 120.0,
+          "seconds": 2.941666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E8 - bounce_poses.npz",
+          "frames": 906,
+          "fps": 120.0,
+          "seconds": 7.55,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E1 - Turn around right_poses.npz",
+          "frames": 1722,
+          "fps": 120.0,
+          "seconds": 14.35,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E22 - duck right_poses.npz",
+          "frames": 304,
+          "fps": 120.0,
+          "seconds": 2.533333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E17 - block middle high_poses.npz",
+          "frames": 305,
+          "fps": 120.0,
+          "seconds": 2.5416666666666665,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E4 - quick advance_poses.npz",
+          "frames": 448,
+          "fps": 120.0,
+          "seconds": 3.7333333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E20 - dodge right_poses.npz",
+          "frames": 335,
+          "fps": 120.0,
+          "seconds": 2.7916666666666665,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E13 - block right high_poses.npz",
+          "frames": 371,
+          "fps": 120.0,
+          "seconds": 3.091666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E18 - block middle low_poses.npz",
+          "frames": 358,
+          "fps": 120.0,
+          "seconds": 2.9833333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E3 - advance_poses.npz",
+          "frames": 763,
+          "fps": 120.0,
+          "seconds": 6.358333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/MartialArtsWalksTurns_c3d/E19 - dodge left_poses.npz",
+          "frames": 267,
+          "fps": 120.0,
+          "seconds": 2.225,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsExtended_c3d/Extended 1_poses.npz",
+          "frames": 2408,
+          "fps": 120.0,
+          "seconds": 20.066666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsExtended_c3d/Extended 2_poses.npz",
+          "frames": 2128,
+          "fps": 120.0,
+          "seconds": 17.733333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsExtended_c3d/Extended 3_poses.npz",
+          "frames": 6361,
+          "fps": 120.0,
+          "seconds": 53.00833333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsExtended_c3d/Form 1_poses.npz",
+          "frames": 2222,
+          "fps": 120.0,
+          "seconds": 18.516666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G20 -  reverse spin cresent right_poses.npz",
+          "frames": 342,
+          "fps": 120.0,
+          "seconds": 2.85,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G7 -  capoera_poses.npz",
+          "frames": 283,
+          "fps": 120.0,
+          "seconds": 2.3583333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G9 -  roundhouse right_poses.npz",
+          "frames": 215,
+          "fps": 120.0,
+          "seconds": 1.7916666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G13-  cresent right_poses.npz",
+          "frames": 312,
+          "fps": 120.0,
+          "seconds": 2.6,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G10-  roundhouse leading left_poses.npz",
+          "frames": 314,
+          "fps": 120.0,
+          "seconds": 2.6166666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G2 - Sidekick leading left_poses.npz",
+          "frames": 335,
+          "fps": 120.0,
+          "seconds": 2.7916666666666665,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G9-  roundhouse right t2_poses.npz",
+          "frames": 338,
+          "fps": 120.0,
+          "seconds": 2.816666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G19-  reverse spin cresent left_poses.npz",
+          "frames": 389,
+          "fps": 120.0,
+          "seconds": 3.2416666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G12-  cresent left_poses.npz",
+          "frames": 331,
+          "fps": 120.0,
+          "seconds": 2.7583333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G8 -  roundhouse left_poses.npz",
+          "frames": 307,
+          "fps": 120.0,
+          "seconds": 2.558333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G5 -  back kick_poses.npz",
+          "frames": 274,
+          "fps": 120.0,
+          "seconds": 2.283333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/male2 Subject Cal 2_poses.npz",
+          "frames": 261,
+          "fps": 120.0,
+          "seconds": 2.175,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G3 - Sidekick leading right_poses.npz",
+          "frames": 238,
+          "fps": 120.0,
+          "seconds": 1.9833333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G16-  double kick_poses.npz",
+          "frames": 476,
+          "fps": 120.0,
+          "seconds": 3.966666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G15-  roundhouse body right_poses.npz",
+          "frames": 353,
+          "fps": 120.0,
+          "seconds": 2.941666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G19-  reverse spin cresent left t2_poses.npz",
+          "frames": 380,
+          "fps": 120.0,
+          "seconds": 3.1666666666666665,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G18-  push kick right_poses.npz",
+          "frames": 347,
+          "fps": 120.0,
+          "seconds": 2.8916666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G6 -  axe kick_poses.npz",
+          "frames": 347,
+          "fps": 120.0,
+          "seconds": 2.8916666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G14-  roundhouse body left_poses.npz",
+          "frames": 327,
+          "fps": 120.0,
+          "seconds": 2.725,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G4 -spinning back kick_poses.npz",
+          "frames": 329,
+          "fps": 120.0,
+          "seconds": 2.7416666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G17-  push kick left_poses.npz",
+          "frames": 546,
+          "fps": 120.0,
+          "seconds": 4.55,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G3 - front kick_poses.npz",
+          "frames": 277,
+          "fps": 120.0,
+          "seconds": 2.308333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsKicks_c3d/G11-  roundhouse leading right_poses.npz",
+          "frames": 400,
+          "fps": 120.0,
+          "seconds": 3.3333333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B20 -  Walk with box_poses.npz",
+          "frames": 773,
+          "fps": 120.0,
+          "seconds": 6.441666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B22 -  side step left_poses.npz",
+          "frames": 296,
+          "fps": 120.0,
+          "seconds": 2.466666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B14 -  Walk turn right 45_poses.npz",
+          "frames": 491,
+          "fps": 120.0,
+          "seconds": 4.091666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B23 -  side step right_poses.npz",
+          "frames": 360,
+          "fps": 120.0,
+          "seconds": 3.0,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B13 -  Walk turn right 90_poses.npz",
+          "frames": 674,
+          "fps": 120.0,
+          "seconds": 5.616666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B21 -  put down box to walk_poses.npz",
+          "frames": 666,
+          "fps": 120.0,
+          "seconds": 5.55,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B9 -  Walk turn left 90_poses.npz",
+          "frames": 604,
+          "fps": 120.0,
+          "seconds": 5.033333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B21 -  put down box to walk a_poses.npz",
+          "frames": 666,
+          "fps": 120.0,
+          "seconds": 5.55,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B5 -  Walk backwards_poses.npz",
+          "frames": 975,
+          "fps": 120.0,
+          "seconds": 8.125,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B4 - Stand to Walk backwards_poses.npz",
+          "frames": 553,
+          "fps": 120.0,
+          "seconds": 4.608333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B17 -  Walk to hop to walk a_poses.npz",
+          "frames": 659,
+          "fps": 120.0,
+          "seconds": 5.491666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B11 -  Walk turn left 135_poses.npz",
+          "frames": 779,
+          "fps": 120.0,
+          "seconds": 6.491666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B10 -  Walk turn left 45_poses.npz",
+          "frames": 718,
+          "fps": 120.0,
+          "seconds": 5.983333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B18 -  Walk to leap to walk_poses.npz",
+          "frames": 344,
+          "fps": 120.0,
+          "seconds": 2.8666666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B18 -  Walk to leap to walk t3_poses.npz",
+          "frames": 735,
+          "fps": 120.0,
+          "seconds": 6.125,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B15 -  Walk turn around_poses.npz",
+          "frames": 901,
+          "fps": 120.0,
+          "seconds": 7.508333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B17 -  Walk to hop to walk_poses.npz",
+          "frames": 659,
+          "fps": 120.0,
+          "seconds": 5.491666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B24 -  walk to crouch_poses.npz",
+          "frames": 733,
+          "fps": 120.0,
+          "seconds": 6.108333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B14 -  Walk turn right 45 t2_poses.npz",
+          "frames": 696,
+          "fps": 120.0,
+          "seconds": 5.8,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B18 -  Walk to leap to walk t2_poses.npz",
+          "frames": 566,
+          "fps": 120.0,
+          "seconds": 4.716666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B26 -  walk to skip_poses.npz",
+          "frames": 705,
+          "fps": 120.0,
+          "seconds": 5.875,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B19 -  Walk to pickup box_poses.npz",
+          "frames": 801,
+          "fps": 120.0,
+          "seconds": 6.675,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2Walking_c3d/B27 -  skip to walk a_poses.npz",
+          "frames": 548,
+          "fps": 120.0,
+          "seconds": 4.566666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A12 - crawl backwards_poses.npz",
+          "frames": 2647,
+          "fps": 120.0,
+          "seconds": 22.058333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A7 - crouch_poses.npz",
+          "frames": 608,
+          "fps": 120.0,
+          "seconds": 5.066666666666666,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A2 - Sway_poses.npz",
+          "frames": 1443,
+          "fps": 120.0,
+          "seconds": 12.025,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A3 - Swing t2_poses.npz",
+          "frames": 977,
+          "fps": 120.0,
+          "seconds": 8.141666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A9 - lie t2_poses.npz",
+          "frames": 946,
+          "fps": 120.0,
+          "seconds": 7.883333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A4 - look_poses.npz",
+          "frames": 2553,
+          "fps": 120.0,
+          "seconds": 21.275,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A3 - Swing_poses.npz",
+          "frames": 1741,
+          "fps": 120.0,
+          "seconds": 14.508333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A8 - crouch to lie_poses.npz",
+          "frames": 773,
+          "fps": 120.0,
+          "seconds": 6.441666666666666,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A5 - pick up box_poses.npz",
+          "frames": 754,
+          "fps": 120.0,
+          "seconds": 6.283333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A1 - Stand_poses.npz",
+          "frames": 360,
+          "fps": 120.0,
+          "seconds": 3.0,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A10 - lie to crouch_poses.npz",
+          "frames": 524,
+          "fps": 120.0,
+          "seconds": 4.366666666666666,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A6 - lift box_poses.npz",
+          "frames": 1006,
+          "fps": 120.0,
+          "seconds": 8.383333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A15 - skip to stand_poses.npz",
+          "frames": 511,
+          "fps": 120.0,
+          "seconds": 4.258333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A2 - Sway t2_poses.npz",
+          "frames": 1914,
+          "fps": 120.0,
+          "seconds": 15.95,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A11 - crawl forward_poses.npz",
+          "frames": 2399,
+          "fps": 120.0,
+          "seconds": 19.991666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A6- lift box t2_poses.npz",
+          "frames": 849,
+          "fps": 120.0,
+          "seconds": 7.075,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1General_c3d/A14 - stand to skip_poses.npz",
+          "frames": 618,
+          "fps": 120.0,
+          "seconds": 5.15,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A4- Look Around_poses.npz",
+          "frames": 1926,
+          "fps": 120.0,
+          "seconds": 16.05,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A7- Crouch_poses.npz",
+          "frames": 530,
+          "fps": 120.0,
+          "seconds": 4.416666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A9- Lie_poses.npz",
+          "frames": 374,
+          "fps": 120.0,
+          "seconds": 3.1166666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A8- Crouch to Lie_poses.npz",
+          "frames": 688,
+          "fps": 120.0,
+          "seconds": 5.733333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A11- Crawl_poses.npz",
+          "frames": 1597,
+          "fps": 120.0,
+          "seconds": 13.308333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A3- Swing arms_poses.npz",
+          "frames": 1279,
+          "fps": 120.0,
+          "seconds": 10.658333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A2- Sway_poses.npz",
+          "frames": 1280,
+          "fps": 120.0,
+          "seconds": 10.666666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A10- Lie to crouch_poses.npz",
+          "frames": 569,
+          "fps": 120.0,
+          "seconds": 4.741666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/male2 Calibration_poses.npz",
+          "frames": 360,
+          "fps": 120.0,
+          "seconds": 3.0,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A12- Crawl Backwards_poses.npz",
+          "frames": 2041,
+          "fps": 120.0,
+          "seconds": 17.008333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A1- Stand_poses.npz",
+          "frames": 457,
+          "fps": 120.0,
+          "seconds": 3.808333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A6- Box lift_poses.npz",
+          "frames": 1331,
+          "fps": 120.0,
+          "seconds": 11.091666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2General_c3d/A5- Pick up box_poses.npz",
+          "frames": 718,
+          "fps": 120.0,
+          "seconds": 5.983333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D16 - switch stance and bounce_poses.npz",
+          "frames": 588,
+          "fps": 120.0,
+          "seconds": 4.9,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D13 -crouch to ready_poses.npz",
+          "frames": 451,
+          "fps": 120.0,
+          "seconds": 3.7583333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D7 - walk to bow_poses.npz",
+          "frames": 849,
+          "fps": 120.0,
+          "seconds": 7.075,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D1 - stand to ready_poses.npz",
+          "frames": 354,
+          "fps": 120.0,
+          "seconds": 2.95,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D10 - victory 2_poses.npz",
+          "frames": 1277,
+          "fps": 120.0,
+          "seconds": 10.641666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D3 - run to ready_poses.npz",
+          "frames": 317,
+          "fps": 120.0,
+          "seconds": 2.6416666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D4 - ready to relax_poses.npz",
+          "frames": 491,
+          "fps": 120.0,
+          "seconds": 4.091666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D5 - ready to walk away_poses.npz",
+          "frames": 535,
+          "fps": 120.0,
+          "seconds": 4.458333333333333,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D11 - ready to taunt one to ready_poses.npz",
+          "frames": 646,
+          "fps": 120.0,
+          "seconds": 5.383333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D2 - walk to ready_poses.npz",
+          "frames": 526,
+          "fps": 120.0,
+          "seconds": 4.383333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D12 - ready to taunt two to ready_poses.npz",
+          "frames": 646,
+          "fps": 120.0,
+          "seconds": 5.383333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D9 - victory 1_poses.npz",
+          "frames": 1585,
+          "fps": 120.0,
+          "seconds": 13.208333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D9 - warm up to ready to warm up_poses.npz",
+          "frames": 1041,
+          "fps": 120.0,
+          "seconds": 8.675,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D8 - bow to ready_poses.npz",
+          "frames": 515,
+          "fps": 120.0,
+          "seconds": 4.291666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D15 - switch stance_poses.npz",
+          "frames": 366,
+          "fps": 120.0,
+          "seconds": 3.05,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D9 - t2 - male2 blanks_poses.npz",
+          "frames": 699,
+          "fps": 120.0,
+          "seconds": 5.825,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsStances_c3d/D14 -ready to crouch_poses.npz",
+          "frames": 400,
+          "fps": 120.0,
+          "seconds": 3.3333333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B6 - walk backwards to stand_poses.npz",
+          "frames": 981,
+          "fps": 120.0,
+          "seconds": 8.175,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B9 - walk turn left (90)_poses.npz",
+          "frames": 852,
+          "fps": 120.0,
+          "seconds": 7.1,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B27 -skip to walk1_poses.npz",
+          "frames": 808,
+          "fps": 120.0,
+          "seconds": 6.733333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B17 - walk to hop to walk1_poses.npz",
+          "frames": 754,
+          "fps": 120.0,
+          "seconds": 6.283333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B3 - walk1_poses.npz",
+          "frames": 915,
+          "fps": 120.0,
+          "seconds": 7.625,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B2 - walk to stand t2_poses.npz",
+          "frames": 588,
+          "fps": 120.0,
+          "seconds": 4.9,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B21 - put down box to walk_poses.npz",
+          "frames": 1131,
+          "fps": 120.0,
+          "seconds": 9.425,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B12 - walk turn right (90)_poses.npz",
+          "frames": 931,
+          "fps": 120.0,
+          "seconds": 7.758333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B19 - walk to pick up box_poses.npz",
+          "frames": 830,
+          "fps": 120.0,
+          "seconds": 6.916666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B21 s3 - put down box to walk_poses.npz",
+          "frames": 1289,
+          "fps": 120.0,
+          "seconds": 10.741666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B1 - stand to walk_poses.npz",
+          "frames": 747,
+          "fps": 120.0,
+          "seconds": 6.225,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B16 - walk turn change direction_poses.npz",
+          "frames": 1323,
+          "fps": 120.0,
+          "seconds": 11.025,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B25 - crouch to walk1_poses.npz",
+          "frames": 710,
+          "fps": 120.0,
+          "seconds": 5.916666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B15 - walk turn around (same direction)_poses.npz",
+          "frames": 1273,
+          "fps": 120.0,
+          "seconds": 10.608333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B23 - side step right_poses.npz",
+          "frames": 999,
+          "fps": 120.0,
+          "seconds": 8.325,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B2 - walk to stand_poses.npz",
+          "frames": 682,
+          "fps": 120.0,
+          "seconds": 5.683333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B7 - walk backwards turn forwards_poses.npz",
+          "frames": 1039,
+          "fps": 120.0,
+          "seconds": 8.658333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B14 - walk turn right (135)_poses.npz",
+          "frames": 1076,
+          "fps": 120.0,
+          "seconds": 8.966666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B22 - side step left_poses.npz",
+          "frames": 1103,
+          "fps": 120.0,
+          "seconds": 9.191666666666666,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B18 - walk to leap to walk_poses.npz",
+          "frames": 683,
+          "fps": 120.0,
+          "seconds": 5.691666666666666,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B5 - walk backwards_poses.npz",
+          "frames": 1384,
+          "fps": 120.0,
+          "seconds": 11.533333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B4 - stand to walk back_poses.npz",
+          "frames": 906,
+          "fps": 120.0,
+          "seconds": 7.55,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B21 s2 - put down box to walk_poses.npz",
+          "frames": 1377,
+          "fps": 120.0,
+          "seconds": 11.475,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B10 - walk turn left (45)_poses.npz",
+          "frames": 950,
+          "fps": 120.0,
+          "seconds": 7.916666666666667,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B20 - walk with box_poses.npz",
+          "frames": 514,
+          "fps": 120.0,
+          "seconds": 4.283333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B13 - walk turn right (45)_poses.npz",
+          "frames": 997,
+          "fps": 120.0,
+          "seconds": 8.308333333333334,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B11 - walk turn left (135)_poses.npz",
+          "frames": 1123,
+          "fps": 120.0,
+          "seconds": 9.358333333333333,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Female1Walking_c3d/B24 - walk to crouch_poses.npz",
+          "frames": 849,
+          "fps": 120.0,
+          "seconds": 7.075,
+          "pose_dimensions": 156,
+          "gender": "female",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Running_c3d/Run C25 - quick side step right_poses.npz",
+          "frames": 398,
+          "fps": 120.0,
+          "seconds": 3.316666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male1Running_c3d/Run C24 - quick side step left_poses.npz",
+          "frames": 356,
+          "fps": 120.0,
+          "seconds": 2.966666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/s001/EricCamper04_poses.npz",
+          "frames": 1937,
+          "fps": 120.0,
+          "seconds": 16.141666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E14 - body cross right_poses.npz",
+          "frames": 294,
+          "fps": 120.0,
+          "seconds": 2.45,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E13 - body cross left_poses.npz",
+          "frames": 229,
+          "fps": 120.0,
+          "seconds": 1.9083333333333334,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E4 -  cross right_poses.npz",
+          "frames": 294,
+          "fps": 120.0,
+          "seconds": 2.45,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E8 - uppercut right_poses.npz",
+          "frames": 308,
+          "fps": 120.0,
+          "seconds": 2.566666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E3 -  cross left_poses.npz",
+          "frames": 392,
+          "fps": 120.0,
+          "seconds": 3.2666666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E16 - body jab left_poses.npz",
+          "frames": 305,
+          "fps": 120.0,
+          "seconds": 2.5416666666666665,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E6 -  hook right_poses.npz",
+          "frames": 310,
+          "fps": 120.0,
+          "seconds": 2.5833333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E7 - uppercut left_poses.npz",
+          "frames": 311,
+          "fps": 120.0,
+          "seconds": 2.591666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E11 - backfist left_poses.npz",
+          "frames": 281,
+          "fps": 120.0,
+          "seconds": 2.341666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E5 -  hook left_poses.npz",
+          "frames": 327,
+          "fps": 120.0,
+          "seconds": 2.725,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E14 - body cross left t2_poses.npz",
+          "frames": 261,
+          "fps": 120.0,
+          "seconds": 2.175,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E1 -  Jab left_poses.npz",
+          "frames": 399,
+          "fps": 120.0,
+          "seconds": 3.325,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E9 - body hook left_poses.npz",
+          "frames": 330,
+          "fps": 120.0,
+          "seconds": 2.75,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E12 - backfist right_poses.npz",
+          "frames": 293,
+          "fps": 120.0,
+          "seconds": 2.441666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E10 - body hook right_poses.npz",
+          "frames": 299,
+          "fps": 120.0,
+          "seconds": 2.4916666666666667,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E11 - body hook right t2_poses.npz",
+          "frames": 294,
+          "fps": 120.0,
+          "seconds": 2.45,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E2 -  Jab right_poses.npz",
+          "frames": 340,
+          "fps": 120.0,
+          "seconds": 2.8333333333333335,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/Male2MartialArtsPunches_c3d/E15 - body jab right_poses.npz",
+          "frames": 206,
+          "fps": 120.0,
+          "seconds": 1.7166666666666666,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        },
+        {
+          "source_id": "ACCAD/s011/walkdog_poses.npz",
+          "frames": 1955,
+          "fps": 120.0,
+          "seconds": 16.291666666666668,
+          "pose_dimensions": 156,
+          "gender": "male",
+          "numerical_validation": true
+        }
+      ],
+      "errors": [],
+      "numerically_validated_hours": 0.445724537037037
+    },
+    {
+      "path": "CMU.tar.bz2",
+      "bytes": 0,
+      "motions": [],
+      "errors": [
+        "empty_archive"
+      ],
+      "numerically_validated_hours": 0.0
+    }
+  ],
+  "retargeted_hours": 0.0,
+  "physics_qualified_hours": 0.0,
+  "body_model_required": "licensed SMPL+H with AMASS-compatible shape; DMPL model for vertex deformation"
+}

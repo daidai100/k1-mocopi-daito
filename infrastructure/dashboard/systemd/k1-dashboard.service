@@ -1,0 +1,13 @@
+[Unit]
+Description=K1 dashboard API and asynchronous MLflow collector
+After=k1-mlflow.service
+
+[Service]
+WorkingDirectory=/mnt/ssd1/k1-dashboard/app
+Environment=K1_DASHBOARD_DATA=/mnt/ssd1/k1-dashboard/data
+ExecStart=/mnt/ssd1/k1-dashboard/.venv/bin/uvicorn service:app --host 100.109.119.8 --port 5050 --no-access-log
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

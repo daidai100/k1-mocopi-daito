@@ -1,0 +1,8 @@
+# Tested local runtime. Torch CUDA wheels can be installed from the cu128 index.
+numpy==1.26.4
+scipy==1.11.4
+mujoco==3.10.0
+torch==2.10.0
+mcap==1.4.0
+mcap-ros2-support==0.5.7
+pytest==9.1.1

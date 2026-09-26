@@ -1,0 +1,21 @@
+{
+  "scope": "Matched training recordings; untrained residual baseline, only retargeter changed; not held-out policy acceptance",
+  "matched_recordings": 30,
+  "old_completed": 4,
+  "new_completed": 10,
+  "old_tracking_passed": 3,
+  "new_tracking_passed": 9,
+  "new_gains": [
+    "3561b82f2f925f50",
+    "71deb8c12ec3625a",
+    "8e33e2e4001b36af",
+    "b25d89d9a047e295",
+    "dae437faa7edc9a8",
+    "e70f84225978b25f"
+  ],
+  "new_losses": [],
+  "newly_rejected": [
+    "6e0e07633abcb4a8"
+  ],
+  "newly_accepted": []
+}

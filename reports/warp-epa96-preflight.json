@@ -1,0 +1,96 @@
+{
+  "backend": "warp",
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "steps": 100,
+  "contract": {
+    "implementation": "mujoco-warp-k1-v1",
+    "model_signature": "74eca13c81c1bb2eeb6cc6147c3bc80c6cbcaed49d50ce6eb04956ab89415770",
+    "mujoco": "3.10.0",
+    "mujoco_warp": "3.11.0",
+    "warp": "1.17.0",
+    "physics_dt": 0.002,
+    "control_dt": 0.02,
+    "nconmax": 64,
+    "njmax": 256,
+    "epa_horizon": 96,
+    "integrator": 3,
+    "solver": 2,
+    "solver_iterations": 100,
+    "solver_tolerance": 1e-06,
+    "overflow_check": "latched across episode resets; fatal before PPO update or validation report",
+    "derived_state": "kinematics refreshed after integration",
+    "physics_steps_per_graph": 1,
+    "conditional_graphs": false,
+    "self_contact_measurement": "any non-ground penetration during the control interval"
+  },
+  "initial_max_abs_error": {
+    "q": 0.0,
+    "dq": 0.0,
+    "orientation": 0.0,
+    "omega": 7.450580596923828e-09,
+    "position": 0.0,
+    "velocity": 0.0,
+    "landmarks": 1.1548399925231934e-07,
+    "body_orientation": 1.1920928955078125e-07
+  },
+  "trajectory_max_abs_error": {
+    "q": 5.960464477539062e-07,
+    "dq": 7.30601605027914e-05,
+    "position": 1.1920928955078125e-07,
+    "orientation": 1.6987323760986328e-06,
+    "landmarks": 7.674098014831543e-07
+  },
+  "max_error_locations": {
+    "q": {
+      "tick": 67,
+      "index": [
+        0,
+        7
+      ]
+    },
+    "dq": {
+      "tick": 10,
+      "index": [
+        1,
+        11
+      ]
+    },
+    "position": {
+      "tick": 19,
+      "index": [
+        1,
+        2
+      ]
+    },
+    "orientation": {
+      "tick": 99,
+      "index": [
+        1,
+        3
+      ]
+    },
+    "landmarks": {
+      "tick": 98,
+      "index": [
+        1,
+        5,
+        0
+      ]
+    }
+  },
+  "limits": {
+    "q": 0.02,
+    "dq": 0.15,
+    "position": 0.01,
+    "orientation": 0.01,
+    "landmarks": 0.01
+  },
+  "max_effort_difference": 1.713482906864211e-08,
+  "max_saturation_difference": 0.0,
+  "partial_reset_passed": true,
+  "self_contact_detection_passed": true,
+  "overflow_latched": true,
+  "dynamics_passed": true,
+  "elapsed_seconds": 3.492466900999716,
+  "scope": "Bounded CPU/GPU dynamics parity; not learned-policy acceptance"
+}

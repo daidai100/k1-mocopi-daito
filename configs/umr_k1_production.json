@@ -1,0 +1,41 @@
+{
+  "robot": {
+    "name": "k1_production",
+    "xml": "../third_party/booster_assets/robots/K1/K1_22dof.xml",
+    "point_cloud_center": "body:trunk",
+    "xml_policy": {
+      "floating_root_body": "trunk",
+      "floating_freejoint": "world_joint"
+    },
+    "tpose_qpos": {
+      "aahead_yaw_joint": 0.0,
+      "aahead_pitch_joint": 0.0,
+      "aaleft_shoulder_pitch_joint": 0.0,
+      "left_shoulder_roll_joint": 0.0,
+      "left_elbow_pitch_joint": 0.0,
+      "left_elbow_yaw_joint": 0.0,
+      "aaright_shoulder_pitch_joint": 0.0,
+      "right_shoulder_roll_joint": 0.0,
+      "right_elbow_pitch_joint": 0.0,
+      "right_elbow_yaw_joint": 0.0,
+      "left_hip_pitch_joint": 0.0,
+      "left_hip_roll_joint": 0.0,
+      "left_hip_yaw_joint": 0.0,
+      "left_knee_pitch_joint": 0.0,
+      "left_ankle_pitch_joint": 0.0,
+      "left_ankle_roll_joint": 0.0,
+      "right_hip_pitch_joint": 0.0,
+      "right_hip_roll_joint": 0.0,
+      "right_hip_yaw_joint": 0.0,
+      "right_knee_pitch_joint": 0.0,
+      "right_ankle_pitch_joint": 0.0,
+      "right_ankle_roll_joint": 0.0
+    }
+  },
+  "correspondence": {
+    "dataset": {
+      "smpl_center": "bbox_ratio",
+      "bbox_center_ratio": 0.5662274843208708
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "baseline": "artifacts/student-warp-v8-contact/human-validation-iteration300",
+  "candidate": "artifacts/student-warp-v8-contact-continuation/human-validation-iteration500",
+  "trials": 180,
+  "comparison": {
+    "completed": {
+      "baseline": 70,
+      "candidate": 67,
+      "gained": [
+        "turn-018-166675236ce5d7c7"
+      ],
+      "lost": [
+        "walk-002-63797b5e1aa8df93",
+        "walk-004-aa615d09f4175d27",
+        "walk-014-63797b5e1aa8df93",
+        "walk-016-aa615d09f4175d27"
+      ]
+    },
+    "tracking_passed": {
+      "baseline": 40,
+      "candidate": 28,
+      "gained": [
+        "turn-006-988af43db7b862ce",
+        "walk-009-65d7290bf752a267",
+        "walk-015-65d7290bf752a267"
+      ],
+      "lost": [
+        "bow-000-2d6a188b639b3046",
+        "bow-002-2d6a188b639b3046",
+        "bow-004-2d6a188b639b3046",
+        "bow-006-2d6a188b639b3046",
+        "bow-008-2d6a188b639b3046",
+        "bow-010-2d6a188b639b3046",
+        "bow-012-2d6a188b639b3046",
+        "bow-014-2d6a188b639b3046",
+        "bow-016-2d6a188b639b3046",
+        "bow-018-2d6a188b639b3046",
+        "walk-002-63797b5e1aa8df93",
+        "walk-004-aa615d09f4175d27",
+        "walk-012-08b24af6b1e4b259",
+        "walk-014-63797b5e1aa8df93",
+        "walk-016-aa615d09f4175d27"
+      ]
+    }
+  },
+  "behaviorally_accepted": false
+}

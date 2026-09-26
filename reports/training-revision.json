@@ -1,0 +1,466 @@
+{
+  "observed_unix_time": 1789789878.131803,
+  "active_run": "artifacts/teacher-isaac-v6-continuation",
+  "initialize_checkpoint": "artifacts/teacher-isaac-v5/checkpoint-001000.pt",
+  "source_revision": "84e2a2e89da900b89059fe5fcd0cd53b80747a16eb4bc2de41e0c51f9b8490e1",
+  "configuration": {
+    "stage": "teacher",
+    "iterations": 2850,
+    "horizon": 32,
+    "epochs": 4,
+    "minibatch": 16384,
+    "learning_rate": 0.0001,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip": 0.2,
+    "bc_weight": 1.0,
+    "seed": 42,
+    "checkpoint_interval": 100,
+    "evaluation_interval": 250,
+    "initial_std": 0.4,
+    "desired_kl": 0.01,
+    "student_warm_start": true,
+    "hidden_sizes": [
+      512,
+      256
+    ],
+    "matmul_precision": "high",
+    "sampling": "transition_balanced"
+  },
+  "num_envs": 4096,
+  "architecture_transfer": {
+    "method": "duplicated neurons with split outgoing weights; zero-weight older history",
+    "old_hidden_sizes": [
+      256,
+      128
+    ],
+    "new_hidden_sizes": [
+      512,
+      256
+    ],
+    "old_history": 4,
+    "new_history": 10,
+    "max_output_difference": {
+      "actor": 0.0023947954177856445,
+      "actor_full_precision": 4.291534423828125e-06,
+      "critic": 0.0027358531951904297,
+      "critic_full_precision": 5.7220458984375e-06
+    }
+  },
+  "prior_warm_transitions_per_second": 21540.935374178527,
+  "current_warm_median_transitions_per_second": 46731.58622103892,
+  "benchmarks": [
+    {
+      "num_envs": 1024,
+      "exit_code": 0,
+      "command": [
+        ".venv-isaac/bin/python",
+        "scripts/train_isaac.py",
+        "--library",
+        "artifacts/references-v5-shared-physics",
+        "--output",
+        "artifacts/gpu-benchmark-v1/1024",
+        "--initialize",
+        "artifacts/teacher-isaac-v5/checkpoint-001000.pt",
+        "--num-envs",
+        "1024",
+        "--minibatch",
+        "4096",
+        "--iterations",
+        "24",
+        "--evaluation-interval",
+        "0",
+        "--history",
+        "10",
+        "--hidden-sizes",
+        "512",
+        "256"
+      ],
+      "warmed_iterations": 19,
+      "median_transitions_per_second": 20681.753047412254,
+      "median_rollout_seconds": 1.4939336539991928,
+      "median_update_seconds": 0.09003505000146106,
+      "peak_gpu_memory_mib": 5767.0,
+      "median_gpu_utilization_pct": 69.0,
+      "median_gpu_power_w": 76.865,
+      "checkpoint_reload_max_error": 0.0,
+      "source_revision": "fe08ca995f5b4b3a64b683c2edbeace1c395150b522968a805e319ef0ca63804"
+    },
+    {
+      "num_envs": 2048,
+      "exit_code": 0,
+      "command": [
+        ".venv-isaac/bin/python",
+        "scripts/train_isaac.py",
+        "--library",
+        "artifacts/references-v5-shared-physics",
+        "--output",
+        "artifacts/gpu-benchmark-v1/2048",
+        "--initialize",
+        "artifacts/teacher-isaac-v5/checkpoint-001000.pt",
+        "--num-envs",
+        "2048",
+        "--minibatch",
+        "8192",
+        "--iterations",
+        "24",
+        "--evaluation-interval",
+        "0",
+        "--history",
+        "10",
+        "--hidden-sizes",
+        "512",
+        "256"
+      ],
+      "warmed_iterations": 19,
+      "median_transitions_per_second": 34104.15939202185,
+      "median_rollout_seconds": 1.7891531529985514,
+      "median_update_seconds": 0.1305285800008278,
+      "peak_gpu_memory_mib": 10300.0,
+      "median_gpu_utilization_pct": 73.0,
+      "median_gpu_power_w": 96.39,
+      "checkpoint_reload_max_error": 0.0,
+      "source_revision": "fe08ca995f5b4b3a64b683c2edbeace1c395150b522968a805e319ef0ca63804"
+    },
+    {
+      "num_envs": 4096,
+      "exit_code": 0,
+      "command": [
+        ".venv-isaac/bin/python",
+        "scripts/train_isaac.py",
+        "--library",
+        "artifacts/references-v5-shared-physics",
+        "--output",
+        "artifacts/gpu-benchmark-v1/4096",
+        "--initialize",
+        "artifacts/teacher-isaac-v5/checkpoint-001000.pt",
+        "--num-envs",
+        "4096",
+        "--minibatch",
+        "16384",
+        "--iterations",
+        "24",
+        "--evaluation-interval",
+        "0",
+        "--history",
+        "10",
+        "--hidden-sizes",
+        "512",
+        "256"
+      ],
+      "warmed_iterations": 19,
+      "median_transitions_per_second": 48633.80527284499,
+      "median_rollout_seconds": 2.4673417350004456,
+      "median_update_seconds": 0.2290424869988783,
+      "peak_gpu_memory_mib": 9951.0,
+      "median_gpu_utilization_pct": 75.0,
+      "median_gpu_power_w": 109.48,
+      "checkpoint_reload_max_error": 0.0,
+      "source_revision": "d16a850654e76fd8c28d6b6d5575b835e94f998c78cccc85b9e5db1cd4d80741"
+    }
+  ],
+  "benchmark_caveat": "4096 run includes selective lookup and exposure instrumentation in addition to the batch change. Each source revision is retained.",
+  "reference_counts": {
+    "selected": 400,
+    "converted": 398,
+    "kinematics_accepted": 347,
+    "rejected": 53,
+    "families": {
+      "bow": 19,
+      "dance": 16,
+      "jump": 22,
+      "kick": 10,
+      "punch": 14,
+      "reach": 80,
+      "run": 56,
+      "squat": 3,
+      "stance": 18,
+      "turn": 62,
+      "walk": 100
+    },
+    "accepted_families": {
+      "bow": 15,
+      "dance": 12,
+      "jump": 22,
+      "kick": 6,
+      "punch": 11,
+      "reach": 70,
+      "run": 53,
+      "squat": 3,
+      "stance": 11,
+      "turn": 57,
+      "walk": 87
+    },
+    "splits": {
+      "train": 274,
+      "test": 40,
+      "validation": 33
+    },
+    "source_hours": 1.556871086277778,
+    "retargeted_hours": 0.6305212326111111,
+    "kinematically_accepted_hours": 0.5239529196388889,
+    "physics_qualified_hours": 0.0,
+    "human_reviewed": false,
+    "elapsed_seconds": 140.30913969800167,
+    "split_rule": "sha256(seed/capture_group); related takes/windows/mirrors must inherit group",
+    "scope": "Offline kinematic candidates. Not a qualified training corpus or behavioral result."
+  },
+  "reference_contact_consistency": [
+    {
+      "library": "artifacts/references-v5-shared-physics",
+      "selected": 400,
+      "accepted": 258,
+      "splits": {
+        "train": 207,
+        "test": 24,
+        "validation": 27
+      },
+      "scope": "Reference-only kinematic consistency, not closed-loop physics qualification",
+      "train_families": {
+        "bow": {
+          "accepted_train_clips": 9,
+          "median_clip_p95_planted_foot_speed_mps": 0.00847129297861293,
+          "clips_over_0p2_mps": 0
+        },
+        "dance": {
+          "accepted_train_clips": 6,
+          "median_clip_p95_planted_foot_speed_mps": 0.4922553244950005,
+          "clips_over_0p2_mps": 3
+        },
+        "jump": {
+          "accepted_train_clips": 5,
+          "median_clip_p95_planted_foot_speed_mps": 0.006812880418604016,
+          "clips_over_0p2_mps": 1
+        },
+        "kick": {
+          "accepted_train_clips": 3,
+          "median_clip_p95_planted_foot_speed_mps": 0.010044836639951009,
+          "clips_over_0p2_mps": 0
+        },
+        "punch": {
+          "accepted_train_clips": 6,
+          "median_clip_p95_planted_foot_speed_mps": 0.8061703677313876,
+          "clips_over_0p2_mps": 4
+        },
+        "reach": {
+          "accepted_train_clips": 49,
+          "median_clip_p95_planted_foot_speed_mps": 0.001412814995446555,
+          "clips_over_0p2_mps": 2
+        },
+        "run": {
+          "accepted_train_clips": 28,
+          "median_clip_p95_planted_foot_speed_mps": 1.0016722961635094,
+          "clips_over_0p2_mps": 25
+        },
+        "squat": {
+          "accepted_train_clips": 2,
+          "median_clip_p95_planted_foot_speed_mps": 0.3697625452564189,
+          "clips_over_0p2_mps": 1
+        },
+        "stance": {
+          "accepted_train_clips": 7,
+          "median_clip_p95_planted_foot_speed_mps": 0.010962313329207277,
+          "clips_over_0p2_mps": 3
+        },
+        "turn": {
+          "accepted_train_clips": 28,
+          "median_clip_p95_planted_foot_speed_mps": 0.2857076035151649,
+          "clips_over_0p2_mps": 19
+        },
+        "walk": {
+          "accepted_train_clips": 64,
+          "median_clip_p95_planted_foot_speed_mps": 0.32001295268470326,
+          "clips_over_0p2_mps": 42
+        }
+      }
+    },
+    {
+      "library": "artifacts/references-v6-collision",
+      "selected": 400,
+      "accepted": 316,
+      "splits": {
+        "train": 255,
+        "test": 31,
+        "validation": 30
+      },
+      "scope": "Reference-only kinematic consistency, not closed-loop physics qualification",
+      "train_families": {
+        "bow": {
+          "accepted_train_clips": 12,
+          "median_clip_p95_planted_foot_speed_mps": 0.01705981400825694,
+          "clips_over_0p2_mps": 0
+        },
+        "dance": {
+          "accepted_train_clips": 8,
+          "median_clip_p95_planted_foot_speed_mps": 0.025820917866473947,
+          "clips_over_0p2_mps": 3
+        },
+        "jump": {
+          "accepted_train_clips": 11,
+          "median_clip_p95_planted_foot_speed_mps": 0.3937423829245441,
+          "clips_over_0p2_mps": 6
+        },
+        "kick": {
+          "accepted_train_clips": 4,
+          "median_clip_p95_planted_foot_speed_mps": 0.012013487098933682,
+          "clips_over_0p2_mps": 0
+        },
+        "punch": {
+          "accepted_train_clips": 7,
+          "median_clip_p95_planted_foot_speed_mps": 0.8027859544667382,
+          "clips_over_0p2_mps": 4
+        },
+        "reach": {
+          "accepted_train_clips": 54,
+          "median_clip_p95_planted_foot_speed_mps": 0.0014871150450933863,
+          "clips_over_0p2_mps": 3
+        },
+        "run": {
+          "accepted_train_clips": 35,
+          "median_clip_p95_planted_foot_speed_mps": 0.9748064667614198,
+          "clips_over_0p2_mps": 31
+        },
+        "squat": {
+          "accepted_train_clips": 2,
+          "median_clip_p95_planted_foot_speed_mps": 0.3699516819945654,
+          "clips_over_0p2_mps": 1
+        },
+        "stance": {
+          "accepted_train_clips": 7,
+          "median_clip_p95_planted_foot_speed_mps": 0.010962313329207277,
+          "clips_over_0p2_mps": 3
+        },
+        "turn": {
+          "accepted_train_clips": 39,
+          "median_clip_p95_planted_foot_speed_mps": 0.3873070213083223,
+          "clips_over_0p2_mps": 28
+        },
+        "walk": {
+          "accepted_train_clips": 76,
+          "median_clip_p95_planted_foot_speed_mps": 0.3049847917322288,
+          "clips_over_0p2_mps": 49
+        }
+      }
+    },
+    {
+      "library": "artifacts/references-v7-contact-root",
+      "selected": 400,
+      "accepted": 347,
+      "splits": {
+        "train": 274,
+        "test": 40,
+        "validation": 33
+      },
+      "scope": "Reference-only kinematic consistency, not closed-loop physics qualification",
+      "train_families": {
+        "bow": {
+          "accepted_train_clips": 12,
+          "median_clip_p95_planted_foot_speed_mps": 0.0002312434639297175,
+          "clips_over_0p2_mps": 0
+        },
+        "dance": {
+          "accepted_train_clips": 11,
+          "median_clip_p95_planted_foot_speed_mps": 0.0014696895894759816,
+          "clips_over_0p2_mps": 0
+        },
+        "jump": {
+          "accepted_train_clips": 15,
+          "median_clip_p95_planted_foot_speed_mps": 0.007562067327146982,
+          "clips_over_0p2_mps": 0
+        },
+        "kick": {
+          "accepted_train_clips": 4,
+          "median_clip_p95_planted_foot_speed_mps": 0.0026363353230806448,
+          "clips_over_0p2_mps": 0
+        },
+        "punch": {
+          "accepted_train_clips": 10,
+          "median_clip_p95_planted_foot_speed_mps": 0.0018158296336308808,
+          "clips_over_0p2_mps": 0
+        },
+        "reach": {
+          "accepted_train_clips": 52,
+          "median_clip_p95_planted_foot_speed_mps": 7.220872572991595e-05,
+          "clips_over_0p2_mps": 0
+        },
+        "run": {
+          "accepted_train_clips": 42,
+          "median_clip_p95_planted_foot_speed_mps": 0.019594478391668065,
+          "clips_over_0p2_mps": 0
+        },
+        "squat": {
+          "accepted_train_clips": 2,
+          "median_clip_p95_planted_foot_speed_mps": 0.0007537874779616644,
+          "clips_over_0p2_mps": 0
+        },
+        "stance": {
+          "accepted_train_clips": 9,
+          "median_clip_p95_planted_foot_speed_mps": 0.0002173782145806593,
+          "clips_over_0p2_mps": 0
+        },
+        "turn": {
+          "accepted_train_clips": 44,
+          "median_clip_p95_planted_foot_speed_mps": 0.01303722370699669,
+          "clips_over_0p2_mps": 0
+        },
+        "walk": {
+          "accepted_train_clips": 73,
+          "median_clip_p95_planted_foot_speed_mps": 0.02274403439796875,
+          "clips_over_0p2_mps": 0
+        }
+      }
+    }
+  ],
+  "fixed_v5_teacher_paired_reference_replay": {
+    "v5": {
+      "completed": 22,
+      "total": 32
+    },
+    "v7": {
+      "completed": 19,
+      "total": 32
+    }
+  },
+  "new_checkpoint_mujoco_checks": {
+    "matched-mujoco-train-000050": {
+      "completed": 19,
+      "total": 32,
+      "checkpoint_iteration": 50,
+      "scope": "Native physics development diagnostic; no early termination resets within trials."
+    },
+    "mujoco-validation-000050": {
+      "completed": 13,
+      "total": 33,
+      "checkpoint_iteration": 50,
+      "scope": "Native physics development diagnostic; no early termination resets within trials."
+    },
+    "mujoco-validation-000150": {
+      "completed": 17,
+      "total": 33,
+      "checkpoint_iteration": 150,
+      "scope": "Native physics development diagnostic; no early termination resets within trials."
+    }
+  },
+  "tests": {
+    "passed": 26,
+    "log": "logs/tests-training-revision-final.log"
+  },
+  "behaviorally_accepted": false,
+  "hardware_verified": false,
+  "resume_checkpoint": "artifacts/teacher-isaac-v6/checkpoint-000150.pt",
+  "start_iteration": 150,
+  "target_iteration": 3000,
+  "latest_verified_iteration": 195,
+  "continuation_warm_median_transitions_per_second": 46220.65364927308,
+  "resume_provenance_preserved": true,
+  "native_replay_000100": {
+    "train": {
+      "completed": 139,
+      "total": 274
+    },
+    "validation": {
+      "completed": 18,
+      "total": 33
+    }
+  }
+}

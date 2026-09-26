@@ -1,0 +1,32 @@
+{
+  "profile": "beyondmimic-causal-v1",
+  "upstream_repository": "https://github.com/HybridRobotics/whole_body_tracking",
+  "upstream_commit": "cd65172032893724b445448818c34165846d847d",
+  "upstream_files": [
+    "source/whole_body_tracking/whole_body_tracking/tasks/tracking/mdp/rewards.py",
+    "source/whole_body_tracking/whole_body_tracking/tasks/tracking/mdp/commands.py",
+    "source/whole_body_tracking/whole_body_tracking/tasks/tracking/tracking_env_cfg.py"
+  ],
+  "reproduction": false,
+  "adaptations": [
+    "Causal K1 student observation contract unchanged; no future frames, global position, or true simulator velocity in the actor",
+    "Training-only asymmetric critic remains unchanged and may use future reference fields",
+    "Anchor position reward tracks height only; horizontal drift is not penalized",
+    "Use K1 landmark sites and associated body orientations rather than upstream body origins",
+    "Relative body targets preserve reference height and use instantaneous relative yaw alignment",
+    "Body linear and angular velocities use backward differences at 20 ms; no centered or forward differences",
+    "Scale the six upstream tracking weights uniformly by 1.5 for a peak sum of 7.5 matching our baseline",
+    "Retain baseline action-change, effort, self-collision and failure costs, terminations, and audited low-support admission",
+    "Retain the baseline take-transition-balanced sampler, physics, action bounds, optimizer and initialization"
+  ],
+  "tracking_terms_weight_sigma": {
+    "anchor_height": [0.5, 0.3],
+    "anchor_orientation": [0.5, 0.4],
+    "relative_body_position": [1.0, 0.3],
+    "relative_body_orientation": [1.0, 0.4],
+    "global_body_linear_velocity": [1.0, 1.0],
+    "global_body_angular_velocity": [1.0, 3.14]
+  },
+  "tracking_scale": 1.5,
+  "behaviorally_accepted": false
+}

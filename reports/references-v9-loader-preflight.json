@@ -1,0 +1,11 @@
+{
+  "library": "artifacts/references-v9-expanded-train",
+  "loaded_training_recordings": 426,
+  "loaded_training_groups": 303,
+  "reference_fingerprint": "d7166fa751398b9c8dc5189d4019a6442bdd3ac3aaf82f1d256ea653a0dfa06f",
+  "finite": true,
+  "held_out_rows_unchanged": true,
+  "train_held_out_disjoint": true,
+  "training_scope_exclusions_retained": 6,
+  "physics_qualified": false
+}

@@ -1,0 +1,49 @@
+{
+  "baseline": "artifacts/tsubame-103768/student-v1/human-validation-v2-iteration100",
+  "candidate": "artifacts/student-warp-v8-contact/human-validation-iteration150",
+  "trials": 180,
+  "comparison": {
+    "completed": {
+      "baseline": 68,
+      "candidate": 67,
+      "gained": [
+        "turn-015-f28ffb400ed735dc",
+        "walk-004-aa615d09f4175d27",
+        "walk-008-63797b5e1aa8df93",
+        "walk-010-aa615d09f4175d27"
+      ],
+      "lost": [
+        "run-004-0543d0ac075bd464",
+        "run-008-0543d0ac075bd464",
+        "run-012-0543d0ac075bd464",
+        "turn-005-9040f50d0c40b1ad",
+        "turn-013-9040f50d0c40b1ad"
+      ]
+    },
+    "tracking_passed": {
+      "baseline": 30,
+      "candidate": 35,
+      "gained": [
+        "bow-002-2d6a188b639b3046",
+        "bow-006-2d6a188b639b3046",
+        "bow-010-2d6a188b639b3046",
+        "bow-014-2d6a188b639b3046",
+        "bow-018-2d6a188b639b3046",
+        "turn-006-988af43db7b862ce",
+        "walk-004-aa615d09f4175d27",
+        "walk-008-63797b5e1aa8df93",
+        "walk-010-aa615d09f4175d27",
+        "walk-012-08b24af6b1e4b259"
+      ],
+      "lost": [
+        "reach-017-943d335851d5d1f9",
+        "reach-018-bfbe9bc1cec0ed5f",
+        "run-008-0543d0ac075bd464",
+        "turn-005-9040f50d0c40b1ad",
+        "turn-013-9040f50d0c40b1ad"
+      ]
+    }
+  },
+  "behaviorally_accepted": false,
+  "promotion": false
+}

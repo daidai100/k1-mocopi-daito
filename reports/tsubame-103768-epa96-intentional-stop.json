@@ -1,0 +1,11 @@
+{
+  "intentional_stop": true,
+  "learner_pid_verified_absent": 1122552,
+  "retained_checkpoint": "/home/4/uh06814/k1-motion/artifacts/tsubame-103768/student-v1-epa96/checkpoint-000350.pt",
+  "retained_iteration": 350,
+  "retained_transitions": 91750400,
+  "last_logged_iteration": 367,
+  "reason": "V7/BC1/no-contact-cost checkpoint275 scored25/180 strict; local V8/PPO-only/contact-cost checkpoint150 scored46/180 and passed standing bouts. Move this allocation to that locally tested setup.",
+  "observed_unix": 1789806790.511736,
+  "behaviorally_accepted": false
+}

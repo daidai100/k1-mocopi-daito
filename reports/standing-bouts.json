@@ -1,0 +1,48 @@
+{
+  "controller": "untrained_double_support_imu_baseline",
+  "bouts": [
+    {
+      "bout": 1,
+      "minimum_root_height_m": 0.54180400964127,
+      "seconds": 300.0
+    },
+    {
+      "bout": 2,
+      "minimum_root_height_m": 0.5420832295329592,
+      "seconds": 300.0
+    }
+  ],
+  "falls": 0,
+  "resets_after_initialization": 0,
+  "max_target_step_rad": 0.013184219598770142,
+  "command_p95_ms": 0.4481740497794817,
+  "events": [
+    {
+      "time": 0.0,
+      "mode": "ready",
+      "reason": "calibrated; explicit arm required"
+    },
+    {
+      "time": 0.0,
+      "mode": "active",
+      "reason": "operator armed"
+    },
+    {
+      "time": 300.0000000000171,
+      "mode": "paused",
+      "reason": "operator paused"
+    },
+    {
+      "time": 301.0000000000162,
+      "mode": "ready",
+      "reason": "calibrated; explicit arm required"
+    },
+    {
+      "time": 301.0000000000162,
+      "mode": "active",
+      "reason": "operator armed"
+    }
+  ],
+  "passed": true,
+  "scope": "Standing idle only; no claim about dynamic tracking or live mocopi."
+}

@@ -1,0 +1,82 @@
+{
+  "desktop": {
+    "time": "2026-09-20T14:22:07.369068+09:00",
+    "service": "k1-bones-seed-recovery-local.service",
+    "state": {
+      "MainPID": "2821378",
+      "NRestarts": "0",
+      "ExecMainStartTimestamp": "Sun 2026-09-20 14:16:54 JST",
+      "ExecMainStatus": "0",
+      "ActiveState": "active",
+      "SubState": "running"
+    },
+    "output": "/home/vivi/c/k1-motion/artifacts/bones-seed-k1-gmr-v4-shard0",
+    "expected": 69987,
+    "processed": 85,
+    "originals": 43,
+    "mirrors": 42,
+    "accepted": 37,
+    "accepted_originals": 19,
+    "recovered_originals": 5,
+    "withheld_formerly_accepted_originals": 15,
+    "physics_qualified": 0,
+    "training_eligible": 0,
+    "loaded_payload_checks": [
+      {
+        "id": "0dab493d9b32496585a4",
+        "is_mirror": false,
+        "frames": 1624,
+        "retarget_version": "causal-ik-v8-command-path-recovery"
+      },
+      {
+        "id": "fe5f744f8fc58e5ddc46",
+        "is_mirror": true,
+        "frames": 1624,
+        "retarget_version": "causal-ik-v8-command-path-recovery"
+      }
+    ],
+    "source_files_match_contract": true,
+    "busy_workers": 4,
+    "maximum_workers": 12
+  },
+  "server": {
+    "time": "2026-09-20T14:22:08.611131+09:00",
+    "service": "k1-bones-seed-recovery-shard1.service",
+    "state": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "MainPID": "1531790",
+      "NRestarts": "0",
+      "ExecMainStartTimestamp": "Sun 2026-09-20 14:16:55 JST",
+      "ExecMainStatus": "0"
+    },
+    "output": "/mnt/ssd1/k1-motion/derived/bones-seed-k1-gmr-v4-shard1",
+    "expected": 72233,
+    "processed": 70,
+    "originals": 35,
+    "mirrors": 35,
+    "accepted": 43,
+    "accepted_originals": 22,
+    "recovered_originals": 3,
+    "withheld_formerly_accepted_originals": 6,
+    "physics_qualified": 0,
+    "training_eligible": 0,
+    "loaded_payload_checks": [
+      {
+        "id": "06c625255731aa47e450",
+        "is_mirror": false,
+        "frames": 401,
+        "retarget_version": "causal-ik-v8-command-path-recovery"
+      },
+      {
+        "id": "229ceb242579b29ae3d8",
+        "is_mirror": true,
+        "frames": 401,
+        "retarget_version": "causal-ik-v8-command-path-recovery"
+      }
+    ],
+    "source_files_match_contract": true,
+    "busy_workers": 8,
+    "maximum_workers": 52
+  }
+}

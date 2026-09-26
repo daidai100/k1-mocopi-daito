@@ -1,0 +1,33 @@
+{
+  "baseline": "reports/tsubame-103768-epa24-replay.json",
+  "candidate": "reports/tsubame-103768-epa96-replay.json",
+  "splits": {
+    "train": {
+      "trials": 274,
+      "completed_before": 180,
+      "completed_after": 180,
+      "completion_changes": [
+        "382ff39b9b1d0d3a",
+        "7bf0b541ab37266b",
+        "2cb00df82ac27091",
+        "9511a370f7a06083",
+        "5e011a33154f9c08",
+        "337224a0fc082ddb",
+        "c847b428c291c134",
+        "2628312255c5f578"
+      ],
+      "max_body_rmse_difference_m": 0.07430657744407654,
+      "max_duration_difference_s": 10.019999504089355
+    },
+    "validation": {
+      "trials": 33,
+      "completed_before": 20,
+      "completed_after": 20,
+      "completion_changes": [],
+      "max_body_rmse_difference_m": 0.006827510893344879,
+      "max_duration_difference_s": 0.2999999523162842
+    }
+  },
+  "intermittent_production_failure_reproduced": false,
+  "behaviorally_accepted": false
+}

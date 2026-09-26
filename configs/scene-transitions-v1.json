@@ -1,0 +1,6 @@
+{
+  "blend_seconds": 0.6,
+  "episode_seconds": 30.0,
+  "candidate_count": 8,
+  "cache_size": 512
+}

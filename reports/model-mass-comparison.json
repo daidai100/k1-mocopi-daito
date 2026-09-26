@@ -1,0 +1,8 @@
+{
+  "xml_mass_kg": 19.666,
+  "urdf_mass_kg": 19.666,
+  "matching_bodies": 23,
+  "mass_mismatches": {},
+  "only_xml": [],
+  "only_urdf": []
+}

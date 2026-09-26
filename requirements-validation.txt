@@ -1,0 +1,2 @@
+# Validated with Python 3.12.3; acquisition itself uses only the standard library.
+numpy==1.26.4
