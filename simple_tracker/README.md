@@ -89,6 +89,20 @@ cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tra
   mocopi 録画 2 本（ライブと同じ因果処理）も転倒なし。ただし深いランジ（胴体 0.42 m）は浅くしか再現しない。
   Bandai データには深くしゃがむ動きがほとんどない（胴体はほぼ 0.47 m 以上）ため、学習が進んでも限界がありうる。
 
+- iter 6000（3 時間 38 分）：Bandai 23 本は全て転倒なし、関節誤差 0.129 rad。mocopi 録画は 0.138 / 0.097 rad（iter 1000 では 0.187 / 0.138）。
+
+## LAFAN1 版（並行 run `*_lafan1_v1`、9/27 00:50 開始）
+
+- `bandai_to_k1.py --format lafan1 --calib_frame auto --segment`：長い収録を区間に分け、床での動作・傾いた胴体・
+  1 秒平均で 1.3 m/s 超の移動・両足が浮いた区間・激しい関節速度を ±0.5 秒の余白付きで除外する。
+  77 本 → 577 区間・2.68 時間（walk 43 分、dance 22 分、aiming 19 分、obstacles 20 分ほか）。
+- 学習は同じタスクで、ライブラリだけ `K1_TRACKER_LIBRARY=~/ws/k1-mocopi-data/k1_lafan1_library.npz` で差し替える。
+- 2 本の同時実行では、どちらも約 5.2 s/iter（単独時は 2.25 s/iter）。合計スループットは単独時より約 13% 低い。
+  Bandai run は 11:58 の停止時点で約 14k iter、LAFAN1 run は 15:50 ごろの停止時点で約 14k iter の見込み。
+- `~/ws/k1-mocopi-data/auto_eval.sh` が 07:30 に両 run の最新チェックポイントを sim2sim にかけ、
+  各 run の終了後にも最終チェックポイントを評価する（結果：`~/ws/k1-mocopi-data/auto_eval.log` と各 run ディレクトリ）。
+- LAFAN1 は CC BY-NC-ND 4.0。リターゲット後のデータは再配布しないこと（ローカルの研究利用のみ）。
+
 ## 既知の制限・次の手順
 
 - **ライブ mocopi**：`live/mocopi_retarget.py udp`（GMR venv）が mocopi アプリの UDP（12351）を受けて
