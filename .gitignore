@@ -30,3 +30,6 @@ artifacts/
 *.tar.bz2
 *.partial
 reports/*.npz
+
+# hydra outputs from Isaac Lab runs
+outputs/
