@@ -45,7 +45,17 @@ def run_clip(cfg, renderer=None, frames=None):
             fell = True
             break
         if renderer is not None and ctrl._step_count % 2 == 0:
+            # draw the reference at the robot's xy/heading: the policy tracks neither, by design
+            from booster_deploy.utils.isaaclab import math as lab_math
+
+            robot_q = torch.from_numpy(ctrl.mj_data.qpos[3:7].astype(np.float32))
+            ref_q = policy.ref_root_quat.cpu()
+            q = lab_math.quat_mul(lab_math.quat_mul(lab_math.yaw_quat(robot_q), lab_math.quat_inv(lab_math.yaw_quat(ref_q))), ref_q)
+            pos = torch.tensor([*ctrl.mj_data.qpos[:2], float(policy.ref_root_pos[2])])
+            pos[1] += 0.5  # side by side
+            ctrl.set_reference_qpos(torch.cat([pos, q, policy.ref_joint_pos[s2r].cpu()]))
             cam.lookat[:] = ctrl.mj_data.qpos[:3]
+            cam.lookat[1] += 0.25
             renderer.update_scene(ctrl.mj_data, cam)
             n0 = renderer.scene.ngeom
             mujoco.mjv_addGeoms(

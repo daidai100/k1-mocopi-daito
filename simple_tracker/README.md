@@ -74,10 +74,20 @@ OMNI_KIT_ACCEPT_EULA=Y ~/ws/beyondmimic/.venv-isaaclab/bin/python simple_tracker
 # 5) sim2sim（ヘッドレス、MuJoCo、動画＋成功率）
 cd ~/ws/beyondmimic/booster_deploy && MUJOCO_GL=egl .venv/bin/python ~/ws/k1-mocopi/simple_tracker/deploy/sim2sim_eval.py \
   --checkpoint <exported/policy_N.pt> --clips '_normal_00[1-2]$' --video s2s.mp4 --json s2s.json
+#    まとめて：最新チェックポイントの書き出し＋sim2sim（Bandai 23 本＋mocopi 録画 2 本、動画は run ディレクトリへ）
+simple_tracker/eval_latest.sh            # 引数でチェックポイントやクリップの正規表現を指定可
 # 6) 実機（booster_deploy と同じ手順。--mujoco を付けると GUI ビューア版）
 cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tracker/deploy/deploy.py \
   --checkpoint <exported/policy_N.pt> --clips 'dataset-2_wave-right-hand_normal_001$'
 ```
+
+## 途中経過（学習 run `2026-09-26_20-58-22_bandai_v1`）
+
+- 20:58 開始、`timeout 15h` で 9/27 11:58 ごろ自動停止。約 2.2 s/iter（約 24k iter の見込み）。
+- iter 500：終了要因の 64% がクリップ完走、33% が手足の高さずれ（失敗）。行動 std 0.36。崩壊なし。
+- **iter 1000（約 40 分）の MuJoCo sim2sim**：Bandai `*_normal_001` の 23 本は全て転倒なし（関節誤差 平均 0.16 rad）。
+  mocopi 録画 2 本（ライブと同じ因果処理）も転倒なし。ただし深いランジ（胴体 0.42 m）は浅くしか再現しない。
+  Bandai データには深くしゃがむ動きがほとんどない（胴体はほぼ 0.47 m 以上）ため、学習が進んでも限界がありうる。
 
 ## 既知の制限・次の手順
 
@@ -89,5 +99,7 @@ cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tra
 - 歩行の参照速度は p95 で約 1 m/s あり、K1 には速い可能性がある。追従しきれない場合はクリップを
   時間方向に伸ばす（例：1.25 倍）か、速度でフィルタする。
 - K1 の腕は短い（約 0.16 m）ため、人の肘を K1 の手先に対応させている（GMR の smplx_to_k1 と同じ）。
+- 低い姿勢（ランジ・スクワット）はデータが少ない。必要なら mocopi で自分の動きを録ってライブラリに追加する
+  （`live/mocopi_retarget.py bvh` で作る npz と同じ形式で `build_library.py` に入れる経路を用意するとよい）。
 - 参照に未来フレームは使わない（ライブでは得られないため）。
 - ライセンス：Bandai Namco データは CC BY-NC 4.0。派生データ（`~/ws/k1-mocopi-data`）はリポジトリに含めない。
