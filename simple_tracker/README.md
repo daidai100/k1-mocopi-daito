@@ -102,11 +102,25 @@ cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tra
   77 本 → 577 区間・2.68 時間（walk 43 分、dance 22 分、aiming 19 分、obstacles 20 分ほか）。
 - 学習は同じタスクで、ライブラリだけ `K1_TRACKER_LIBRARY=~/ws/k1-mocopi-data/k1_lafan1_library.npz` で差し替える。
 - 2 本の同時実行では、どちらも約 5.2 s/iter（単独時は 2.25 s/iter）。合計スループットは単独時より約 13% 低い。
-  Bandai run は 11:58 の停止時点で約 14k iter、LAFAN1 run は 15:50 ごろの停止時点で約 14k iter の見込み。
+  結果として、どちらの run も停止時点で 14k iter（最終チェックポイント `model_14000.pt`）だった。
 - iter 10750（13:50）：LAFAN1 subject1 の 34 区間すべて転倒なし、関節誤差 0.113 rad（265 秒の歩行を含む）。mocopi 録画は 0.129 / 0.099 rad。
 - `~/ws/k1-mocopi-data/auto_eval.sh` が 07:30 に両 run の最新チェックポイントを sim2sim にかけ、
   各 run の終了後にも最終チェックポイントを評価する予定だったが、相対パスの不具合で失敗した（修正済み）。
-  LAFAN1 の最終評価は `auto_eval_lafan.sh` が 15:55 に固まったプロセスを kill してから実行する（結果：`~/ws/k1-mocopi-data/auto_eval.log`）。
+  LAFAN1 の最終評価は `auto_eval_lafan.sh` が 15:55 に固まったプロセスを kill してから実行した（結果：`~/ws/k1-mocopi-data/auto_eval.log`）。
+- **最終（iter 14000、15:50 停止）**：LAFAN1 subject1 の 34 区間すべて転倒なし、関節誤差 0.110 rad
+  （苦手なのは fightAndSports の 0.18 rad、それ以外は 0.09〜0.13 rad）。mocopi 録画は 0.136 / 0.089 rad。
+
+### Bandai 版と LAFAN1 版の比較（どちらも iter 14000、MuJoCo sim2sim、関節誤差 rad）
+
+| 評価対象 | Bandai | LAFAN1 |
+| --- | ---: | ---: |
+| それぞれの学習データのクリップ | 23/23 完走、0.122 | 34/34 完走、0.110 |
+| mocopi 録画 MCPM_20260922_163917（ランジを含む） | **0.122** | 0.136 |
+| mocopi 録画 MCPM_20260922_164010 | 0.110 | **0.089** |
+
+- 学習データにない mocopi 録画では優劣がはっきりしない。どちらも転倒はしていない。
+- 評価クリップはどれも学習データに含まれるため、未知の動作への汎化はまだ測れていない。
+- 書き出したポリシー：`logs/rsl_rl/k1_simple_tracker/<run>/exported/policy_14000.{pt,onnx}`（ログは git に含めていない）。
 - LAFAN1 は CC BY-NC-ND 4.0。リターゲット後のデータは再配布しないこと（ローカルの研究利用のみ）。
 
 ## 既知の制限・次の手順
