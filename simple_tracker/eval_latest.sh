@@ -7,7 +7,8 @@
 set -euo pipefail
 REPO=$(cd "$(dirname "$0")/.." && pwd)
 RUN=${RUN:-$(ls -td "$REPO"/logs/rsl_rl/k1_simple_tracker/*/ | head -1)}
-CKPT=${1:-$(ls -v "$RUN"/model_*.pt | tail -1)}
+RUN=$(realpath "$RUN")
+CKPT=$(realpath "${1:-$(ls -v "$RUN"/model_*.pt | tail -1)}")
 N=$(basename "$CKPT" .pt | sed 's/model_//')
 DATA=${DATA:-$HOME/ws/k1-mocopi-data}
 case "$RUN" in
