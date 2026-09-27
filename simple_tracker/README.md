@@ -91,6 +91,10 @@ cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tra
 
 - iter 6000（3 時間 38 分）：Bandai 23 本は全て転倒なし、関節誤差 0.129 rad。mocopi 録画は 0.138 / 0.097 rad（iter 1000 では 0.187 / 0.138）。
 
+- **最終（iter 14000、11:58 停止）**：Bandai 23 本すべて転倒なし、関節誤差 0.122 rad。mocopi 録画は 0.122 / 0.110 rad。
+- 注意：`timeout` の SIGTERM を受けると Isaac が終了処理で固まり、GPU を保持したまま残る（停止後に PID 指定で kill した）。
+  チェックポイントは 250 iter ごとに保存されるため、最後の 250 iter 未満は失われる。
+
 ## LAFAN1 版（並行 run `*_lafan1_v1`、9/27 00:50 開始）
 
 - `bandai_to_k1.py --format lafan1 --calib_frame auto --segment`：長い収録を区間に分け、床での動作・傾いた胴体・
@@ -99,8 +103,10 @@ cd ~/ws/beyondmimic/booster_deploy && .venv/bin/python ~/ws/k1-mocopi/simple_tra
 - 学習は同じタスクで、ライブラリだけ `K1_TRACKER_LIBRARY=~/ws/k1-mocopi-data/k1_lafan1_library.npz` で差し替える。
 - 2 本の同時実行では、どちらも約 5.2 s/iter（単独時は 2.25 s/iter）。合計スループットは単独時より約 13% 低い。
   Bandai run は 11:58 の停止時点で約 14k iter、LAFAN1 run は 15:50 ごろの停止時点で約 14k iter の見込み。
+- iter 10750（13:50）：LAFAN1 subject1 の 34 区間すべて転倒なし、関節誤差 0.113 rad（265 秒の歩行を含む）。mocopi 録画は 0.129 / 0.099 rad。
 - `~/ws/k1-mocopi-data/auto_eval.sh` が 07:30 に両 run の最新チェックポイントを sim2sim にかけ、
-  各 run の終了後にも最終チェックポイントを評価する（結果：`~/ws/k1-mocopi-data/auto_eval.log` と各 run ディレクトリ）。
+  各 run の終了後にも最終チェックポイントを評価する予定だったが、相対パスの不具合で失敗した（修正済み）。
+  LAFAN1 の最終評価は `auto_eval_lafan.sh` が 15:55 に固まったプロセスを kill してから実行する（結果：`~/ws/k1-mocopi-data/auto_eval.log`）。
 - LAFAN1 は CC BY-NC-ND 4.0。リターゲット後のデータは再配布しないこと（ローカルの研究利用のみ）。
 
 ## 既知の制限・次の手順
